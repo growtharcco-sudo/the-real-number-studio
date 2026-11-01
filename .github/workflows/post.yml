@@ -54,5 +54,7 @@ jobs:
         env: { IG_TOKEN: "${{ secrets.IG_TOKEN }}", GH_TOKEN: "${{ secrets.GH_PAT }}" }
         run: |
           [ "$(date -u +%u)" = "1" ] || exit 0
+          [ -n "$GH_TOKEN" ] || { echo "GH_PAT not set, skipping refresh"; exit 0; }
+          case "$IG_TOKEN" in EAA*) echo "Facebook-type token, no refresh needed"; exit 0;; esac
           NEW=$(python -c "import os,sys; sys.path.insert(0,'poster'); import instagram; print(instagram.refresh_token(os.environ['IG_TOKEN']))")
           gh secret set IG_TOKEN --body "$NEW" --repo "${{ github.repository }}"

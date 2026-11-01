@@ -6,7 +6,12 @@ instagram_business_content_publish). The video must be reachable at a public URL
 import os, time, requests
 
 VER = os.environ.get("IG_API_VERSION", "v26.0")
-BASE = f"https://graph.instagram.com/{VER}"
+
+
+def _base(token):
+    """Instagram-login tokens start with IG...; Facebook/Unified-login (system user) tokens start with EAA."""
+    host = "graph.facebook.com" if token.startswith("EAA") else "graph.instagram.com"
+    return f"https://{host}/{VER}"
 
 
 def _check(r):
@@ -17,6 +22,7 @@ def _check(r):
 
 def publish_reel(video_url, caption, cover_url=None, ai_label=True, token=None, user_id=None):
     token = token or os.environ["IG_TOKEN"]; user_id = user_id or os.environ["IG_USER_ID"]
+    BASE = _base(token)
     data = {"media_type": "REELS", "video_url": video_url, "caption": caption, "share_to_feed": "true",
             "access_token": token}
     if cover_url: data["cover_url"] = cover_url
@@ -46,7 +52,9 @@ def publish_reel(video_url, caption, cover_url=None, ai_label=True, token=None, 
 
 
 def refresh_token(token):
-    """Long-lived tokens last 60 days; refreshing returns a fresh 60-day token."""
+    """Instagram-login tokens last 60 days; refreshing returns a fresh 60-day token.
+    Facebook/system-user tokens (EAA...) are refreshed differently or never expire, so they are returned unchanged."""
+    if token.startswith("EAA"): return token
     r = requests.get("https://graph.instagram.com/refresh_access_token",
                      params={"grant_type": "ig_refresh_token", "access_token": token}, timeout=30)
     return _check(r)["access_token"]
