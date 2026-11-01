@@ -33,6 +33,9 @@ def _checkout():
 
 def _publish(tmp):
     open(os.path.join(tmp, ".nojekyll"), "w").close()
+    site = os.path.join(ROOT, "pages")                      # home, privacy and terms pages always stay on the site
+    for f in os.listdir(site) if os.path.isdir(site) else []:
+        shutil.copy(os.path.join(site, f), os.path.join(tmp, f))
     shutil.rmtree(os.path.join(tmp, ".git"), ignore_errors=True)
     url = _url()
     sh("git", "init", "-q", "-b", "media", cwd=tmp)
@@ -52,7 +55,7 @@ def prune():
     tmp = _checkout()
     queued = set(os.listdir(os.path.join(ROOT, "queue"))) if os.path.isdir(os.path.join(ROOT, "queue")) else set()
     for name in os.listdir(tmp):
-        if name.startswith(".") or name in queued: continue
+        if name.startswith(".") or name in queued or name.endswith(".html"): continue
         shutil.rmtree(os.path.join(tmp, name), ignore_errors=True)
     _publish(tmp)
 
