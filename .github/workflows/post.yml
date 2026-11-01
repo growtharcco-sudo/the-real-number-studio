@@ -36,10 +36,11 @@ jobs:
           YT_PRIVACY: ${{ vars.YT_PRIVACY || 'public' }}
         run: python poster/publish_due.py
       - name: Save results
+        env: { GITHUB_TOKEN: "${{ github.token }}" }
         run: |
           git config user.name trn-bot && git config user.email trn-bot@users.noreply.github.com
           git add -A queue posted && git commit -q -m "posting results" && git push -q || echo "nothing to save"
-          python poster/media_branch.py prune
+          if [ "$(cat .changed 2>/dev/null)" = "1" ]; then python poster/media_branch.py prune; fi
       - name: Fail loudly so GitHub emails you
         if: steps.post.outcome == 'failure'
         run: exit 1

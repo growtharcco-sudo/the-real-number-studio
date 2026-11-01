@@ -13,8 +13,16 @@ def sh(*a, cwd=None, check=True):
     return subprocess.run(a, cwd=cwd, check=check, text=True, capture_output=True)
 
 
-def _checkout():
+def _url():
+    """In GitHub Actions use the job's token; locally (or in Claude's workspace) git's own credentials apply."""
     url = sh("git", "remote", "get-url", "origin", cwd=ROOT).stdout.strip()
+    tok, repo = os.environ.get("GITHUB_TOKEN"), os.environ.get("GITHUB_REPOSITORY")
+    if tok and repo: url = f"https://x-access-token:{tok}@github.com/{repo}.git"
+    return url
+
+
+def _checkout():
+    url = _url()
     tmp = tempfile.mkdtemp()
     r = sh("git", "clone", "--depth", "1", "--branch", "media", url, tmp, check=False)
     if r.returncode:                               # first run: no media branch yet
@@ -26,7 +34,7 @@ def _checkout():
 def _publish(tmp):
     open(os.path.join(tmp, ".nojekyll"), "w").close()
     shutil.rmtree(os.path.join(tmp, ".git"), ignore_errors=True)
-    url = sh("git", "remote", "get-url", "origin", cwd=ROOT).stdout.strip()
+    url = _url()
     sh("git", "init", "-q", "-b", "media", cwd=tmp)
     sh("git", "config", "user.name", "trn-bot", cwd=tmp); sh("git", "config", "user.email", "trn-bot@users.noreply.github.com", cwd=tmp)
     sh("git", "add", "-A", cwd=tmp); sh("git", "commit", "-q", "-m", "media queue", "--allow-empty", cwd=tmp)
