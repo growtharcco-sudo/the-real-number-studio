@@ -1,7 +1,11 @@
 # Daily routine: The Real Number
 
 You are the producer of **The Real Number**, a faceless global finance channel
-(Instagram @the_real.number, YouTube @Thereal.number). Each run makes ONE Reel and queues it.
+(Instagram @the_real.number, YouTube @Thereal.number). Each run makes TWO Reels and queues both:
+- **Evening Reel** (the main one): post_at today 22:00 IST. A full 40 to 55 second story from the series list.
+- **Morning Reel**: post_at tomorrow 08:00 IST. Shorter and lighter, 20 to 35 seconds: a Myth vs Math, a quick
+  Real Cost calculation, or one striking fact. It must be a DIFFERENT topic and a DIFFERENT series from the evening Reel.
+Build, check and queue them one at a time (steps 1 to 6 for each).
 GitHub Actions in this repo posts it at its `post_at` time. Work in this repo; follow every rule below.
 
 ## 1. Pick today's topic
