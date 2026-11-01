@@ -1,0 +1,112 @@
+{
+  "id": "033_tech_wipeout",
+  "series": "Money News",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "phrases": [
+    {"say": "Two trillion dollars. That's roughly how much value the Nasdaq one hundred was on track to lose in October.", "cap": "$2 trillion. That's roughly how much value the Nasdaq 100 was on track to lose in October."},
+    {"say": "And Friday, October thirtieth, made it worse.", "cap": "And Friday, October 30th, made it worse.", "pause": 0.47},
+    {"say": "The Nasdaq fell about three percent.", "cap": "The Nasdaq fell about 3%.", "pause": 0.49},
+    {"say": "The S and P five hundred, about two.", "cap": "The S&P 500, about 2.", "pause": 0.45},
+    {"say": "The Dow, just over one.", "cap": "The Dow, just over 1.", "pause": 0.45},
+    {"say": "So what happened?", "pause": 0.64},
+    {"say": "Big Tech is spending like never before on A I.", "cap": "Big Tech is spending like never before on AI.", "pause": 0.7},
+    {"say": "J P Morgan estimates about nine hundred billion dollars of A I spending worldwide this year.", "cap": "J.P. Morgan estimates about $900 billion of AI spending worldwide this year.", "pause": 0.6},
+    {"say": "Investors want proof it pays off.", "pause": 0.59},
+    {"say": "This week,", "pause": 0.49},
+    {"say": "they didn't get enough.", "pause": 0.31},
+    {"say": "Alphabet had its biggest one-day percentage drop on record.", "pause": 0.69},
+    {"say": "Amazon disappointed.", "pause": 0.53},
+    {"say": "And Intel, after a weak forecast,", "pause": 0.4},
+    {"say": "lost about", "cap": "lost about...", "pause": 0.3},
+    {"say": "twenty-nine percent in a single day.", "cap": "29% in a single day.", "pause": 0.22},
+    {"say": "Add oil above a hundred dollars and talk of higher interest rates,", "cap": "Add oil above $100 and talk of higher interest rates,", "pause": 0.57},
+    {"say": "and you get this.", "pause": 0.27},
+    {"say": "So, is it a crash?", "pause": 0.68},
+    {"say": "Not yet.", "pause": 0.53},
+    {"say": "The Dow was still up for the month.", "pause": 0.54},
+    {"say": "This is a tech sell-off,", "pause": 0.64},
+    {"say": "and it's about one question:", "pause": 0.28},
+    {"say": "will all that A I spending pay off?", "cap": "will all that AI spending pay off?", "pause": 0.57},
+    {"say": "Follow for the real number behind your money.", "pause": 0.51}
+  ],
+  "scenes": [
+    {"until": 2, "els": [
+      {"type": "text", "text": "−$2 trillion", "font": "head", "size": 176, "color": "red", "y": 470, "at": -1, "mode": "fade"},
+      {"type": "text", "text": "wiped off the Nasdaq 100 in October", "font": "hand", "size": 60, "color": "blue", "y": 690, "at": -1, "rot": -1.5, "mode": "fade"},
+      {"type": "text", "text": "on track, per Reuters · Oct 30, 2026", "font": "hand", "size": 46, "color": "grey", "y": 785, "at": -1, "mode": "fade"},
+      {"type": "text", "text": "...and Friday made it worse", "font": "hand", "size": 56, "color": "red", "y": 890, "at": 1}
+    ]},
+    {"until": 5, "els": [
+      {"type": "text", "text": "Friday, Oct 30 (one day):", "font": "hand", "size": 54, "color": "blue", "x": 120, "y": 400, "at": 2},
+      {"type": "text", "text": "Nasdaq  −2.9%", "size": 46, "color": "red", "x": 120, "y": 500, "at": 2},
+      {"type": "bar", "x": 135, "y": 574, "w": 725, "color": "red", "at": 2, "delay": 0.2},
+      {"type": "text", "text": "S&P 500  −2.1%", "size": 46, "color": "red", "x": 120, "y": 640, "at": 3},
+      {"type": "bar", "x": 135, "y": 714, "w": 525, "color": "red", "at": 3, "delay": 0.2},
+      {"type": "text", "text": "Dow  −1.2%", "size": 46, "color": "red", "x": 120, "y": 780, "at": 4},
+      {"type": "bar", "x": 135, "y": 854, "w": 300, "color": "red", "at": 4, "delay": 0.2}
+    ]},
+    {"until": 11, "els": [
+      {"type": "text", "text": "so what happened?", "font": "hand", "size": 60, "color": "blue", "y": 360, "at": 5},
+      {"type": "text", "text": "Big Tech's AI spending:", "size": 46, "y": 460, "at": 6},
+      {"id": "c900", "type": "count", "prefix": "$", "value": 900, "suffix": " billion", "size": 130, "color": "red", "y": 530, "at": 7},
+      {"type": "text", "text": "est. worldwide in 2026 (J.P. Morgan)", "font": "hand", "size": 46, "color": "blue", "y": 700, "at": 7, "delay": 0.85},
+      {"type": "text", "text": "investors want proof it pays off", "size": 44, "y": 800, "at": 8},
+      {"id": "ne", "type": "text", "text": "this week: not enough", "font": "hand", "size": 64, "color": "red", "y": 880, "at": 9},
+      {"type": "ring", "of": "ne", "part": "not enough", "color": "red", "at": 10}
+    ]},
+    {"until": 16, "els": [
+      {"type": "text", "text": "this week's results:", "font": "hand", "size": 56, "color": "blue", "x": 120, "y": 360, "at": 11},
+      {"type": "text", "text": "x", "font": "hand", "size": 56, "color": "red", "x": 122, "y": 432, "at": 11, "mode": "fade"},
+      {"type": "text", "text": "Alphabet: biggest 1-day % drop on record", "size": 40, "x": 172, "y": 446, "at": 11},
+      {"type": "text", "text": "x", "font": "hand", "size": 56, "color": "red", "x": 122, "y": 512, "at": 12, "mode": "fade"},
+      {"type": "text", "text": "Amazon: disappointed", "size": 40, "x": 172, "y": 526, "at": 12},
+      {"type": "text", "text": "x", "font": "hand", "size": 56, "color": "red", "x": 122, "y": 592, "at": 13, "mode": "fade"},
+      {"type": "text", "text": "Intel: weak forecast", "size": 40, "x": 172, "y": 606, "at": 13},
+      {"id": "i29", "type": "text", "text": "−29%", "font": "head", "size": 170, "color": "red", "y": 690, "at": 15, "mode": "fade"},
+      {"type": "highlight", "of": "i29", "at": 15, "delay": 0.2},
+      {"type": "text", "text": "Intel, in a single day", "font": "hand", "size": 52, "color": "blue", "y": 900, "at": 15, "delay": 0.55}
+    ]},
+    {"until": 18, "els": [
+      {"type": "text", "text": "+ oil above $100", "size": 60, "x": 140, "y": 420, "at": 16},
+      {"type": "text", "text": "+ talk of higher interest rates", "size": 48, "x": 140, "y": 530, "at": [16, 0.45]},
+      {"type": "line", "from": [140, 640], "to": [880, 640], "at": 17},
+      {"id": "eq", "type": "text", "text": "= −$2 trillion", "font": "head", "size": 110, "color": "red", "y": 670, "at": 17, "delay": 0.15, "mode": "fade"},
+      {"type": "highlight", "of": "eq", "at": 17, "delay": 0.4}
+    ]},
+    {"until": 21, "els": [
+      {"type": "text", "text": "is it a crash?", "font": "hand", "size": 64, "color": "blue", "y": 380, "at": 18},
+      {"type": "text", "text": "not yet.", "font": "head", "size": 150, "color": "green", "y": 470, "at": 19, "mode": "fade"},
+      {"type": "text", "text": "Dow in October:  +1.5%", "size": 48, "color": "green", "y": 690, "at": 20},
+      {"type": "bar", "x": 250, "y": 780, "w": 490, "color": "green", "at": 20, "delay": 0.4},
+      {"type": "text", "text": "Sep 30: 50,906   Oct 30: ~51,690", "font": "hand", "size": 44, "color": "grey", "y": 830, "at": 20, "delay": 0.8}
+    ]},
+    {"until": 24, "els": [
+      {"id": "ts", "type": "text", "text": "a tech sell-off", "font": "head", "size": 120, "color": "red", "y": 400, "at": 21, "mode": "fade"},
+      {"type": "highlight", "of": "ts", "part": "tech", "at": 21, "delay": 0.3},
+      {"type": "text", "text": "about one question:", "font": "hand", "size": 56, "color": "blue", "y": 600, "at": 22},
+      {"id": "q", "type": "text", "text": "will all that AI spending pay off?", "size": 48, "y": 690, "at": 23},
+      {"type": "underline", "of": "q", "color": "red", "at": 23, "delay": 1.0}
+    ]},
+    {"until": "end", "els": [
+      {"type": "card", "label": "note:", "lines": ["Education only. Not financial advice.", "Figures as of the Oct 30, 2026 close.", "Sources: Reuters, Yahoo Finance, AP."], "y": 380, "at": 24},
+      {"type": "text", "text": "story still moving · as of Oct 30, 2026", "font": "hand", "size": 42, "color": "red", "y": 640, "at": 24, "delay": 0.2},
+      {"type": "text", "text": "follow for", "font": "hand", "size": 52, "color": "blue", "y": 930, "at": 24},
+      {"id": "rn", "type": "text", "text": "The Real Number", "font": "head", "size": 66, "y": 1000, "at": 24, "delay": 0.18, "mode": "fade"},
+      {"type": "highlight", "of": "rn", "at": 24, "delay": 0.33}
+    ]}
+  ],
+  "cover": {"kicker": "the Nasdaq wipeout", "big": "−$2T", "sub": "wiped off tech in October", "date": "as of Oct 30, 2026"},
+  "sources": [
+    {"claim": "Nasdaq 100 on track to lose $2T+ in October", "url": "https://ca.investing.com/news/stock-market-news/nasdaq-faces-2-trillion-wipeout-in-october-as-ai-spending-fears-deepen-4918716"},
+    {"claim": "Oct 30 index moves, Intel -29%", "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-amazon-intel-131609630.html"},
+    {"claim": "Dow Sep 30 close 50,906", "url": "https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-wednesday-9302026-nid30092026/"}
+  ],
+  "post": {
+    "post_at": "2026-11-01T22:00:00+05:30",
+    "instagram_caption": "Nasdaq wipeout: the Nasdaq 100 was on track to lose more than $2 trillion in October, Reuters reports. Friday, October 30 made it worse.\n\nOn October 30, the Nasdaq fell about 2.9%, the S&P 500 about 2.1% and the Dow about 1.2%. Alphabet had its biggest one-day percentage drop on record, Amazon disappointed, and Intel fell about 29% after a weak forecast. Oil above $100 and talk of higher interest rates added pressure. The Dow still finished October up about 1.5%. Numbers as of the October 30 close.\n\nIs this the start of a crash, or just a tech sell-off?\n\nEducation only. Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#nasdaq #stockmarket #techstocks #investing #therealnumber",
+    "youtube_title": "The $2 Trillion Nasdaq Wipeout Explained (October 2026 Tech Sell-Off)",
+    "youtube_description": "The Nasdaq 100 was on track to lose more than $2 trillion in market value in October 2026, Reuters reports. On October 30, the Nasdaq fell about 2.9%, the S&P 500 about 2.1% and the Dow about 1.2%. Investors are questioning whether Big Tech's AI spending will pay off; J.P. Morgan estimates about $900 billion of global AI spending in 2026. Alphabet had its biggest one-day percentage drop on record, Amazon's results disappointed, and Intel fell about 29% after a weak forecast. Oil above $100 and talk of higher interest rates added pressure. The Dow still closed October up about 1.5% (50,906 on Sep 30 to about 51,690 on Oct 30). Figures as of the October 30, 2026 close. Education only, not financial advice; AI narration.\n\nSources: Reuters · https://ca.investing.com/news/stock-market-news/nasdaq-faces-2-trillion-wipeout-in-october-as-ai-spending-fears-deepen-4918716 · Yahoo Finance · https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-amazon-intel-131609630.html\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#nasdaq #stockmarket #investing",
+    "youtube_tags": ["nasdaq", "stock market", "tech stocks", "AI spending", "the real number"]
+  }
+}

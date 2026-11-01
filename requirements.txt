@@ -1,0 +1,9 @@
+# reel building (daily Claude task)
+kokoro-onnx
+soundfile
+numpy
+Pillow
+# posting (GitHub Actions)
+requests
+google-api-python-client
+google-auth
