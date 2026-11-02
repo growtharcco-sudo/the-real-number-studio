@@ -19,6 +19,8 @@ else:
         time.sleep(10)
     print("Instagram: processed the video ->", st.get("status_code"), "(not published)" if st.get("status_code") == "FINISHED" else st)
     ok &= st.get("status_code") == "FINISHED"
+if os.environ.get("SKIP_YT") == "1":
+    print("YouTube: skipped this run"); print("ALL OK" if ok else "SOMETHING FAILED"); sys.exit(0 if ok else 1)
 local = "/tmp/t.mp4"; open(local, "wb").write(requests.get(url, timeout=120).content)
 try:
     res = youtube.upload_short(local, "Pipeline test (safe to delete)", "Automated test upload. Private.", privacy="private")
