@@ -4,8 +4,8 @@ Fully automatic, free pipeline for The Real Number (Instagram @the_real.number, 
 
 | Time (IST) | What happens | Where |
 |---|---|---|
-| ~5 PM | Pick a topic, write and fact-check the script, generate the voice (Kokoro "Michael"), build the Reel and cover, queue it, notify James | Claude scheduled task (cloud), following `ROUTINE.md` |
-| until post time | James can reply "skip" to cancel | Claude |
+| ~5 PM | Pick a topic, write and fact-check the script, generate the voice (Kokoro "Michael"), build the Reel and cover, queue it, notify Samrit | Claude scheduled task (cloud), following `ROUTINE.md` |
+| until post time | Samrit can reply "skip" to cancel | Claude |
 | 9:05 / 10:05 PM | Post to Instagram (official API, AI label on) and YouTube Shorts (official API, synthetic-content disclosure on) | GitHub Actions, `.github/workflows/post.yml` |
 
 Nothing needs your Mac. Setup: see `SETUP.md`.

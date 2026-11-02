@@ -66,8 +66,8 @@ python poster/media_branch.py add <id> queue/<id>/video.mp4 queue/<id>/cover.png
 git add specs queue IDEAS.md && git commit -m "queue <id>" && git push
 ```
 
-## 7. Tell James
+## 7. Tell Samrit
 Send the video and cover with SendUserFile (status proactive) and one message:
 the topic, the hero number, post time, and: "Reply skip to cancel."
-If James replies "skip": create `queue/<id>/SKIP`, commit and push. Nothing gets posted.
+If Samrit replies "skip": create `queue/<id>/SKIP`, commit and push. Nothing gets posted.
 If he asks for a change: edit the spec, rebuild, re-run step 6 (same id), push.
