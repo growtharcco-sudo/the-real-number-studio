@@ -1,30 +1,40 @@
 name: Post due Reels
 
+# GitHub's schedule can run hours late, so this job does not rely on it for timing.
+# Each run sleeps until the next queued post is due (up to ~5h45m), posts it, then starts itself
+# again if more posts are waiting. The hourly schedule is only a backup.
 on:
   schedule:
-    - cron: "35 15 * * *"     # 9:05 PM IST   (evening slot, mid-March to early Nov)
-    - cron: "35 16 * * *"     # 10:05 PM IST  (evening slot, early Nov to mid-March)
-    - cron: "35 2 * * *"      # 08:05 AM IST  (morning slot, if one is queued)
-  workflow_dispatch:           # "Run workflow" button for a manual post or a test
+    - cron: "17 * * * *"
+  workflow_dispatch:
   push:
     branches: [main]
-    paths: ["queue/**"]       # posts straight away if something was queued already due
+    paths: ["queue/**"]
 
 concurrency: { group: post, cancel-in-progress: false }
-permissions: { contents: write }
+permissions: { contents: write, actions: write }
 
 jobs:
   post:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 355
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 1 }
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: pip install -q requests google-api-python-client google-auth
+      - name: Wait until the next post is due
+        id: wait
+        run: |
+          S=$(python poster/next_due.py); echo "seconds until next post: $S"
+          if [ "$S" -lt 0 ]; then echo "nothing queued"; echo "none=1" >> $GITHUB_OUTPUT; exit 0; fi
+          [ "$S" -gt 20700 ] && S=20700
+          sleep "$S"
+          git pull -q --ff-only origin main   # pick up any "skip" or edits made while waiting
       - name: Post
         id: post
+        if: steps.wait.outputs.none != '1'
         continue-on-error: true
         env:
           PAGES_BASE: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
@@ -36,26 +46,17 @@ jobs:
           YT_PRIVACY: ${{ vars.YT_PRIVACY || 'public' }}
         run: python poster/publish_due.py
       - name: Save results
+        if: steps.wait.outputs.none != '1'
         env: { GITHUB_TOKEN: "${{ github.token }}" }
         run: |
           git config user.name trn-bot && git config user.email trn-bot@users.noreply.github.com
-          git add -A queue posted && git commit -q -m "posting results" && git push -q || echo "nothing to save"
+          git add -A queue posted && git commit -q -m "posting results" && git pull -q --rebase origin main && git push -q || echo "nothing to save"
           if [ "$(cat .changed 2>/dev/null)" = "1" ]; then python poster/media_branch.py prune; fi
+      - name: Start again for the next queued post
+        if: steps.wait.outputs.none != '1'
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          [ "$(python poster/next_due.py)" -ge 0 ] && gh workflow run post.yml --repo "${{ github.repository }}" --ref main || echo "queue empty"
       - name: Fail loudly so GitHub emails you
         if: steps.post.outcome == 'failure'
         run: exit 1
-
-  refresh-instagram-token:     # long-lived tokens expire after 60 days; refresh every Monday
-    if: github.event.schedule == '35 2 * * *'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - run: pip install -q requests
-      - name: Refresh and store
-        env: { IG_TOKEN: "${{ secrets.IG_TOKEN }}", GH_TOKEN: "${{ secrets.GH_PAT }}" }
-        run: |
-          [ "$(date -u +%u)" = "1" ] || exit 0
-          [ -n "$GH_TOKEN" ] || { echo "GH_PAT not set, skipping refresh"; exit 0; }
-          case "$IG_TOKEN" in EAA*) echo "Facebook-type token, no refresh needed"; exit 0;; esac
-          NEW=$(python -c "import os,sys; sys.path.insert(0,'poster'); import instagram; print(instagram.refresh_token(os.environ['IG_TOKEN']))")
-          gh secret set IG_TOKEN --body "$NEW" --repo "${{ github.repository }}"
