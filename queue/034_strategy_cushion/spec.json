@@ -1,0 +1,520 @@
+{
+  "id": "034_strategy_cushion",
+  "series": "Crypto, Clearly",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "phrases": [
+    {
+      "say": "Three percent. That's how far bitcoin sits above what Strategy paid for it.",
+      "cap": "3%. That's how far bitcoin sits above what Strategy paid for it."
+    },
+    {
+      "say": "Michael Saylor's Strategy holds about eight hundred forty-eight thousand bitcoin.",
+      "cap": "Michael Saylor's Strategy holds about 848,000 bitcoin.",
+      "pause": 0.55
+    },
+    {
+      "say": "It paid about sixty-four billion dollars for them.",
+      "cap": "It paid about $64 billion for them.",
+      "pause": 0.45
+    },
+    {
+      "say": "That's an average of",
+      "cap": "That's an average of...",
+      "pause": 0.5
+    },
+    {
+      "say": "seventy-five thousand, four hundred forty-six dollars a coin.",
+      "cap": "$75,446 a coin.",
+      "pause": 0.3
+    },
+    {
+      "say": "On November second, bitcoin traded near seventy-eight thousand dollars.",
+      "cap": "On November 2nd, bitcoin traded near $78,000.",
+      "pause": 0.6
+    },
+    {
+      "say": "So the cushion is",
+      "cap": "So the cushion is...",
+      "pause": 0.5
+    },
+    {
+      "say": "just about three percent.",
+      "cap": "just about 3%.",
+      "pause": 0.3
+    },
+    {
+      "say": "That's a paper gain of about two billion dollars,",
+      "cap": "That's a paper gain of about $2 billion,",
+      "pause": 0.6
+    },
+    {
+      "say": "on a sixty-four billion dollar bet.",
+      "cap": "on a $64 billion bet.",
+      "pause": 0.25
+    },
+    {
+      "say": "How did it get this thin?",
+      "pause": 0.65
+    },
+    {
+      "say": "Bitcoin's record high is about one hundred twenty-six thousand dollars.",
+      "cap": "Bitcoin's record high is about $126,000.",
+      "pause": 0.5
+    },
+    {
+      "say": "It's now about thirty-eight percent below that.",
+      "cap": "It's now about 38% below that.",
+      "pause": 0.45
+    },
+    {
+      "say": "If bitcoin drops below that average,",
+      "pause": 0.6
+    },
+    {
+      "say": "the whole pile is worth less than it cost.",
+      "pause": 0.3
+    },
+    {
+      "say": "That's only about two thousand five hundred dollars away.",
+      "cap": "That's only about $2,500 away.",
+      "pause": 0.55
+    },
+    {
+      "say": "Follow for the real number behind your money.",
+      "pause": 0.55
+    }
+  ],
+  "scenes": [
+    {
+      "until": 1,
+      "els": [
+        {
+          "type": "text",
+          "text": "3%",
+          "font": "head",
+          "size": 176,
+          "color": "red",
+          "y": 470,
+          "at": -1,
+          "mode": "fade"
+        },
+        {
+          "type": "text",
+          "text": "bitcoin above Strategy's average cost",
+          "font": "hand",
+          "size": 58,
+          "color": "blue",
+          "y": 690,
+          "at": -1,
+          "rot": -1.5,
+          "mode": "fade"
+        },
+        {
+          "type": "text",
+          "text": "as of Nov 2, 2026 · bitcoin ~$78,000",
+          "font": "hand",
+          "size": 46,
+          "color": "grey",
+          "y": 785,
+          "at": -1,
+          "mode": "fade"
+        }
+      ]
+    },
+    {
+      "until": 3,
+      "els": [
+        {
+          "type": "text",
+          "text": "Strategy (Michael Saylor's company)",
+          "font": "hand",
+          "size": 56,
+          "color": "blue",
+          "y": 380,
+          "at": 1
+        },
+        {
+          "type": "count",
+          "value": 848517,
+          "suffix": " BTC",
+          "size": 120,
+          "color": "ink",
+          "y": 470,
+          "at": 1,
+          "delay": 0.3
+        },
+        {
+          "type": "text",
+          "text": "holdings as of Oct 25, 2026 (8-K)",
+          "font": "hand",
+          "size": 46,
+          "color": "grey",
+          "y": 630,
+          "at": 1,
+          "delay": 1.0
+        },
+        {
+          "id": "cost",
+          "type": "text",
+          "text": "cost: $64.02 billion",
+          "size": 64,
+          "y": 760,
+          "at": 2
+        },
+        {
+          "type": "underline",
+          "of": "cost",
+          "color": "red",
+          "at": 2,
+          "delay": 0.8
+        }
+      ]
+    },
+    {
+      "until": 5,
+      "els": [
+        {
+          "type": "text",
+          "text": "average cost per coin:",
+          "font": "hand",
+          "size": 58,
+          "color": "blue",
+          "y": 380,
+          "at": 3
+        },
+        {
+          "id": "avg",
+          "type": "count",
+          "prefix": "$",
+          "value": 75446,
+          "size": 150,
+          "color": "ink",
+          "y": 480,
+          "at": 4
+        },
+        {
+          "type": "highlight",
+          "of": "avg",
+          "at": 4,
+          "delay": 1.3
+        },
+        {
+          "type": "text",
+          "text": "incl. fees, per Strategy's filing",
+          "font": "hand",
+          "size": 46,
+          "color": "grey",
+          "y": 700,
+          "at": 4,
+          "delay": 0.6
+        }
+      ]
+    },
+    {
+      "until": 8,
+      "els": [
+        {
+          "type": "text",
+          "text": "Nov 2, 2026:",
+          "font": "hand",
+          "size": 56,
+          "color": "blue",
+          "x": 120,
+          "y": 370,
+          "at": 5
+        },
+        {
+          "type": "text",
+          "text": "bitcoin  ~$78,000",
+          "size": 46,
+          "color": "green",
+          "x": 120,
+          "y": 460,
+          "at": 5
+        },
+        {
+          "type": "bar",
+          "x": 135,
+          "y": 534,
+          "w": 700,
+          "color": "green",
+          "at": 5,
+          "delay": 0.3
+        },
+        {
+          "type": "text",
+          "text": "Strategy's avg cost  $75,446",
+          "size": 46,
+          "color": "red",
+          "x": 120,
+          "y": 600,
+          "at": 6
+        },
+        {
+          "type": "bar",
+          "x": 135,
+          "y": 674,
+          "w": 677,
+          "color": "red",
+          "at": 6,
+          "delay": 0.2
+        },
+        {
+          "id": "cu",
+          "type": "text",
+          "text": "cushion: ~3%",
+          "font": "head",
+          "size": 120,
+          "color": "red",
+          "y": 760,
+          "at": 7,
+          "mode": "fade"
+        },
+        {
+          "type": "highlight",
+          "of": "cu",
+          "part": "~3%",
+          "at": 7,
+          "delay": 0.3
+        }
+      ]
+    },
+    {
+      "until": 10,
+      "els": [
+        {
+          "type": "text",
+          "text": "paper gain:",
+          "font": "hand",
+          "size": 60,
+          "color": "blue",
+          "y": 380,
+          "at": 8
+        },
+        {
+          "type": "text",
+          "text": "~$2 billion",
+          "font": "head",
+          "size": 140,
+          "color": "green",
+          "y": 470,
+          "at": 8,
+          "mode": "fade"
+        },
+        {
+          "id": "bet",
+          "type": "text",
+          "text": "on a $64 billion bet",
+          "size": 64,
+          "y": 700,
+          "at": 9
+        },
+        {
+          "type": "ring",
+          "of": "bet",
+          "part": "$64 billion",
+          "color": "red",
+          "at": 9,
+          "delay": 0.5
+        }
+      ]
+    },
+    {
+      "until": 13,
+      "els": [
+        {
+          "type": "text",
+          "text": "how did it get this thin?",
+          "font": "hand",
+          "size": 60,
+          "color": "blue",
+          "y": 370,
+          "at": 10
+        },
+        {
+          "type": "text",
+          "text": "record high  ~$126,000",
+          "size": 46,
+          "x": 120,
+          "y": 470,
+          "at": 11
+        },
+        {
+          "type": "bar",
+          "x": 135,
+          "y": 544,
+          "w": 740,
+          "color": "blue",
+          "at": 11,
+          "delay": 0.3
+        },
+        {
+          "type": "text",
+          "text": "now  ~$78,000",
+          "size": 46,
+          "color": "red",
+          "x": 120,
+          "y": 610,
+          "at": 12
+        },
+        {
+          "type": "bar",
+          "x": 135,
+          "y": 684,
+          "w": 458,
+          "color": "red",
+          "at": 12,
+          "delay": 0.2
+        },
+        {
+          "id": "dn",
+          "type": "text",
+          "text": "−38%",
+          "font": "head",
+          "size": 130,
+          "color": "red",
+          "y": 760,
+          "at": 12,
+          "delay": 0.6,
+          "mode": "fade"
+        },
+        {
+          "type": "highlight",
+          "of": "dn",
+          "at": 12,
+          "delay": 0.9
+        }
+      ]
+    },
+    {
+      "until": 16,
+      "els": [
+        {
+          "type": "text",
+          "text": "the math:",
+          "font": "hand",
+          "size": 60,
+          "color": "blue",
+          "y": 370,
+          "at": 13
+        },
+        {
+          "type": "text",
+          "text": "bitcoin below $75,446",
+          "font": "head",
+          "size": 70,
+          "color": "red",
+          "y": 460,
+          "at": 13,
+          "mode": "fade"
+        },
+        {
+          "type": "text",
+          "text": "= pile worth less than it cost",
+          "size": 48,
+          "y": 600,
+          "at": 14
+        },
+        {
+          "id": "aw",
+          "type": "text",
+          "text": "only ~$2,500 away",
+          "font": "hand",
+          "size": 72,
+          "color": "red",
+          "y": 720,
+          "at": 15
+        },
+        {
+          "type": "underline",
+          "of": "aw",
+          "color": "red",
+          "at": 15,
+          "delay": 0.8
+        }
+      ]
+    },
+    {
+      "until": "end",
+      "els": [
+        {
+          "type": "card",
+          "label": "note:",
+          "lines": [
+            "Education only. Not financial advice.",
+            "Crypto is unregulated and can be risky.",
+            "Holdings as of Oct 25; bitcoin Nov 2, 2026.",
+            "Sources: Strategy 8-K, CoinGecko."
+          ],
+          "y": 380,
+          "at": 16
+        },
+        {
+          "type": "text",
+          "text": "follow for",
+          "font": "hand",
+          "size": 52,
+          "color": "blue",
+          "y": 930,
+          "at": 16
+        },
+        {
+          "id": "rn",
+          "type": "text",
+          "text": "The Real Number",
+          "font": "head",
+          "size": 66,
+          "y": 1000,
+          "at": 16,
+          "delay": 0.18,
+          "mode": "fade"
+        },
+        {
+          "type": "highlight",
+          "of": "rn",
+          "at": 16,
+          "delay": 0.33
+        }
+      ]
+    }
+  ],
+  "cover": {
+    "kicker": "Saylor's bitcoin cushion",
+    "big": "3%",
+    "sub": "above Strategy's average cost",
+    "date": "as of Nov 2, 2026"
+  },
+  "sources": [
+    {
+      "claim": "848,517 BTC as of Oct 25, 2026; aggregate cost $64.02B; average $75,446 incl. fees",
+      "url": "https://assets.contentstack.io/v3/assets/bltf8d808d9b8cebd37/blt2949e627b54cb525/6adec46d6ee1cccbf5a11f9e/form-8-k_10-26-2026.pdf"
+    },
+    {
+      "claim": "Bitcoin ~$77,969 on Nov 2, 2026; all-time high $126,080",
+      "url": "https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+      "claim": "Bitcoin near $78,000 on Nov 2, 2026",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-2-dow-sp-500-nasdaq-091835095.html"
+    },
+    {
+      "claim": "computed in Python: 78,000/75,446 - 1 = 3.4%; 848,517 x 78,000 - 64.02B = ~$2.2B; 77,969/126,080 - 1 = -38.2%; 78,000 - 75,446 = 2,554",
+      "url": "computed"
+    }
+  ],
+  "post": {
+    "post_at": "2026-11-02T22:00:00+05:30",
+    "instagram_caption": "Strategy holds 848,517 bitcoin. Its cushion is now only about 3%.\n\nStrategy, Michael Saylor's company, paid an aggregate $64.02 billion for its bitcoin, an average of about $75,446 per coin including fees, according to its October 26, 2026 filing (holdings as of October 25). On November 2, bitcoin traded near $78,000 per CoinGecko: about 3% above that average cost and about 38% below its record of roughly $126,000. That is a paper gain of about $2 billion. If bitcoin fell below $75,446, the holdings would be worth less than they cost. Crypto products are unregulated and can be highly risky.\n\nShould a public company hold this much of one asset?\n\nEducation only. Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#bitcoin #crypto #saylor #mstr #therealnumber",
+    "youtube_title": "Strategy's Bitcoin Cushion Is Just 3% (Saylor's $64B Bet Explained)",
+    "youtube_description": "Strategy, Michael Saylor's company, held 848,517 bitcoin as of October 25, 2026, bought for an aggregate $64.02 billion, or about $75,446 per coin including fees, according to its October 26 SEC filing. On November 2, 2026, bitcoin traded near $78,000 (CoinGecko), about 3% above that average cost and about 38% below its record of roughly $126,000. That leaves a paper gain of about $2 billion; below $75,446 the holdings would be worth less than they cost. Figures as of November 2, 2026. Crypto products are unregulated and can be highly risky. Education only, not financial advice; AI narration.\n\nSources: Strategy Form 8-K (Oct 26, 2026) · https://assets.contentstack.io/v3/assets/bltf8d808d9b8cebd37/blt2949e627b54cb525/6adec46d6ee1cccbf5a11f9e/form-8-k_10-26-2026.pdf · CoinGecko · https://www.coingecko.com/en/coins/bitcoin\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#bitcoin #crypto #investing",
+    "youtube_tags": [
+      "bitcoin",
+      "Strategy",
+      "MicroStrategy",
+      "Michael Saylor",
+      "crypto",
+      "the real number"
+    ]
+  }
+}
