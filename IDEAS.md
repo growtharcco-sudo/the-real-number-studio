@@ -36,3 +36,4 @@ India Edition: at most 1 in 7 posts.
 ## Used
 | Myth vs Math | Buffett pays himself $100,000 | $100k salary | queued 035_buffett_salary (2026-11-03 08:00 IST) |
 | The Collapse | Madoff: victims got back 72.8% | 72.8% of allowed claims, $15.5B recovered | queued 036_madoff_recovery (2026-11-03 22:00 IST) |
+| The Real Cost | $5,000 card at $100/month: $9,012 interest | 22.15 0X0P+0PR (Fed G.19 Q2 2026) | queued 037_card_interest (2026-11-04 08:00 IST) |

@@ -1,0 +1,68 @@
+{
+  "id": "037_card_interest",
+  "series": "The Real Cost",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "phrases": [
+    {"say": "A five thousand dollar credit card balance, paid off at one hundred dollars a month,", "cap": "A $5,000 credit card balance, paid off at $100 a month,"},
+    {"say": "could cost you about", "cap": "could cost you about...", "pause": 0.4},
+    {"say": "nine thousand dollars in interest.", "cap": "$9,000 in interest.", "pause": 0.3},
+    {"say": "That's at twenty-two point one five percent:", "cap": "That's at 22.15%:", "pause": 0.55},
+    {"say": "the Federal Reserve's average bank card rate for accounts charged interest.", "pause": 0.3},
+    {"say": "And it takes almost twelve years.", "pause": 0.5},
+    {"say": "Pay two hundred a month instead,", "cap": "Pay $200 a month instead,", "pause": 0.55},
+    {"say": "and it's gone in under three years,", "pause": 0.35},
+    {"say": "with about one thousand eight hundred dollars of interest.", "cap": "with about $1,800 of interest.", "pause": 0.4},
+    {"say": "Same debt.", "pause": 0.55},
+    {"say": "About seven thousand two hundred dollars less.", "cap": "About $7,200 less.", "pause": 0.3},
+    {"say": "Follow for the real number behind your money.", "pause": 0.55}
+  ],
+  "scenes": [
+    {"until": 3, "els": [
+      {"type": "text", "text": "$9,012", "font": "head", "size": 176, "color": "red", "y": 470, "at": -1, "mode": "fade"},
+      {"type": "text", "text": "interest on a $5,000 card at $100/month", "font": "hand", "size": 54, "color": "blue", "y": 690, "at": -1, "rot": -1.5, "mode": "fade"},
+      {"type": "text", "text": "at 22.15% APR · Fed G.19, Oct 7, 2026", "font": "hand", "size": 44, "color": "grey", "y": 785, "at": -1, "mode": "fade"},
+      {"type": "text", "text": "more than the debt itself", "font": "hand", "size": 56, "color": "red", "y": 890, "at": 2}
+    ]},
+    {"until": 6, "els": [
+      {"type": "text", "text": "the rate:", "font": "hand", "size": 60, "color": "blue", "y": 380, "at": 3},
+      {"id": "rt", "type": "count", "value": 22.15, "decimals": 2, "suffix": "%", "size": 140, "color": "red", "y": 450, "at": 3, "delay": 0.2},
+      {"type": "text", "text": "avg. US bank card rate, accounts charged interest", "size": 32, "y": 640, "at": 4},
+      {"type": "text", "text": "Federal Reserve G.19 · Q2 2026", "font": "hand", "size": 44, "color": "grey", "y": 700, "at": 4, "delay": 0.4},
+      {"id": "yr", "type": "text", "text": "141 months: almost 12 years", "font": "hand", "size": 60, "color": "red", "y": 860, "at": 5},
+      {"type": "underline", "of": "yr", "color": "red", "at": 5, "delay": 0.8}
+    ]},
+    {"until": 9, "els": [
+      {"type": "text", "text": "same $5,000, two ways:", "font": "hand", "size": 60, "color": "blue", "y": 380, "at": 6},
+      {"type": "text", "text": "$100/mo: 141 months, $9,012 interest", "size": 42, "color": "red", "x": 120, "y": 480, "at": 6, "delay": 0.4},
+      {"type": "bar", "x": 135, "y": 554, "w": 725, "color": "red", "at": 6, "delay": 0.6},
+      {"type": "text", "text": "$200/mo: 34 months, $1,768 interest", "size": 42, "color": "green", "x": 120, "y": 640, "at": 7},
+      {"type": "bar", "x": 135, "y": 714, "w": 142, "color": "green", "at": 8},
+      {"type": "text", "text": "bar = interest paid", "font": "hand", "size": 42, "color": "grey", "y": 800, "at": 8, "delay": 0.5}
+    ]},
+    {"until": 11, "els": [
+      {"type": "text", "text": "same debt.", "font": "hand", "size": 64, "color": "blue", "y": 400, "at": 9},
+      {"id": "sv", "type": "text", "text": "$7,244", "font": "head", "size": 170, "color": "green", "y": 490, "at": 10, "mode": "fade"},
+      {"type": "highlight", "of": "sv", "at": 10, "delay": 0.3},
+      {"type": "text", "text": "less interest", "font": "hand", "size": 60, "color": "blue", "y": 720, "at": 10, "delay": 0.5}
+    ]},
+    {"until": "end", "els": [
+      {"type": "card", "label": "note:", "lines": ["Education only. Not financial advice.", "Assumes no new charges; interest at", "APR/12 monthly. Rate: Q2 2026, Federal", "Reserve G.19, released Oct 7, 2026."], "y": 380, "at": 11},
+      {"type": "text", "text": "follow for", "font": "hand", "size": 52, "color": "blue", "y": 930, "at": 11},
+      {"id": "rn", "type": "text", "text": "The Real Number", "font": "head", "size": 66, "y": 1000, "at": 11, "delay": 0.18, "mode": "fade"},
+      {"type": "highlight", "of": "rn", "at": 11, "delay": 0.33}
+    ]}
+  ],
+  "cover": {"kicker": "the real cost of a $5K card", "big": "$9,012", "big_size": 230, "sub": "in interest at $100 a month", "date": "22.15% APR · Fed, Oct 2026"},
+  "sources": [
+    {"claim": "Commercial bank interest rate on credit card plans, accounts assessed interest: 22.15% (Q2 2026, revised), G.19 released Oct 7, 2026", "url": "https://federalreserve.gov/releases/g19/Current/"},
+    {"claim": "computed in Python: $5,000 at 22.15% APR, interest monthly at APR/12, no new charges. $100/month: 141 months, $9,012 interest. $200/month: 34 months, $1,768 interest. Difference $7,244. Bar widths 725 and 142 px", "url": "computed"}
+  ],
+  "post": {
+    "post_at": "2026-11-04T08:00:00+05:30",
+    "instagram_caption": "A $5,000 credit card balance, paid off at $100 a month, could cost about $9,000 in interest.\n\nAt 22.15%, the Federal Reserve's average US bank card rate for accounts charged interest (Q2 2026, G.19 released October 7, 2026), $100 a month takes 141 months, almost 12 years, and about $9,012 in interest. $200 a month clears it in 34 months with about $1,768 in interest: about $7,244 less for the same debt. Assumes no new charges and interest charged monthly at APR/12; real card terms vary.\n\nDid you know your card's APR before reading this?\n\nEducation only. Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#creditcard #debt #interest #personalfinance #therealnumber",
+    "youtube_title": "A $5,000 Credit Card Balance Can Cost $9,000 in Interest",
+    "youtube_description": "At 22.15%, the Federal Reserve's average US bank credit card rate for accounts charged interest (Q2 2026, G.19 released October 7, 2026), a $5,000 balance paid at $100 a month takes 141 months and costs about $9,012 in interest. At $200 a month it takes 34 months and about $1,768 in interest, about $7,244 less. Calculation assumes no new charges and interest charged monthly at APR/12; real card terms vary. Rate checked November 3, 2026. Education only, not financial advice; AI narration.\n\nSources: Federal Reserve G.19 Consumer Credit · https://federalreserve.gov/releases/g19/Current/\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#creditcard #personalfinance #debt",
+    "youtube_tags": ["credit card interest", "credit card debt", "APR", "real cost", "personal finance", "the real number"]
+  }
+}
