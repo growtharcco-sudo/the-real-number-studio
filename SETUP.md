@@ -9,12 +9,26 @@ Everything is free. Your keys go only into GitHub's encrypted Secrets, never int
 2. Tell Claude "repo created". Claude pushes the code and the first video.
 3. Repo → **Settings → Pages** → Source: *Deploy from a branch* → Branch: `media` / `(root)` → Save.
 
-## B. Instagram key (Meta developer app)
-1. developers.facebook.com → **My Apps → Create app** → use case **"Manage messaging & content on Instagram"**.
-2. In the app: **Instagram → API setup with Instagram login** → **Add account** → log in as `@the_real.number`.
-3. Next to the account, click **Generate token**. Copy it. That is `IG_TOKEN` (valid 60 days; the workflow refreshes it every Monday).
-4. The number shown next to the account is `IG_USER_ID`.
-5. Leave the app in **Development** mode. It only needs to post to your own account.
+## B. Instagram key (Meta system-user token, never expires)
+`IG_TOKEN` is a **system-user token** from Meta Business settings. It never expires, so there is
+no refresh job. Do not switch back to the 60-day "Instagram login" key.
+
+How it is set up (done 4 Nov 2026):
+- Business portfolio **The Real Number**, with the Facebook Page **The Real Number** linked to `@the_real.number`.
+- System user **unhyped-poster** (Admin), with **Full control** over the Page, `@the_real.number`
+  and the app **Real Number Studio**.
+- Token settings: app **Real Number Studio**, expiration **Never**, permissions
+  `instagram_basic`, `instagram_content_publish`, `pages_show_list`, `pages_read_engagement`.
+- `IG_USER_ID` is the Instagram account ID `17841412838217113` (unchanged).
+
+If the key ever has to be replaced:
+1. business.facebook.com → **Settings → Users → System users → unhyped-poster → Generate token**.
+2. Pick the same app, expiration **Never**, and the same four permissions. Copy the token.
+3. Repo → **Settings → Secrets and variables → Actions** → update `IG_TOKEN`. Never paste it into a chat.
+4. Repo → **Actions → Check keys → Run workflow**. It should print `SYSTEM_USER | valid: True | expires: NEVER`.
+
+Warning: **unhyped-poster is shared with the tech channel The Unhyped.** Revoking its tokens or
+removing that system user stops posting on **both** channels.
 
 ## C. YouTube key (Google Cloud)
 1. console.cloud.google.com → **New project** `the-real-number`.
@@ -34,15 +48,11 @@ Everything is free. Your keys go only into GitHub's encrypted Secrets, never int
 6. Apply for the free audit so uploads can be public: https://support.google.com/youtube/contact/yt_api_form
    Until it is approved, YouTube keeps API uploads **private**: open YouTube Studio and switch each Short to Public.
 
-## D. GitHub token for the weekly Instagram key refresh
-github.com → Settings → Developer settings → **Fine-grained tokens** → Generate →
-Repository access: only `the-real-number-studio` → Permissions: **Secrets: Read and write** → Generate.
-That is `GH_PAT`.
-
-## E. Paste the secrets
+## D. Paste the secrets
 Repo → **Settings → Secrets and variables → Actions → New repository secret**, one each:
-`IG_USER_ID`, `IG_TOKEN`, `YT_CLIENT_ID`, `YT_CLIENT_SECRET`, `YT_REFRESH_TOKEN`, `GH_PAT`.
+`IG_USER_ID`, `IG_TOKEN`, `YT_CLIENT_ID`, `YT_CLIENT_SECRET`, `YT_REFRESH_TOKEN`.
+(No `GH_PAT` is needed any more: nothing refreshes the Instagram key. If an old `GH_PAT` secret is there, it can be deleted.)
 
-## F. Test
+## E. Test
 Repo → **Actions → Post due Reels → Run workflow**. A green tick means it worked.
 If a post ever fails, GitHub emails you, and the error is saved in `queue/<id>/result.json`.
