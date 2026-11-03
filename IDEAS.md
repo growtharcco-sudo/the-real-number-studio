@@ -13,7 +13,6 @@ payment, Binance hack, Oct 2026 Nasdaq wipeout.
 | $1,000 Then | $1,000 in Amazon in 1997 | ~$3.4M (price moves) | Amazon IR split history + close |
 | $1,000 Then | $1,000 with Buffett in 1965 | 5,502,284% vs 39,054% S&P | Berkshire annual letter (latest) |
 | How They Really Make Money | Coca-Cola pays Buffett 63% of his cost every year | ~$816M a year on ~$1.3B cost | Berkshire letter |
-| The Collapse | Madoff: the $64.8 billion fake fortune | $64.8B paper balances | Madoff Trustee site |
 | The Collapse | FTX: the $8 billion hole | ~$8B shortfall, 25-year sentence | DOJ SDNY |
 | The Collapse | Archegos: $20 billion gone in 2 days | Credit Suisse ~$5.5B loss | DOJ / CS report |
 | The Collapse | GameStop up ~28x in a month | ~$17 to $483 intraday, Jan 2021 | SEC staff report |
@@ -36,3 +35,4 @@ India Edition: at most 1 in 7 posts.
 
 ## Used
 | Myth vs Math | Buffett pays himself $100,000 | $100k salary | queued 035_buffett_salary (2026-11-03 08:00 IST) |
+| The Collapse | Madoff: victims got back 72.8% | 72.8% of allowed claims, $15.5B recovered | queued 036_madoff_recovery (2026-11-03 22:00 IST) |

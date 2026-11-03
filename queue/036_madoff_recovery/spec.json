@@ -1,0 +1,454 @@
+{
+ "id": "036_madoff_recovery",
+ "series": "The Collapse",
+ "voice": "am_michael",
+ "speed": 1.08,
+ "phrases": [
+  {
+   "say": "Bernie Madoff's victims lost about twenty billion dollars.",
+   "cap": "Bernie Madoff's victims lost about $20 billion."
+  },
+  {
+   "say": "Almost eighteen years later, they've gotten back",
+   "pause": 0.5
+  },
+  {
+   "say": "at least seventy-two point eight percent.",
+   "cap": "at least 72.8%.",
+   "pause": 0.35
+  },
+  {
+   "say": "Madoff said he was investing his clients' money.",
+   "pause": 0.6
+  },
+  {
+   "say": "Instead, old investors were paid with new investors' money.",
+   "pause": 0.45
+  },
+  {
+   "say": "That's a Ponzi scheme.",
+   "pause": 0.4
+  },
+  {
+   "say": "In December two thousand eight, it collapsed.",
+   "cap": "In December 2008, it collapsed.",
+   "pause": 0.55
+  },
+  {
+   "say": "In twenty oh nine, he was sentenced to one hundred fifty years in prison,",
+   "cap": "In 2009, he was sentenced to 150 years in prison,",
+   "pause": 0.55
+  },
+  {
+   "say": "and ordered to forfeit one hundred seventy point eight billion dollars.",
+   "cap": "and ordered to forfeit $170.8 billion.",
+   "pause": 0.3
+  },
+  {
+   "say": "Most of that money was long gone.",
+   "pause": 0.5
+  },
+  {
+   "say": "So trustee Irving Picard went after what was left.",
+   "pause": 0.55
+  },
+  {
+   "say": "He has recovered about fifteen and a half billion dollars.",
+   "cap": "He has recovered about $15.5 billion.",
+   "pause": 0.45
+  },
+  {
+   "say": "After seventeen payouts,",
+   "cap": "After 17 payouts,",
+   "pause": 0.6
+  },
+  {
+   "say": "one thousand five hundred forty-seven accounts have been paid in full.",
+   "cap": "1,547 accounts have been paid in full.",
+   "pause": 0.3
+  },
+  {
+   "say": "Every other allowed claim: at least seventy-two point eight percent back.",
+   "cap": "Every other allowed claim: at least 72.8% back.",
+   "pause": 0.5
+  },
+  {
+   "say": "Follow for the real number behind your money.",
+   "pause": 0.55
+  }
+ ],
+ "scenes": [
+  {
+   "until": 3,
+   "els": [
+    {
+     "type": "text",
+     "text": "72.8%",
+     "font": "head",
+     "size": 176,
+     "color": "green",
+     "y": 470,
+     "at": -1,
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "paid back on every allowed Madoff claim",
+     "font": "hand",
+     "size": 54,
+     "color": "blue",
+     "y": 690,
+     "at": -1,
+     "rot": -1.5,
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "Madoff Trustee · Feb 27, 2026 · checked Nov 3, 2026",
+     "font": "hand",
+     "size": 40,
+     "color": "grey",
+     "y": 785,
+     "at": -1,
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "...of about $20 billion lost",
+     "font": "hand",
+     "size": 56,
+     "color": "red",
+     "y": 890,
+     "at": 1
+    }
+   ]
+  },
+  {
+   "until": 7,
+   "els": [
+    {
+     "type": "text",
+     "text": "how it worked:",
+     "font": "hand",
+     "size": 60,
+     "color": "blue",
+     "y": 380,
+     "at": 3
+    },
+    {
+     "type": "text",
+     "text": "Madoff: “I’m investing your money”",
+     "size": 44,
+     "y": 470,
+     "at": 3
+    },
+    {
+     "type": "text",
+     "text": "really: old investors paid",
+     "size": 44,
+     "y": 560,
+     "at": 4
+    },
+    {
+     "type": "text",
+     "text": "with new investors' money",
+     "size": 44,
+     "color": "red",
+     "y": 630,
+     "at": [
+      4,
+      0.5
+     ]
+    },
+    {
+     "id": "pz",
+     "type": "text",
+     "text": "= a Ponzi scheme",
+     "font": "head",
+     "size": 96,
+     "color": "red",
+     "y": 720,
+     "at": 5,
+     "mode": "fade"
+    },
+    {
+     "type": "highlight",
+     "of": "pz",
+     "part": "Ponzi",
+     "at": 5,
+     "delay": 0.3
+    },
+    {
+     "type": "text",
+     "text": "Dec 2008: it collapsed",
+     "font": "hand",
+     "size": 56,
+     "color": "red",
+     "y": 890,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "until": 10,
+   "els": [
+    {
+     "type": "text",
+     "text": "the sentence (2009):",
+     "font": "hand",
+     "size": 60,
+     "color": "blue",
+     "y": 380,
+     "at": 7
+    },
+    {
+     "type": "text",
+     "text": "150 years",
+     "font": "head",
+     "size": 150,
+     "color": "red",
+     "y": 460,
+     "at": 7,
+     "delay": 0.4,
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "ordered to forfeit:",
+     "size": 44,
+     "y": 660,
+     "at": 8
+    },
+    {
+     "id": "cf",
+     "type": "count",
+     "prefix": "$",
+     "value": 170.8,
+     "decimals": 1,
+     "suffix": "B",
+     "size": 110,
+     "color": "red",
+     "y": 720,
+     "at": 8,
+     "delay": 0.2
+    },
+    {
+     "type": "text",
+     "text": "most of it: long gone",
+     "font": "hand",
+     "size": 56,
+     "color": "red",
+     "y": 890,
+     "at": 9
+    }
+   ]
+  },
+  {
+   "until": 12,
+   "els": [
+    {
+     "type": "text",
+     "text": "trustee Irving Picard:",
+     "font": "hand",
+     "size": 60,
+     "color": "blue",
+     "y": 380,
+     "at": 10
+    },
+    {
+     "type": "text",
+     "text": "ordered forfeited  $170.8B",
+     "size": 44,
+     "color": "red",
+     "x": 120,
+     "y": 480,
+     "at": 10,
+     "delay": 0.6
+    },
+    {
+     "type": "bar",
+     "x": 135,
+     "y": 554,
+     "w": 725,
+     "color": "red",
+     "at": 10,
+     "delay": 0.8
+    },
+    {
+     "type": "text",
+     "text": "actually recovered  ~$15.5B",
+     "size": 44,
+     "color": "green",
+     "x": 120,
+     "y": 640,
+     "at": 11
+    },
+    {
+     "type": "bar",
+     "x": 135,
+     "y": 714,
+     "w": 66,
+     "color": "green",
+     "at": 11,
+     "delay": 0.3
+    },
+    {
+     "type": "text",
+     "text": "Madoff Trustee, as of Oct 23, 2026",
+     "font": "hand",
+     "size": 44,
+     "color": "grey",
+     "y": 820,
+     "at": 11,
+     "delay": 0.8
+    }
+   ]
+  },
+  {
+   "until": 15,
+   "els": [
+    {
+     "type": "text",
+     "text": "after 17 payouts:",
+     "font": "hand",
+     "size": 60,
+     "color": "blue",
+     "y": 380,
+     "at": 12
+    },
+    {
+     "type": "text",
+     "text": "1,547",
+     "font": "head",
+     "size": 150,
+     "color": "green",
+     "y": 450,
+     "at": 13,
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "accounts paid in full (of 2,291)",
+     "font": "hand",
+     "size": 50,
+     "color": "blue",
+     "y": 640,
+     "at": 13,
+     "delay": 0.4
+    },
+    {
+     "type": "text",
+     "text": "everyone else, at least:",
+     "size": 44,
+     "y": 740,
+     "at": 14
+    },
+    {
+     "id": "p72",
+     "type": "text",
+     "text": "72.8%",
+     "font": "head",
+     "size": 110,
+     "color": "green",
+     "y": 810,
+     "at": 14,
+     "delay": 0.6,
+     "mode": "fade"
+    },
+    {
+     "type": "highlight",
+     "of": "p72",
+     "at": 14,
+     "delay": 0.9
+    }
+   ]
+  },
+  {
+   "until": "end",
+   "els": [
+    {
+     "type": "card",
+     "label": "note:",
+     "lines": [
+      "Education only. Not financial advice.",
+      "Recovery figures as of Oct 23, 2026;",
+      "claims paid as of Feb 27, 2026.",
+      "Sources: Madoff Trustee, US DOJ."
+     ],
+     "y": 380,
+     "at": 15
+    },
+    {
+     "type": "text",
+     "text": "follow for",
+     "font": "hand",
+     "size": 52,
+     "color": "blue",
+     "y": 930,
+     "at": 15
+    },
+    {
+     "id": "rn",
+     "type": "text",
+     "text": "The Real Number",
+     "font": "head",
+     "size": 66,
+     "y": 1000,
+     "at": 15,
+     "delay": 0.18,
+     "mode": "fade"
+    },
+    {
+     "type": "highlight",
+     "of": "rn",
+     "at": 15,
+     "delay": 0.33
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "kicker": "the Madoff collapse",
+  "big": "72.8%",
+  "big_color": "green",
+  "big_size": 230,
+  "sub": "paid back, almost 18 years on",
+  "date": "Madoff Trustee · Nov 2026"
+ },
+ "sources": [
+  {
+   "claim": "Trustee: customers defrauded of approximately $20 billion; 17th distribution Feb 27, 2026; customers with allowed claims have received at least 72.848% of each allowed claim",
+   "url": "https://www.madofftrustee.com/trustee-message-02.html"
+  },
+  {
+   "claim": "Total recovered by the trustee $15.509 billion, as of Oct 23, 2026; 17 pro rata interim distributions",
+   "url": "https://madofftrustee.com/"
+  },
+  {
+   "claim": "1,547 of 2,291 accounts with allowed claims fully satisfied (Feb 27, 2026)",
+   "url": "https://www.madofftrustee.com/statements-07.html"
+  },
+  {
+   "claim": "Madoff sentenced June 2009 to 150 years for a Ponzi scheme; ordered to forfeit $170,799,000,000",
+   "url": "https://www.justice.gov/archive/usao/nys/pressreleases/June09/madoffbernardsentencingpr.pdf"
+  },
+  {
+   "claim": "computed in Python: Dec 11, 2008 to Nov 3, 2026 = 17.9 years; 15.509/170.799 = 9.1%; bar widths 725 and 66 px",
+   "url": "computed"
+  }
+ ],
+ "post": {
+  "post_at": "2026-11-03T22:00:00+05:30",
+  "instagram_caption": "Bernie Madoff's victims lost about $20 billion. Almost 18 years later, they have gotten back at least 72.8%.\n\nMadoff ran a Ponzi scheme, paying old investors with new investors' money, until it collapsed in December 2008. In 2009 he was sentenced to 150 years in prison and ordered to forfeit $170.8 billion, most of which was long gone. Court-appointed trustee Irving Picard has recovered about $15.5 billion as of October 23, 2026. After 17 payouts, 1,547 of 2,291 accounts with allowed claims have been paid in full, and every allowed claim has received at least 72.848% (as of February 27, 2026). Sources: Madoff Trustee, US Department of Justice.\n\nWould you have spotted it?\n\nEducation only. Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#madoff #ponzischeme #fraud #moneyhistory #therealnumber",
+  "youtube_title": "Madoff's $20 Billion Fraud: Victims Got Back 72.8%",
+  "youtube_description": "Bernie Madoff's victims lost about $20 billion, according to the court-appointed trustee. Madoff ran a Ponzi scheme that collapsed in December 2008; in 2009 he was sentenced to 150 years in prison and ordered to forfeit $170.8 billion. Trustee Irving Picard has recovered about $15.5 billion (as of October 23, 2026). After 17 interim distributions, 1,547 of 2,291 accounts with allowed claims have been paid in full, and every allowed claim has received at least 72.848% (as of February 27, 2026). Figures checked November 3, 2026. Education only, not financial advice; AI narration.\n\nSources: Madoff Trustee · https://www.madofftrustee.com/trustee-message-02.html · Madoff Trustee · https://madofftrustee.com/ · US DOJ · https://www.justice.gov/archive/usao/nys/pressreleases/June09/madoffbernardsentencingpr.pdf\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#madoff #ponzischeme #moneyhistory",
+  "youtube_tags": [
+   "Bernie Madoff",
+   "Ponzi scheme",
+   "Madoff recovery",
+   "Irving Picard",
+   "financial fraud",
+   "the real number"
+  ]
+ }
+}
