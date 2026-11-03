@@ -1,0 +1,89 @@
+{
+  "id": "038_oil_plunge",
+  "series": "Money News",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "phrases": [
+    {"say": "Seven point six percent. That's how much oil fell in a single day this Monday.", "cap": "7.6%. That's how much oil fell in a single day this Monday."},
+    {"say": "Brent crude went from about one hundred thirteen dollars a barrel,", "cap": "Brent crude went from about $113 a barrel,", "pause": 0.45},
+    {"say": "to one hundred four dollars and seventy-seven cents.", "cap": "to $104.77.", "pause": 0.35},
+    {"say": "Oil's biggest one-day drop since July.", "pause": 0.55},
+    {"say": "So what happened?", "pause": 0.64},
+    {"say": "Hopes of U S and Iran peace talks.", "cap": "Hopes of US-Iran peace talks.", "pause": 0.55},
+    {"say": "Washington said it would prefer to end the conflict peacefully,", "pause": 0.5},
+    {"say": "and Iran signaled it is open to talks.", "pause": 0.4},
+    {"say": "That eased fears about oil supply.", "pause": 0.55},
+    {"say": "But here's the number for your wallet.", "pause": 0.64},
+    {"say": "U S gasoline still averages", "cap": "US gasoline still averages...", "pause": 0.5},
+    {"say": "four dollars and seventeen cents a gallon.", "cap": "$4.17 a gallon.", "pause": 0.25},
+    {"say": "A year ago, it was three dollars and four cents.", "cap": "A year ago, it was $3.04.", "pause": 0.55},
+    {"say": "That's about thirty-seven percent more.", "cap": "That's about 37% more.", "pause": 0.5},
+    {"say": "And by Tuesday,", "pause": 0.6},
+    {"say": "oil was already edging back up.", "pause": 0.35},
+    {"say": "Every headline still moves the price.", "pause": 0.55},
+    {"say": "Follow for the real number behind your money.", "pause": 0.6}
+  ],
+  "scenes": [
+    {"until": 1, "els": [
+      {"type": "text", "text": "−7.6%", "font": "head", "size": 176, "color": "red", "y": 470, "at": -1, "mode": "fade"},
+      {"type": "text", "text": "oil, in a single day", "font": "hand", "size": 60, "color": "blue", "y": 690, "at": -1, "rot": -1.5, "mode": "fade"},
+      {"type": "text", "text": "Brent crude · Nov 2, 2026 settle", "font": "hand", "size": 46, "color": "grey", "y": 785, "at": -1, "mode": "fade"}
+    ]},
+    {"until": 4, "els": [
+      {"type": "text", "text": "Brent crude, per barrel:", "font": "hand", "size": 56, "color": "blue", "y": 380, "at": 1},
+      {"type": "text", "text": "Fri, Oct 30:  $113.43", "size": 56, "color": "grey", "y": 480, "at": 1, "delay": 0.3},
+      {"id": "p2", "type": "text", "text": "$104.77", "font": "head", "size": 150, "color": "red", "y": 580, "at": 2, "mode": "fade"},
+      {"type": "highlight", "of": "p2", "at": 2, "delay": 0.3},
+      {"type": "text", "text": "Mon, Nov 2 settle", "font": "hand", "size": 46, "color": "grey", "y": 770, "at": 2, "delay": 0.4},
+      {"id": "bj", "type": "text", "text": "biggest 1-day drop since July", "font": "hand", "size": 58, "color": "red", "y": 870, "at": 3},
+      {"type": "underline", "of": "bj", "color": "red", "at": 3, "delay": 0.8}
+    ]},
+    {"until": 9, "els": [
+      {"type": "text", "text": "so what happened?", "font": "hand", "size": 60, "color": "blue", "y": 370, "at": 4},
+      {"id": "pt", "type": "text", "text": "hopes of US-Iran peace talks", "size": 52, "y": 480, "at": 5},
+      {"type": "ring", "of": "pt", "part": "peace talks", "color": "red", "at": 5, "delay": 0.6},
+      {"type": "text", "text": "US: prefers a peaceful end", "size": 44, "x": 140, "y": 600, "at": 6},
+      {"type": "text", "text": "Iran: signals it is open to talks", "size": 44, "x": 140, "y": 680, "at": 7},
+      {"type": "line", "from": [140, 780], "to": [880, 780], "at": 8},
+      {"type": "text", "text": "= less fear for oil supply", "font": "hand", "size": 60, "color": "green", "y": 820, "at": 8, "delay": 0.15}
+    ]},
+    {"until": 14, "els": [
+      {"type": "text", "text": "the number for your wallet:", "font": "hand", "size": 58, "color": "blue", "y": 370, "at": 9},
+      {"type": "text", "text": "US gasoline, national average", "size": 44, "y": 470, "at": 10},
+      {"id": "g", "type": "count", "prefix": "$", "value": 4.17, "decimals": 2, "suffix": "/gal", "size": 130, "color": "red", "y": 540, "at": 11},
+      {"type": "text", "text": "a year ago: $3.04 (AAA)", "font": "hand", "size": 50, "color": "grey", "y": 720, "at": 12},
+      {"id": "g37", "type": "text", "text": "+37%", "font": "head", "size": 130, "color": "red", "y": 800, "at": 13, "mode": "fade"},
+      {"type": "highlight", "of": "g37", "at": 13, "delay": 0.3}
+    ]},
+    {"until": 17, "els": [
+      {"type": "text", "text": "by Tuesday, Nov 3:", "font": "hand", "size": 60, "color": "blue", "y": 380, "at": 14},
+      {"id": "up", "type": "text", "text": "edging back up", "font": "head", "size": 96, "color": "red", "y": 480, "at": 15, "mode": "fade"},
+      {"type": "text", "text": "Brent back above $105", "font": "hand", "size": 50, "color": "grey", "y": 640, "at": 15, "delay": 0.4},
+      {"id": "eh", "type": "text", "text": "every headline still moves the price", "size": 46, "y": 780, "at": 16},
+      {"type": "underline", "of": "eh", "color": "red", "at": 16, "delay": 1.0}
+    ]},
+    {"until": "end", "els": [
+      {"type": "card", "label": "note:", "lines": ["Education only. Not financial advice.", "Prices as of the Nov 2, 2026 settle.", "Sources: CNBC, NBC News, AAA, Reuters."], "y": 380, "at": 17},
+      {"type": "text", "text": "story still moving · as of Nov 3, 2026", "font": "hand", "size": 42, "color": "red", "y": 640, "at": 17, "delay": 0.2},
+      {"type": "text", "text": "follow for", "font": "hand", "size": 52, "color": "blue", "y": 930, "at": 17},
+      {"id": "rn", "type": "text", "text": "The Real Number", "font": "head", "size": 66, "y": 1000, "at": 17, "delay": 0.18, "mode": "fade"},
+      {"type": "highlight", "of": "rn", "at": 17, "delay": 0.33}
+    ]}
+  ],
+  "cover": {"kicker": "oil's big plunge", "big": "−7.6%", "sub": "Brent crude in one day", "date": "Nov 2, 2026 · CNBC", "big_size": 230},
+  "sources": [
+    {"claim": "Brent settled $104.77, down $8.66 (7.63%) on Nov 2; WTI down 7.4%, biggest daily loss since Jul 27 (CNBC, as reported)", "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-2-2026"},
+    {"claim": "Brent settle and WTI biggest loss since July (CNBC), Tuesday Brent back above $105 (Reuters, Trading Economics)", "url": "https://financefeeds.com/brent-crude-oil-price-106-tuesday-after-7-6-percent-plunge-qeshm-strike-report-midterms-bull-113-bear-100/"},
+    {"claim": "Oil prices slide in biggest drop since July on hope for more Iran talks", "url": "https://www.nbcnews.com/business/energy/oil-prices-slide-trump-hope-iran-talks-rcna607107"},
+    {"claim": "Brent fell about 7.9% to below $105 on US-Iran diplomacy hopes", "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-2-dow-sp-500-nasdaq-091835095.html"},
+    {"claim": "AAA national average: gasoline $4.17 vs $3.04 a year ago (Nov 2, 2026)", "url": "https://spectrumlocalnews.com/nc/triad/politics/2026/11/02/oil-prices-fall-november-2"},
+    {"claim": "Brent back above $105 to $106 on Nov 3", "url": "https://tradingeconomics.com/commodity/brent-crude-oil"}
+  ],
+  "post": {
+    "post_at": "2026-11-03T18:30:00+05:30",
+    "instagram_caption": "Oil fell 7.6% in a single day. Brent crude settled at $104.77 a barrel on Monday, November 2, down $8.66, CNBC reports.\n\nIt was oil's biggest one-day drop since July, on hopes of US-Iran peace talks: Washington said it would prefer a peaceful end to the conflict and Iran signaled it is open to talks. For drivers, the AAA US gasoline average was still $4.17 a gallon on November 2, up from $3.04 a year ago, about 37% more. By Tuesday, November 3, Brent was edging back up above $105. Prices as of the November 2 settle.\n\nWill lower oil prices reach the pump?\n\nEducation only. Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#oilprices #crudeoil #gasprices #markets #therealnumber",
+    "youtube_title": "Oil Just Fell 7.6% in One Day: What Happened (Nov 2026)",
+    "youtube_description": "Brent crude settled at $104.77 a barrel on Monday, November 2, 2026, down $8.66 or about 7.6%, CNBC reports, oil's biggest one-day drop since July. The move came on hopes of US-Iran peace talks: Washington said it would prefer a peaceful end to the conflict and Iran signaled it is open to talks. The AAA US national average for gasoline was still $4.17 a gallon on November 2, up from $3.04 a year ago, about 37% more. By Tuesday, November 3, Brent was edging back up above $105. Prices as of the November 2, 2026 settle. Education only, not financial advice; AI narration.\n\nSources: CNBC via StockTitan · https://www.stocktitan.net/articles/stock-market-today-live-november-2-2026 · NBC News · https://www.nbcnews.com/business/energy/oil-prices-slide-trump-hope-iran-talks-rcna607107 · AAA via Spectrum News · https://spectrumlocalnews.com/nc/triad/politics/2026/11/02/oil-prices-fall-november-2 · Trading Economics · https://tradingeconomics.com/commodity/brent-crude-oil\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#oilprices #gasprices #markets",
+    "youtube_tags": ["oil prices", "brent crude", "gas prices", "iran", "the real number"]
+  }
+}
