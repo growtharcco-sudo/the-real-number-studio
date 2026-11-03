@@ -5,6 +5,8 @@ q = os.path.join(ROOT, "queue"); now = dt.datetime.now(dt.timezone.utc); best = 
 for v in os.listdir(q) if os.path.isdir(q) else []:
     p = os.path.join(q, v, "post.json")
     if not os.path.exists(p) or os.path.exists(os.path.join(q, v, "SKIP")): continue
-    s = (dt.datetime.fromisoformat(json.load(open(p))["post_at"]) - now).total_seconds()
+    post = json.load(open(p))
+    s = (dt.datetime.fromisoformat(post["post_at"]) - now).total_seconds()
+    if post.get("breaking"): s = max(s, 1800 - (now - dt.datetime.fromisoformat(post["post_at"])).total_seconds())
     best = s if best is None else min(best, s)
 print(-1 if best is None else max(0, int(best)))

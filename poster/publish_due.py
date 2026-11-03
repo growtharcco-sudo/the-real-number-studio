@@ -11,6 +11,7 @@ import datetime as dt, json, os, shutil, sys, time, urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DRY = "--dry-run" in sys.argv
+BREAKING_ONLY = "--breaking-only" in sys.argv   # used by the instant "post now" workflow
 PAGES = os.environ.get("PAGES_BASE", "").rstrip("/")
 
 
@@ -36,6 +37,9 @@ def main():
         if os.path.exists(os.path.join(d, "SKIP")):
             print(f"{vid}: skipped (veto)"); os.makedirs(os.path.join(ROOT, "posted"), exist_ok=True); shutil.move(d, os.path.join(ROOT, "posted", vid + "__skipped")); changed = True; continue
         when = dt.datetime.fromisoformat(post["post_at"])
+        if BREAKING_ONLY and not post.get("breaking"): continue
+        # breaking posts belong to the instant workflow; the scheduled one only picks them up as a fallback
+        if not BREAKING_ONLY and post.get("breaking") and (now - when).total_seconds() < 1800: continue
         if when > now:
             print(f"{vid}: not due until {when.isoformat()}"); continue
         rp = os.path.join(d, "result.json")

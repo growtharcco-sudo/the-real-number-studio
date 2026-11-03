@@ -45,10 +45,18 @@ def _publish(tmp):
 
 
 def add(vid, video, cover):
-    tmp = _checkout()
-    d = os.path.join(tmp, vid); os.makedirs(d, exist_ok=True)
-    shutil.copy(video, os.path.join(d, "video.mp4")); shutil.copy(cover, os.path.join(d, "cover.png"))
-    _publish(tmp)
+    """Add a video, then re-check it is really on the branch (another run may have pushed at the same moment)."""
+    import time
+    for attempt in range(4):
+        tmp = _checkout()
+        d = os.path.join(tmp, vid); os.makedirs(d, exist_ok=True)
+        shutil.copy(video, os.path.join(d, "video.mp4")); shutil.copy(cover, os.path.join(d, "cover.png"))
+        _publish(tmp)
+        time.sleep(5)
+        chk = _checkout()
+        if os.path.exists(os.path.join(chk, vid, "video.mp4")): print("media branch has", vid); return
+        print("video was overwritten by a parallel run, retrying"); time.sleep(10)
+    raise SystemExit("could not add video to media branch")
 
 
 def prune():

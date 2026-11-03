@@ -43,7 +43,7 @@ Copy `specs/033_tech_wipeout.json` as the template and write `specs/<NNN>_<slug>
 - Use bars for comparisons, a `count` for the hero number, `highlight`/`ring` for the key word.
 - Last scene: the note card (education only, as-of date, sources), then "follow for" + "The Real Number".
 - `cover`: kicker (hand, blue), big (2 to 6 characters, e.g. "−$2T"), sub, date.
-- `post`: post_at is today 22:00 IST (`YYYY-MM-DDT22:00:00+05:30`; 21:00 from mid-March to early Nov).
+- `post`: post_at is set by the run type (see the scheduled task prompt or the News Reels section below).
   Instagram caption format: hook line, blank line, facts paragraph, blank line, one real question,
   blank line, "Education only. Not financial advice.", "Follow @the_real.number for the real number behind your money.",
   blank line, exactly 5 hashtags ending with #therealnumber.
@@ -71,3 +71,40 @@ Send the video and cover with SendUserFile (status proactive) and one message:
 the topic, the hero number, post time, and: "Reply skip to cancel."
 If Samrit replies "skip": create `queue/<id>/SKIP`, commit and push. Nothing gets posted.
 If he asks for a change: edit the spec, rebuild, re-run step 6 (same id), push.
+
+---
+
+# News Reels (the third slot)
+
+Two extra run types use the same steps 2 to 7 above, with these differences.
+
+## A. News slot run (daily, about 5:15 PM IST)
+- Make ONE Reel on the single biggest money story of the last 24 hours. Series: **Money News**.
+- `post_at`: today 18:30 IST (`YYYY-MM-DDT18:30:00+05:30`). That is 8 AM in New York.
+- **Skip the run** (make nothing) if `NEWS_LOG.md` shows a breaking Reel was posted in the last 18 hours:
+  the breaking Reel was today's news Reel.
+- If the news is quiet, pick the most useful current money topic (a rate decision coming, a big earnings
+  week, a price milestone). It must still be current, not evergreen.
+
+## B. Breaking watcher run (every 3 hours, day and night)
+Goal: be first on a huge story. Most runs should find nothing and stop within a few minutes.
+1. Read `NEWS_LOG.md`. Stop at once if a breaking Reel was posted in the last 6 hours, or 2 already today (IST).
+2. Search the web for money news from the last 3 hours.
+3. A story qualifies ONLY if at least one of these is true:
+   - S&P 500, Nasdaq or Dow moves 3% or more in a day, or US trading is halted
+   - Bitcoin moves 10% or more in 24 hours, or a crypto hack, collapse or freeze of $500 million or more
+   - A surprise central bank move (Fed, ECB, BoE, BoJ, RBI): an unscheduled change, or one the market did not expect
+   - A top-50 company (by value) or major bank collapses, goes bankrupt, is rescued or is hit by fraud charges
+   - A single event moves a top company's value by $100 billion or more in a day
+   - A government default, capital controls, or a currency falling 10% or more in a day
+4. **Accuracy beats speed.** The headline facts must be confirmed by at least TWO independent reputable outlets
+   (Reuters, AP, Bloomberg, CNBC, FT, WSJ, BBC, or the official source). Say "reported" for anything not official.
+   No speculation about causes, culprits or what happens next. If unsure, do not post.
+5. If it qualifies and is not already in `NEWS_LOG.md`: make the Reel (40 to 55 s, series **Money News**,
+   cover kicker "breaking"), with `"breaking": true` in `post` and `post_at` = now (current IST time).
+   It posts within minutes of the push.
+6. Then add a line to `NEWS_LOG.md`, commit and push, and send Samrit the video with one line on what posted.
+
+## NEWS_LOG.md
+Every news or breaking Reel adds one line: `YYYY-MM-DD HH:MM IST | breaking/news | <id> | <story in 8 words>`.
+Before making any news Reel, check the log so the same story is never covered twice.
