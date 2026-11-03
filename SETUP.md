@@ -25,7 +25,7 @@ If the key ever has to be replaced:
 1. business.facebook.com → **Settings → Users → System users → unhyped-poster → Generate token**.
 2. Pick the same app, expiration **Never**, and the same four permissions. Copy the token.
 3. Repo → **Settings → Secrets and variables → Actions** → update `IG_TOKEN`. Never paste it into a chat.
-4. Repo → **Actions → Check keys → Run workflow**. It should print `SYSTEM_USER | valid: True | expires: NEVER`.
+4. Repo → **Actions → Check keys (posts nothing) → Run workflow**. It should print `SYSTEM_USER | valid: True | expires: NEVER`.
 
 Warning: **unhyped-poster is shared with the tech channel The Unhyped.** Revoking its tokens or
 removing that system user stops posting on **both** channels.
