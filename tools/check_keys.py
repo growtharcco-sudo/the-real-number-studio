@@ -16,6 +16,17 @@ else:
     if r.ok:
         r = requests.get(f"{base}/{uid}/content_publishing_limit", params={"fields": "quota_usage,config", "access_token": tok}, timeout=30)
         print("Instagram publishing quota:", r.json() if r.ok else f"could not read ({r.status_code})")
+        if tok.startswith("EAA"):
+            import datetime as _dt
+            d = requests.get("https://graph.facebook.com/debug_token", params={"input_token": tok, "access_token": tok}, timeout=30)
+            if d.ok:
+                j = d.json().get("data", {}); exp = j.get("expires_at", None); dexp = j.get("data_access_expires_at", None)
+                f = lambda t: "NEVER" if t in (0, None) else _dt.datetime.utcfromtimestamp(t).strftime("%Y-%m-%d")
+                print("Instagram token type:", j.get("type"), "| valid:", j.get("is_valid"), "| expires:", f(exp), "| data access expires:", f(dexp))
+            else:
+                print("Instagram token expiry: could not read", d.status_code, d.text[:200])
+        else:
+            print("Instagram token: Instagram-login type (60-day, needs refresh)")
 if os.environ.get("YT_REFRESH_TOKEN"):
     try:
         import youtube
