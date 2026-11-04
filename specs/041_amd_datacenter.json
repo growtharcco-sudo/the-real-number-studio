@@ -1,0 +1,545 @@
+{
+ "id": "041_amd_datacenter",
+ "series": "Money News",
+ "voice": "am_michael",
+ "speed": 1.08,
+ "phrases": [
+  {
+   "say": "Ninety-seven percent. That's how much A M D's data center sales grew in one year.",
+   "cap": "97%. That's how much AMD's data center sales grew in one year."
+  },
+  {
+   "say": "Data center revenue:",
+   "pause": 0.45
+  },
+  {
+   "say": "eight point five billion dollars in a single quarter.",
+   "cap": "$8.5 billion in a single quarter.",
+   "pause": 0.3
+  },
+  {
+   "say": "Nearly double a year ago.",
+   "pause": 0.5
+  },
+  {
+   "say": "Total revenue hit a record thirteen point four billion,",
+   "cap": "Total revenue hit a record $13.4 billion,",
+   "pause": 0.55
+  },
+  {
+   "say": "up forty-five percent, ahead of what analysts expected.",
+   "cap": "up 45%, ahead of what analysts expected.",
+   "pause": 0.3
+  },
+  {
+   "say": "So what's driving it?",
+   "pause": 0.64
+  },
+  {
+   "say": "A I.",
+   "cap": "AI.",
+   "pause": 0.45
+  },
+  {
+   "say": "Data centers are buying A M D's server chips and A I processors.",
+   "cap": "Data centers are buying AMD's server chips and AI processors.",
+   "pause": 0.4
+  },
+  {
+   "say": "Gaming chip sales, though, fell forty percent.",
+   "cap": "Gaming chip sales, though, fell 40%.",
+   "pause": 0.6
+  },
+  {
+   "say": "And the outlook?",
+   "pause": 0.64
+  },
+  {
+   "say": "A M D expects about seventeen billion dollars next quarter,",
+   "cap": "AMD expects about $17 billion next quarter,",
+   "pause": 0.45
+  },
+  {
+   "say": "and more than eighty percent revenue growth in twenty twenty-seven.",
+   "cap": "and more than 80% revenue growth in 2027.",
+   "pause": 0.3
+  },
+  {
+   "say": "On Wednesday, before the open, the shares rose about seven percent, Reuters reports.",
+   "cap": "On Wednesday, before the open, the shares rose about 7%, Reuters reports.",
+   "pause": 0.6
+  },
+  {
+   "say": "That's about",
+   "cap": "That's about...",
+   "pause": 0.5
+  },
+  {
+   "say": "fifty-eight billion dollars of value, if the gains hold.",
+   "cap": "$58 billion of value, if the gains hold.",
+   "pause": 0.25
+  },
+  {
+   "say": "Follow for the real number behind your money.",
+   "pause": 0.6
+  }
+ ],
+ "scenes": [
+  {
+   "until": 1,
+   "els": [
+    {
+     "type": "text",
+     "text": "+97%",
+     "font": "head",
+     "size": 176,
+     "color": "green",
+     "y": 470,
+     "at": -1,
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "AMD's data center sales, in 1 year",
+     "font": "hand",
+     "size": 58,
+     "color": "blue",
+     "y": 690,
+     "at": -1,
+     "rot": -1.5,
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "Q3 2026 results · reported Nov 3, 2026",
+     "font": "hand",
+     "size": 44,
+     "color": "grey",
+     "y": 785,
+     "at": -1,
+     "mode": "fade"
+    }
+   ]
+  },
+  {
+   "until": 4,
+   "els": [
+    {
+     "type": "text",
+     "text": "data center revenue:",
+     "font": "hand",
+     "size": 56,
+     "color": "blue",
+     "x": 120,
+     "y": 380,
+     "at": 1
+    },
+    {
+     "type": "text",
+     "text": "Q3 2025:  $4.3B",
+     "size": 46,
+     "color": "grey",
+     "x": 120,
+     "y": 480,
+     "at": 1,
+     "delay": 0.2
+    },
+    {
+     "type": "bar",
+     "x": 135,
+     "y": 554,
+     "w": 367,
+     "color": "grey",
+     "at": 1,
+     "delay": 0.4
+    },
+    {
+     "type": "text",
+     "text": "Q3 2026:  $8.5B",
+     "size": 46,
+     "color": "green",
+     "x": 120,
+     "y": 620,
+     "at": 2
+    },
+    {
+     "type": "bar",
+     "x": 135,
+     "y": 694,
+     "w": 725,
+     "color": "green",
+     "at": 2,
+     "delay": 0.2
+    },
+    {
+     "id": "nd",
+     "type": "text",
+     "text": "nearly double",
+     "font": "hand",
+     "size": 64,
+     "color": "green",
+     "y": 800,
+     "at": 3
+    },
+    {
+     "type": "ring",
+     "of": "nd",
+     "color": "green",
+     "at": 3,
+     "delay": 0.5
+    }
+   ]
+  },
+  {
+   "until": 6,
+   "els": [
+    {
+     "type": "text",
+     "text": "total revenue, Q3 2026:",
+     "font": "hand",
+     "size": 56,
+     "color": "blue",
+     "y": 370,
+     "at": 4
+    },
+    {
+     "id": "c134",
+     "type": "count",
+     "prefix": "$",
+     "value": 13.4,
+     "decimals": 1,
+     "suffix": "B",
+     "size": 140,
+     "color": "green",
+     "y": 460,
+     "at": 4
+    },
+    {
+     "type": "text",
+     "text": "a record · up 45% from $9.2B",
+     "font": "hand",
+     "size": 52,
+     "color": "green",
+     "y": 650,
+     "at": 5
+    },
+    {
+     "type": "line",
+     "from": [
+      140,
+      760
+     ],
+     "to": [
+      880,
+      760
+     ],
+     "at": 5,
+     "delay": 1.0
+    },
+    {
+     "type": "text",
+     "text": "analysts expected: ~$13.1B",
+     "size": 46,
+     "color": "grey",
+     "y": 800,
+     "at": 5,
+     "delay": 1.15
+    }
+   ]
+  },
+  {
+   "until": 9,
+   "els": [
+    {
+     "type": "text",
+     "text": "so what's driving it?",
+     "font": "hand",
+     "size": 60,
+     "color": "blue",
+     "y": 370,
+     "at": 6
+    },
+    {
+     "id": "ai",
+     "type": "text",
+     "text": "AI",
+     "font": "head",
+     "size": 170,
+     "color": "green",
+     "y": 460,
+     "at": 7,
+     "mode": "fade"
+    },
+    {
+     "type": "highlight",
+     "of": "ai",
+     "at": 7,
+     "delay": 0.2
+    },
+    {
+     "type": "text",
+     "text": "data centers buying AMD's",
+     "size": 46,
+     "y": 700,
+     "at": 8
+    },
+    {
+     "type": "text",
+     "text": "server chips + AI processors",
+     "size": 46,
+     "y": 770,
+     "at": 8,
+     "delay": 0.4
+    }
+   ]
+  },
+  {
+   "until": 10,
+   "els": [
+    {
+     "type": "text",
+     "text": "but not everything grew:",
+     "font": "hand",
+     "size": 60,
+     "color": "blue",
+     "y": 380,
+     "at": 9
+    },
+    {
+     "id": "g40",
+     "type": "text",
+     "text": "−40%",
+     "font": "head",
+     "size": 170,
+     "color": "red",
+     "y": 480,
+     "at": 9,
+     "mode": "fade",
+     "delay": 1.0
+    },
+    {
+     "type": "highlight",
+     "of": "g40",
+     "at": 9,
+     "delay": 1.2
+    },
+    {
+     "type": "text",
+     "text": "gaming chip sales, to $773M",
+     "font": "hand",
+     "size": 54,
+     "color": "red",
+     "y": 700,
+     "at": 9,
+     "delay": 1.5
+    }
+   ]
+  },
+  {
+   "until": 13,
+   "els": [
+    {
+     "type": "text",
+     "text": "AMD's own outlook:",
+     "font": "hand",
+     "size": 60,
+     "color": "blue",
+     "y": 370,
+     "at": 10
+    },
+    {
+     "type": "text",
+     "text": "next quarter:  ~$17B",
+     "size": 54,
+     "x": 140,
+     "y": 480,
+     "at": 11
+    },
+    {
+     "type": "text",
+     "text": "analysts expected ~$16.3B",
+     "font": "hand",
+     "size": 46,
+     "color": "grey",
+     "x": 140,
+     "y": 565,
+     "at": 11,
+     "delay": 0.6
+    },
+    {
+     "id": "g80",
+     "type": "text",
+     "text": "2027:  80%+ growth",
+     "size": 54,
+     "x": 140,
+     "y": 680,
+     "at": 12
+    },
+    {
+     "type": "ring",
+     "of": "g80",
+     "part": "80%+",
+     "color": "green",
+     "at": 12,
+     "delay": 0.6
+    },
+    {
+     "type": "text",
+     "text": "company forecast, not a promise",
+     "font": "hand",
+     "size": 46,
+     "color": "grey",
+     "x": 140,
+     "y": 780,
+     "at": 12,
+     "delay": 1.0
+    }
+   ]
+  },
+  {
+   "until": 16,
+   "els": [
+    {
+     "type": "text",
+     "text": "Wednesday, before the open:",
+     "font": "hand",
+     "size": 58,
+     "color": "blue",
+     "y": 370,
+     "at": 13
+    },
+    {
+     "type": "text",
+     "text": "AMD shares  +7.3%",
+     "size": 56,
+     "color": "green",
+     "y": 470,
+     "at": 13,
+     "delay": 1.2
+    },
+    {
+     "type": "text",
+     "text": "premarket, per Reuters",
+     "font": "hand",
+     "size": 46,
+     "color": "grey",
+     "y": 555,
+     "at": 13,
+     "delay": 1.6
+    },
+    {
+     "id": "c58",
+     "type": "count",
+     "prefix": "+$",
+     "value": 58,
+     "suffix": " billion",
+     "size": 120,
+     "color": "green",
+     "y": 650,
+     "at": 15
+    },
+    {
+     "type": "text",
+     "text": "of value, if the gains hold",
+     "font": "hand",
+     "size": 52,
+     "color": "blue",
+     "y": 820,
+     "at": 15,
+     "delay": 0.8
+    }
+   ]
+  },
+  {
+   "until": "end",
+   "els": [
+    {
+     "type": "card",
+     "label": "note:",
+     "lines": [
+      "Education only. Not financial advice.",
+      "Results reported Nov 3, 2026.",
+      "Sources: AMD, Reuters, LSEG, Bloomberg."
+     ],
+     "y": 380,
+     "at": 16
+    },
+    {
+     "type": "text",
+     "text": "story still moving · as of Nov 4, 2026",
+     "font": "hand",
+     "size": 42,
+     "color": "red",
+     "y": 640,
+     "at": 16,
+     "delay": 0.2
+    },
+    {
+     "type": "text",
+     "text": "follow for",
+     "font": "hand",
+     "size": 52,
+     "color": "blue",
+     "y": 930,
+     "at": 16
+    },
+    {
+     "id": "rn",
+     "type": "text",
+     "text": "The Real Number",
+     "font": "head",
+     "size": 66,
+     "y": 1000,
+     "at": 16,
+     "delay": 0.18,
+     "mode": "fade"
+    },
+    {
+     "type": "highlight",
+     "of": "rn",
+     "at": 16,
+     "delay": 0.33
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "kicker": "AMD's AI surge",
+  "big": "+97%",
+  "sub": "data center sales in one year",
+  "date": "Q3 2026 · reported Nov 3",
+  "big_size": 230,
+  "big_color": "green"
+ },
+ "sources": [
+  {
+   "claim": "AMD Q3 2026: revenue $13,377M vs $9,246M (+45%), record; data center $8.5B (+97%); gaming $773M (-40%); Q4 outlook ~$17B; quarter ended Sep 26, 2026 (AMD press release)",
+   "url": "https://www.stocktitan.net/news/AMD/amd-reports-third-quarter-2026-financial-7j6jzo29buqw.html"
+  },
+  {
+   "claim": "AMD up 7.3% premarket Nov 4, ~$58B value if gains hold; data center $8.55B vs $8.20B expected; >80% 2027 revenue growth expected (Reuters)",
+   "url": "https://www.investing.com/news/stock-market-news/amd-shares-jump-as-aidriven-datacenter-strength-fuels-growth-outlook-4998022"
+  },
+  {
+   "claim": "Revenue est. $13.09B (LSEG); Q4 guide $17B vs $16.3B Bloomberg consensus; data center share 47% to 64%",
+   "url": "https://en.sedaily.com/international/2026/11/04/amd-data-center-revenue-doubles-shares-jump-8-percent"
+  },
+  {
+   "claim": "Analysts expected $13.1B revenue; Q4 midpoint above $16.3B average; Lisa Su: revenue to grow more than 80% in 2027",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/amd-stock-surges-hours-q3-223831468.html"
+  }
+ ],
+ "post": {
+  "post_at": "2026-11-04T18:30:00+05:30",
+  "instagram_caption": "AMD's data center sales grew 97% in one year. The chipmaker reported $8.5 billion of data center revenue for the quarter on Tuesday, November 3.\n\nAMD's total Q3 revenue hit a record $13.4 billion, up 45% from $9.2 billion a year ago, above the roughly $13.1 billion analysts expected (LSEG). Demand for its server chips and AI processors drove the jump, while gaming chip sales fell 40% to $773 million. AMD expects about $17 billion of revenue next quarter, above the $16.3 billion analysts expected (Bloomberg), and said it expects revenue to grow more than 80% in 2027. Shares rose 7.3% before the opening bell on Wednesday, November 4, Reuters reports, about $58 billion of value if the gains hold. Figures as of November 4, 2026.\n\nCan AI demand keep growing this fast?\n\nEducation only. Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#amd #chipstocks #artificialintelligence #stockmarket #therealnumber",
+  "youtube_title": "AMD's Data Center Sales Just Grew 97% in One Year (Q3 2026)",
+  "youtube_description": "AMD's data center revenue grew 97% year over year to $8.5 billion in the third quarter of 2026, the company reported on November 3, 2026. Total revenue was a record $13.4 billion, up 45% from $9.2 billion a year earlier, above the roughly $13.1 billion analysts expected (LSEG). Demand for server chips and AI processors drove the growth, while gaming chip sales fell 40% to $773 million. AMD expects about $17 billion of revenue in the fourth quarter, above the $16.3 billion analysts expected (Bloomberg), and said it expects revenue to grow more than 80% in 2027. Shares rose 7.3% in premarket trading on November 4, Reuters reports, about $58 billion of market value if the gains hold. Figures as of November 4, 2026. Education only, not financial advice; AI narration.\n\nSources: AMD press release · https://www.stocktitan.net/news/AMD/amd-reports-third-quarter-2026-financial-7j6jzo29buqw.html · Reuters · https://www.investing.com/news/stock-market-news/amd-shares-jump-as-aidriven-datacenter-strength-fuels-growth-outlook-4998022 · Seoul Economic Daily · https://en.sedaily.com/international/2026/11/04/amd-data-center-revenue-doubles-shares-jump-8-percent\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#amd #stockmarket #ai",
+  "youtube_tags": [
+   "amd",
+   "amd earnings",
+   "data center",
+   "AI chips",
+   "the real number"
+  ]
+ }
+}
