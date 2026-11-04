@@ -76,9 +76,11 @@ If he asks for a change: edit the spec, rebuild, re-run step 6 (same id), push.
 
 # News Reels (the third slot)
 
-Two extra run types use the same steps 2 to 7 above, with these differences.
+The news Reel uses the same steps 2 to 7 above, with these differences. It is made FIRST in the one daily
+run (about 4:30 PM IST), before the evening and morning Reels. The account allows only 5 scheduled runs a day
+across all channels, so everything for the day happens in that one run.
 
-## A. News slot run (daily, about 5:15 PM IST)
+## A. News Reel (made first in the daily run)
 - Make ONE Reel on the single biggest money story of the last 24 hours. Series: **Money News**.
 - `post_at`: today 18:30 IST (`YYYY-MM-DDT18:30:00+05:30`). That is 8 AM in New York.
 - **Skip the run** (make nothing) if `NEWS_LOG.md` shows a breaking Reel was posted in the last 18 hours:
@@ -86,7 +88,8 @@ Two extra run types use the same steps 2 to 7 above, with these differences.
 - If the news is quiet, pick the most useful current money topic (a rate decision coming, a big earnings
   week, a price milestone). It must still be current, not evergreen.
 
-## B. Breaking watcher run (every 3 hours, day and night)
+## B. Breaking watcher run (OFF since 4 Nov 2026)
+Paused: running every 3 hours used up the daily scheduled-run cap. Kept here only in case it is turned back on.
 Goal: be first on a huge story. Most runs should find nothing and stop within a few minutes.
 1. Read `NEWS_LOG.md`. Stop at once if a breaking Reel was posted in the last 6 hours, or 2 already today (IST).
 2. Search the web for money news from the last 3 hours.
