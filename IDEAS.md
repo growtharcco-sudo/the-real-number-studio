@@ -22,7 +22,6 @@ payment, Binance hack, Oct 2026 Nasdaq wipeout.
 | How They Really Make Money | BlackRock manages ~$1,890 per human | AUM / world population | BlackRock IR + UN pop |
 | Crypto, Clearly | Crypto thieves stole $2.7B in one year | 2025 total | Chainalysis / TRM report |
 | Crypto, Clearly | The whole crypto market vs one company | total crypto cap vs Nvidia cap | CoinGecko + close, today |
-| Myth vs Math | "$24 for Manhattan" | myth: test it | primary history source |
 | Myth vs Math | "70% of lottery winners go broke" | myth: try to find the source | trace the claim |
 | Myth vs Math | Tulip mania prices | myth vs record | academic source |
 | The Real Cost (India Edition) | Your "safe" FD is losing money | ~ -0.25% real after 30% tax | RBI CPI + bank FD rate, today |
@@ -37,3 +36,4 @@ India Edition: at most 1 in 7 posts.
 | The Collapse | Madoff: victims got back 72.8% | 72.8% of allowed claims, $15.5B recovered | queued 036_madoff_recovery (2026-11-03 22:00 IST) |
 | The Real Cost | $5,000 card at $100/month: $9,012 interest | 22.15 0X0P+0PR (Fed G.19 Q2 2026) | queued 037_card_interest (2026-11-04 08:00 IST) |
 | $1,000 Then | $1,000 in Apple in 1980 | $3.52M before dividends (Nov 4, 2026 close $349.51) | queued 043_apple_1980 (2026-11-05 22:00 IST) |
+| Myth vs Math | "$24 for Manhattan" | 60 guilders in trade goods (Schagen letter, Nov 5, 1626) | queued 044_manhattan_24 (2026-11-06 08:00 IST) |

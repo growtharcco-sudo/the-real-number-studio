@@ -1,0 +1,338 @@
+{
+ "id": "044_manhattan_24",
+ "series": "Myth vs Math",
+ "voice": "am_michael",
+ "speed": 1.08,
+ "phrases": [
+  {
+   "say": "Twenty-four dollars. That's the famous price of Manhattan. But the record says something else.",
+   "cap": "$24. That's the famous price of Manhattan. But the record says something else."
+  },
+  {
+   "say": "A Dutch letter dated November fifth, sixteen twenty-six, says the island was bought",
+   "cap": "A Dutch letter dated November 5, 1626, says the island was bought",
+   "pause": 0.5
+  },
+  {
+   "say": "for the value of sixty guilders,",
+   "cap": "for the value of 60 guilders,",
+   "pause": 0.3
+  },
+  {
+   "say": "in trade goods, not cash.",
+   "pause": 0.55
+  },
+  {
+   "say": "The twenty-four dollars came later: a nineteenth-century conversion that never got updated.",
+   "cap": "The $24 came later: a 19th-century conversion that never got updated.",
+   "pause": 0.55
+  },
+  {
+   "say": "Back then, sixty guilders was about three or four months' wages for a sailor.",
+   "cap": "Back then, 60 guilders was about 3 or 4 months' wages for a sailor.",
+   "pause": 0.55
+  },
+  {
+   "say": "Not a fortune.",
+   "pause": 0.4
+  },
+  {
+   "say": "But not twenty-four dollars, either.",
+   "cap": "But not $24, either.",
+   "pause": 0.5
+  },
+  {
+   "say": "Follow for the real number behind your money.",
+   "pause": 0.6
+  }
+ ],
+ "scenes": [
+  {
+   "until": 1,
+   "els": [
+    {
+     "id": "m24",
+     "type": "text",
+     "text": "$24?",
+     "font": "head",
+     "size": 180,
+     "color": "red",
+     "y": 470,
+     "at": -1,
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "the famous price of Manhattan",
+     "font": "hand",
+     "size": 58,
+     "color": "blue",
+     "y": 690,
+     "at": -1,
+     "rot": -1.5,
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "myth vs the 1626 record",
+     "font": "hand",
+     "size": 46,
+     "color": "grey",
+     "y": 785,
+     "at": -1,
+     "mode": "fade"
+    },
+    {
+     "type": "ring",
+     "of": "m24",
+     "color": "red",
+     "at": 0,
+     "delay": 3.0
+    }
+   ]
+  },
+  {
+   "until": 4,
+   "els": [
+    {
+     "type": "text",
+     "text": "the record: a letter, Nov 5, 1626",
+     "font": "hand",
+     "size": 54,
+     "color": "blue",
+     "y": 380,
+     "at": 1
+    },
+    {
+     "id": "g60",
+     "type": "text",
+     "text": "60 guilders",
+     "font": "head",
+     "size": 140,
+     "color": "green",
+     "y": 480,
+     "at": 2,
+     "mode": "fade"
+    },
+    {
+     "type": "highlight",
+     "of": "g60",
+     "at": 2,
+     "delay": 0.3
+    },
+    {
+     "type": "text",
+     "text": "in trade goods, not cash",
+     "font": "hand",
+     "size": 58,
+     "color": "blue",
+     "y": 700,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "until": 5,
+   "els": [
+    {
+     "type": "text",
+     "text": "so where's the $24 from?",
+     "font": "hand",
+     "size": 56,
+     "color": "blue",
+     "y": 380,
+     "at": 4
+    },
+    {
+     "type": "text",
+     "text": "a 19th-century conversion",
+     "size": 52,
+     "y": 480,
+     "at": 4,
+     "delay": 1.0
+    },
+    {
+     "type": "text",
+     "text": "e.g. O'Callaghan's 1855 history",
+     "font": "hand",
+     "size": 44,
+     "color": "grey",
+     "y": 560,
+     "at": 4,
+     "delay": 1.5
+    },
+    {
+     "id": "nu",
+     "type": "text",
+     "text": "never updated",
+     "font": "head",
+     "size": 100,
+     "color": "red",
+     "y": 660,
+     "at": 4,
+     "delay": 2.6,
+     "mode": "fade"
+    },
+    {
+     "type": "underline",
+     "of": "nu",
+     "color": "red",
+     "at": 4,
+     "delay": 3.2
+    }
+   ]
+  },
+  {
+   "until": 6,
+   "els": [
+    {
+     "type": "text",
+     "text": "60 guilders in 1626 =",
+     "font": "hand",
+     "size": 58,
+     "color": "blue",
+     "y": 380,
+     "at": 5
+    },
+    {
+     "id": "w34",
+     "type": "text",
+     "text": "3 to 4 months",
+     "font": "head",
+     "size": 120,
+     "color": "green",
+     "y": 470,
+     "at": 5,
+     "delay": 1.2,
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "of a sailor's wages",
+     "font": "hand",
+     "size": 60,
+     "color": "blue",
+     "y": 650,
+     "at": 5,
+     "delay": 1.8
+    },
+    {
+     "type": "text",
+     "text": "or about 30 beaver skins",
+     "font": "hand",
+     "size": 46,
+     "color": "grey",
+     "y": 740,
+     "at": 5,
+     "delay": 2.6
+    }
+   ]
+  },
+  {
+   "until": 8,
+   "els": [
+    {
+     "type": "text",
+     "text": "not a fortune,",
+     "font": "head",
+     "size": 110,
+     "y": 430,
+     "at": 6,
+     "mode": "fade"
+    },
+    {
+     "id": "n24",
+     "type": "text",
+     "text": "but not $24, either",
+     "font": "hand",
+     "size": 76,
+     "color": "red",
+     "y": 620,
+     "at": 7
+    },
+    {
+     "type": "ring",
+     "of": "n24",
+     "part": "$24",
+     "color": "red",
+     "at": 7,
+     "delay": 0.6,
+     "padx": 10,
+     "pady": 10
+    }
+   ]
+  },
+  {
+   "until": "end",
+   "els": [
+    {
+     "type": "card",
+     "label": "note:",
+     "lines": [
+      "Education only. Not financial advice.",
+      "Source: Schagen letter, Nov 5, 1626.",
+      "New Netherland Institute, Mental Floss."
+     ],
+     "y": 380,
+     "at": 8
+    },
+    {
+     "type": "text",
+     "text": "follow for",
+     "font": "hand",
+     "size": 52,
+     "color": "blue",
+     "y": 930,
+     "at": 8
+    },
+    {
+     "id": "rn",
+     "type": "text",
+     "text": "The Real Number",
+     "font": "head",
+     "size": 66,
+     "y": 1000,
+     "at": 8,
+     "delay": 0.18,
+     "mode": "fade"
+    },
+    {
+     "type": "highlight",
+     "of": "rn",
+     "at": 8,
+     "delay": 0.33
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "kicker": "Manhattan for $24?",
+  "big": "60",
+  "sub": "guilders, in trade goods",
+  "date": "the 1626 record",
+  "big_color": "green"
+ },
+ "sources": [
+  {
+   "claim": "Schagen letter: Manhattan bought 'for the value of 60 guilders'; value of trade goods, not money; $24 is a mid-19th-century conversion (O'Callaghan 1855: 'sixty guilders, or twenty-four dollars'); 60 guilders = 3 or 4 months' wages for a sailor or artisan, or 30 beaver skins (New Netherland Institute)",
+   "url": "https://newnetherlandinstitute.org/content/manhattan-and-the-24-myth/"
+  },
+  {
+   "claim": "Letter dated Nov 5, 1626 by Pieter Schagen to West India Company directors, the only known primary reference; 19th-century historians converted to ~$24, never adjusted (Mental Floss)",
+   "url": "https://www.mentalfloss.com/history/was-manhattan-really-bought-24"
+  }
+ ],
+ "post": {
+  "post_at": "2026-11-06T08:00:00+05:30",
+  "instagram_caption": "Manhattan for $24? That's not what the record says.\n\nThe only known primary source, a Dutch letter dated November 5, 1626, says Manhattan was bought \"for the value of 60 guilders\", paid in trade goods, not cash. The $24 figure came from 19th-century historians who converted the guilders to dollars, and it was never updated. According to the New Netherland Institute, 60 guilders in 1626 was about three or four months' wages for a sailor or an artisan, or about 30 beaver skins.\n\nWhich money \"fact\" have you always heard but never checked?\n\nEducation only. Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#history #newyork #manhattan #mythvsmath #therealnumber",
+  "youtube_title": "Was Manhattan Really Bought for $24? (Myth vs Math)",
+  "youtube_description": "The famous claim is that Manhattan was bought for $24. The only known primary source, a Dutch letter dated November 5, 1626, says the island was bought for the value of 60 guilders, paid in trade goods, not cash. The $24 figure came from a 19th-century conversion of guilders to dollars that was never updated. According to the New Netherland Institute, 60 guilders in 1626 was about three or four months' wages for a sailor or an artisan, or about 30 beaver skins. Education only, not financial advice; AI narration.\n\nSources: New Netherland Institute · https://newnetherlandinstitute.org/content/manhattan-and-the-24-myth/ · Mental Floss · https://www.mentalfloss.com/history/was-manhattan-really-bought-24\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#history #manhattan #mythvsmath",
+  "youtube_tags": [
+   "manhattan",
+   "24 dollars",
+   "new amsterdam",
+   "money myths",
+   "the real number"
+  ]
+ }
+}
