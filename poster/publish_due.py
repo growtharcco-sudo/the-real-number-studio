@@ -56,6 +56,13 @@ def main():
                 res.update(youtube.upload_short(local, post["youtube_title"], post["youtube_description"],
                                                 post.get("youtube_tags")))
                 os.remove(local)
+                try:
+                    cov = os.path.join(d, "cover.png")
+                    if not os.path.exists(cov): urllib.request.urlretrieve(cover_url, cov)
+                    res.update(youtube.set_thumbnail(res["yt_video_id"], cov))
+                except Exception as e:
+                    res["yt_thumb"] = f"not set: {e}"
+                print("  YouTube thumbnail:", res["yt_thumb"])
                 json.dump(res, open(rp, "w"), indent=1); print("  YouTube:", res["yt_url"], res.get("yt_privacy"))
             if "ig_media_id" not in res:
                 import instagram

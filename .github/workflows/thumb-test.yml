@@ -1,0 +1,31 @@
+name: Test Shorts thumbnail (one video)
+on:
+  workflow_dispatch:
+    inputs:
+      id: { description: "posted/<id> to set the thumbnail on", required: true }
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q google-api-python-client google-auth pillow numpy
+      - env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          ID: ${{ inputs.id }}
+          BASE: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
+        run: |
+          python - <<'PY'
+          import json, os, sys, urllib.request
+          sys.path.insert(0, "poster"); import youtube
+          vid = os.environ["ID"]; res = json.load(open(f"posted/{vid}/result.json"))
+          cov = f"posted/{vid}/cover.png"
+          try: urllib.request.urlretrieve(f"{os.environ['BASE']}/{vid}/cover.png", cov)
+          except Exception:
+              sys.path.insert(0, "pipeline"); import render
+              render.cover(json.load(open(f"posted/{vid}/spec.json")), cov)
+          print("video", res["yt_url"]); print("RESULT:", youtube.set_thumbnail(res["yt_video_id"], cov))
+          PY

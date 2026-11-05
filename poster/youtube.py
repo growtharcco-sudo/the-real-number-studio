@@ -31,3 +31,20 @@ def upload_short(path, title, description, tags=None, privacy=None):
         _, resp = req.next_chunk()
     return {"yt_video_id": resp["id"], "yt_url": f"https://youtube.com/shorts/{resp['id']}",
             "yt_privacy": resp.get("status", {}).get("privacyStatus")}
+
+
+def set_thumbnail(video_id, image_path):
+    """Try to set the cover as the Short's thumbnail. YouTube only accepts this for channels that have
+    custom Shorts thumbnails (rolling out from July 2026, Partner Program first) and a phone-verified
+    account. Never raises: returns {"yt_thumb": "set"} or {"yt_thumb": "not allowed: <reason>"}."""
+    try:
+        src = image_path
+        if os.path.getsize(src) > 2_000_000:                   # API limit is 2 MB: high-quality JPEG copy
+            from PIL import Image
+            src = image_path.rsplit(".", 1)[0] + "_yt.jpg"
+            Image.open(image_path).convert("RGB").save(src, "JPEG", quality=95)
+        mime = "image/jpeg" if src.endswith(".jpg") else "image/png"
+        _client().thumbnails().set(videoId=video_id, media_body=MediaFileUpload(src, mimetype=mime)).execute()
+        return {"yt_thumb": "set"}
+    except Exception as e:
+        return {"yt_thumb": f"not allowed: {str(e)[:200]}"}
