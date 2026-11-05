@@ -1,0 +1,551 @@
+{
+ "id": "042_midterm_rally",
+ "series": "Money News",
+ "voice": "am_michael",
+ "speed": 1.08,
+ "phrases": [
+  {
+   "say": "Fifteen hundred and sixty-nine points. That's how far the Dow jumped the day after the U S midterms.",
+   "cap": "1,569 points. That's how far the Dow jumped the day after the US midterms."
+  },
+  {
+   "say": "That's about three percent, in one day.",
+   "cap": "That's about 3%, in one day.",
+   "pause": 0.45
+  },
+  {
+   "say": "The S and P five hundred rose one point six percent,",
+   "cap": "The S&P 500 rose 1.6%,",
+   "pause": 0.4
+  },
+  {
+   "say": "its best day in three months.",
+   "pause": 0.45
+  },
+  {
+   "say": "The Nasdaq, one point four.",
+   "cap": "The Nasdaq, 1.4%.",
+   "pause": 0.5
+  },
+  {
+   "say": "So what happened?",
+   "pause": 0.64
+  },
+  {
+   "say": "Democrats won control of both the House and the Senate,",
+   "pause": 0.45
+  },
+  {
+   "say": "and President Trump said he would accept the results.",
+   "pause": 0.55
+  },
+  {
+   "say": "Analysts told C N B C markets tend to prefer gridlock.",
+   "cap": "Analysts told CNBC markets tend to prefer gridlock.",
+   "pause": 0.5
+  },
+  {
+   "say": "Then came oil.",
+   "pause": 0.6
+  },
+  {
+   "say": "Brent crude fell",
+   "cap": "Brent crude fell...",
+   "pause": 0.35
+  },
+  {
+   "say": "eight point seven percent in a day,",
+   "cap": "8.7% in a day,",
+   "pause": 0.3
+  },
+  {
+   "say": "to ninety-four dollars sixty-two, its lowest in two months.",
+   "cap": "to $94.62, its lowest in two months.",
+   "pause": 0.5
+  },
+  {
+   "say": "Not everything rose.",
+   "pause": 0.6
+  },
+  {
+   "say": "Energy stocks fell the most,",
+   "pause": 0.35
+  },
+  {
+   "say": "and A I data center stocks slipped on fears of new limits.",
+   "cap": "and AI data center stocks slipped on fears of new limits.",
+   "pause": 0.6
+  },
+  {
+   "say": "One day isn't a trend.",
+   "pause": 0.5
+  },
+  {
+   "say": "Follow for the real number behind your money.",
+   "pause": 0.6
+  }
+ ],
+ "scenes": [
+  {
+   "until": 1,
+   "els": [
+    {
+     "type": "text",
+     "text": "+1,569",
+     "font": "head",
+     "size": 176,
+     "color": "green",
+     "y": 470,
+     "at": -1,
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "Dow points, the day after the midterms",
+     "font": "hand",
+     "size": 54,
+     "color": "blue",
+     "y": 690,
+     "at": -1,
+     "rot": -1.5,
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "Nov 4, 2026 close · per AP",
+     "font": "hand",
+     "size": 44,
+     "color": "grey",
+     "y": 785,
+     "at": -1,
+     "mode": "fade"
+    }
+   ]
+  },
+  {
+   "until": 2,
+   "els": [
+    {
+     "type": "text",
+     "text": "Wednesday, Nov 4:",
+     "font": "hand",
+     "size": 58,
+     "color": "blue",
+     "y": 380,
+     "at": 1
+    },
+    {
+     "id": "c303",
+     "type": "count",
+     "prefix": "+",
+     "value": 3.03,
+     "decimals": 2,
+     "suffix": "%",
+     "size": 150,
+     "color": "green",
+     "y": 460,
+     "at": 1
+    },
+    {
+     "type": "text",
+     "text": "the Dow, in one day",
+     "font": "hand",
+     "size": 52,
+     "color": "green",
+     "y": 660,
+     "at": 1,
+     "delay": 0.5
+    },
+    {
+     "type": "text",
+     "text": "Dow close: 53,356",
+     "size": 56,
+     "y": 780,
+     "at": 1,
+     "delay": 1.1
+    }
+   ]
+  },
+  {
+   "until": 5,
+   "els": [
+    {
+     "type": "text",
+     "text": "the whole market rose:",
+     "font": "hand",
+     "size": 56,
+     "color": "blue",
+     "x": 120,
+     "y": 380,
+     "at": 2
+    },
+    {
+     "type": "text",
+     "text": "Dow  +3.0%",
+     "size": 46,
+     "color": "green",
+     "x": 120,
+     "y": 480,
+     "at": 2
+    },
+    {
+     "type": "bar",
+     "x": 135,
+     "y": 554,
+     "w": 725,
+     "color": "green",
+     "at": 2,
+     "delay": 0.2
+    },
+    {
+     "type": "text",
+     "text": "S&P 500  +1.6%",
+     "size": 46,
+     "color": "green",
+     "x": 120,
+     "y": 620,
+     "at": 2,
+     "delay": 0.6
+    },
+    {
+     "type": "bar",
+     "x": 135,
+     "y": 694,
+     "w": 378,
+     "color": "green",
+     "at": 2,
+     "delay": 0.8
+    },
+    {
+     "type": "text",
+     "text": "Nasdaq  +1.4%",
+     "size": 46,
+     "color": "green",
+     "x": 120,
+     "y": 760,
+     "at": 4
+    },
+    {
+     "type": "bar",
+     "x": 135,
+     "y": 834,
+     "w": 344,
+     "color": "green",
+     "at": 4,
+     "delay": 0.2
+    },
+    {
+     "id": "b3",
+     "type": "text",
+     "text": "S&P: best day in 3 months",
+     "font": "hand",
+     "size": 50,
+     "color": "green",
+     "y": 900,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "until": 9,
+   "els": [
+    {
+     "type": "text",
+     "text": "so what happened?",
+     "font": "hand",
+     "size": 60,
+     "color": "blue",
+     "y": 370,
+     "at": 5
+    },
+    {
+     "type": "text",
+     "text": "Democrats won the House + Senate",
+     "size": 44,
+     "y": 470,
+     "at": 6
+    },
+    {
+     "type": "text",
+     "text": "Trump said he'll accept the results",
+     "size": 44,
+     "y": 550,
+     "at": 7
+    },
+    {
+     "type": "line",
+     "from": [
+      140,
+      650
+     ],
+     "to": [
+      880,
+      650
+     ],
+     "at": 8
+    },
+    {
+     "type": "text",
+     "text": "analysts, via CNBC:",
+     "font": "hand",
+     "size": 50,
+     "color": "blue",
+     "y": 690,
+     "at": 8
+    },
+    {
+     "id": "gl",
+     "type": "text",
+     "text": "markets tend to prefer gridlock",
+     "font": "hand",
+     "size": 58,
+     "color": "green",
+     "y": 780,
+     "at": 8,
+     "delay": 0.6
+    },
+    {
+     "type": "ring",
+     "of": "gl",
+     "part": "gridlock",
+     "color": "green",
+     "at": 8,
+     "delay": 1.4
+    }
+   ]
+  },
+  {
+   "until": 13,
+   "els": [
+    {
+     "type": "text",
+     "text": "then came oil:",
+     "font": "hand",
+     "size": 60,
+     "color": "blue",
+     "y": 370,
+     "at": 9
+    },
+    {
+     "id": "o87",
+     "type": "text",
+     "text": "−8.7%",
+     "font": "head",
+     "size": 170,
+     "color": "red",
+     "y": 460,
+     "at": 11,
+     "mode": "fade"
+    },
+    {
+     "type": "highlight",
+     "of": "o87",
+     "at": 11,
+     "delay": 0.2
+    },
+    {
+     "type": "text",
+     "text": "Brent crude, to $94.62",
+     "font": "hand",
+     "size": 56,
+     "color": "blue",
+     "y": 680,
+     "at": 12
+    },
+    {
+     "type": "text",
+     "text": "lowest in 2 months (AP)",
+     "font": "hand",
+     "size": 44,
+     "color": "grey",
+     "y": 765,
+     "at": 12,
+     "delay": 0.6
+    }
+   ]
+  },
+  {
+   "until": 16,
+   "els": [
+    {
+     "type": "text",
+     "text": "not everything rose:",
+     "font": "hand",
+     "size": 58,
+     "color": "blue",
+     "x": 120,
+     "y": 380,
+     "at": 13
+    },
+    {
+     "type": "text",
+     "text": "x",
+     "font": "hand",
+     "size": 56,
+     "color": "red",
+     "x": 122,
+     "y": 476,
+     "at": 14,
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "energy stocks: fell the most",
+     "size": 42,
+     "x": 172,
+     "y": 490,
+     "at": 14
+    },
+    {
+     "type": "text",
+     "text": "x",
+     "font": "hand",
+     "size": 56,
+     "color": "red",
+     "x": 122,
+     "y": 576,
+     "at": 15,
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "AI data center stocks: slipped",
+     "size": 42,
+     "x": 172,
+     "y": 590,
+     "at": 15
+    },
+    {
+     "type": "text",
+     "text": "on fears of new limits",
+     "font": "hand",
+     "size": 46,
+     "color": "grey",
+     "x": 172,
+     "y": 665,
+     "at": 15,
+     "delay": 0.6
+    }
+   ]
+  },
+  {
+   "until": 17,
+   "els": [
+    {
+     "id": "tr",
+     "type": "text",
+     "text": "one day",
+     "font": "head",
+     "size": 130,
+     "y": 440,
+     "at": 16,
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "isn't a trend",
+     "font": "hand",
+     "size": 72,
+     "color": "blue",
+     "y": 620,
+     "at": 16,
+     "delay": 0.4
+    },
+    {
+     "type": "underline",
+     "of": "tr",
+     "color": "green",
+     "at": 16,
+     "delay": 0.6
+    }
+   ]
+  },
+  {
+   "until": "end",
+   "els": [
+    {
+     "type": "card",
+     "label": "note:",
+     "lines": [
+      "Education only. Not financial advice.",
+      "Figures as of the Nov 4, 2026 close.",
+      "Sources: AP, CNBC, TheStreet."
+     ],
+     "y": 380,
+     "at": 17
+    },
+    {
+     "type": "text",
+     "text": "story still moving · as of Nov 4, 2026",
+     "font": "hand",
+     "size": 42,
+     "color": "red",
+     "y": 640,
+     "at": 17,
+     "delay": 0.2
+    },
+    {
+     "type": "text",
+     "text": "follow for",
+     "font": "hand",
+     "size": 52,
+     "color": "blue",
+     "y": 930,
+     "at": 17
+    },
+    {
+     "id": "rn",
+     "type": "text",
+     "text": "The Real Number",
+     "font": "head",
+     "size": 66,
+     "y": 1000,
+     "at": 17,
+     "delay": 0.18,
+     "mode": "fade"
+    },
+    {
+     "type": "highlight",
+     "of": "rn",
+     "at": 17,
+     "delay": 0.33
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "kicker": "the midterm rally",
+  "big": "+1,569",
+  "sub": "Dow points in one day",
+  "date": "Nov 4, 2026 close",
+  "big_size": 210,
+  "big_color": "green"
+ },
+ "sources": [
+  {
+   "claim": "Nov 4 2026 closes: Dow +1,569.40 to 53,356.12; S&P 500 +119.70 to 7,688.62 (+1.6%, best day in three months); Nasdaq +364.50 to 25,736.51 (+1.4%); Brent -8.7% to $94.62, lowest in two months; 10-yr yield 4.88% (AP)",
+   "url": "https://www.timesfreepress.com/news/2026/nov/04/stocks-surge-and-the-dow-soars-1500-points-as-oil-prices-tumble-following-the-us-midterm-elections/"
+  },
+  {
+   "claim": "Dow +3.03%; Democrats won both houses; Trump said he would accept results; markets tend to prefer gridlock; AI data center stocks fell on fears of new limits (CNBC, via StockTitan)",
+   "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-4-2026"
+  },
+  {
+   "claim": "Closes 53,356.12 / 7,688.62 / 25,736.51; energy investors bet on end of Iran war uncertainty; energy the worst sector (TheStreet)",
+   "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-04-2026"
+  }
+ ],
+ "post": {
+  "post_at": "2026-11-05T18:30:00+05:30",
+  "instagram_caption": "The Dow jumped 1,569 points on Wednesday, November 4, the day after the US midterm elections.\n\nThe Dow rose about 3% to close at 53,356, AP reports. The S&P 500 rose 1.6% to 7,688.62, its best day in three months, and the Nasdaq rose 1.4%. Democrats won control of both the House and the Senate, and President Trump said he would accept the results; analysts told CNBC that markets tend to prefer gridlock. Brent crude fell 8.7% to $94.62, its lowest level in two months, as energy traders appeared to bet on less uncertainty from the Iran war, TheStreet reports. Energy stocks fell the most, and AI data center stocks slipped on fears of new limits. Figures as of the November 4, 2026 close.\n\nWill the rally last past the first day?\n\nEducation only. Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#dowjones #stockmarket #midterms #oilprices #therealnumber",
+  "youtube_title": "The Dow Jumped 1,569 Points After the 2026 Midterms",
+  "youtube_description": "The Dow Jones Industrial Average jumped 1,569.40 points, or about 3%, to close at 53,356.12 on Wednesday, November 4, 2026, the day after the US midterm elections, AP reports. The S&P 500 rose 1.6% to 7,688.62, its best day in three months, and the Nasdaq rose 1.4% to 25,736.51. Democrats won control of both the House and the Senate, and President Trump said he would accept the results; analysts told CNBC that markets tend to prefer gridlock. Brent crude fell 8.7% to $94.62, its lowest level in two months. Energy stocks fell the most, and AI data center stocks slipped on fears of new limits. Figures as of the November 4, 2026 close. Education only, not financial advice; AI narration.\n\nSources: AP · https://www.timesfreepress.com/news/2026/nov/04/stocks-surge-and-the-dow-soars-1500-points-as-oil-prices-tumble-following-the-us-midterm-elections/ · CNBC via StockTitan · https://www.stocktitan.net/articles/stock-market-today-live-november-4-2026 · TheStreet · https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-04-2026\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#dowjones #stockmarket #midterms",
+  "youtube_tags": [
+   "dow jones",
+   "stock market",
+   "midterm elections",
+   "oil prices",
+   "the real number"
+  ]
+ }
+}
