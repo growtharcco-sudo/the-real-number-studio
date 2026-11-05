@@ -1,0 +1,510 @@
+{
+ "id": "043_apple_1980",
+ "series": "$1,000 Then",
+ "voice": "am_michael",
+ "speed": 1.08,
+ "phrases": [
+  {
+   "say": "Three and a half million dollars. That's what a thousand dollars in Apple's first shares, in nineteen eighty, would be worth today.",
+   "cap": "$3.5 million. That's what $1,000 in Apple's first shares, in 1980, would be worth today."
+  },
+  {
+   "say": "It's hindsight. But here's the math.",
+   "pause": 0.55
+  },
+  {
+   "say": "December twelfth, nineteen eighty. Apple goes public at twenty-two dollars a share.",
+   "cap": "December 12, 1980. Apple goes public at $22 a share.",
+   "pause": 0.45
+  },
+  {
+   "say": "A thousand dollars buys forty-five shares.",
+   "cap": "$1,000 buys 45 shares.",
+   "pause": 0.5
+  },
+  {
+   "say": "Then five stock splits turn every share into two hundred twenty-four.",
+   "cap": "Then five stock splits turn every share into 224.",
+   "pause": 0.5
+  },
+  {
+   "say": "So forty-five shares become ten thousand and eighty.",
+   "cap": "So 45 shares become 10,080.",
+   "pause": 0.55
+  },
+  {
+   "say": "On November fourth, Apple closed at a record three hundred forty-nine dollars fifty-one.",
+   "cap": "On November 4, Apple closed at a record $349.51.",
+   "pause": 0.45
+  },
+  {
+   "say": "Multiply it out,",
+   "cap": "Multiply it out...",
+   "pause": 0.4
+  },
+  {
+   "say": "and you get about three point five million dollars, before dividends.",
+   "cap": "and you get about $3.5 million, before dividends.",
+   "pause": 0.6
+  },
+  {
+   "say": "But most stocks never do this.",
+   "pause": 0.55
+  },
+  {
+   "say": "A study of nearly twenty-six thousand U S stocks found",
+   "cap": "A study of nearly 26,000 US stocks found",
+   "pause": 0.3
+  },
+  {
+   "say": "fifty-eight percent failed to beat Treasury bills over their lifetimes.",
+   "cap": "58% failed to beat Treasury bills over their lifetimes.",
+   "pause": 0.55
+  },
+  {
+   "say": "Apple is the exception, not the rule.",
+   "pause": 0.55
+  },
+  {
+   "say": "Follow for the real number behind your money.",
+   "pause": 0.6
+  }
+ ],
+ "scenes": [
+  {
+   "until": 1,
+   "els": [
+    {
+     "type": "text",
+     "text": "$3.5 million",
+     "font": "head",
+     "size": 160,
+     "color": "green",
+     "y": 470,
+     "at": -1,
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "from $1,000 in Apple, in 1980",
+     "font": "hand",
+     "size": 58,
+     "color": "blue",
+     "y": 690,
+     "at": -1,
+     "rot": -1.5,
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "hindsight · as of the Nov 4, 2026 close",
+     "font": "hand",
+     "size": 44,
+     "color": "grey",
+     "y": 785,
+     "at": -1,
+     "mode": "fade"
+    }
+   ]
+  },
+  {
+   "until": 4,
+   "els": [
+    {
+     "type": "text",
+     "text": "the hindsight math:",
+     "font": "hand",
+     "size": 58,
+     "color": "blue",
+     "y": 370,
+     "at": 1
+    },
+    {
+     "type": "text",
+     "text": "Dec 12, 1980: Apple's IPO",
+     "size": 50,
+     "y": 470,
+     "at": 2
+    },
+    {
+     "id": "p22",
+     "type": "text",
+     "text": "$22 a share",
+     "font": "head",
+     "size": 130,
+     "color": "green",
+     "y": 550,
+     "at": 2,
+     "delay": 1.2,
+     "mode": "fade"
+    },
+    {
+     "id": "s45",
+     "type": "text",
+     "text": "$1,000 buys 45 shares",
+     "font": "hand",
+     "size": 64,
+     "color": "blue",
+     "y": 780,
+     "at": 3
+    },
+    {
+     "type": "ring",
+     "of": "s45",
+     "part": "45 shares",
+     "color": "green",
+     "at": 3,
+     "delay": 0.8
+    }
+   ]
+  },
+  {
+   "until": 5,
+   "els": [
+    {
+     "type": "text",
+     "text": "5 stock splits:",
+     "font": "hand",
+     "size": 58,
+     "color": "blue",
+     "x": 140,
+     "y": 370,
+     "at": 4
+    },
+    {
+     "type": "text",
+     "text": "1987   2-for-1",
+     "size": 44,
+     "x": 160,
+     "y": 460,
+     "at": 4,
+     "delay": 0.2
+    },
+    {
+     "type": "text",
+     "text": "2000   2-for-1",
+     "size": 44,
+     "x": 160,
+     "y": 525,
+     "at": 4,
+     "delay": 0.4
+    },
+    {
+     "type": "text",
+     "text": "2005   2-for-1",
+     "size": 44,
+     "x": 160,
+     "y": 590,
+     "at": 4,
+     "delay": 0.6
+    },
+    {
+     "type": "text",
+     "text": "2014   7-for-1",
+     "size": 44,
+     "x": 160,
+     "y": 655,
+     "at": 4,
+     "delay": 0.8
+    },
+    {
+     "type": "text",
+     "text": "2020   4-for-1",
+     "size": 44,
+     "x": 160,
+     "y": 720,
+     "at": 4,
+     "delay": 1.0
+    },
+    {
+     "id": "x224",
+     "type": "text",
+     "text": "1 share = 224 shares",
+     "font": "head",
+     "size": 76,
+     "color": "green",
+     "y": 810,
+     "at": 4,
+     "delay": 1.5,
+     "mode": "fade"
+    },
+    {
+     "type": "highlight",
+     "of": "x224",
+     "part": "224",
+     "at": 4,
+     "delay": 1.8
+    }
+   ]
+  },
+  {
+   "until": 6,
+   "els": [
+    {
+     "type": "text",
+     "text": "45 shares become...",
+     "font": "hand",
+     "size": 60,
+     "color": "blue",
+     "y": 380,
+     "at": 5
+    },
+    {
+     "type": "count",
+     "value": 10080,
+     "suffix": "",
+     "size": 160,
+     "color": "green",
+     "y": 470,
+     "at": 5,
+     "delay": 1.0
+    },
+    {
+     "type": "text",
+     "text": "shares",
+     "font": "hand",
+     "size": 64,
+     "color": "green",
+     "y": 690,
+     "at": 5,
+     "delay": 1.6
+    }
+   ]
+  },
+  {
+   "until": 9,
+   "els": [
+    {
+     "type": "text",
+     "text": "Nov 4, 2026 close:",
+     "font": "hand",
+     "size": 58,
+     "color": "blue",
+     "y": 370,
+     "at": 6
+    },
+    {
+     "type": "text",
+     "text": "$349.51 (a record)",
+     "size": 58,
+     "y": 460,
+     "at": 6,
+     "delay": 1.0
+    },
+    {
+     "type": "text",
+     "text": "10,080 × $349.51",
+     "size": 52,
+     "y": 560,
+     "at": 7
+    },
+    {
+     "type": "line",
+     "from": [
+      200,
+      650
+     ],
+     "to": [
+      820,
+      650
+     ],
+     "at": 7,
+     "delay": 0.6
+    },
+    {
+     "id": "c35",
+     "type": "count",
+     "prefix": "$",
+     "value": 3523061,
+     "size": 120,
+     "color": "green",
+     "y": 680,
+     "at": 8
+    },
+    {
+     "type": "text",
+     "text": "before dividends",
+     "font": "hand",
+     "size": 50,
+     "color": "grey",
+     "y": 860,
+     "at": 8,
+     "delay": 1.5
+    }
+   ]
+  },
+  {
+   "until": 12,
+   "els": [
+    {
+     "type": "text",
+     "text": "but most stocks never do this:",
+     "font": "hand",
+     "size": 56,
+     "color": "blue",
+     "y": 370,
+     "at": 9
+    },
+    {
+     "type": "text",
+     "text": "~26,000 US stocks, 1926 to 2016",
+     "size": 44,
+     "y": 460,
+     "at": 10
+    },
+    {
+     "id": "c58",
+     "type": "count",
+     "value": 58,
+     "suffix": "%",
+     "size": 170,
+     "color": "red",
+     "y": 540,
+     "at": 11
+    },
+    {
+     "type": "text",
+     "text": "failed to beat Treasury bills",
+     "font": "hand",
+     "size": 56,
+     "color": "red",
+     "y": 760,
+     "at": 11,
+     "delay": 0.9
+    },
+    {
+     "type": "text",
+     "text": "study by Hendrik Bessembinder, ASU",
+     "font": "hand",
+     "size": 42,
+     "color": "grey",
+     "y": 850,
+     "at": 11,
+     "delay": 1.4
+    }
+   ]
+  },
+  {
+   "until": 13,
+   "els": [
+    {
+     "id": "ex",
+     "type": "text",
+     "text": "the exception,",
+     "font": "head",
+     "size": 110,
+     "color": "green",
+     "y": 430,
+     "at": 12,
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "not the rule",
+     "font": "hand",
+     "size": 80,
+     "color": "blue",
+     "y": 620,
+     "at": 12,
+     "delay": 0.8
+    },
+    {
+     "type": "highlight",
+     "of": "ex",
+     "part": "exception",
+     "at": 12,
+     "delay": 0.3
+    }
+   ]
+  },
+  {
+   "until": "end",
+   "els": [
+    {
+     "type": "card",
+     "label": "note:",
+     "lines": [
+      "Hindsight. Most investments don't do this.",
+      "Education only. Not financial advice.",
+      "Price as of the Nov 4, 2026 close.",
+      "Sources: Motley Fool, Fox Business, ASU."
+     ],
+     "y": 380,
+     "at": 13
+    },
+    {
+     "type": "text",
+     "text": "follow for",
+     "font": "hand",
+     "size": 52,
+     "color": "blue",
+     "y": 930,
+     "at": 13
+    },
+    {
+     "id": "rn",
+     "type": "text",
+     "text": "The Real Number",
+     "font": "head",
+     "size": 66,
+     "y": 1000,
+     "at": 13,
+     "delay": 0.18,
+     "mode": "fade"
+    },
+    {
+     "type": "highlight",
+     "of": "rn",
+     "at": 13,
+     "delay": 0.33
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "kicker": "$1,000 in Apple in 1980",
+  "big": "$3.5M",
+  "sub": "worth today, before dividends",
+  "date": "hindsight · as of Nov 4, 2026",
+  "big_color": "green"
+ },
+ "sources": [
+  {
+   "claim": "Apple IPO Dec 12, 1980 at $22; $1,000 bought 45 shares; 5 splits multiply shares by 224 (Fox Business)",
+   "url": "https://foxbusiness.com/markets/apple-ipo-anniversary-how-much-would-1000-investment-worth-today"
+  },
+  {
+   "claim": "Splits: 2-for-1 1987, 2000, 2005; 7-for-1 2014; 4-for-1 2020; 1 IPO share = 224 shares (Motley Fool)",
+   "url": "https://www.fool.com/investing/2024/11/14/if-you-bought-1-share-of-apple-at-its-ipo-heres-ho"
+  },
+  {
+   "claim": "AAPL closed at record $349.51 on Nov 4, 2026, up $17.61 (MacDailyNews); +5.31% record (CNBC via StockTitan; Capp Notes)",
+   "url": "https://macdailynews.com/2026/11/04/apple-shares-hit-new-all-time-intraday-and-closing-highs-94/"
+  },
+  {
+   "claim": "Apple +5.31% to record on Nov 4, 2026 (CNBC via StockTitan)",
+   "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-4-2026"
+  },
+  {
+   "claim": "58% of nearly 26,000 US stocks failed to beat T-bills over their lives; 4.3% created all net wealth, 1926 to 2016 (Bessembinder, ASU)",
+   "url": "https://news.wpcarey.asu.edu/20180917-do-stocks-outperform-treasury-bills"
+  },
+  {
+   "claim": "Python: 45 x 224 = 10,080 shares; 10,080 x $349.51 = $3,523,060.80; about 19.5% a year over 45.9 years",
+   "url": "computed"
+  }
+ ],
+ "post": {
+  "post_at": "2026-11-05T22:00:00+05:30",
+  "instagram_caption": "$1,000 in Apple's first shares in 1980 would be worth about $3.5 million today, before dividends. It's hindsight, so here's the math.\n\nApple went public on December 12, 1980 at $22 a share, so $1,000 bought 45 shares. Five stock splits (2-for-1 in 1987, 2000 and 2005, 7-for-1 in 2014, 4-for-1 in 2020) turned each share into 224, so 45 shares became 10,080. Apple closed at a record $349.51 on November 4, 2026, which makes those shares worth about $3.52 million. But most stocks never do this: a study of nearly 26,000 US stocks from 1926 to 2016 by Hendrik Bessembinder found 58% failed to beat Treasury bills over their lifetimes. Price as of the November 4, 2026 close.\n\nWould you have held through 46 years of ups and downs?\n\nEducation only. Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#apple #stockmarket #compounding #investinghistory #therealnumber",
+  "youtube_title": "$1,000 in Apple in 1980 Is Now Worth $3.5 Million (Hindsight Math)",
+  "youtube_description": "Apple went public on December 12, 1980 at $22 a share, so $1,000 bought 45 shares. Five stock splits (2-for-1 in 1987, 2000 and 2005, 7-for-1 in 2014 and 4-for-1 in 2020) turned each share into 224, so 45 shares became 10,080. At Apple's record close of $349.51 on November 4, 2026, that is about $3.52 million, before dividends. This is hindsight: a study of nearly 26,000 US stocks from 1926 to 2016 by Hendrik Bessembinder (Arizona State University) found 58% failed to beat Treasury bills over their lifetimes. Price as of the November 4, 2026 close. Education only, not financial advice; AI narration.\n\nSources: Fox Business · https://foxbusiness.com/markets/apple-ipo-anniversary-how-much-would-1000-investment-worth-today · Motley Fool · https://www.fool.com/investing/2024/11/14/if-you-bought-1-share-of-apple-at-its-ipo-heres-ho · MacDailyNews · https://macdailynews.com/2026/11/04/apple-shares-hit-new-all-time-intraday-and-closing-highs-94/ · ASU W. P. Carey · https://news.wpcarey.asu.edu/20180917-do-stocks-outperform-treasury-bills\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#apple #stockmarket #investing",
+  "youtube_tags": [
+   "apple stock",
+   "apple ipo",
+   "stock splits",
+   "compounding",
+   "the real number"
+  ]
+ }
+}

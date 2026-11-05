@@ -9,7 +9,6 @@ payment, Binance hack, Oct 2026 Nasdaq wipeout.
 ## Open ideas
 | Series | Hook | Lead number | Check against |
 |---|---|---|---|
-| $1,000 Then | $1,000 in Apple in 1980 | ~$3.5M before dividends (price moves) | Apple IR split history + close |
 | $1,000 Then | $1,000 in Amazon in 1997 | ~$3.4M (price moves) | Amazon IR split history + close |
 | $1,000 Then | $1,000 with Buffett in 1965 | 5,502,284% vs 39,054% S&P | Berkshire annual letter (latest) |
 | How They Really Make Money | Coca-Cola pays Buffett 63% of his cost every year | ~$816M a year on ~$1.3B cost | Berkshire letter |
@@ -37,3 +36,4 @@ India Edition: at most 1 in 7 posts.
 | Myth vs Math | Buffett pays himself $100,000 | $100k salary | queued 035_buffett_salary (2026-11-03 08:00 IST) |
 | The Collapse | Madoff: victims got back 72.8% | 72.8% of allowed claims, $15.5B recovered | queued 036_madoff_recovery (2026-11-03 22:00 IST) |
 | The Real Cost | $5,000 card at $100/month: $9,012 interest | 22.15 0X0P+0PR (Fed G.19 Q2 2026) | queued 037_card_interest (2026-11-04 08:00 IST) |
+| $1,000 Then | $1,000 in Apple in 1980 | $3.52M before dividends (Nov 4, 2026 close $349.51) | queued 043_apple_1980 (2026-11-05 22:00 IST) |
