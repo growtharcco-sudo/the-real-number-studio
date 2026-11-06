@@ -1,0 +1,517 @@
+{
+ "id": "045_nasdaq_chip_rout",
+ "series": "Money News",
+ "voice": "am_michael",
+ "speed": 1.08,
+ "phrases": [
+  {
+   "say": "Five and a half percent. That's how much the Nasdaq lost on Thursday, its worst day since April twenty twenty-five.",
+   "cap": "5.5%. That's how much the Nasdaq lost on Thursday, its worst day since April 2025."
+  },
+  {
+   "say": "One day earlier, the Dow jumped fifteen hundred and sixty-nine points after the midterms.",
+   "cap": "One day earlier, the Dow jumped 1,569 points after the midterms.",
+   "pause": 0.45
+  },
+  {
+   "say": "On Thursday, it gave back",
+   "pause": 0.35
+  },
+  {
+   "say": "eighteen hundred and thirty-three.",
+   "cap": "1,833.",
+   "pause": 0.5
+  },
+  {
+   "say": "The S and P five hundred fell four point four percent.",
+   "cap": "The S&P 500 fell 4.4%.",
+   "pause": 0.55
+  },
+  {
+   "say": "So where did it start?",
+   "pause": 0.6
+  },
+  {
+   "say": "Chip stocks.",
+   "pause": 0.45
+  },
+  {
+   "say": "The Philadelphia chip index fell twelve percent.",
+   "cap": "The PHLX chip index fell 12%.",
+   "pause": 0.4
+  },
+  {
+   "say": "A M D lost seventeen percent. Nvidia, nine.",
+   "cap": "AMD lost 17%. Nvidia, 9%.",
+   "pause": 0.55
+  },
+  {
+   "say": "Why?",
+   "pause": 0.5
+  },
+  {
+   "say": "Democrats won both chambers of Congress,",
+   "pause": 0.35
+  },
+  {
+   "say": "and investors fear new hurdles for A I data centers, Yahoo Finance reports.",
+   "cap": "and investors fear new hurdles for AI data centers, Yahoo Finance reports.",
+   "pause": 0.5
+  },
+  {
+   "say": "Nomura said hedge funds rushed to lock in profits before year end.",
+   "pause": 0.55
+  },
+  {
+   "say": "The Nasdaq is now in a correction,",
+   "pause": 0.35
+  },
+  {
+   "say": "more than ten percent below its record.",
+   "cap": "more than 10% below its record.",
+   "pause": 0.55
+  },
+  {
+   "say": "Follow for the real number behind your money.",
+   "pause": 0.6
+  }
+ ],
+ "scenes": [
+  {
+   "until": 1,
+   "els": [
+    {
+     "type": "text",
+     "text": "−5.5%",
+     "y": 470,
+     "at": -1,
+     "font": "head",
+     "size": 176,
+     "color": "red",
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "Nasdaq, in one day",
+     "y": 690,
+     "at": -1,
+     "font": "hand",
+     "size": 56,
+     "color": "blue",
+     "rot": -1.5,
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "Nov 5, 2026 close · worst since Apr 2025",
+     "y": 785,
+     "at": -1,
+     "font": "hand",
+     "size": 42,
+     "color": "grey",
+     "mode": "fade"
+    }
+   ]
+  },
+  {
+   "until": 4,
+   "els": [
+    {
+     "type": "text",
+     "text": "the Dow, two days:",
+     "y": 380,
+     "at": 1,
+     "font": "hand",
+     "size": 58,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "Wed  +1,569",
+     "y": 480,
+     "at": 1,
+     "font": "head",
+     "size": 96,
+     "color": "green"
+    },
+    {
+     "type": "text",
+     "text": "after the midterms",
+     "y": 600,
+     "at": 1,
+     "font": "hand",
+     "size": 46,
+     "color": "grey",
+     "delay": 0.6
+    },
+    {
+     "id": "d2",
+     "type": "text",
+     "text": "Thu  −1,833",
+     "font": "head",
+     "size": 96,
+     "color": "red",
+     "y": 700,
+     "at": 3,
+     "mode": "fade"
+    },
+    {
+     "type": "highlight",
+     "of": "d2",
+     "at": 3,
+     "delay": 0.2
+    },
+    {
+     "type": "text",
+     "text": "net: −264 points in 2 days",
+     "y": 850,
+     "at": 3,
+     "font": "hand",
+     "size": 50,
+     "color": "red",
+     "delay": 0.3
+    }
+   ]
+  },
+  {
+   "until": 5,
+   "els": [
+    {
+     "type": "text",
+     "text": "Thursday, Nov 5:",
+     "y": 380,
+     "at": 4,
+     "font": "hand",
+     "size": 56,
+     "color": "blue",
+     "x": 120
+    },
+    {
+     "type": "text",
+     "text": "Nasdaq  −5.5%",
+     "y": 480,
+     "at": 4,
+     "size": 46,
+     "color": "red",
+     "x": 120
+    },
+    {
+     "type": "bar",
+     "x": 135,
+     "y": 554,
+     "w": 725,
+     "color": "red",
+     "at": 4,
+     "delay": 0.2
+    },
+    {
+     "type": "text",
+     "text": "S&P 500  −4.4%",
+     "y": 620,
+     "at": 4,
+     "size": 46,
+     "color": "red",
+     "x": 120,
+     "delay": 0.5
+    },
+    {
+     "type": "bar",
+     "x": 135,
+     "y": 694,
+     "w": 573,
+     "color": "red",
+     "at": 4,
+     "delay": 0.7
+    },
+    {
+     "type": "text",
+     "text": "Dow  −3.4%",
+     "y": 760,
+     "at": 4,
+     "size": 46,
+     "color": "red",
+     "x": 120,
+     "delay": 1.0
+    },
+    {
+     "type": "bar",
+     "x": 135,
+     "y": 834,
+     "w": 452,
+     "color": "red",
+     "at": 4,
+     "delay": 1.2
+    }
+   ]
+  },
+  {
+   "until": 9,
+   "els": [
+    {
+     "type": "text",
+     "text": "where did it start?",
+     "y": 370,
+     "at": 5,
+     "font": "hand",
+     "size": 60,
+     "color": "blue"
+    },
+    {
+     "id": "ch",
+     "type": "text",
+     "text": "chip stocks",
+     "font": "head",
+     "size": 110,
+     "y": 450,
+     "at": 6,
+     "mode": "fade"
+    },
+    {
+     "type": "ring",
+     "of": "ch",
+     "part": "chip",
+     "color": "red",
+     "at": 6,
+     "delay": 0.4
+    },
+    {
+     "type": "text",
+     "text": "PHLX chip index  −12.3%",
+     "y": 640,
+     "at": 7,
+     "size": 46,
+     "color": "red"
+    },
+    {
+     "type": "text",
+     "text": "AMD  −17.3%",
+     "y": 730,
+     "at": 8,
+     "size": 46,
+     "color": "red"
+    },
+    {
+     "type": "text",
+     "text": "Nvidia  −9.3%",
+     "y": 810,
+     "at": 8,
+     "size": 46,
+     "color": "red",
+     "delay": 0.8
+    }
+   ]
+  },
+  {
+   "until": 13,
+   "els": [
+    {
+     "type": "text",
+     "text": "why?",
+     "y": 370,
+     "at": 9,
+     "font": "hand",
+     "size": 64,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "Democrats won both chambers",
+     "y": 470,
+     "at": 10,
+     "size": 44
+    },
+    {
+     "type": "text",
+     "text": "fears of new hurdles for",
+     "y": 550,
+     "at": 11,
+     "size": 44
+    },
+    {
+     "id": "dc",
+     "type": "text",
+     "text": "AI data centers",
+     "font": "hand",
+     "size": 62,
+     "color": "red",
+     "y": 620,
+     "at": 11,
+     "delay": 0.4
+    },
+    {
+     "type": "underline",
+     "of": "dc",
+     "color": "red",
+     "at": 11,
+     "delay": 0.9
+    },
+    {
+     "type": "line",
+     "from": [
+      140,
+      730
+     ],
+     "to": [
+      880,
+      730
+     ],
+     "at": 12
+    },
+    {
+     "type": "text",
+     "text": "Nomura: hedge funds rushed",
+     "y": 770,
+     "at": 12,
+     "font": "hand",
+     "size": 48,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "to lock in profits",
+     "y": 845,
+     "at": 12,
+     "font": "hand",
+     "size": 48,
+     "color": "blue",
+     "delay": 0.4
+    }
+   ]
+  },
+  {
+   "until": 15,
+   "els": [
+    {
+     "type": "text",
+     "text": "the Nasdaq is now in a",
+     "y": 380,
+     "at": 13,
+     "font": "hand",
+     "size": 58,
+     "color": "blue"
+    },
+    {
+     "id": "co",
+     "type": "text",
+     "text": "correction",
+     "font": "head",
+     "size": 130,
+     "y": 460,
+     "at": 13,
+     "mode": "fade"
+    },
+    {
+     "type": "highlight",
+     "of": "co",
+     "at": 13,
+     "delay": 0.3
+    },
+    {
+     "type": "text",
+     "text": "10%+ below its record",
+     "y": 680,
+     "at": 14,
+     "font": "hand",
+     "size": 60,
+     "color": "red"
+    }
+   ]
+  },
+  {
+   "until": "end",
+   "els": [
+    {
+     "type": "card",
+     "label": "note:",
+     "lines": [
+      "Education only. Not financial advice.",
+      "Figures as of the Nov 5, 2026 close.",
+      "Sources: Motley Fool, Yahoo Finance,",
+      "CNBC, CBS News."
+     ],
+     "y": 380,
+     "at": 15
+    },
+    {
+     "type": "text",
+     "text": "story still moving · as of Nov 5, 2026",
+     "y": 680,
+     "at": 15,
+     "font": "hand",
+     "size": 42,
+     "color": "red",
+     "delay": 0.2
+    },
+    {
+     "type": "text",
+     "text": "follow for",
+     "y": 930,
+     "at": 15,
+     "font": "hand",
+     "size": 52,
+     "color": "blue"
+    },
+    {
+     "id": "rn",
+     "type": "text",
+     "text": "The Real Number",
+     "font": "head",
+     "size": 66,
+     "y": 1000,
+     "at": 15,
+     "delay": 0.18,
+     "mode": "fade"
+    },
+    {
+     "type": "highlight",
+     "of": "rn",
+     "at": 15,
+     "delay": 0.33
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "kicker": "worst day since 2025",
+  "big": "−5.5%",
+  "sub": "the Nasdaq, in one day",
+  "date": "Nov 5, 2026 close",
+  "big_size": 210,
+  "big_color": "red"
+ },
+ "sources": [
+  {
+   "claim": "Nov 5 2026 closes: Nasdaq 24,315.00 (-1,421.52, -5.52%); S&P 500 7,353.73 (-334.89, -4.36%); Dow 51,523.06 (-1,833.06, -3.44%); Nvidia -9.26%; AMD -17.26%; investors de-risking chips after Democratic midterm sweep (The Motley Fool, fetched Nov 6 2026)",
+   "url": "https://www.fool.com/coverage/stock-market-today/2026/11/05/stock-market-today-nov-5-nasdaq-suffers-worst-day-in-18-months-as-ai-trade-comes-under-fire/"
+  },
+  {
+   "claim": "Dow 51,523.06 -1,833.06 (-3.44%); PHLX Semiconductor Index 9,011.14, -12.25%; Nasdaq closed in correction territory; Nasdaq and S&P on pace for worst day since April 2025 tariff crash; Democrats' sweep raised concerns about regulatory hurdles for AI data center buildouts; Nomura's Charlie McElligott: hedge fund rush to protect profits before year end (Yahoo Finance, fetched Nov 6 2026)",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-rises-chip-stocks-141439950.html"
+  },
+  {
+   "claim": "Nasdaq -5.52%, ended in a correction more than 10% below its record from last month; S&P 500 -4.36%, worst day since April 2025; Dow -1,833; AMD -17.26%, Nvidia -9.26% (CNBC, via StockTitan, fetched Nov 6 2026)",
+   "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-5-2026"
+  },
+  {
+   "claim": "Thursday on track for worst day since April 2025 tariff shock (Capital Economics); Democrats won control of Congress; Dow posted biggest gain of the year on Wednesday (CBS News, fetched Nov 6 2026)",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/stocks-crater-investors-recoil-tech-180224986.html"
+  },
+  {
+   "claim": "Nov 4 2026: Dow +1,569.40 to 53,356.12; S&P 500 7,688.62; Nasdaq 25,736.51 (AP). Python: two-day Dow change 51,523.06 - (53,356.12 - 1,569.40) = -263.66",
+   "url": "https://www.timesfreepress.com/news/2026/nov/04/stocks-surge-and-the-dow-soars-1500-points-as-oil-prices-tumble-following-the-us-midterm-elections/"
+  }
+ ],
+ "post": {
+  "post_at": "2026-11-06T18:30:00+05:30",
+  "instagram_caption": "The Nasdaq just had its worst day since April 2025: down 5.5% in one session.\n\nThe Nasdaq fell 5.52% to 24,315 on Thursday, November 5, its worst day since April 2025, and closed in a correction, more than 10% below its record. The S&P 500 fell 4.36% and the Dow lost 1,833 points, one day after the Dow jumped 1,569 points following the US midterms. Chip stocks led the drop: the PHLX Semiconductor Index fell 12.25%, AMD 17.3% and Nvidia 9.3%. Yahoo Finance reports that Democrats' sweep of Congress raised concerns about regulatory hurdles for AI data center buildouts, and Nomura's Charlie McElligott described a hedge fund rush to protect profits before year end. Figures as of the November 5, 2026 close.\n\nWhat matters more for markets: the AI spending, or the AI profits?\n\nEducation only. Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#nasdaq #stockmarket #chipstocks #aistocks #therealnumber",
+  "youtube_title": "The Nasdaq Just Had Its Worst Day Since April 2025",
+  "youtube_description": "The Nasdaq fell 5.52% to 24,315 on Thursday, November 5, its worst day since April 2025, and closed in a correction, more than 10% below its record. The S&P 500 fell 4.36% and the Dow lost 1,833 points, one day after the Dow jumped 1,569 points following the US midterms. Chip stocks led the drop: the PHLX Semiconductor Index fell 12.25%, AMD 17.3% and Nvidia 9.3%. Yahoo Finance reports that Democrats' sweep of Congress raised concerns about regulatory hurdles for AI data center buildouts, and Nomura's Charlie McElligott described a hedge fund rush to protect profits before year end. Figures as of the November 5, 2026 close. Education only, not financial advice; AI narration.\n\nSources: The Motley Fool · https://www.fool.com/coverage/stock-market-today/2026/11/05/stock-market-today-nov-5-nasdaq-suffers-worst-day-in-18-months-as-ai-trade-comes-under-fire/ · Yahoo Finance · https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-rises-chip-stocks-141439950.html · CNBC via StockTitan · https://www.stocktitan.net/articles/stock-market-today-live-november-5-2026 · CBS News · https://finance.yahoo.com/markets/stocks/articles/stocks-crater-investors-recoil-tech-180224986.html\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#nasdaq #stockmarket #chipstocks",
+  "youtube_tags": [
+   "nasdaq",
+   "stock market",
+   "chip stocks",
+   "ai stocks",
+   "the real number"
+  ]
+ }
+}
