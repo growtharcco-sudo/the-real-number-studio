@@ -8,6 +8,7 @@ A reel is described by a spec (see specs/*.json). Times are given in phrases, no
 A scene ends when phrase "until" starts (or at the end of the video when "until" is "end").
 """
 import math, os, random, re, subprocess
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
@@ -167,6 +168,23 @@ class Card(El):
         if a > 0: fr.alpha_composite(fade(s.img, a), (s.x, int(s.y + 24 * (1 - p))))
 
 
+class Photo(El):
+    """A real photo pinned to the notebook page: white border, soft shadow, a strip of tape."""
+    def __init__(s, path, cx, y, w, t0, t1, rot=-2.0):
+        super().__init__(t0, t1, 0.3)
+        ph = Image.open(path).convert("RGBA"); h = round(ph.height * w / ph.width)
+        ph = ph.resize((w, h), Image.LANCZOS); b = 16
+        im = Image.new("RGBA", (w + 2 * b + 12, h + 2 * b + 30), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+        d.rectangle([10, 22, w + 2 * b + 10, h + 2 * b + 26], fill=(0, 0, 0, 40))
+        d.rectangle([2, 14, w + 2 * b + 2, h + 2 * b + 14], fill=(253, 251, 245, 255), outline=(150, 145, 135, 255), width=2)
+        im.alpha_composite(ph, (2 + b, 14 + b))
+        cx2 = (w + 2 * b) // 2; d.rectangle([cx2 - 70, 0, cx2 + 70, 30], fill=(222, 205, 160, 230))
+        s.img = im.rotate(rot, resample=Image.BICUBIC, expand=True); s.x, s.y = int(cx - s.img.width / 2), y
+    def draw(s, fr, d, t):
+        p = ease(s.p(t)); a = s.a(t) * p
+        if a > 0: fr.alpha_composite(fade(s.img, a), (s.x, int(s.y + 24 * (1 - p))))
+
+
 # ---------------- spec -> elements ----------------
 def build(spec, times, total):
     def at(v, delay=0.0):
@@ -198,6 +216,9 @@ def build(spec, times, total):
                 ob = Ln(tuple(e["from"]), tuple(e["to"]), c, t0, t1, e.get("width", 4))
             elif ty == "bar":
                 ob = Bar(e["x"], e["y"], e["w"], e.get("h", 34), c, FILL[e.get("color", "red")], t0, t1)
+            elif ty == "photo":
+                ob = Photo(os.path.join(ROOT_DIR, e["src"]) if not os.path.isabs(e["src"]) else e["src"],
+                           e.get("x", CX), e["y"], e.get("w", 380), t0, t1, e.get("rot", -2.0))
             elif ty == "card":
                 ob = Card(e.get("label", "note:"), e["lines"], e.get("x", 150), e["y"], e.get("w", 780), t0, t1)
             else:

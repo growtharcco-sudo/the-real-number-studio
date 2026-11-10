@@ -5,4 +5,4 @@
 2026-11-04 18:12 IST | news | 041_amd_datacenter | AMD data center sales up 97%, record quarter
 2026-11-05 16:46 IST | news | 042_midterm_rally | Dow jumps 1,569 points after US midterms
 2026-11-06 17:20 IST | news | 045_nasdaq_chip_rout | Nasdaq falls 5.5%, worst day since April 2025
-2026-11-10 13:43 IST | cancelled (not posted) | 046_nvidia_spy_story | Nvidia -4.27%, about $190B, after Huang spy story (reported), held by Samrit to add a photo
+2026-11-10 13:43 IST | breaking | 046_nvidia_spy_story | Nvidia -4.27%, about $190B, after Huang spy story (reported), re-made with Huang photo
