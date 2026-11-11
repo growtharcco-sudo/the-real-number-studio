@@ -1,0 +1,512 @@
+{
+ "id": "047_buffett_vs_market",
+ "style": "dark",
+ "series": "The Buffett Question",
+ "voice": "am_michael",
+ "speed": 1.08,
+ "caption_keywords": [
+  "buffett",
+  "buffett's",
+  "market",
+  "market?",
+  "guess.",
+  "guess",
+  "years",
+  "run.",
+  "million",
+  "end."
+ ],
+ "phrases": [
+  {
+   "say": "Would you rather put one thousand dollars into Warren Buffett's company in 1964,",
+   "cap": "Would you rather put $1,000 into Warren Buffett's company in 1964,",
+   "pause": 0.25
+  },
+  {
+   "say": "or into the whole stock market?",
+   "pause": 0.45
+  },
+  {
+   "say": "Lock in your guess. The answer is at the end.",
+   "pause": 0.4
+  },
+  {
+   "say": "First, the market.",
+   "pause": 0.3
+  },
+  {
+   "say": "The S and P 500, dividends included, grew about ten and a half percent a year.",
+   "cap": "The S&P 500, dividends included, grew about 10.5% a year.",
+   "pause": 0.3
+  },
+  {
+   "say": "Your thousand dollars becomes",
+   "cap": "Your $1,000 becomes",
+   "pause": 0.15
+  },
+  {
+   "say": "four hundred sixty-one thousand dollars.",
+   "cap": "$461,610.",
+   "pause": 0.45
+  },
+  {
+   "say": "Not bad. Now, Buffett.",
+   "pause": 0.3
+  },
+  {
+   "say": "Berkshire Hathaway grew nineteen point seven percent a year.",
+   "cap": "Berkshire Hathaway grew 19.7% a year.",
+   "pause": 0.3
+  },
+  {
+   "say": "Same thousand dollars.",
+   "cap": "Same $1,000.",
+   "pause": 0.2
+  },
+  {
+   "say": "Keep watching.",
+   "pause": 1.2
+  },
+  {
+   "say": "Sixty-one million dollars.",
+   "cap": "$61 million.",
+   "pause": 0.5
+  },
+  {
+   "say": "That's a hundred and thirty-two times more money,",
+   "cap": "That's 132 times more money,",
+   "pause": 0.2
+  },
+  {
+   "say": "from a gap of about nine points a year.",
+   "cap": "from a gap of about 9 points a year.",
+   "pause": 0.5
+  },
+  {
+   "say": "The real number isn't the return.",
+   "pause": 0.25
+  },
+  {
+   "say": "It's how many years you let it run.",
+   "pause": 0.5
+  },
+  {
+   "say": "Follow for more.",
+   "pause": 0.8
+  }
+ ],
+ "scenes": [
+  {
+   "until": 2,
+   "els": [
+    {
+     "type": "text",
+     "text": "WOULD YOU RATHER PUT",
+     "y": 300,
+     "at": -1,
+     "size": 46
+    },
+    {
+     "type": "box",
+     "y": 390,
+     "h": 250,
+     "w": 760,
+     "at": -1
+    },
+    {
+     "type": "text",
+     "text": "$1,000",
+     "y": 400,
+     "at": -1,
+     "weight": "extra",
+     "size": 150,
+     "mode": "pop"
+    },
+    {
+     "type": "text",
+     "text": "IN 1964",
+     "y": 575,
+     "at": -1,
+     "weight": "semi",
+     "size": 40,
+     "color": "grey"
+    },
+    {
+     "type": "pill",
+     "text": "INTO WARREN BUFFETT'S COMPANY",
+     "color": "gold",
+     "y": 700,
+     "at": 0,
+     "delay": 1.2
+    },
+    {
+     "type": "text",
+     "text": "OR",
+     "y": 800,
+     "at": 1,
+     "weight": "extra",
+     "size": 56,
+     "color": "green"
+    },
+    {
+     "type": "pill",
+     "text": "INTO THE WHOLE STOCK MARKET",
+     "color": "green",
+     "filled": false,
+     "y": 890,
+     "at": 1,
+     "delay": 0.3
+    }
+   ]
+  },
+  {
+   "until": 3,
+   "els": [
+    {
+     "type": "pill",
+     "text": "LOCK IN YOUR GUESS",
+     "color": "gold",
+     "y": 380,
+     "at": 2
+    },
+    {
+     "type": "text",
+     "text": "$?",
+     "y": 470,
+     "at": 2,
+     "weight": "extra",
+     "size": 260,
+     "color": "gold",
+     "mode": "pop",
+     "glow": true,
+     "delay": 0.2
+    },
+    {
+     "type": "text",
+     "text": "THE ANSWER IS AT THE END",
+     "y": 820,
+     "at": 2,
+     "weight": "semi",
+     "size": 40,
+     "color": "grey",
+     "delay": 1.0
+    }
+   ]
+  },
+  {
+   "until": 7,
+   "els": [
+    {
+     "type": "text",
+     "text": "THE MARKET",
+     "y": 320,
+     "at": 3,
+     "size": 60,
+     "color": "green"
+    },
+    {
+     "type": "text",
+     "text": "S&P 500, DIVIDENDS INCLUDED",
+     "y": 400,
+     "at": 3,
+     "weight": "medium",
+     "size": 32,
+     "color": "grey",
+     "delay": 0.3
+    },
+    {
+     "type": "pill",
+     "text": "~10.5% A YEAR",
+     "color": "green",
+     "y": 470,
+     "at": 4,
+     "delay": 1.2
+    },
+    {
+     "type": "count",
+     "prefix": "$",
+     "from": 1000,
+     "value": 461610,
+     "curve": "exp",
+     "y": 600,
+     "size": 150,
+     "color": "white",
+     "at": 5,
+     "dur": 2.4
+    },
+    {
+     "type": "meter",
+     "y": 820,
+     "w": 760,
+     "from": 0,
+     "to": 1,
+     "color": "green",
+     "at": 5,
+     "dur": 2.4
+    },
+    {
+     "type": "text",
+     "text": "1964",
+     "y": 850,
+     "at": 5,
+     "weight": "semi",
+     "size": 30,
+     "color": "grey",
+     "x": 145
+    },
+    {
+     "type": "text",
+     "text": "2025",
+     "y": 850,
+     "at": 5,
+     "weight": "semi",
+     "size": 30,
+     "color": "grey",
+     "x": 825
+    }
+   ]
+  },
+  {
+   "until": 12,
+   "els": [
+    {
+     "type": "text",
+     "text": "BUFFETT",
+     "y": 320,
+     "at": 7,
+     "size": 60,
+     "color": "gold",
+     "delay": 0.6
+    },
+    {
+     "type": "text",
+     "text": "BERKSHIRE HATHAWAY, PER SHARE",
+     "y": 400,
+     "at": 8,
+     "weight": "medium",
+     "size": 32,
+     "color": "grey"
+    },
+    {
+     "type": "pill",
+     "text": "19.7% A YEAR",
+     "color": "gold",
+     "y": 470,
+     "at": 8,
+     "delay": 1.2
+    },
+    {
+     "type": "count",
+     "prefix": "$",
+     "from": 1000,
+     "value": 60993940,
+     "curve": "exp",
+     "y": 605,
+     "size": 128,
+     "color": "white",
+     "color_after": "gold",
+     "after": 461611,
+     "at": 9,
+     "dur": 4.2
+    },
+    {
+     "type": "meter",
+     "y": 820,
+     "w": 760,
+     "from": 0,
+     "to": 1,
+     "color": "gold",
+     "at": 9,
+     "dur": 4.2
+    },
+    {
+     "type": "text",
+     "text": "1964",
+     "y": 850,
+     "at": 9,
+     "weight": "semi",
+     "size": 30,
+     "color": "grey",
+     "x": 145
+    },
+    {
+     "type": "text",
+     "text": "2025",
+     "y": 850,
+     "at": 9,
+     "weight": "semi",
+     "size": 30,
+     "color": "grey",
+     "x": 825
+    },
+    {
+     "type": "pill",
+     "text": "OVERALL GAIN: 6,099,294%",
+     "color": "gold",
+     "filled": false,
+     "y": 930,
+     "at": 11,
+     "delay": 0.4
+    }
+   ]
+  },
+  {
+   "until": 14,
+   "els": [
+    {
+     "type": "hbar",
+     "label": "THE MARKET (S&P 500)",
+     "value": "$461,610",
+     "frac": 0.0076,
+     "color": "green",
+     "y": 360,
+     "at": 12
+    },
+    {
+     "type": "hbar",
+     "label": "BUFFETT (BERKSHIRE)",
+     "value": "$61.0M",
+     "frac": 1.0,
+     "color": "gold",
+     "y": 540,
+     "at": 12,
+     "delay": 0.3
+    },
+    {
+     "type": "text",
+     "text": "132×",
+     "y": 730,
+     "at": 12,
+     "weight": "extra",
+     "size": 200,
+     "color": "gold",
+     "mode": "pop",
+     "glow": true,
+     "delay": 1.2
+    },
+    {
+     "type": "text",
+     "text": "FROM ~9 POINTS A YEAR",
+     "y": 1010,
+     "at": 13,
+     "size": 50,
+     "color": "green"
+    }
+   ]
+  },
+  {
+   "until": "end",
+   "els": [
+    {
+     "type": "text",
+     "text": "THE REAL NUMBER ISN'T",
+     "y": 400,
+     "at": 14,
+     "weight": "semi",
+     "size": 40,
+     "color": "grey"
+    },
+    {
+     "type": "text",
+     "text": "THE RETURN",
+     "y": 470,
+     "at": 14,
+     "weight": "extra",
+     "size": 84,
+     "id": "r",
+     "delay": 0.5
+    },
+    {
+     "type": "strike",
+     "of": "r",
+     "color": "red",
+     "at": 15
+    },
+    {
+     "type": "text",
+     "text": "IT'S",
+     "y": 620,
+     "at": 15,
+     "weight": "semi",
+     "size": 40,
+     "color": "grey",
+     "delay": 0.2
+    },
+    {
+     "type": "text",
+     "text": "HOW MANY YEARS",
+     "y": 690,
+     "at": 15,
+     "weight": "extra",
+     "size": 92,
+     "color": "green",
+     "glow": true,
+     "delay": 0.4
+    },
+    {
+     "type": "text",
+     "text": "YOU LET IT RUN",
+     "y": 800,
+     "at": 15,
+     "weight": "extra",
+     "size": 92,
+     "color": "green",
+     "glow": true,
+     "delay": 0.8
+    },
+    {
+     "type": "follow",
+     "y": 970,
+     "at": 16
+    },
+    {
+     "type": "text",
+     "text": "Figures to the end of 2025, from Berkshire's 2025 letter.",
+     "y": 1100,
+     "at": 16,
+     "weight": "medium",
+     "size": 26,
+     "color": "grey"
+    },
+    {
+     "type": "text",
+     "text": "Past results don't guarantee future returns. Not financial advice.",
+     "y": 1140,
+     "at": 16,
+     "weight": "medium",
+     "size": 26,
+     "color": "grey"
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "kicker": "$1,000 with Buffett\nin 1964 became",
+  "big": "$61M",
+  "sub": "vs $461,610\nin the market",
+  "date": "Berkshire 2025 letter"
+ },
+ "sources": [
+  {
+   "claim": "Berkshire per-share market value: 19.7% compounded annual gain 1965-2025, overall gain 6,099,294% 1964-2025; S&P 500 with dividends: 10.5% a year, overall 46,061% (fetched Nov 11 2026)",
+   "url": "https://www.berkshirehathaway.com/letters/2025ltr.pdf"
+  },
+  {
+   "claim": "Python: $1,000 x (1+60,992.94) = $60,993,940; $1,000 x (1+460.61) = $461,610; ratio 132.1; implied CAGRs 19.8% and 10.6% over 61 years (matches the letter's rounding)",
+   "url": "https://www.berkshirehathaway.com/letters/2025ltr.pdf"
+  }
+ ],
+ "post": {
+  "post_at": "2026-11-11T22:00:00+05:30",
+  "instagram_caption": "Would you rather have put $1,000 into Warren Buffett's company in 1964, or into the whole stock market?\n\nFrom 1964 to the end of 2025, the S&P 500 with dividends gained 46,061% overall, about 10.5% a year. $1,000 became $461,610. Berkshire Hathaway's per-share market value gained 6,099,294%, about 19.7% a year. $1,000 became about $61 million. That's 132 times more, from a gap of about 9 points a year.\n\nWhat did you guess before the counter stopped?\n\nSource: Berkshire Hathaway 2025 shareholder letter (performance table). Past results don't guarantee future returns. Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#warrenbuffett #compounding #investing #stockmarket #therealnumber",
+  "youtube_title": "$1,000 With Warren Buffett in 1964 vs the Stock Market",
+  "youtube_description": "$1,000 in the S&P 500 (dividends included) from 1964 to the end of 2025 became $461,610. The same $1,000 in Berkshire Hathaway became about $61 million: 132 times more, from a gap of about 9 points a year.\n\nSource: Berkshire Hathaway 2025 shareholder letter, performance table: https://www.berkshirehathaway.com/letters/2025ltr.pdf\nPast results don't guarantee future returns. Education only, not financial advice. AI narration.\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#warrenbuffett #compounding #investing",
+  "youtube_tags": [
+   "warren buffett",
+   "berkshire hathaway",
+   "compounding",
+   "s&p 500",
+   "the real number"
+  ]
+ }
+}

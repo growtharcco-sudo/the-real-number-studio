@@ -16,40 +16,59 @@ GitHub Actions in this repo posts it at its `post_at` time. Work in this repo; f
 4. Rotate series. Never use the same series twice in a row: Money News, The Collapse, Pros vs Index,
    $1,000 Then, How They Really Make Money, Money Machine, The Real Cost, Myth vs Math, Crypto, Clearly.
 
-## 2. Write the script (house style)
-- 40 to 55 seconds spoken (about 120 to 150 words). Hook in the first sentence, with the key number.
-- One real number is the hero. End with exactly: "Follow for the real number behind your money."
+## 2. Write the script (house style, since 11 Nov 2026)
+Our dark "question" Reels (like The Penny Question) got 1,000 to 5,000 views; the old notebook explainers stayed
+under 200. So every evergreen Reel is built to be watched to the END:
+- **Pick ONE retention hook** and say it in the first 3 seconds:
+  1. *Would you rather:* "Would you rather have X, or Y?" The answer comes at the end.
+  2. *Guess the number:* "Lock in your guess. The answer is at the end." A counter runs while they guess.
+  3. *Countdown:* "4 money numbers. The last one is the one that hurts." Count down 4, 3, 2, 1; #1 is the payoff.
+  4. *Myth, then the twist:* state the belief everyone has, then the number that breaks it, revealed last.
+  Never use the same hook type two Reels in a row.
+- The payoff (the biggest number or the twist) is saved for the last 8 to 12 seconds. Never reveal it early.
+- End on ONE short takeaway line people want to share, in the form "The real number isn't X. It's Y."
+  then "Follow for more."
+- Something on screen must change every 2 to 3 seconds (a counter, a bar, a pill, a colour flip, a new card).
+- 35 to 50 seconds spoken (about 100 to 135 words). Short sentences. The hero number is spoken AND on screen.
 - `say` text is written for the voice: numbers in words ("twenty-nine percent", "S and P five hundred",
   "A I", "J P Morgan"). `cap` text is what viewers read ("29%", "S&P 500", "AI", "J.P. Morgan").
-- Put a natural "…" style pause before the reveal by making the reveal its own phrase.
 - Explain, never advise: no "buy", "sell", "you should invest", no predictions, no promised returns.
   Use "could", "about", "as of <date>". Name the source of every number.
 - Crypto: add "Crypto products are unregulated and can be highly risky." to the caption.
-- Hindsight stories ("$1,000 in X"): say it is hindsight and most investments don't do this.
+- Hindsight stories ("$1,000 in X"): say past results don't guarantee future returns.
 - No em dashes anywhere (use commas, colons or "·").
+- News Reels keep the same dark style; their hook is the news itself plus the number.
 
 ## 3. Fact-check (mandatory)
 - Every figure needs a primary or reputable source fetched TODAY. Put each one in `sources` in the spec.
 - Run all arithmetic in Python, never in your head. Date-stamp anything that moves (prices, rates).
 - If you cannot verify the hero number, pick another topic. Never queue an unverified claim.
 
-## 4. Build the spec
-Copy `specs/033_tech_wipeout.json` as the template and write `specs/<NNN>_<slug>.json`
-(NNN = next number after the highest in specs/). Rules for the visuals:
-- Frame 0 shows the hook: the hero number in `head` font, size 150 to 180, red (green for good news),
-  plus a blue `hand` subline and a grey `hand` date line. All with `"at": -1`.
-- 5 to 8 scenes. Each scene: a blue `hand` label at y 360 to 400, then 1 to 3 elements between y 450 and 950.
-  Keep everything above y 1000 (captions sit at about 1150).
-- Use bars for comparisons, a `count` for the hero number, `highlight`/`ring` for the key word.
-- Last scene: the note card (education only, as-of date, sources), then "follow for" + "The Real Number".
-- `cover`: kicker (hand, blue), big (2 to 6 characters, e.g. "−$2T"), sub, date.
+## 4. Build the spec (dark style)
+Copy `specs/047_buffett_vs_market.json` as the template and write `specs/<NNN>_<slug>.json`
+(NNN = next number after the highest in specs/). It must have `"style": "dark"` and a `series` label that names
+the question (e.g. "The Penny Question", "The Buffett Question", "The Real Cost"). Visual rules
+(engine: `pipeline/render_dark.py`; elements text, count, pill, box, meter, hbar, strike, grid, follow):
+- Frame 0 (`"at": -1`) shows the hook question with the key number big (weight extra, size 130 to 170).
+- Choose the main "toy" by topic: `count` with `"curve": "exp"` + `meter` for growth/compounding;
+  `grid` (calendar cells lighting up, `gold_from` for the late surge) for day-by-day stories;
+  two `hbar`s for comparisons; a red `count` dropping for crashes; `pill`s numbered 4, 3, 2, 1 for countdowns.
+- Colours: green = the normal/first thing, gold = the payoff, red = losses and the struck-out wrong idea.
+- Element y values are BEFORE the engine's +110 offset: keep everything between y 280 and 1060 (captions at 1500).
+- `caption_keywords`: 5 to 10 words that light up green in the captions (numbers turn gold automatically).
+- Last scene: "THE REAL NUMBER ISN'T" + the struck-out wrong idea + "IT'S" + the answer in green, the `follow`
+  pill, and two small grey lines: the as-of date and source, and "Not financial advice."
+- `cover`: kicker (a short question or setup, 2 lines max), big (the payoff number, 2 to 7 characters), sub
+  (1 to 2 short lines), date (source).
 - `post`: post_at is set by the run type (see the scheduled task prompt or the News Reels section below).
   Instagram caption format: hook line, blank line, facts paragraph, blank line, one real question,
-  blank line, "Education only. Not financial advice.", "Follow @the_real.number for the real number behind your money.",
+  blank line, source + "Not financial advice.", "Follow @the_real.number for the real number behind your money.",
   blank line, exactly 5 hashtags ending with #therealnumber.
   YouTube title under 70 characters, no #shorts. YouTube description: facts paragraph with the as-of date
-  and "Education only, not financial advice; AI narration.", then "Sources: Name · URL · Name · URL",
+  and "Education only, not financial advice. AI narration.", then sources with URLs,
   then "Subscribe to @Thereal.number for the real number behind your money.", then 3 hashtags.
+- A real photo (`photo` element, notebook engine only for now) is used ONLY when Samrit sends one himself.
+  Never download photos of people from the web.
 
 ## 5. Build and check
 ```
@@ -57,7 +76,8 @@ pip install -r requirements.txt --break-system-packages -q
 python pipeline/make_reel.py specs/<id>.json --stills     # look at EVERY still with the Read tool
 python pipeline/make_reel.py specs/<id>.json              # full render into queue/<id>/
 ```
-Look at the stills: no text off-screen, nothing overlapping, numbers on screen match the script.
+Look at the stills: no text off-screen, nothing overlapping, numbers on screen match the script, the hook
+is readable in frame 0, and the payoff only appears in the last 12 seconds.
 Fix and rebuild until clean. The spec checker refuses specs that break the caption rules.
 
 ## 6. Queue it
