@@ -37,6 +37,9 @@ def main():
     path = sys.argv[1]
     spec = json.load(open(path))
     check_spec(spec)
+    global render
+    if spec.get("style") == "dark":
+        import render_dark as render
     out = os.path.join(ROOT, "queue", spec["id"])
     os.makedirs(out, exist_ok=True)
     wav = os.path.join(out, "voice.wav")
