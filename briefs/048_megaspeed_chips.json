@@ -1,0 +1,161 @@
+{
+ "id": "048_megaspeed_chips",
+ "style": "notebook",
+ "series": "Money News",
+ "speed": 1.1,
+ "keywords": [],
+ "beats": [
+  {
+   "say": "Nvidia's board is reportedly preparing to push out Jensen Huang, The Wall Street Journal says.",
+   "pause": 0.35,
+   "show": {
+    "kind": "hook",
+    "photo": "work/jensen_huang.png",
+    "sub": "Nvidia CEO Jensen Huang",
+    "big": "$4.6B+",
+    "color": "red"
+   }
+  },
+  {
+   "say": "But the real story isn't the affair. It's the chips.",
+   "pause": 0.45
+  },
+  {
+   "say": "Alice Huang was an executive at Megaspeed,",
+   "pause": 0.2,
+   "show": {
+    "kind": "facts",
+    "label": "Megaspeed, step by step:",
+    "lines": [
+     "began: Singapore arm of 7Road",
+     "7Road: Chinese gaming firm",
+     "2023: Nvidia cloud partner",
+     "in: $4.6B+ of Nvidia gear"
+    ]
+   }
+  },
+  {
+   "say": "which began as the Singapore arm of a Chinese gaming company, 7Road.",
+   "pause": 0.3
+  },
+  {
+   "say": "In 2023, Nvidia made it a cloud partner.",
+   "pause": 0.3
+  },
+  {
+   "say": "Bloomberg says at least four point six billion dollars of Nvidia hardware came in.",
+   "cap": "Bloomberg says at least $4.6 billion of Nvidia hardware came in.",
+   "pause": 0.45
+  },
+  {
+   "say": "The New York Times says Alibaba was among the Chinese firms renting that power.",
+   "pause": 0.3,
+   "show": {
+    "kind": "facts",
+    "label": "who used it, reportedly:",
+    "lines": [
+     "Alibaba rented compute (NYT)",
+     "her family's network:",
+     "~$7.5B of Nvidia chips"
+    ]
+   }
+  },
+  {
+   "say": "The Information says her family's network moved about seven and a half billion dollars in chips.",
+   "cap": "The Information says her family's network moved about $7.5 billion in chips.",
+   "pause": 0.45
+  },
+  {
+   "say": "Megaspeed denies wrongdoing, Nvidia says it found no diversion, and Singapore is investigating.",
+   "pause": 0.45,
+   "show": {
+    "kind": "facts",
+    "label": "the other side:",
+    "lines": [
+     "Megaspeed: denies wrongdoing",
+     "Nvidia: no sign chips diverted",
+     "Singapore: investigating",
+     "China: spy claims “baseless”"
+    ]
+   }
+  },
+  {
+   "say": "Nvidia fell about eight percent after hours.",
+   "cap": "Nvidia fell about 8% after hours.",
+   "pause": 0.45,
+   "show": {
+    "kind": "number",
+    "label": "Nvidia, after hours, Nov 11:",
+    "value": 8,
+    "prefix": "−",
+    "suffix": "%",
+    "decimals": 0,
+    "note": "about, after the WSJ report"
+   }
+  },
+  {
+   "say": "The real number isn't the affair. It's billions in chips, and where they went.",
+   "pause": 0.4,
+   "show": {
+    "kind": "ending",
+    "lines": [
+     "Reported, not proven. As of Nov 12, 2026.",
+     "Sources: WSJ, NYT, Bloomberg, The Information,",
+     "Fortune, TechCrunch, 24/7 Wall St.",
+     "Education only. Not financial advice."
+    ]
+   }
+  },
+  {
+   "say": "Follow for more.",
+   "pause": 0.6
+  }
+ ],
+ "cover": {
+  "kicker": "forget the affair",
+  "big": "$4.6B+",
+  "sub": "of Nvidia chips",
+  "date": "follow the chips",
+  "big_color": "red",
+  "big_size": 170
+ },
+ "sources": [
+  {
+   "claim": "Megaspeed began as 7Road International (Chinese gaming firm tied to state-backed investors), renamed 2023; Swiftdata (Tan Yong Pong) bought it Nov 2023; Singapore investigating; The Information: $7.5B via Megaspeed/Speedmatrix; Alibaba/Tencent clients of Litong (Fortune, fetched Nov 12 2026)",
+   "url": "https://fortune.com/2026/11/11/megaspeed-nvidia-chips-china-singapore-malaysia/"
+  },
+  {
+   "claim": "7Road shareholders include Beijing's central government; Bloomberg customs records: at least $4.6B of Nvidia hardware into SE Asia by Nov 2025; NYT: Chinese companies like Alibaba rented computing power; Nvidia: no evidence of diversion; Megaspeed rejects wrongdoing; China: claims baseless (Protos, fetched Nov 12 2026)",
+   "url": "https://protos.com/how-alice-huang-helped-nvidia-with-chinese-export-restrictions/"
+  },
+  {
+   "claim": "Timeline; WSJ: board preparing to oust Huang; stock down about 8% after hours; NYT Alibaba rented compute; Nvidia cloud partner (TechCrunch, fetched Nov 12 2026)",
+   "url": "https://techcrunch.com/2026/11/11/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/"
+  },
+  {
+   "claim": "WSJ: Nvidia preparing to remove Huang; Nov 11 close $173.73, after hours -8.14% to $159.51 (24/7 Wall St., fetched Nov 12 2026)",
+   "url": "https://247wallst.com/investing/2026/11/12/wsj-says-nvidia-is-preparing-to-oust-jensen-huang-over-alleged-affairs-heres-how-much-2000-shares-have-lost-over-the-last-month/"
+  },
+  {
+   "claim": "Board reportedly preparing to oust Huang; Megaspeed bought over $4.8bn of Nvidia chips since 2024; US probe (Silicon Republic, fetched Nov 12 2026)",
+   "url": "https://www.siliconrepublic.com/business/jensen-huang-nvidia-china-us-ai-2026-affair-second"
+  },
+  {
+   "claim": "Python check: (173.73-159.51)/173.73 = 8.19%; article says 8.14%, so the Reel says 'about 8%'",
+   "url": "https://247wallst.com/investing/2026/11/12/wsj-says-nvidia-is-preparing-to-oust-jensen-huang-over-alleged-affairs-heres-how-much-2000-shares-have-lost-over-the-last-month/"
+  }
+ ],
+ "post": {
+  "post_at": "2026-11-12T20:00:00+05:30",
+  "instagram_caption": "Nvidia's board is reportedly preparing to push out Jensen Huang, The Wall Street Journal says. But the affair isn't the real story. Follow the chips.\n\nAlice Huang was an executive at Megaspeed. It began as the Singapore arm of 7Road, a Chinese gaming company with state-backed shareholders. In 2023 it was sold to a Singapore businessman, and soon after Nvidia made it a cloud partner. Customs records show at least $4.6 billion of Nvidia hardware came in (Bloomberg). The New York Times reports Chinese companies like Alibaba rented computing power from these data centers, and The Information says a network tied to her family moved about $7.5 billion of Nvidia chips. Megaspeed denies wrongdoing, Nvidia says it found no evidence chips were diverted, Singapore is investigating Megaspeed, and China calls the spy claims baseless. Nvidia fell about 8% after hours on Nov 11 after the Journal's report. These are reported claims, not proven facts.\n\nWhere do you think the line is between a CEO's private life and a company's risk?\n\nSources: WSJ, NYT, Bloomberg, The Information, Fortune, TechCrunch. Education only. Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#nvidia #jensenhuang #megaspeed #stockmarket #therealnumber",
+  "youtube_title": "Forget the Affair: Follow Nvidia's $4.6 Billion of Chips",
+  "youtube_description": "Nvidia's board is reportedly preparing to push out Jensen Huang (WSJ). The bigger story: Megaspeed, where Alice Huang was an executive, began as the Singapore arm of Chinese gaming firm 7Road, became an Nvidia cloud partner in 2023, and brought in at least $4.6 billion of Nvidia hardware (Bloomberg, customs records). The NYT reports Chinese companies like Alibaba rented its computing power; The Information says a network tied to her family moved about $7.5 billion of Nvidia chips. Megaspeed denies wrongdoing, Nvidia says it found no evidence of diversion, Singapore is investigating, and China calls the spy claims baseless. Reported, not proven. As of Nov 12, 2026. Education only, not financial advice. AI narration.\n\nSources: Fortune https://fortune.com/2026/11/11/megaspeed-nvidia-chips-china-singapore-malaysia/ · Protos https://protos.com/how-alice-huang-helped-nvidia-with-chinese-export-restrictions/ · TechCrunch https://techcrunch.com/2026/11/11/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/ · 24/7 Wall St. https://247wallst.com/investing/2026/11/12/wsj-says-nvidia-is-preparing-to-oust-jensen-huang-over-alleged-affairs-heres-how-much-2000-shares-have-lost-over-the-last-month/\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#nvidia #jensenhuang #stockmarket",
+  "youtube_tags": [
+   "nvidia",
+   "jensen huang",
+   "megaspeed",
+   "alice huang",
+   "the real number"
+  ]
+ }
+}
