@@ -44,20 +44,18 @@ under 200. So every evergreen Reel is built to be watched to the END:
 - Run all arithmetic in Python, never in your head. Date-stamp anything that moves (prices, rates).
 - If you cannot verify the hero number, pick another topic. Never queue an unverified claim.
 
-## 4. Build the spec (dark style)
-Copy `specs/047_buffett_vs_market.json` as the template and write `specs/<NNN>_<slug>.json`
-(NNN = next number after the highest in specs/). It must have `"style": "dark"` and a `series` label that names
-the question (e.g. "The Penny Question", "The Buffett Question", "The Real Cost"). Visual rules
-(engine: `pipeline/render_dark.py`; elements text, count, pill, box, meter, hbar, strike, grid, follow):
-- Frame 0 (`"at": -1`) shows the hook question with the key number big (weight extra, size 130 to 170).
-- Choose the main "toy" by topic: `count` with `"curve": "exp"` + `meter` for growth/compounding;
-  `grid` (calendar cells lighting up, `gold_from` for the late surge) for day-by-day stories;
-  two `hbar`s for comparisons; a red `count` dropping for crashes; `pill`s numbered 4, 3, 2, 1 for countdowns.
-- Colours: green = the normal/first thing, gold = the payoff, red = losses and the struck-out wrong idea.
-- Element y values are BEFORE the engine's +110 offset: keep everything between y 280 and 1060 (captions at 1500).
-- `caption_keywords`: 5 to 10 words that light up green in the captions (numbers turn gold automatically).
-- Last scene: "THE REAL NUMBER ISN'T" + the struck-out wrong idea + "IT'S" + the answer in green, the `follow`
-  pill, and two small grey lines: the as-of date and source, and "Not financial advice."
+## 4. Write a BRIEF, not a full spec (the Reel kit, saves usage)
+Write `briefs/<NNN>_<slug>.json` (NNN = next number after the highest in specs/), then build the spec from it:
+`python pipeline/kit.py briefs/<id>.json`. The kit lays out every scene from ready, tested blocks, so you
+only choose the scene kind and fill in the words and numbers. Never hand-write scene coordinates.
+- Templates: `briefs/000_kit_example.json` (dark style, the default) and `briefs/000_kit_notebook_example.json`
+  (the original notebook look). The scene kinds and their fields are listed at the top of `pipeline/kit.py`.
+- One beat = one spoken phrase. A beat with `"show"` starts a new scene; beat 0 must have one (the hook frame).
+- Dark kinds: question, guess, counter, bars, countdown, myth, calendar, ending. Pick the main visual by topic:
+  counter for growth, calendar for day-by-day, bars for comparisons, countdown for "4 numbers, the last one...".
+- Notebook kinds: hook, facts, number, compare, ending. Use the notebook look only if Samrit asks for it.
+- `keywords`: 5 to 10 words that light up green in the captions (numbers turn gold automatically).
+- If `kit.py` prints LAYOUT PROBLEMS (text too wide), shorten that text and run it again.
 - `cover`: kicker (a short question or setup, 2 lines max), big (the payoff number, 2 to 7 characters), sub
   (1 to 2 short lines), date (source).
 - `post`: post_at is set by the run type (see the scheduled task prompt or the News Reels section below).
@@ -73,10 +71,10 @@ the question (e.g. "The Penny Question", "The Buffett Question", "The Real Cost"
 ## 5. Build and check
 ```
 pip install -r requirements.txt --break-system-packages -q
-python pipeline/make_reel.py specs/<id>.json --stills     # look at EVERY still with the Read tool
+python pipeline/make_reel.py specs/<id>.json --sheet      # ONE image: hook frame + every scene + cover; Read it once
 python pipeline/make_reel.py specs/<id>.json              # full render into queue/<id>/
 ```
-Look at the stills: no text off-screen, nothing overlapping, numbers on screen match the script, the hook
+Look at the sheet: no text off-screen, nothing overlapping, numbers on screen match the script, the hook
 is readable in frame 0, and the payoff only appears in the last 12 seconds.
 Fix and rebuild until clean. The spec checker refuses specs that break the caption rules.
 

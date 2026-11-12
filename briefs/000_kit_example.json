@@ -1,0 +1,200 @@
+{
+ "id": "000_kit_example",
+ "series": "The Buffett Question",
+ "speed": 1.08,
+ "keywords": [
+  "buffett",
+  "buffett's",
+  "market",
+  "market?",
+  "guess.",
+  "guess",
+  "years",
+  "run.",
+  "million",
+  "end."
+ ],
+ "beats": [
+  {
+   "say": "Would you rather put one thousand dollars into Warren Buffett's company in 1964,",
+   "cap": "Would you rather put $1,000 into Warren Buffett's company in 1964,",
+   "pause": 0.25,
+   "show": {
+    "kind": "question",
+    "top": "WOULD YOU RATHER PUT",
+    "big": "$1,000",
+    "sub": "IN 1964",
+    "options": [
+     "INTO WARREN BUFFETT'S COMPANY",
+     "INTO THE WHOLE STOCK MARKET"
+    ]
+   }
+  },
+  {
+   "say": "or into the whole stock market?",
+   "pause": 0.45
+  },
+  {
+   "say": "Lock in your guess. The answer is at the end.",
+   "pause": 0.4,
+   "show": {
+    "kind": "guess"
+   }
+  },
+  {
+   "say": "First, the market.",
+   "pause": 0.3,
+   "show": {
+    "kind": "counter",
+    "title": "THE MARKET",
+    "subtitle": "S&P 500, DIVIDENDS INCLUDED",
+    "rate": "~10.5% A YEAR",
+    "start": 1000,
+    "end": 461610,
+    "prefix": "$",
+    "color": "green",
+    "years": [
+     1964,
+     2025
+    ],
+    "at": 2,
+    "dur": 2.4
+   }
+  },
+  {
+   "say": "The S and P 500, dividends included, grew about ten and a half percent a year.",
+   "cap": "The S&P 500, dividends included, grew about 10.5% a year.",
+   "pause": 0.3
+  },
+  {
+   "say": "Your thousand dollars becomes",
+   "cap": "Your $1,000 becomes",
+   "pause": 0.15
+  },
+  {
+   "say": "four hundred sixty-one thousand dollars.",
+   "cap": "$461,610.",
+   "pause": 0.45
+  },
+  {
+   "say": "Not bad. Now, Buffett.",
+   "pause": 0.3,
+   "show": {
+    "kind": "counter",
+    "title": "BUFFETT",
+    "subtitle": "BERKSHIRE HATHAWAY, PER SHARE",
+    "rate": "19.7% A YEAR",
+    "start": 1000,
+    "end": 60993940,
+    "prefix": "$",
+    "color": "gold",
+    "payoff_color": "gold",
+    "payoff_after": 461611,
+    "years": [
+     1964,
+     2025
+    ],
+    "at": 2,
+    "dur": 4.2,
+    "badge": "OVERALL GAIN: 6,099,294%"
+   }
+  },
+  {
+   "say": "Berkshire Hathaway grew nineteen point seven percent a year.",
+   "cap": "Berkshire Hathaway grew 19.7% a year.",
+   "pause": 0.3
+  },
+  {
+   "say": "Same thousand dollars.",
+   "cap": "Same $1,000.",
+   "pause": 0.2
+  },
+  {
+   "say": "Keep watching.",
+   "pause": 1.2
+  },
+  {
+   "say": "Sixty-one million dollars.",
+   "cap": "$61 million.",
+   "pause": 0.5
+  },
+  {
+   "say": "That's a hundred and thirty-two times more money,",
+   "cap": "That's 132 times more money,",
+   "pause": 0.2,
+   "show": {
+    "kind": "bars",
+    "a": {
+     "label": "THE MARKET (S&P 500)",
+     "value": "$461,610",
+     "frac": 0.0076,
+     "color": "green"
+    },
+    "b": {
+     "label": "BUFFETT (BERKSHIRE)",
+     "value": "$61.0M",
+     "frac": 1.0,
+     "color": "gold"
+    },
+    "big": "132×",
+    "note": "FROM ~9 POINTS A YEAR"
+   }
+  },
+  {
+   "say": "from a gap of about nine points a year.",
+   "cap": "from a gap of about 9 points a year.",
+   "pause": 0.5
+  },
+  {
+   "say": "The real number isn't the return.",
+   "pause": 0.25,
+   "show": {
+    "kind": "ending",
+    "wrong": "THE RETURN",
+    "right": [
+     "HOW MANY YEARS",
+     "YOU LET IT RUN"
+    ],
+    "source": "Figures to the end of 2025, from Berkshire's 2025 letter.",
+    "disclaimer": "Past results don't guarantee future returns. Not financial advice."
+   }
+  },
+  {
+   "say": "It's how many years you let it run.",
+   "pause": 0.5
+  },
+  {
+   "say": "Follow for more.",
+   "pause": 0.8
+  }
+ ],
+ "cover": {
+  "kicker": "$1,000 with Buffett\nin 1964 became",
+  "big": "$61M",
+  "sub": "vs $461,610\nin the market",
+  "date": "Berkshire 2025 letter"
+ },
+ "sources": [
+  {
+   "claim": "Berkshire per-share market value: 19.7% compounded annual gain 1965-2025, overall gain 6,099,294% 1964-2025; S&P 500 with dividends: 10.5% a year, overall 46,061% (fetched Nov 11 2026)",
+   "url": "https://www.berkshirehathaway.com/letters/2025ltr.pdf"
+  },
+  {
+   "claim": "Python: $1,000 x (1+60,992.94) = $60,993,940; $1,000 x (1+460.61) = $461,610; ratio 132.1; implied CAGRs 19.8% and 10.6% over 61 years (matches the letter's rounding)",
+   "url": "https://www.berkshirehathaway.com/letters/2025ltr.pdf"
+  }
+ ],
+ "post": {
+  "post_at": "2026-11-11T22:00:00+05:30",
+  "instagram_caption": "Would you rather have put $1,000 into Warren Buffett's company in 1964, or into the whole stock market?\n\nFrom 1964 to the end of 2025, the S&P 500 with dividends gained 46,061% overall, about 10.5% a year. $1,000 became $461,610. Berkshire Hathaway's per-share market value gained 6,099,294%, about 19.7% a year. $1,000 became about $61 million. That's 132 times more, from a gap of about 9 points a year.\n\nWhat did you guess before the counter stopped?\n\nSource: Berkshire Hathaway 2025 shareholder letter (performance table). Past results don't guarantee future returns. Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#warrenbuffett #compounding #investing #stockmarket #therealnumber",
+  "youtube_title": "$1,000 With Warren Buffett in 1964 vs the Stock Market",
+  "youtube_description": "$1,000 in the S&P 500 (dividends included) from 1964 to the end of 2025 became $461,610. The same $1,000 in Berkshire Hathaway became about $61 million: 132 times more, from a gap of about 9 points a year.\n\nSource: Berkshire Hathaway 2025 shareholder letter, performance table: https://www.berkshirehathaway.com/letters/2025ltr.pdf\nPast results don't guarantee future returns. Education only, not financial advice. AI narration.\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#warrenbuffett #compounding #investing",
+  "youtube_tags": [
+   "warren buffett",
+   "berkshire hathaway",
+   "compounding",
+   "s&p 500",
+   "the real number"
+  ]
+ }
+}

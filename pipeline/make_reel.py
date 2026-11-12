@@ -45,6 +45,21 @@ def main():
     wav = os.path.join(out, "voice.wav")
     _, times, total = voice.synth(spec["phrases"], wav, spec.get("voice", "am_michael"), spec.get("speed", 1.08))
     json.dump({"phrase_times": times, "total": total}, open(os.path.join(out, "timing.json"), "w"), indent=1)
+    if "--sheet" in sys.argv:          # cheap check: one image, one frame per scene (all its elements on screen)
+        ends = [(times[sc["until"]][0] - 0.25) if sc["until"] != "end" else total - 0.3 for sc in spec["scenes"]]
+        ts = [0.0] + [round(t, 2) for t in ends]
+        base = os.path.join(out, "check")
+        render.render(spec, times, total, wav, base, stills=ts)
+        from PIL import Image
+        ims = [Image.open(f"{base}.still_{t:05.1f}.png").resize((360, 640)) for t in ts]
+        cols = min(4, len(ims)); rows = (len(ims) + cols - 1) // cols
+        sheet = Image.new("RGB", (360 * cols, 640 * rows + 360))
+        for i, im in enumerate(ims): sheet.paste(im, ((i % cols) * 360, (i // cols) * 640))
+        cov = os.path.join(out, "cover.png"); render.cover(spec, cov)
+        sheet.paste(Image.open(cov).resize((202, 360)), (0, 640 * rows))
+        sheet.save(os.path.join(out, "sheet.png"))
+        for t in ts: os.remove(f"{base}.still_{t:05.1f}.png")
+        print("check sheet:", os.path.join(out, "sheet.png"), f"({total:.1f}s)"); return
     if "--stills" in sys.argv:
         ts = [0.0] + [round((s + e) / 2, 2) for s, e in times]
         render.render(spec, times, total, wav, os.path.join(out, "check"), stills=ts)
