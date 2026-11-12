@@ -18,7 +18,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
-      - run: pip install -q requests google-api-python-client google-auth
+      - run: pip install -q requests google-api-python-client google-auth pillow
+      - name: Get the latest queue (a run that started earlier may already have posted it)
+        run: git pull -q --ff-only origin main || true
       - name: Post breaking Reels that are due
         id: post
         continue-on-error: true
@@ -30,7 +32,7 @@ jobs:
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
           YT_PRIVACY: ${{ vars.YT_PRIVACY || 'public' }}
-        run: python poster/publish_due.py --breaking-only
+        run: git pull -q --ff-only origin main || true; python poster/publish_due.py --breaking-only
       - name: Save results
         env: { GITHUB_TOKEN: "${{ github.token }}" }
         run: |
