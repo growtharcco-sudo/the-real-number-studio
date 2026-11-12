@@ -1,0 +1,401 @@
+{
+ "id": "049_huang_resigns",
+ "style": "notebook",
+ "series": "Money News",
+ "voice": "am_michael",
+ "speed": 1.1,
+ "caption_keywords": [],
+ "phrases": [
+  {
+   "say": "Jensen Huang is out as Nvidia's C E O.",
+   "cap": "Jensen Huang is out as Nvidia's CEO.",
+   "pause": 0.4
+  },
+  {
+   "say": "He resigned today, effective immediately, and gave up his board seat too.",
+   "pause": 0.45
+  },
+  {
+   "say": "Nvidia's finance chief, Colette Kress, takes over for now,",
+   "pause": 0.2
+  },
+  {
+   "say": "while the board searches inside and outside the company.",
+   "pause": 0.45
+  },
+  {
+   "say": "The stock fell more than ten percent in early trading,",
+   "cap": "The stock fell more than 10% in early trading,",
+   "pause": 0.2
+  },
+  {
+   "say": "and Bloomberg says its market value dropped below four trillion dollars.",
+   "cap": "and Bloomberg says its market value dropped below $4 trillion.",
+   "pause": 0.45
+  },
+  {
+   "say": "It took two weeks.",
+   "pause": 0.25
+  },
+  {
+   "say": "A spy report. An admitted affair. A board report. And now, a resignation.",
+   "pause": 0.45
+  },
+  {
+   "say": "At its overnight low, the stock was about thirty-five percent below its October record.",
+   "cap": "At its overnight low, the stock was about 35% below its October record.",
+   "pause": 0.45
+  },
+  {
+   "say": "He co-founded Nvidia in 1993. Thirty-three years later, he's out.",
+   "pause": 0.45
+  },
+  {
+   "say": "Follow for more.",
+   "pause": 0.6
+  }
+ ],
+ "scenes": [
+  {
+   "until": 2,
+   "els": [
+    {
+     "type": "photo",
+     "src": "work/jensen_huang.png",
+     "y": 345,
+     "w": 380,
+     "at": -1
+    },
+    {
+     "type": "text",
+     "text": "out as Nvidia CEO",
+     "y": 800,
+     "at": -1,
+     "font": "hand",
+     "size": 54,
+     "color": "blue",
+     "rot": -1.5,
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "−10%+",
+     "y": 875,
+     "at": -1,
+     "font": "head",
+     "size": 120,
+     "color": "red",
+     "mode": "fade",
+     "id": "hero"
+    }
+   ]
+  },
+  {
+   "until": 4,
+   "els": [
+    {
+     "type": "text",
+     "text": "what happened, Nov 12:",
+     "y": 380,
+     "at": 2,
+     "font": "hand",
+     "size": 60,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "Huang resigns, effective now",
+     "y": 480,
+     "at": 2,
+     "size": 46
+    },
+    {
+     "type": "text",
+     "text": "leaves the board too",
+     "y": 590,
+     "at": 3,
+     "size": 46
+    },
+    {
+     "type": "text",
+     "text": "interim CEO: Colette Kress",
+     "y": 700,
+     "at": 3,
+     "size": 46
+    },
+    {
+     "type": "text",
+     "text": "search: inside and outside",
+     "y": 810,
+     "at": 3,
+     "size": 46,
+     "id": "f2"
+    },
+    {
+     "type": "highlight",
+     "of": "f2",
+     "at": 3,
+     "delay": 0.4
+    }
+   ]
+  },
+  {
+   "until": 6,
+   "els": [
+    {
+     "type": "text",
+     "text": "Nvidia, early trading:",
+     "y": 380,
+     "at": 4,
+     "font": "hand",
+     "size": 60,
+     "color": "blue"
+    },
+    {
+     "type": "count",
+     "value": 10,
+     "prefix": "−",
+     "suffix": "%+",
+     "decimals": 0,
+     "y": 480,
+     "size": 150,
+     "color": "red",
+     "at": 4,
+     "id": "n4"
+    },
+    {
+     "type": "underline",
+     "of": "n4",
+     "color": "red",
+     "at": 4,
+     "delay": 1.0
+    },
+    {
+     "type": "text",
+     "text": "value now under $4 trillion",
+     "y": 720,
+     "at": 5,
+     "font": "hand",
+     "size": 54,
+     "color": "grey"
+    }
+   ]
+  },
+  {
+   "until": 8,
+   "els": [
+    {
+     "type": "text",
+     "text": "how we got here:",
+     "y": 380,
+     "at": 6,
+     "font": "hand",
+     "size": 60,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "Oct 29: spy report (NYT)",
+     "y": 480,
+     "at": 6,
+     "size": 46
+    },
+    {
+     "type": "text",
+     "text": "Nov 8: Huang admits affair",
+     "y": 590,
+     "at": 7,
+     "size": 46
+    },
+    {
+     "type": "text",
+     "text": "Nov 11: WSJ, board moves",
+     "y": 700,
+     "at": 7,
+     "size": 46
+    },
+    {
+     "type": "text",
+     "text": "Nov 12: Huang resigns",
+     "y": 810,
+     "at": 7,
+     "size": 46,
+     "id": "f6"
+    },
+    {
+     "type": "highlight",
+     "of": "f6",
+     "at": 7,
+     "delay": 0.4
+    }
+   ]
+  },
+  {
+   "until": 9,
+   "els": [
+    {
+     "type": "text",
+     "text": "from the record:",
+     "y": 380,
+     "at": 8,
+     "font": "hand",
+     "size": 60,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "Oct 6 record close",
+     "y": 480,
+     "at": 8,
+     "size": 40,
+     "color": "grey",
+     "x": 135
+    },
+    {
+     "type": "bar",
+     "x": 135,
+     "y": 540,
+     "w": 725,
+     "color": "grey",
+     "at": 8,
+     "delay": 0.2
+    },
+    {
+     "type": "text",
+     "text": "$239.24",
+     "y": 600,
+     "at": 8,
+     "font": "head",
+     "size": 56,
+     "x": 135
+    },
+    {
+     "type": "text",
+     "text": "overnight low, Nov 12",
+     "y": 700,
+     "at": 8,
+     "size": 40,
+     "color": "grey",
+     "x": 135
+    },
+    {
+     "type": "bar",
+     "x": 135,
+     "y": 760,
+     "w": 473,
+     "color": "red",
+     "at": 8,
+     "delay": 0.2
+    },
+    {
+     "type": "text",
+     "text": "$156.20",
+     "y": 820,
+     "at": 8,
+     "font": "head",
+     "size": 56,
+     "color": "red",
+     "x": 135,
+     "id": "c8"
+    },
+    {
+     "type": "highlight",
+     "of": "c8",
+     "at": 8,
+     "delay": 0.8
+    }
+   ]
+  },
+  {
+   "until": "end",
+   "els": [
+    {
+     "type": "card",
+     "label": "note:",
+     "lines": [
+      "As of Nov 12, 2026, early US trading.",
+      "Sources: Nvidia via Engadget, Yahoo Finance,",
+      "CTV/CP24, Bloomberg, NYT, WSJ.",
+      "Education only. Not financial advice."
+     ],
+     "y": 380,
+     "at": 9
+    },
+    {
+     "type": "text",
+     "text": "follow for",
+     "y": 930,
+     "at": 9,
+     "font": "hand",
+     "size": 52,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "The Real Number",
+     "y": 1000,
+     "at": 9,
+     "font": "head",
+     "size": 66,
+     "delay": 0.18,
+     "mode": "fade",
+     "id": "rn"
+    },
+    {
+     "type": "highlight",
+     "of": "rn",
+     "at": 9,
+     "delay": 0.33
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "kicker": "breaking",
+  "big": "OUT",
+  "sub": "Jensen Huang leaves Nvidia",
+  "date": "Nov 12, 2026",
+  "big_color": "red",
+  "big_size": 190
+ },
+ "sources": [
+  {
+   "claim": "Board: Huang 'resigned his position as president and chief executive', gave up board seat; Kress interim CEO; search internal and external candidates (Engadget, 9:04 a.m. EST Nov 12 2026, fetched 20:20 IST)",
+   "url": "https://www.engadget.com/2314584/jensen-huang-is-out-as-nvidia-ceo/"
+  },
+  {
+   "claim": "Resign effective immediately; Kress interim; NVDA -10.33% on page; overnight low $156.20; record close $239.24 Oct 6 (Yahoo Finance live, fetched Nov 12 2026)",
+   "url": "https://finance.yahoo.com/technology/live/nvidia-live-updates-jensen-huang-resigns-cfo-colette-kress-to-serve-as-interim-ceo-140341430.html"
+  },
+  {
+   "claim": "Nvidia tumbled 13-14% after Huang resigned; after-hours -8.6% Wed (CP24/AP, fetched Nov 12 2026)",
+   "url": "https://www.cp24.com/news/money/2026/11/12/nvidia-shares-plunge-13-at-open-after-ceo-jensen-huang-resigns/"
+  },
+  {
+   "claim": "Bloomberg: Nvidia market cap falls under $4 trillion after Huang steps down (headline, Nov 12 2026)",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-12/nvidia-market-value-sinks-below-4-trillion-after-huang-resigns"
+  },
+  {
+   "claim": "Timeline: NYT Oct 29 spy report; Huang admission; WSJ Nov 11 board (TechCrunch, fetched Nov 12 2026)",
+   "url": "https://techcrunch.com/2026/11/11/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/"
+  },
+  {
+   "claim": "Python: 1 - 156.20/239.24 = 34.7%, about 35%",
+   "url": "https://finance.yahoo.com/technology/live/nvidia-live-updates-jensen-huang-resigns-cfo-colette-kress-to-serve-as-interim-ceo-140341430.html"
+  }
+ ],
+ "post": {
+  "post_at": "2026-11-12T20:18:00+05:30",
+  "breaking": true,
+  "instagram_caption": "Jensen Huang is out as Nvidia's CEO.\n\nNvidia's board said Huang resigned as president and CEO effective immediately and gave up his board seat. CFO Colette Kress is interim CEO while the board searches for a permanent CEO among internal and external candidates. The stock fell more than 10% in early trading on Nov 12, and Bloomberg reports Nvidia's market value dropped below $4 trillion. It took two weeks: a spy report (NYT, Oct 29), an admitted affair (Nov 8), a WSJ report that the board was moving (Nov 11), and now a resignation. At its overnight low of $156.20, the stock was about 35% below its Oct 6 record close of $239.24.\n\nCan a company this big be priced on one person?\n\nSources: Nvidia (via Engadget), Yahoo Finance, CP24, Bloomberg. Education only. Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#nvidia #jensenhuang #stockmarket #breakingnews #therealnumber",
+  "youtube_title": "Jensen Huang Is Out as Nvidia CEO: What Just Happened",
+  "youtube_description": "Nvidia's board said Jensen Huang resigned as president and CEO effective immediately and left the board. CFO Colette Kress is interim CEO while the board searches for a permanent CEO. The stock fell more than 10% in early trading on Nov 12, 2026, and Bloomberg reports its market value dropped below $4 trillion. At its overnight low of $156.20, it was about 35% below its Oct 6 record close of $239.24. Education only, not financial advice. AI narration.\n\nSources: Engadget https://www.engadget.com/2314584/jensen-huang-is-out-as-nvidia-ceo/ · Yahoo Finance https://finance.yahoo.com/technology/live/nvidia-live-updates-jensen-huang-resigns-cfo-colette-kress-to-serve-as-interim-ceo-140341430.html · CP24 https://www.cp24.com/news/money/2026/11/12/nvidia-shares-plunge-13-at-open-after-ceo-jensen-huang-resigns/\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#nvidia #jensenhuang #stockmarket",
+  "youtube_tags": [
+   "nvidia",
+   "jensen huang",
+   "colette kress",
+   "nvidia stock",
+   "the real number"
+  ]
+ }
+}
