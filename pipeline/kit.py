@@ -133,7 +133,11 @@ def nb_block(kind, s, b, nb):
     if kind == "hook":
         els = []; y = 400
         if s.get("photo"):
-            els.append({"type": "photo", "src": s["photo"], "y": 345, "w": 380, "at": first}); y = 800
+            from PIL import Image as _I
+            import os as _os
+            pw, ph = _I.open(_os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), s["photo"])).size
+            w = 380 if ph <= pw * 1.05 else 320; h = round(w * ph / pw)        # portraits a bit narrower
+            els.append({"type": "photo", "src": s["photo"], "y": 345, "w": w, "at": first}); y = 345 + h + 75
         if s.get("sub") and s.get("photo"):
             els.append(T(s["sub"], y, first, font="hand", size=54, color="blue", rot=-1.5, mode="fade")); y += 75
         els.append(T(s["big"], y, first, font="head", size=120 if s.get("photo") else 170, color=c, mode="fade", id="hero"))

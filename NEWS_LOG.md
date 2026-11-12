@@ -8,3 +8,4 @@
 2026-11-10 13:43 IST | breaking | 046_nvidia_spy_story | Nvidia -4.27%, about $190B, after Huang spy story (reported), re-made with Huang photo
 2026-11-12 18:48 IST | news | 048_megaspeed_chips | Megaspeed: $4.6B+ of Nvidia hardware; WSJ says board preparing to oust Huang
 2026-11-12 20:20 IST | breaking | 049_huang_resigns | Huang resigns as Nvidia CEO; Kress interim; stock -10%+
+2026-11-12 20:24 IST | breaking | 050_huang_resigns | re-post of 049 with Kress photo (049 deleted by Samrit)
