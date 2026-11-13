@@ -9,3 +9,4 @@
 2026-11-12 18:48 IST | news | 048_megaspeed_chips | Megaspeed: $4.6B+ of Nvidia hardware; WSJ says board preparing to oust Huang
 2026-11-12 20:20 IST | breaking | 049_huang_resigns | Huang resigns as Nvidia CEO; Kress interim; stock -10%+
 2026-11-12 20:24 IST | breaking | 050_huang_resigns | re-post of 049 with Kress photo (049 deleted by Samrit)
+2026-11-13 13:19 IST | breaking | 051_connected_or_not | Binance + Nvidia + stablecoin rule: connected? checked

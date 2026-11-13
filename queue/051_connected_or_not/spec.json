@@ -1,0 +1,365 @@
+{
+ "id": "051_connected_or_not",
+ "style": "notebook",
+ "series": "Money News",
+ "voice": "am_michael",
+ "speed": 1.1,
+ "caption_keywords": [],
+ "phrases": [
+  {
+   "say": "Three giant money stories in three weeks. The internet says they're all connected. Let's check.",
+   "pause": 0.45
+  },
+  {
+   "say": "One. Binance lost about six point three billion dollars, after hackers got in through an engineer's laptop.",
+   "cap": "One. Binance lost about $6.3 billion, after hackers got in through an engineer's laptop.",
+   "pause": 0.3
+  },
+  {
+   "say": "Blockchain firm TRM Labs blames a North Korean hacking group. About two point seven billion was frozen.",
+   "cap": "Blockchain firm TRM Labs blames a North Korean hacking group. About $2.7 billion was frozen.",
+   "pause": 0.45
+  },
+  {
+   "say": "Two. Jensen Huang quit as Nvidia's C E O, after U S intelligence suspected the woman he had an affair with of working for China.",
+   "cap": "Two. Jensen Huang quit as Nvidia's CEO, after US intelligence suspected the woman he had an affair with of working for China.",
+   "pause": 0.45
+  },
+  {
+   "say": "Three. A new U S stablecoin rule bans issuers from paying interest, but leaves room for crypto platforms.",
+   "cap": "Three. A new US stablecoin rule bans issuers from paying interest, but leaves room for crypto platforms.",
+   "pause": 0.3
+  },
+  {
+   "say": "America's banks warn that could pull deposits out of banks.",
+   "pause": 0.45
+  },
+  {
+   "say": "So, one plot? The evidence points to three different players.",
+   "pause": 0.3
+  },
+  {
+   "say": "North Korea. China. And banks fighting crypto.",
+   "pause": 0.5
+  },
+  {
+   "say": "The real link isn't a secret plan. It's a fight over who controls the new pipes of money.",
+   "pause": 0.4
+  },
+  {
+   "say": "Follow for the real number.",
+   "pause": 0.6
+  }
+ ],
+ "scenes": [
+  {
+   "until": 1,
+   "els": [
+    {
+     "type": "text",
+     "text": "3 stories",
+     "y": 400,
+     "at": -1,
+     "font": "head",
+     "size": 170,
+     "color": "red",
+     "mode": "fade",
+     "id": "hero"
+    },
+    {
+     "type": "text",
+     "text": "one plot?",
+     "y": 630,
+     "at": -1,
+     "font": "hand",
+     "size": 60,
+     "color": "blue",
+     "rot": -1.5,
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "Oct 21 to Nov 12, 2026",
+     "y": 730,
+     "at": -1,
+     "font": "hand",
+     "size": 44,
+     "color": "grey",
+     "mode": "fade"
+    }
+   ]
+  },
+  {
+   "until": 3,
+   "els": [
+    {
+     "type": "text",
+     "text": "story 1: Binance, Oct 30",
+     "y": 380,
+     "at": 1,
+     "font": "hand",
+     "size": 60,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "about $6.3B drained",
+     "y": 480,
+     "at": 1,
+     "size": 46
+    },
+    {
+     "type": "text",
+     "text": "way in: an engineer's laptop",
+     "y": 590,
+     "at": 2,
+     "size": 46
+    },
+    {
+     "type": "text",
+     "text": "TRM Labs: North Korea",
+     "y": 700,
+     "at": 2,
+     "size": 46
+    },
+    {
+     "type": "text",
+     "text": "about $2.7B frozen",
+     "y": 810,
+     "at": 2,
+     "size": 46,
+     "id": "f1"
+    },
+    {
+     "type": "highlight",
+     "of": "f1",
+     "at": 2,
+     "delay": 0.4
+    }
+   ]
+  },
+  {
+   "until": 4,
+   "els": [
+    {
+     "type": "photo",
+     "src": "work/jensen_huang.png",
+     "y": 345,
+     "w": 380,
+     "at": 3
+    },
+    {
+     "type": "text",
+     "text": "story 2: Nvidia, Nov 12",
+     "y": 800,
+     "at": 3,
+     "font": "hand",
+     "size": 54,
+     "color": "blue",
+     "rot": -1.5,
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "CEO out",
+     "y": 875,
+     "at": 3,
+     "font": "head",
+     "size": 120,
+     "color": "red",
+     "mode": "fade",
+     "id": "hero"
+    }
+   ]
+  },
+  {
+   "until": 6,
+   "els": [
+    {
+     "type": "text",
+     "text": "story 3: banks vs crypto",
+     "y": 380,
+     "at": 4,
+     "font": "hand",
+     "size": 60,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "Oct 21: OCC final rule",
+     "y": 480,
+     "at": 4,
+     "size": 46
+    },
+    {
+     "type": "text",
+     "text": "issuers: no interest",
+     "y": 590,
+     "at": 5,
+     "size": 46
+    },
+    {
+     "type": "text",
+     "text": "platforms: case by case",
+     "y": 700,
+     "at": 5,
+     "size": 46
+    },
+    {
+     "type": "text",
+     "text": "banks warn: “deposit flight”",
+     "y": 810,
+     "at": 5,
+     "size": 46,
+     "id": "f4"
+    },
+    {
+     "type": "highlight",
+     "of": "f4",
+     "at": 5,
+     "delay": 0.4
+    }
+   ]
+  },
+  {
+   "until": 8,
+   "els": [
+    {
+     "type": "text",
+     "text": "so, one plot?",
+     "y": 380,
+     "at": 6,
+     "font": "hand",
+     "size": 60,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "Binance: North Korea (TRM)",
+     "y": 480,
+     "at": 6,
+     "size": 46
+    },
+    {
+     "type": "text",
+     "text": "Nvidia: China (US officials)",
+     "y": 590,
+     "at": 7,
+     "size": 46
+    },
+    {
+     "type": "text",
+     "text": "stablecoins: banks vs crypto",
+     "y": 700,
+     "at": 7,
+     "size": 46
+    },
+    {
+     "type": "text",
+     "text": "3 different players",
+     "y": 810,
+     "at": 7,
+     "size": 46,
+     "id": "f6"
+    },
+    {
+     "type": "highlight",
+     "of": "f6",
+     "at": 7,
+     "delay": 0.4
+    }
+   ]
+  },
+  {
+   "until": "end",
+   "els": [
+    {
+     "type": "card",
+     "label": "note:",
+     "lines": [
+      "Reported claims, as of Nov 13, 2026.",
+      "Sources: Euronews, TRM Labs, The Block,",
+      "ABA, NYT, Engadget, Yahoo Finance.",
+      "Education only. Not financial advice."
+     ],
+     "y": 380,
+     "at": 8
+    },
+    {
+     "type": "text",
+     "text": "follow for",
+     "y": 930,
+     "at": 8,
+     "font": "hand",
+     "size": 52,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "The Real Number",
+     "y": 1000,
+     "at": 8,
+     "font": "head",
+     "size": 66,
+     "delay": 0.18,
+     "mode": "fade",
+     "id": "rn"
+    },
+    {
+     "type": "highlight",
+     "of": "rn",
+     "at": 8,
+     "delay": 0.33
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "kicker": "3 money stories",
+  "big": "1 plot?",
+  "sub": "we checked",
+  "date": "Binance · Nvidia · stablecoins",
+  "big_color": "red",
+  "big_size": 180
+ },
+ "sources": [
+  {
+   "claim": "Binance: about $6.3B impact; DevOps engineer laptop entry point; ~$2.7B frozen; TRM Labs attributes to North Korea's TraderTraitor 'with high confidence' (Euronews, fetched Nov 13 2026)",
+   "url": "https://www.euronews.com/2026/10/30/how-the-binance-hack-happened-and-who-was-behind-it"
+  },
+  {
+   "claim": "Binance says compromised engineer's laptop may have opened the $6.3B drain (Yahoo Finance)",
+   "url": "https://finance.yahoo.com/markets/crypto/articles/binance-says-compromised-engineer-laptop-161203953.html"
+  },
+  {
+   "claim": "OCC final GENIUS rule Oct 21 2026: issuers barred from paying interest; third-party presumption dropped, case by case; ABA: gaps risk 'deposit flight' (The Block, fetched Nov 13 2026)",
+   "url": "https://www.theblock.co/news/regulation/2026-10-21-american-bankers-association-accuses-occ-undermining-congress-stablecoin-rewards-rule-421629"
+  },
+  {
+   "claim": "ABA statement on OCC final rule implementing the GENIUS Act",
+   "url": "https://www.aba.com/about-us/press-room/press-releases/aba-statement-on-occ-final-rule-implementing-the-genius-act"
+  },
+  {
+   "claim": "Huang resigned as CEO Nov 12 2026; Kress interim (Engadget)",
+   "url": "https://www.engadget.com/2314584/jensen-huang-is-out-as-nvidia-ceo/"
+  },
+  {
+   "claim": "NYT Oct 29: US intelligence concluded Alice Huang passed information to Beijing; Huang admitted affair (TechCrunch timeline)",
+   "url": "https://techcrunch.com/2026/11/11/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/"
+  }
+ ],
+ "post": {
+  "post_at": "2026-11-13T13:18:00+05:30",
+  "breaking": true,
+  "instagram_caption": "Three giant money stories in three weeks. The internet says they're all connected. We checked.\n\n1. Binance (Oct 30): about $6.3 billion drained after hackers got in through an engineer's laptop. TRM Labs blames North Korea's TraderTraitor group; about $2.7 billion was frozen.\n2. Nvidia (Nov 12): Jensen Huang resigned as CEO after US intelligence suspected the woman he had an affair with of working for China (reported, not proven).\n3. Stablecoins (Oct 21): the OCC's final GENIUS Act rule bans issuers from paying interest but treats platform rewards case by case. The American Bankers Association warns of deposit flight.\n\nThree different players: North Korea, China, and banks vs crypto. The real link isn't a secret plan. It's a fight over who controls the new pipes of money.\n\nWhich of the three do you think matters most for your money?\n\nSources: Euronews, TRM Labs, The Block, ABA, NYT, Engadget. Crypto products are unregulated and can be highly risky. Education only. Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#binance #nvidia #stablecoins #crypto #therealnumber",
+  "youtube_title": "Binance, Nvidia, Stablecoins: Is It All Connected? We Checked",
+  "youtube_description": "Three giant money stories in three weeks: the $6.3 billion Binance hack (TRM Labs blames North Korea), Jensen Huang's exit from Nvidia after a reported China spy probe, and the OCC's final GENIUS Act stablecoin rule that banks say risks deposit flight. Is it one plot? The evidence points to three different players. Reported claims, as of Nov 13, 2026. Crypto products are unregulated and can be highly risky. Education only, not financial advice. AI narration.\n\nSources: Euronews https://www.euronews.com/2026/10/30/how-the-binance-hack-happened-and-who-was-behind-it · The Block https://www.theblock.co/news/regulation/2026-10-21-american-bankers-association-accuses-occ-undermining-congress-stablecoin-rewards-rule-421629 · Engadget https://www.engadget.com/2314584/jensen-huang-is-out-as-nvidia-ceo/\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#binance #nvidia #stablecoins",
+  "youtube_tags": [
+   "binance hack",
+   "nvidia",
+   "stablecoins",
+   "genius act",
+   "the real number"
+  ]
+ }
+}
