@@ -126,6 +126,8 @@ def block(kind, s, b, nb):
 #   number   label, value, prefix, suffix, decimals, note, color
 #   compare  label, a={label, value, frac}, b={...}, color
 #   ending   lines=[note card lines] (as-of date, sources, "Education only. Not financial advice.")
+# Any notebook scene can add "stick": {"pose": point|shocked|think|cheer|shrug, "bubble": "short line"}
+# for the stickman host (bottom right). Keep bubbles under ~16 characters.
 def nb_block(kind, s, b, nb):
     def at(n=0): return b + min(n, nb - 1)
     first = -1 if b == 0 else at()
@@ -191,7 +193,12 @@ def build_spec(brief):
         nxt = starts[k + 1] if k + 1 < len(starts) else len(beats)
         sh = beats[b]["show"]
         fn = nb_block if brief.get("style") == "notebook" else block
-        scenes.append({"until": nxt if k + 1 < len(starts) else "end", "els": fn(sh["kind"], sh, b, nxt - b)})
+        els = fn(sh["kind"], sh, b, nxt - b)
+        st = sh.get("stick")                      # optional stickman host: {"pose": ..., "bubble": "..."}
+        if st and brief.get("style") == "notebook":
+            els.append({"type": "stick", "pose": st.get("pose", "point"), "bubble": st.get("bubble"),
+                        "x": 915, "y": 1120, "h": 270, "at": -1 if b == 0 else b, "delay": 0.0 if b == 0 else 0.2})
+        scenes.append({"until": nxt if k + 1 < len(starts) else "end", "els": els})
     for e in scenes[0]["els"]:            # the hook frame must be fully visible at frame 0 (thumbnail + first look)
         if e.get("at") == 0 and e["type"] not in ("strike",): e["at"] = -1; e.pop("delay", None)
     spec = {"id": brief["id"], "style": brief.get("style", "dark"), "series": brief["series"], "voice": brief.get("voice", "am_michael"),

@@ -185,6 +185,68 @@ class Photo(El):
         if a > 0: fr.alpha_composite(fade(s.img, a), (s.x, int(s.y + 24 * (1 - p))))
 
 
+class Stick(El):
+    """Hand-drawn stickman host. Poses: point, shocked, think, cheer, shrug. Gentle bob so he never sits still.
+    x, y = centre of his feet. Optional speech bubble (hand font) above his head."""
+    def __init__(s, pose, x, y, h, t0, t1, bubble=None, color="ink"):
+        super().__init__(t0, t1, 0.3); s.pose, s.x, s.y, s.h, s.bubble = pose, x, y, h, bubble
+        s.col = COL.get(color, COL["ink"])
+        s.bimg = None
+        if bubble:
+            f = font("hand", 44); w = int(f.getlength(bubble)) + 44; hh = 70
+            im = Image.new("RGBA", (w + 34, hh + 8), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+            d.rounded_rectangle([4, 4, w + 4, hh + 4], 30, fill=(255, 254, 248, 255), outline=s.col + (255,), width=4)
+            d.polygon([(w + 1, hh * 0.35), (w + 30, hh * 0.5), (w + 1, hh * 0.65)], fill=(255, 254, 248, 255))
+            d.line([(w + 4, hh * 0.35), (w + 30, hh * 0.5), (w + 4, hh * 0.65)], fill=s.col + (255,), width=4)
+            d.text((26, 10), bubble, font=f, fill=s.col + (255,))
+            s.bimg = im
+
+    def draw(s, fr, d, t):
+        p = ease(s.p(t)); a = s.a(t) * p
+        if a <= 0: return
+        import math as m
+        k = s.h / 300.0; tt = max(0., t - s.t0)
+        bob = 4 * k * m.sin(tt * 3.0); wave = m.sin(tt * 6.0)
+        c = s.col + (int(255 * a),); W = max(4, int(7 * k))
+        x, yb = s.x, s.y - 30 * (1 - p)
+        hip = (x, yb - 120 * k + bob); neck = (x, yb - 215 * k + bob); hc = (x, yb - 255 * k + bob); r = 38 * k
+        d.line([hip, neck], fill=c, width=W)
+        lean = {"shocked": -10}.get(s.pose, 0) * k
+        d.line([hip, (x - 42 * k, yb)], fill=c, width=W); d.line([hip, (x + 42 * k + lean, yb)], fill=c, width=W)
+        sh = (x, neck[1] + 18 * k)
+        P = s.pose
+        if P == "point":
+            L = [(x - 40 * k, sh[1] + 55 * k), (x - 52 * k, sh[1] + 100 * k)]
+            R = [(x - 55 * k, sh[1] - 25 * k), (x - 95 * k - 4 * wave * k, sh[1] - 80 * k)]
+        elif P == "shocked":
+            L = [(x - 55 * k, sh[1] - 40 * k), (x - 70 * k, sh[1] - 95 * k + 6 * wave * k)]
+            R = [(x + 55 * k, sh[1] - 40 * k), (x + 70 * k, sh[1] - 95 * k - 6 * wave * k)]
+        elif P == "think":
+            L = [(x - 40 * k, sh[1] + 55 * k), (x - 50 * k, sh[1] + 100 * k)]
+            R = [(x + 45 * k, sh[1] + 40 * k), (x + 18 * k, hc[1] + r * 0.9)]
+        elif P == "cheer":
+            L = [(x - 45 * k, sh[1] - 45 * k), (x - 80 * k, sh[1] - 110 * k - 8 * wave * k)]
+            R = [(x + 45 * k, sh[1] - 45 * k), (x + 80 * k, sh[1] - 110 * k + 8 * wave * k)]
+        else:  # shrug
+            L = [(x - 60 * k, sh[1] + 25 * k), (x - 95 * k, sh[1] - 15 * k + 3 * wave * k)]
+            R = [(x + 60 * k, sh[1] + 25 * k), (x + 95 * k, sh[1] - 15 * k - 3 * wave * k)]
+        d.line([sh] + L, fill=c, width=W, joint="curve"); d.line([sh] + R, fill=c, width=W, joint="curve")
+        d.ellipse([hc[0] - r, hc[1] - r, hc[0] + r, hc[1] + r], outline=c, width=W, fill=(255, 254, 248, int(255 * a)))
+        ex, ey = 13 * k, hc[1] - 6 * k; er = max(3, 5 * k)
+        blink = (tt % 3.2) < 0.12
+        for sx in (-ex, ex):
+            if blink: d.line([(x + sx - er, ey), (x + sx + er, ey)], fill=c, width=max(2, W // 2))
+            else: d.ellipse([x + sx - er, ey - er, x + sx + er, ey + er], fill=c)
+        my = hc[1] + 16 * k; mw = max(2, W // 2)
+        if P == "shocked": d.ellipse([x - 9 * k, my - 9 * k, x + 9 * k, my + 9 * k], outline=c, width=mw)
+        elif P in ("cheer", "point"): d.arc([x - 16 * k, my - 14 * k, x + 16 * k, my + 8 * k], 20, 160, fill=c, width=mw)
+        elif P == "think": d.line([(x - 10 * k, my), (x + 12 * k, my - 4 * k)], fill=c, width=mw)
+        else: d.arc([x - 14 * k, my - 2 * k, x + 14 * k, my + 14 * k], 200, 340, fill=c, width=mw)
+        if s.bimg is not None and s.p(t) > 0.6:
+            bx = int(x - r - 8 - s.bimg.width); by = int(hc[1] + 8)
+            fr.alpha_composite(fade(s.bimg, a), (max(10, bx), by))
+
+
 # ---------------- spec -> elements ----------------
 def build(spec, times, total):
     def at(v, delay=0.0):
@@ -219,6 +281,9 @@ def build(spec, times, total):
             elif ty == "photo":
                 ob = Photo(os.path.join(ROOT_DIR, e["src"]) if not os.path.isabs(e["src"]) else e["src"],
                            e.get("x", CX), e["y"], e.get("w", 380), t0, t1, e.get("rot", -2.0))
+            elif ty == "stick":
+                ob = Stick(e.get("pose", "point"), e.get("x", 900), e["y"], e.get("h", 260), t0, t1,
+                           e.get("bubble"), e.get("color", "ink"))
             elif ty == "card":
                 ob = Card(e.get("label", "note:"), e["lines"], e.get("x", 150), e["y"], e.get("w", 780), t0, t1)
             else:
