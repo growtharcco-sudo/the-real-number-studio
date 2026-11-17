@@ -1,0 +1,160 @@
+{
+ "id": "052_coffee_myth",
+ "style": "notebook",
+ "layout": "presenter",
+ "series": "Myth vs Math",
+ "speed": 1.08,
+ "keywords": [],
+ "beats": [
+  {
+   "say": "Every money guru on the internet: stop buying coffee!",
+   "pause": 0.3,
+   "show": {
+    "kind": "hook",
+    "big": "$5",
+    "sub": "the coffee myth",
+    "date": "let's do the math",
+    "color": "red",
+    "pose": "shrug"
+   }
+  },
+  {
+   "say": "Okay. Let's actually do the math. Because I really like coffee.",
+   "pause": 0.4
+  },
+  {
+   "say": "Five dollars a day is eighteen hundred twenty-five dollars a year.",
+   "cap": "$5 a day is $1,825 a year.",
+   "pause": 0.3,
+   "show": {
+    "kind": "number",
+    "label": "$5 a day, for a year:",
+    "value": 1825,
+    "prefix": "$",
+    "note": "ouch",
+    "pose": "shocked"
+   }
+  },
+  {
+   "say": "Ouch.",
+   "pause": 0.45
+  },
+  {
+   "say": "Now, say you invest it instead, and it grows seven percent a year, for thirty years.",
+   "cap": "Now, say you invest it instead, and it grows 7% a year, for 30 years.",
+   "pause": 0.3,
+   "show": {
+    "kind": "number",
+    "label": "invested for 30 years at 7%:",
+    "value": 185537,
+    "prefix": "$",
+    "note": "for... coffee?!",
+    "pose": "think"
+   }
+  },
+  {
+   "say": "You'd end up with about a hundred and eighty-five thousand dollars.",
+   "cap": "You'd end up with about $185,000.",
+   "pause": 0.3
+  },
+  {
+   "say": "For coffee?!",
+   "pause": 0.5
+  },
+  {
+   "say": "But here's the twist.",
+   "pause": 0.3,
+   "show": {
+    "kind": "compare",
+    "label": "where the $185k comes from:",
+    "a": {
+     "label": "coffee money you put in",
+     "value": "$54,750",
+     "frac": 0.295,
+     "color": "grey"
+    },
+    "b": {
+     "label": "growth on top",
+     "value": "$130,787",
+     "frac": 0.705
+    },
+    "color": "green",
+    "pose": "point"
+   }
+  },
+  {
+   "say": "Only about fifty-five thousand of it is your coffee money.",
+   "cap": "Only about $55,000 of it is your coffee money.",
+   "pause": 0.3
+  },
+  {
+   "say": "The other hundred and thirty thousand is just time, doing the work.",
+   "cap": "The other $130,000 is just time, doing the work.",
+   "pause": 0.45
+  },
+  {
+   "say": "So the real number isn't the latte. It's the thirty years.",
+   "pause": 0.3,
+   "show": {
+    "kind": "facts",
+    "label": "the real number:",
+    "lines": [
+     "not the latte",
+     "it's the 30 years",
+     "start small, start early",
+     "(keep the coffee)"
+    ],
+    "pose": "cheer"
+   }
+  },
+  {
+   "say": "Start small, start early,",
+   "pause": 0.2
+  },
+  {
+   "say": "and honestly? Keep the coffee.",
+   "pause": 0.5
+  },
+  {
+   "say": "Hypothetical example, not financial advice. Follow for more.",
+   "pause": 0.6,
+   "show": {
+    "kind": "ending",
+    "lines": [
+     "Hypothetical: $5 a day, 7% a year, 30 years,",
+     "added monthly. Returns are not guaranteed.",
+     "Calculated in Python.",
+     "Education only. Not financial advice."
+    ],
+    "pose": "point"
+   }
+  }
+ ],
+ "cover": {
+  "kicker": "stop buying coffee?",
+  "big": "$185k",
+  "sub": "let's do the math",
+  "date": "Myth vs Math",
+  "big_color": "red",
+  "big_size": 190
+ },
+ "sources": [
+  {
+   "claim": "Python: $5 x 365 / 12 = $152.08 a month at 7%/12 for 360 months: FV = 152.08 x ((1+0.07/12)^360 - 1)/(0.07/12) = $185,537; paid in $54,750; growth $130,787 (70.5%). 7% is a stated hypothetical, not a forecast.",
+   "url": "https://www.investor.gov/financial-tools-calculators/calculators/compound-interest-calculator"
+  }
+ ],
+ "post": {
+  "post_at": "2026-11-18T22:00:00+05:30",
+  "instagram_caption": "Every money guru: stop buying coffee! So we did the math.\n\n$5 a day is $1,825 a year. Invested instead, growing 7% a year for 30 years (added monthly), it becomes about $185,537. But only $54,750 of that is coffee money. About $130,787, roughly 70%, is growth: time doing the work. So the real number isn't the latte. It's the 30 years.\n\nWhat's your daily coffee costing you, really?\n\nHypothetical example. Returns are not guaranteed. Education only. Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#personalfinance #compoundinterest #investing #moneytips #therealnumber",
+  "youtube_title": "Stop Buying Coffee? We Did the Math",
+  "youtube_description": "$5 a day is $1,825 a year. Invested at a hypothetical 7% a year for 30 years (added monthly), it becomes about $185,537, but only $54,750 is coffee money; about $130,787 is growth. The real number isn't the latte, it's the time. Hypothetical example; returns are not guaranteed. Education only, not financial advice. AI narration.\n\nCheck the math yourself: SEC compound interest calculator https://www.investor.gov/financial-tools-calculators/calculators/compound-interest-calculator\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#personalfinance #compoundinterest #investing",
+  "youtube_tags": [
+   "latte factor",
+   "compound interest",
+   "personal finance",
+   "investing",
+   "the real number"
+  ]
+ }
+}

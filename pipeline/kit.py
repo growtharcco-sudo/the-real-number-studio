@@ -31,6 +31,7 @@ Scene kinds and their fields ("@n" = appears at beat n of THIS scene, counted fr
 import json, sys
 
 Y_TOP = 300
+CX_P = 495                                 # presenter host x (centre of feet)
 
 
 def T(text, y, at, **k): return dict(type="text", text=text, y=y, at=at, **k)
@@ -180,6 +181,60 @@ def nb_block(kind, s, b, nb):
     raise ValueError("unknown notebook scene kind: " + kind)
 
 
+# ---------------- notebook PRESENTER layout ("layout": "presenter") ----------------
+# Big lip-synced stickman host at the bottom, bigger text in the top half, captions between them.
+# Same kinds as nb_block; every scene gets the host, posed by "pose" (point|shocked|think|cheer|shrug).
+def nbp_block(kind, s, b, nb):
+    def at(n=0): return b + min(n, nb - 1)
+    first = -1 if b == 0 else at()
+    c = s.get("color", "red")
+    if kind == "hook":
+        if s.get("photo"):
+            from PIL import Image as _I
+            import os as _os
+            pw, ph = _I.open(_os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), s["photo"])).size
+            w = 250 if ph <= pw * 1.05 else 210; h = round(w * ph / pw)
+            y = 345 + h + 70
+            els = [{"type": "photo", "src": s["photo"], "y": 345, "w": w, "at": first},
+                   T(s.get("sub", ""), y, first, font="hand", size=60, color="blue", rot=-1.5, mode="fade"),
+                   T(s["big"], y + 70, first, font="head", size=110, color=c, mode="fade")]
+            return els
+        els = [T(s["big"], 400, first, font="head", size=210, color=c, mode="fade", id="hero")]
+        if s.get("sub"): els.append(T(s["sub"], 660, first, font="hand", size=78, color="blue", rot=-1.5, mode="fade"))
+        if s.get("date"): els.append(T(s["date"], 770, first, font="hand", size=54, color="grey", mode="fade"))
+        return els
+    if kind == "facts":
+        els = [T(s["label"], 360, at(), font="hand", size=74, color="blue")]
+        L = s["lines"][:4]
+        for i, line in enumerate(L):
+            els.append(T(line, 465 + 100 * i, at(i), size=58, **({"id": f"f{b}"} if i == len(L) - 1 else {})))
+        els.append({"type": "highlight", "of": f"f{b}", "at": at(len(L) - 1), "delay": 0.4})
+        return els
+    if kind == "number":
+        els = [T(s["label"], 370, at(), font="hand", size=74, color="blue"),
+               {"type": "count", "value": s["value"], "prefix": s.get("prefix", ""), "suffix": s.get("suffix", ""),
+                "decimals": s.get("decimals", 0), "y": 470, "size": s.get("size", 200), "color": c, "at": at(), "id": f"n{b}"},
+               {"type": "underline", "of": f"n{b}", "color": c, "at": at(), "delay": 1.0}]
+        if s.get("note"): els.append(T(s["note"], 760, at(min(1, nb - 1)), font="hand", size=66, color="grey"))
+        return els
+    if kind == "compare":
+        a, bb = s["a"], s["b"]; n1 = at(min(1, nb - 1))
+        return [T(s["label"], 350, at(), font="hand", size=74, color="blue"),
+                T(a["label"], 445, at(), size=46, color="grey", x=135),
+                {"type": "bar", "x": 135, "y": 505, "w": max(30, int(725 * a["frac"])), "color": a.get("color", "grey"), "at": at(), "delay": 0.2},
+                T(a["value"], 550, at(), font="head", size=64, x=135),
+                T(bb["label"], 645, n1, size=46, color="grey", x=135),
+                {"type": "bar", "x": 135, "y": 705, "w": max(30, int(725 * bb["frac"])), "color": bb.get("color", c), "at": n1, "delay": 0.2},
+                T(bb["value"], 750, n1, font="head", size=64, color=c, x=135, id=f"c{b}"),
+                {"type": "highlight", "of": f"c{b}", "at": n1, "delay": 0.8}]
+    if kind == "ending":
+        return [{"type": "card", "label": "note:", "lines": s["lines"][:4], "y": 350, "at": at()},
+                T("follow for", 640, at(), font="hand", size=66, color="blue"),
+                T("The Real Number", 715, at(), font="head", size=84, delay=0.18, mode="fade", id="rn"),
+                {"type": "highlight", "of": "rn", "at": at(), "delay": 0.33}]
+    raise ValueError("unknown notebook scene kind: " + kind)
+
+
 def build_spec(brief):
     beats = brief["beats"]; phrases = []; starts = []
     for i, bt in enumerate(beats):
@@ -192,8 +247,12 @@ def build_spec(brief):
     for k, b in enumerate(starts):
         nxt = starts[k + 1] if k + 1 < len(starts) else len(beats)
         sh = beats[b]["show"]
-        fn = nb_block if brief.get("style") == "notebook" else block
+        pres = brief.get("layout") == "presenter"
+        fn = (nbp_block if pres else nb_block) if brief.get("style") == "notebook" else block
         els = fn(sh["kind"], sh, b, nxt - b)
+        if pres:                                  # the host is on screen in every scene
+            els.append({"type": "stick", "pose": sh.get("pose", "point"), "x": CX_P, "y": 1570, "h": 520,
+                        "presenter": True, "at": -1 if b == 0 else b})
         st = sh.get("stick")                      # optional stickman host: {"pose": ..., "bubble": "..."}
         if st and brief.get("style") == "notebook":
             els.append({"type": "stick", "pose": st.get("pose", "point"), "bubble": st.get("bubble"),
@@ -201,7 +260,7 @@ def build_spec(brief):
         scenes.append({"until": nxt if k + 1 < len(starts) else "end", "els": els})
     for e in scenes[0]["els"]:            # the hook frame must be fully visible at frame 0 (thumbnail + first look)
         if e.get("at") == 0 and e["type"] not in ("strike",): e["at"] = -1; e.pop("delay", None)
-    spec = {"id": brief["id"], "style": brief.get("style", "dark"), "series": brief["series"], "voice": brief.get("voice", "am_michael"),
+    spec = {"id": brief["id"], "style": brief.get("style", "dark"), "layout": brief.get("layout", "standard"), "series": brief["series"], "voice": brief.get("voice", "am_michael"),
             "speed": brief.get("speed", 1.08), "caption_keywords": brief.get("keywords", []),
             "phrases": phrases, "scenes": scenes}
     for k in ("cover", "sources", "post"): spec[k] = brief[k]
@@ -210,7 +269,17 @@ def build_spec(brief):
 
 def layout_check(spec):
     """Cheap automatic check so fewer stills need eyeballing: text inside the frame, nothing too wide."""
-    if spec.get("style") == "notebook": return []
+    if spec.get("style") == "notebook":
+        if spec.get("layout") != "presenter": return []
+        sys.path.insert(0, __import__("os").path.dirname(__file__)); import render as N
+        probs = []
+        for sc in spec["scenes"]:
+            for e in sc["els"]:
+                if e["type"] == "text":
+                    w = N.font(e.get("font", "sans"), e.get("size", 56)).getlength(e["text"])
+                    if w > (900 if e.get("x") is None else 960 - e["x"]): probs.append(f'too wide ({int(w)}px): "{e["text"]}"')
+                    if e["y"] + e.get("size", 56) > 880: probs.append(f'runs into the captions: "{e["text"]}"')
+        return probs
     sys.path.insert(0, __import__("os").path.dirname(__file__)); import render_dark as R
     problems = []
     for sc in spec["scenes"]:

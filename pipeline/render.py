@@ -18,6 +18,8 @@ FD = os.path.join(HERE, "fonts")
 COL = {"ink": (24, 28, 46), "blue": (35, 75, 215), "red": (214, 58, 42), "green": (22, 122, 78), "grey": (92, 88, 82)}
 FILL = {"red": (246, 205, 196), "green": (200, 232, 212), "blue": (205, 216, 246), "ink": (220, 220, 225), "grey": (225, 222, 215)}
 HL = (255, 219, 75)
+CAP_Y = 1150                               # caption centre (presenter layout moves it up)
+AMP = []                                   # per-frame voice loudness 0..1, for the stickman's lip sync
 CX = 495                                  # visual centre used by the channel (clear of the IG side buttons)
 _fc = {}
 
@@ -188,8 +190,10 @@ class Photo(El):
 class Stick(El):
     """Hand-drawn stickman host. Poses: point, shocked, think, cheer, shrug. Gentle bob so he never sits still.
     x, y = centre of his feet. Optional speech bubble (hand font) above his head."""
-    def __init__(s, pose, x, y, h, t0, t1, bubble=None, color="ink"):
+    def __init__(s, pose, x, y, h, t0, t1, bubble=None, color="ink", presenter=False):
         super().__init__(t0, t1, 0.3); s.pose, s.x, s.y, s.h, s.bubble = pose, x, y, h, bubble
+        s.presenter = presenter
+        if presenter: s.t1 = t1 + 0.051            # meet the next scene's host with no blank frame
         s.col = COL.get(color, COL["ink"])
         s.bimg = None
         if bubble:
@@ -202,10 +206,13 @@ class Stick(El):
             s.bimg = im
 
     def draw(s, fr, d, t):
-        p = ease(s.p(t)); a = s.a(t) * p
+        if s.presenter:                           # one continuous host: poses switch, no fades
+            if t >= s.t1: return
+            p, a = 1.0, 1.0
+        else: p = ease(s.p(t)); a = s.a(t) * p
         if a <= 0: return
         import math as m
-        k = s.h / 300.0; tt = max(0., t - s.t0)
+        k = s.h / 300.0; tt = max(0., t - s.t0) if not s.presenter else t
         bob = 4 * k * m.sin(tt * 3.0); wave = m.sin(tt * 6.0)
         c = s.col + (int(255 * a),); W = max(4, int(7 * k))
         x, yb = s.x, s.y - 30 * (1 - p)
@@ -238,7 +245,11 @@ class Stick(El):
             if blink: d.line([(x + sx - er, ey), (x + sx + er, ey)], fill=c, width=max(2, W // 2))
             else: d.ellipse([x + sx - er, ey - er, x + sx + er, ey + er], fill=c)
         my = hc[1] + 16 * k; mw = max(2, W // 2)
-        if P == "shocked": d.ellipse([x - 9 * k, my - 9 * k, x + 9 * k, my + 9 * k], outline=c, width=mw)
+        amp = AMP[min(len(AMP) - 1, int(t * FPS))] if AMP else 0
+        if s.presenter and amp > 0.12:                      # talking: mouth opens with the voice
+            oh = 3 * k + 15 * k * min(1, amp); ow = 11 * k + 3 * k * min(1, amp)
+            d.ellipse([x - ow, my - oh / 2, x + ow, my + oh / 2], fill=c)
+        elif P == "shocked": d.ellipse([x - 9 * k, my - 9 * k, x + 9 * k, my + 9 * k], outline=c, width=mw)
         elif P in ("cheer", "point"): d.arc([x - 16 * k, my - 14 * k, x + 16 * k, my + 8 * k], 20, 160, fill=c, width=mw)
         elif P == "think": d.line([(x - 10 * k, my), (x + 12 * k, my - 4 * k)], fill=c, width=mw)
         else: d.arc([x - 14 * k, my - 2 * k, x + 14 * k, my + 14 * k], 200, 340, fill=c, width=mw)
@@ -283,7 +294,7 @@ def build(spec, times, total):
                            e.get("x", CX), e["y"], e.get("w", 380), t0, t1, e.get("rot", -2.0))
             elif ty == "stick":
                 ob = Stick(e.get("pose", "point"), e.get("x", 900), e["y"], e.get("h", 260), t0, t1,
-                           e.get("bubble"), e.get("color", "ink"))
+                           e.get("bubble"), e.get("color", "ink"), e.get("presenter", False))
             elif ty == "card":
                 ob = Card(e.get("label", "note:"), e["lines"], e.get("x", 150), e["y"], e.get("w", 780), t0, t1)
             else:
@@ -333,7 +344,7 @@ def draw_caption(fr, d, t, chunks, cf):
             if cur and cf.getlength(" ".join(x[0] for x in cur + [w])) > 760: lines.append(cur); cur = [w]
             else: cur.append(w)
         lines.append(cur)
-        lh = 78; y0 = 1150 - (len(lines) - 1) * lh // 2
+        lh = 78; y0 = CAP_Y - (len(lines) - 1) * lh // 2
         lay = Image.new("RGBA", fr.size, (0, 0, 0, 0)); dl = ImageDraw.Draw(lay)
         for li, ln in enumerate(lines):
             widths = [cf.getlength(w[0]) for w in ln]
@@ -345,7 +356,22 @@ def draw_caption(fr, d, t, chunks, cf):
 
 
 # ---------------- render ----------------
+def voice_amp(wav):
+    import wave, numpy as np
+    w = wave.open(wav); n = w.getnframes(); sr = w.getframerate(); ch = w.getnchannels()
+    a = np.frombuffer(w.readframes(n), dtype=np.int16).astype(float)
+    if ch > 1: a = a.reshape(-1, ch).mean(axis=1)
+    hop = sr // FPS; m = len(a) // hop
+    r = np.sqrt((a[:m * hop].reshape(m, hop) ** 2).mean(axis=1))
+    r = r / (np.percentile(r, 95) + 1e-6)
+    r = np.convolve(np.clip(r, 0, 1), [0.25, 0.5, 0.25], mode="same")   # smooth so the mouth doesn't jitter
+    return list(r)
+
+
 def render(spec, times, total, wav, out_mp4, stills=None):
+    global CAP_Y, AMP
+    CAP_Y = 905 if spec.get("layout") == "presenter" else 1150
+    AMP = voice_amp(wav) if spec.get("layout") == "presenter" else []
     paper = make_paper()
     els = build(spec, times, total)
     chunks, cf = caption_chunks(spec, times)
