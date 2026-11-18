@@ -1,0 +1,157 @@
+{
+ "id": "053_two_and_twenty",
+ "style": "notebook",
+ "layout": "presenter",
+ "series": "Wall Street Secrets",
+ "speed": 1.08,
+ "keywords": [
+  "fees",
+  "profits",
+  "lose",
+  "win",
+  "hedge"
+ ],
+ "beats": [
+  {
+   "say": "Lose a hundred million dollars of other people's money. Still get paid twenty million.",
+   "cap": "Lose $100 million of other people's money. Still get paid $20 million.",
+   "pause": 0.3,
+   "show": {
+    "kind": "hook",
+    "big": "$20M",
+    "sub": "for losing money?!",
+    "date": "hedge fund maths",
+    "color": "red",
+    "pose": "shocked"
+   }
+  },
+  {
+   "say": "Many hedge funds charge two and twenty. About two percent of your money, every year.",
+   "cap": "Many hedge funds charge \"2 and 20\". About 2% of your money, every year.",
+   "pause": 0.3,
+   "show": {
+    "kind": "facts",
+    "label": "\"2 and 20\":",
+    "lines": [
+     "2% of your money, yearly",
+     "+ 20% of the profits",
+     "SEC: 1-2% and 15-20%"
+    ],
+    "pose": "point"
+   }
+  },
+  {
+   "say": "Plus about twenty percent of the profits.",
+   "cap": "Plus about 20% of the profits.",
+   "pause": 0.35
+  },
+  {
+   "say": "On a one billion dollar fund, that's twenty million a year.",
+   "cap": "On a $1 billion fund, that's $20 million a year.",
+   "pause": 0.3,
+   "show": {
+    "kind": "number",
+    "label": "2% of $1 billion:",
+    "value": 20,
+    "prefix": "$",
+    "suffix": "M",
+    "note": "every year",
+    "color": "green",
+    "pose": "think"
+   }
+  },
+  {
+   "say": "Up twenty percent? Forty million more.",
+   "cap": "Up 20%? $40 million more.",
+   "pause": 0.35
+  },
+  {
+   "say": "Down ten percent? You lose a hundred million.",
+   "cap": "Down 10%? You lose $100 million.",
+   "pause": 0.3,
+   "show": {
+    "kind": "compare",
+    "label": "a bad year, down 10%:",
+    "a": {
+     "label": "you lose",
+     "value": "-$100M",
+     "frac": 1.0,
+     "color": "red"
+    },
+    "b": {
+     "label": "they still collect",
+     "value": "about $20M",
+     "frac": 0.2,
+     "color": "green"
+    },
+    "color": "green",
+    "pose": "shrug"
+   }
+  },
+  {
+   "say": "They still get about twenty million. Wait, what?",
+   "cap": "They still get about $20 million. Wait, what?",
+   "pause": 0.4
+  },
+  {
+   "say": "The real number isn't the twenty. It's the two.",
+   "cap": "The real number isn't the 20. It's the 2.",
+   "pause": 0.3,
+   "show": {
+    "kind": "facts",
+    "label": "the real number:",
+    "lines": [
+     "not the 20%",
+     "it's the 2%",
+     "paid win or lose"
+    ],
+    "pose": "cheer"
+   }
+  },
+  {
+   "say": "Simplified example. Not financial advice. Follow for more.",
+   "pause": 0.45,
+   "show": {
+    "kind": "ending",
+    "lines": [
+     "Simplified: 2% on $1B, 20% of gains.",
+     "Real fees vary by fund.",
+     "SEC Investor.gov, Nov 18, 2026.",
+     "Education only. Not financial advice."
+    ],
+    "pose": "point"
+   }
+  }
+ ],
+ "cover": {
+  "kicker": "they lost money",
+  "big": "$20M",
+  "sub": "and still got paid",
+  "date": "Wall Street Secrets",
+  "big_color": "red",
+  "big_size": 190
+ },
+ "sources": [
+  {
+   "claim": "Hedge fund investors typically pay an asset management fee of 1-2% of NAV and a performance fee of 15-20% of profit (SEC Investor.gov, fetched Nov 18, 2026).",
+   "url": "https://investor.gov/introduction-investing/investing-basics/investment-products/private-investment-funds/hedge-funds"
+  },
+  {
+   "claim": "Python, hypothetical $1B fund: 2% = $20,000,000; +20% year: profit $200M, 20% fee = $40,000,000 (total $60M); -10% year: loss $100,000,000, no performance fee, management fee about $20M (simplified: charged on the starting $1B).",
+   "url": "https://investor.gov/introduction-investing/investing-basics/investment-products/private-investment-funds/hedge-funds"
+  }
+ ],
+ "post": {
+  "post_at": "2026-11-19T08:00:00+05:30",
+  "instagram_caption": "Lose $100 million of other people's money. Still get paid $20 million.\n\nIt's called \"2 and 20\". Many hedge funds charge about 2% of your money every year, plus about 20% of the profits (the SEC's Investor.gov says typical fees are 1-2% of assets and 15-20% of profits). On a $1 billion fund, 2% is $20 million a year. A year up 20% adds another $40 million in profit fees. A year down 10% loses investors $100 million, and the 2% is still about $20 million. Simplified example: real fees vary by fund.\n\nWould you pay 2% a year, win or lose?\n\nSource: SEC Investor.gov (fetched Nov 18, 2026). Maths in Python. Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#hedgefunds #wallstreet #investing #fees #therealnumber",
+  "youtube_title": "Hedge Funds Get Paid $20M Even When They Lose",
+  "youtube_description": "\"2 and 20\": many hedge funds charge about 2% of assets every year plus about 20% of profits (SEC Investor.gov: typically 1-2% of NAV and 15-20% of profit, as of Nov 18, 2026). On a hypothetical $1 billion fund, 2% is $20 million a year, win or lose. A year up 20% adds $40 million in profit fees; a year down 10% loses investors $100 million while the 2% is still about $20 million. Simplified example; real fees vary. Education only, not financial advice. AI narration.\n\nSources: SEC Investor.gov, Hedge Funds https://investor.gov/introduction-investing/investing-basics/investment-products/private-investment-funds/hedge-funds\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#hedgefunds #wallstreet #investing",
+  "youtube_tags": [
+   "hedge funds",
+   "2 and 20",
+   "wall street",
+   "investing fees",
+   "the real number"
+  ]
+ }
+}
