@@ -1,0 +1,446 @@
+{
+ "id": "055_ftx_twist",
+ "style": "notebook",
+ "layout": "presenter",
+ "series": "The Collapse",
+ "voice": "am_michael",
+ "speed": 1.08,
+ "caption_keywords": [
+  "FTX",
+  "Bitcoin",
+  "claim",
+  "bankrupt",
+  "catch",
+  "prison"
+ ],
+ "phrases": [
+  {
+   "say": "November 2022. Over eight billion dollars of customer money, gone from one crypto exchange.",
+   "cap": "November 2022. Over $8 billion of customer money, gone from one crypto exchange.",
+   "pause": 0.3
+  },
+  {
+   "say": "F T X. Its founder, Sam Bankman-Fried, was convicted of fraud and got twenty-five years.",
+   "cap": "FTX. Its founder, Sam Bankman-Fried, was convicted of fraud and got 25 years.",
+   "pause": 0.3
+  },
+  {
+   "say": "Then the bankruptcy team collected billions.",
+   "pause": 0.3
+  },
+  {
+   "say": "Ninety-eight percent of creditors get one hundred nineteen percent of their claim.",
+   "cap": "98% of creditors get 119% of their claim.",
+   "pause": 0.3
+  },
+  {
+   "say": "More than they lost? Here's the catch.",
+   "pause": 0.4
+  },
+  {
+   "say": "Claims were priced on the day F T X went bankrupt.",
+   "cap": "Claims were priced on the day FTX went bankrupt.",
+   "pause": 0.3
+  },
+  {
+   "say": "One Bitcoin: sixteen thousand eight hundred seventy-one dollars. Plus nineteen percent, about twenty thousand.",
+   "cap": "1 Bitcoin: $16,871. Plus 19%, about $20,000.",
+   "pause": 0.3
+  },
+  {
+   "say": "One Bitcoin this week? About sixty-two thousand five hundred. Ouch.",
+   "cap": "1 Bitcoin this week? About $62,500. Ouch.",
+   "pause": 0.4
+  },
+  {
+   "say": "So the real number isn't one hundred nineteen percent. In Bitcoin, it's about thirty-two.",
+   "cap": "So the real number isn't 119%. In Bitcoin, it's about 32%.",
+   "pause": 0.3
+  },
+  {
+   "say": "Crypto is risky. Not financial advice. Follow for more.",
+   "pause": 0.45
+  }
+ ],
+ "scenes": [
+  {
+   "until": 1,
+   "els": [
+    {
+     "type": "text",
+     "text": "$8B",
+     "y": 400,
+     "at": -1,
+     "font": "head",
+     "size": 210,
+     "color": "red",
+     "mode": "fade",
+     "id": "hero"
+    },
+    {
+     "type": "text",
+     "text": "of customer money, gone",
+     "y": 660,
+     "at": -1,
+     "font": "hand",
+     "size": 78,
+     "color": "blue",
+     "rot": -1.5,
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "FTX · US Justice Dept.",
+     "y": 770,
+     "at": -1,
+     "font": "hand",
+     "size": 54,
+     "color": "grey",
+     "mode": "fade"
+    },
+    {
+     "type": "stick",
+     "pose": "shocked",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": -1
+    }
+   ]
+  },
+  {
+   "until": 2,
+   "els": [
+    {
+     "type": "text",
+     "text": "FTX, the record:",
+     "y": 360,
+     "at": 1,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "over $8B of customer money",
+     "y": 465,
+     "at": 1,
+     "size": 58
+    },
+    {
+     "type": "text",
+     "text": "founder convicted of fraud",
+     "y": 565,
+     "at": 1,
+     "size": 58
+    },
+    {
+     "type": "text",
+     "text": "25 years in prison (2024)",
+     "y": 665,
+     "at": 1,
+     "size": 58,
+     "id": "f1"
+    },
+    {
+     "type": "highlight",
+     "of": "f1",
+     "at": 1,
+     "delay": 0.4
+    },
+    {
+     "type": "stick",
+     "pose": "point",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 1
+    }
+   ]
+  },
+  {
+   "until": 5,
+   "els": [
+    {
+     "type": "text",
+     "text": "the plan, for 98% of creditors:",
+     "y": 370,
+     "at": 2,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "count",
+     "value": 119,
+     "prefix": "",
+     "suffix": "%",
+     "decimals": 0,
+     "y": 470,
+     "size": 200,
+     "color": "green",
+     "at": 2,
+     "id": "n2"
+    },
+    {
+     "type": "underline",
+     "of": "n2",
+     "color": "green",
+     "at": 2,
+     "delay": 1.0
+    },
+    {
+     "type": "text",
+     "text": "of their claim back?!",
+     "y": 760,
+     "at": 3,
+     "font": "hand",
+     "size": 66,
+     "color": "grey"
+    },
+    {
+     "type": "stick",
+     "pose": "cheer",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 2
+    }
+   ]
+  },
+  {
+   "until": 8,
+   "els": [
+    {
+     "type": "text",
+     "text": "1 Bitcoin left on FTX:",
+     "y": 350,
+     "at": 5,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "paid back: 119% of $16,871",
+     "y": 445,
+     "at": 5,
+     "size": 46,
+     "color": "grey",
+     "x": 135
+    },
+    {
+     "type": "bar",
+     "x": 135,
+     "y": 505,
+     "w": 232,
+     "color": "grey",
+     "at": 5,
+     "delay": 0.2
+    },
+    {
+     "type": "text",
+     "text": "about $20,076",
+     "y": 550,
+     "at": 5,
+     "font": "head",
+     "size": 64,
+     "x": 135
+    },
+    {
+     "type": "text",
+     "text": "1 Bitcoin, Nov 18, 2026",
+     "y": 645,
+     "at": 6,
+     "size": 46,
+     "color": "grey",
+     "x": 135
+    },
+    {
+     "type": "bar",
+     "x": 135,
+     "y": 705,
+     "w": 725,
+     "color": "red",
+     "at": 6,
+     "delay": 0.2
+    },
+    {
+     "type": "text",
+     "text": "about $62,541",
+     "y": 750,
+     "at": 6,
+     "font": "head",
+     "size": 64,
+     "color": "red",
+     "x": 135,
+     "id": "c5"
+    },
+    {
+     "type": "highlight",
+     "of": "c5",
+     "at": 6,
+     "delay": 0.8
+    },
+    {
+     "type": "stick",
+     "pose": "shrug",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "until": 9,
+   "els": [
+    {
+     "type": "text",
+     "text": "the real number:",
+     "y": 360,
+     "at": 8,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "not 119% back",
+     "y": 465,
+     "at": 8,
+     "size": 58
+    },
+    {
+     "type": "text",
+     "text": "about 32% of a Bitcoin",
+     "y": 565,
+     "at": 8,
+     "size": 58
+    },
+    {
+     "type": "text",
+     "text": "(at Nov 18, 2026 prices)",
+     "y": 665,
+     "at": 8,
+     "size": 58,
+     "id": "f8"
+    },
+    {
+     "type": "highlight",
+     "of": "f8",
+     "at": 8,
+     "delay": 0.4
+    },
+    {
+     "type": "stick",
+     "pose": "think",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 8
+    }
+   ]
+  },
+  {
+   "until": "end",
+   "els": [
+    {
+     "type": "card",
+     "label": "note:",
+     "lines": [
+      "DOJ SDNY, Mar 28, 2024. Plan: Oct 7, 2024.",
+      "BTC: $16,871 claim price; $62,541",
+      "(CoinDesk, Nov 18, 2026). Maths in Python.",
+      "Education only. Not financial advice."
+     ],
+     "y": 350,
+     "at": 9
+    },
+    {
+     "type": "text",
+     "text": "follow for",
+     "y": 640,
+     "at": 9,
+     "font": "hand",
+     "size": 66,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "The Real Number",
+     "y": 715,
+     "at": 9,
+     "font": "head",
+     "size": 84,
+     "delay": 0.18,
+     "mode": "fade",
+     "id": "rn"
+    },
+    {
+     "type": "highlight",
+     "of": "rn",
+     "at": 9,
+     "delay": 0.33
+    },
+    {
+     "type": "stick",
+     "pose": "point",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 9
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "kicker": "FTX paid back",
+  "big": "119%",
+  "sub": "so why only 32% of a Bitcoin?",
+  "date": "The Collapse",
+  "big_color": "red",
+  "big_size": 190
+ },
+ "sources": [
+  {
+   "claim": "Samuel Bankman-Fried sentenced to 25 years in prison (Mar 28, 2024); stole over $8 billion of customers' money, per US Attorney Damian Williams. US DOJ SDNY, fetched Nov 18, 2026.",
+   "url": "https://www.justice.gov/usao-sdny/pr/samuel-bankman-fried-sentenced-25-years-prison"
+  },
+  {
+   "claim": "Oct 7, 2024: Judge John Dorsey approved FTX plan; 98% of creditors get 119% of their allowed claim as of November 2022 (CNBC via NBC Philadelphia, fetched Nov 18, 2026).",
+   "url": "https://nbcphiladelphia.com/news/business/money-report/ftx-bankruptcy-judge-approves-more-than-14-billion-payback-plan-two-years-after-exchange-collapsed/3991514"
+  },
+  {
+   "claim": "FTX claims priced at petition date (Nov 11, 2022): Bitcoin $16,871 (Protos, Feb 1, 2024; FinanceFeeds), fetched Nov 18, 2026.",
+   "url": "https://protos.com/ftx-customers-to-be-repaid-at-16871-bitcoin-prices"
+  },
+  {
+   "claim": "Bitcoin $62,541.42 at 3:41 pm EST, Nov 18, 2026 (CoinDesk).",
+   "url": "https://www.coindesk.com/price/bitcoin"
+  },
+  {
+   "claim": "Python: 16,871 x 1.19 = $20,076.49; 20,076.49 / 62,541.42 = 32.1% of one Bitcoin; 62,541.42 / 16,871 = 3.71x.",
+   "url": "https://www.coindesk.com/price/bitcoin"
+  }
+ ],
+ "post": {
+  "post_at": "2026-11-20T22:00:00+05:30",
+  "instagram_caption": "FTX customers got back 119%. So why does it feel like a loss?\n\nIn November 2022, over $8 billion of FTX customers' money was gone, per US prosecutors. Founder Sam Bankman-Fried was convicted and sentenced to 25 years in March 2024. Then the bankruptcy plan, approved in October 2024, gave 98% of creditors 119% of their claim. The catch: claims were priced in dollars on the day FTX went bankrupt, when 1 Bitcoin was $16,871. 119% of that is about $20,076. On Nov 18, 2026, 1 Bitcoin was about $62,541. In Bitcoin terms, that's about 32%.\n\nWould you rather be paid back in dollars or in coins?\n\nSources: US DOJ SDNY, CNBC, Protos, CoinDesk (fetched Nov 18, 2026). Past prices don't predict future ones. Crypto products are unregulated and can be highly risky. Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#ftx #bitcoin #crypto #cryptonews #therealnumber",
+  "youtube_title": "FTX Paid Back 119%. In Bitcoin, It Was About 32%",
+  "youtube_description": "Over $8 billion of FTX customers' money was gone in November 2022 (US DOJ); founder Sam Bankman-Fried got 25 years in March 2024. The bankruptcy plan approved Oct 7, 2024 gave 98% of creditors 119% of their claim, but claims were priced in dollars on the bankruptcy date, when Bitcoin was $16,871. 119% of that is about $20,076, versus about $62,541 for 1 Bitcoin on Nov 18, 2026 (CoinDesk): about 32% in Bitcoin terms. Past prices don't predict future ones. Crypto products are unregulated and can be highly risky. Education only, not financial advice. AI narration.\n\nSources: US DOJ https://www.justice.gov/usao-sdny/pr/samuel-bankman-fried-sentenced-25-years-prison · CNBC/NBC https://nbcphiladelphia.com/news/business/money-report/ftx-bankruptcy-judge-approves-more-than-14-billion-payback-plan-two-years-after-exchange-collapsed/3991514 · Protos https://protos.com/ftx-customers-to-be-repaid-at-16871-bitcoin-prices · CoinDesk https://www.coindesk.com/price/bitcoin\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#ftx #bitcoin #crypto",
+  "youtube_tags": [
+   "FTX",
+   "Sam Bankman-Fried",
+   "bitcoin",
+   "crypto collapse",
+   "the real number"
+  ]
+ }
+}
