@@ -8,11 +8,12 @@
  "caption_keywords": [],
  "phrases": [
   {
-   "say": "Every money guru on the internet: stop buying coffee!",
-   "pause": 0.3
+   "say": "This five dollar coffee could cost you a hundred and eighty-five thousand dollars.",
+   "cap": "This $5 coffee could cost you $185,000.",
+   "pause": 0.35
   },
   {
-   "say": "Okay. Let's actually do the math. Because I really like coffee.",
+   "say": "At least, that's what every money guru says. So let's actually do the math. Because I really like coffee.",
    "pause": 0.4
   },
   {
@@ -75,7 +76,7 @@
    "els": [
     {
      "type": "text",
-     "text": "$5",
+     "text": "$185k",
      "y": 400,
      "at": -1,
      "font": "head",
@@ -86,7 +87,7 @@
     },
     {
      "type": "text",
-     "text": "the coffee myth",
+     "text": "for a $5 coffee?!",
      "y": 660,
      "at": -1,
      "font": "hand",
@@ -97,7 +98,7 @@
     },
     {
      "type": "text",
-     "text": "let's do the math",
+     "text": "wait for the twist",
      "y": 770,
      "at": -1,
      "font": "hand",
@@ -107,7 +108,7 @@
     },
     {
      "type": "stick",
-     "pose": "shrug",
+     "pose": "shocked",
      "x": 495,
      "y": 1570,
      "h": 520,

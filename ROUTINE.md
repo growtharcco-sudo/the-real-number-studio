@@ -13,31 +13,52 @@ GitHub Actions in this repo posts it at its `post_at` time. Work in this repo; f
    A story qualifies if it is big, has one striking number, and can be told truthfully in 50 seconds.
 2. If no news qualifies, take the next unused idea from `IDEAS.md` (mark it used).
 3. Check `posted/` and `queue/`: never repeat a topic or a hook from the last 30 days.
-4. Rotate series. Never use the same series twice in a row: Money News, The Collapse, Pros vs Index,
-   $1,000 Then, How They Really Make Money, Money Machine, The Real Cost, Myth vs Math, Crypto, Clearly.
+4. **Cover ALL of finance, as a mix.** Rotate these areas so no area repeats two Reels in a row, and every
+   area appears at least once a week:
+   - **Stock market:** big moves, famous stocks, indexes, earnings, how investing really works
+   - **Financial news:** today's biggest money story (the 6:30 PM news slot, every day)
+   - **Crypto:** Bitcoin, stablecoins, hacks, ETFs, scams (always with the crypto risk line)
+   - **Private equity, VC and hedge funds:** buyouts, "2 and 20", famous deals and blow-ups, unicorns
+   - **Companies:** how they really make money, collapses and scandals, CEO stories
+   - **Economy:** central banks, interest rates, inflation, recessions, debt, currencies
+   - **Personal finance:** money myths, compounding, debt, salaries, "the real cost" maths
+   - **Banking and real estate:** how banks work, mortgages, housing bubbles
+   India Edition: at most 1 in 7 posts. Series names (pick the one that fits): Money News, The Collapse,
+   Pros vs Index, $1,000 Then, How They Really Make Money, Money Machine, The Real Cost, Myth vs Math,
+   Crypto Clearly, Wall Street Secrets (PE, VC, hedge funds).
 
-## 2. Write the script (house style, since 11 Nov 2026)
-Our dark "question" Reels (like The Penny Question) got 1,000 to 5,000 views; the old notebook explainers stayed
-under 200. So every evergreen Reel is built to be watched to the END:
-- **Pick ONE retention hook** and say it in the first 3 seconds:
-  1. *Would you rather:* "Would you rather have X, or Y?" The answer comes at the end.
-  2. *Guess the number:* "Lock in your guess. The answer is at the end." A counter runs while they guess.
-  3. *Countdown:* "4 money numbers. The last one is the one that hurts." Count down 4, 3, 2, 1; #1 is the payoff.
-  4. *Myth, then the twist:* state the belief everyone has, then the number that breaks it, revealed last.
-  Never use the same hook type two Reels in a row.
-- The payoff (the biggest number or the twist) is saved for the last 8 to 12 seconds. Never reveal it early.
-- End on ONE short takeaway line people want to share, in the form "The real number isn't X. It's Y."
-  then "Follow for more."
-- Something on screen must change every 2 to 3 seconds (a counter, a bar, a pill, a colour flip, a new card).
+## 2. Write the script (house style, since 18 Nov 2026: the stickman presenter, a bit funny)
+The channel is now a funny-but-accurate stickman explainer: notebook style, `"layout": "presenter"`.
+The stickman is the narrator. He talks to the viewer like a friend who knows money, a little cheeky.
+
+**The hook (first 2 seconds) decides everything.** Beat 0 must stop the scroll. Use ONE of these:
+  1. *Shock number:* the most surprising number of the story, said first. "This coffee costs you $185,000."
+  2. *Call-out:* "If you have a savings account, you're being robbed. Legally."
+  3. *Bold question:* "Why does a company that loses money worth $50 billion?"
+  4. *Myth to break:* "Every money guru says stop buying coffee. They're wrong. Kind of."
+  5. *Countdown:* "3 money rules rich people never say out loud. Number 1 is wild."
+  6. *Story cold open:* "In 2008, one bank lost $3.9 billion. In a weekend."
+  On screen at frame 0: the hero number or the call-out in huge text, and the stickman in a reacting pose
+  (shocked, point or shrug). Never open with "Hi", "Today", "In this video" or a slow setup.
+  Never repeat the same hook type two Reels in a row.
+**Keep them watching:**
+- Hold the payoff (biggest number or the twist) for the last 8 to 12 seconds. Tease it early ("wait for the last one").
+- A new scene or pose every 4 to 6 seconds; something moves every 2 to 3 seconds.
+- Funny comes from the stickman's reactions ("Ouch.", "For coffee?!", "Wait, what?"), relatable comparisons
+  ("that's 2 million iPhones") and honest asides. It NEVER comes from bending a number.
+- Serious news (crashes, layoffs, scandals, people losing money): keep humour light, react with surprise or
+  confusion, never mock real victims or make jokes about a real person's private life.
+- End on ONE shareable line, "The real number isn't X. It's Y.", then "Follow for more."
+**Always:**
 - 35 to 50 seconds spoken (about 100 to 135 words). Short sentences. The hero number is spoken AND on screen.
 - `say` text is written for the voice: numbers in words ("twenty-nine percent", "S and P five hundred",
   "A I", "J P Morgan"). `cap` text is what viewers read ("29%", "S&P 500", "AI", "J.P. Morgan").
 - Explain, never advise: no "buy", "sell", "you should invest", no predictions, no promised returns.
-  Use "could", "about", "as of <date>". Name the source of every number.
+  Use "could", "about", "as of <date>". Name the source of every number. Hypothetical maths says so.
 - Crypto: add "Crypto products are unregulated and can be highly risky." to the caption.
 - Hindsight stories ("$1,000 in X"): say past results don't guarantee future returns.
 - No em dashes anywhere (use commas, colons or "·").
-- News Reels keep the same dark style; their hook is the news itself plus the number.
+- Real photos only when Samrit sends them (in work/); never download photos of people from the web.
 
 ## 3. Fact-check (mandatory)
 - Every figure needs a primary or reputable source fetched TODAY. Put each one in `sources` in the spec.
@@ -53,7 +74,9 @@ only choose the scene kind and fill in the words and numbers. Never hand-write s
 - One beat = one spoken phrase. A beat with `"show"` starts a new scene; beat 0 must have one (the hook frame).
 - Dark kinds: question, guess, counter, bars, countdown, myth, calendar, ending. Pick the main visual by topic:
   counter for growth, calendar for day-by-day, bars for comparisons, countdown for "4 numbers, the last one...".
-- Notebook kinds: hook, facts, number, compare, ending. Use the notebook look only if Samrit asks for it.
+- Notebook kinds: hook, facts, number, compare, ending. DEFAULT since 18 Nov 2026: `"style": "notebook"`,
+  `"layout": "presenter"`, and give every scene a `"pose"` (point, shocked, think, cheer, shrug) that fits
+  the line. Template: `briefs/052_coffee_myth.json`.
 - `keywords`: 5 to 10 words that light up green in the captions (numbers turn gold automatically).
 - If `kit.py` prints LAYOUT PROBLEMS (text too wide), shorten that text and run it again.
 - `cover`: kicker (a short question or setup, 2 lines max), big (the payoff number, 2 to 7 characters), sub

@@ -7,19 +7,20 @@
  "keywords": [],
  "beats": [
   {
-   "say": "Every money guru on the internet: stop buying coffee!",
-   "pause": 0.3,
+   "say": "This five dollar coffee could cost you a hundred and eighty-five thousand dollars.",
+   "cap": "This $5 coffee could cost you $185,000.",
+   "pause": 0.35,
    "show": {
     "kind": "hook",
-    "big": "$5",
-    "sub": "the coffee myth",
-    "date": "let's do the math",
+    "big": "$185k",
+    "sub": "for a $5 coffee?!",
+    "date": "wait for the twist",
     "color": "red",
-    "pose": "shrug"
+    "pose": "shocked"
    }
   },
   {
-   "say": "Okay. Let's actually do the math. Because I really like coffee.",
+   "say": "At least, that's what every money guru says. So let's actually do the math. Because I really like coffee.",
    "pause": 0.4
   },
   {
