@@ -1,0 +1,382 @@
+{
+ "id": "054_card_vs_fed",
+ "style": "notebook",
+ "layout": "presenter",
+ "series": "Money Machine",
+ "voice": "am_michael",
+ "speed": 1.08,
+ "caption_keywords": [
+  "credit",
+  "card",
+  "Fed",
+  "gap",
+  "margin",
+  "risk"
+ ],
+ "phrases": [
+  {
+   "say": "Why is your credit card twenty-two percent, when the Fed's rate is four?",
+   "cap": "Why is your credit card 22%, when the Fed's rate is 4%?",
+   "pause": 0.3
+  },
+  {
+   "say": "Fed data: card accounts paying interest averaged twenty-two point three six percent last quarter.",
+   "cap": "Fed data: card accounts paying interest averaged 22.36% last quarter.",
+   "pause": 0.3
+  },
+  {
+   "say": "The Fed's rate tops out at four. So where do the other eighteen points go?",
+   "cap": "The Fed's rate tops out at 4%. So where do the other 18 points go?",
+   "pause": 0.35
+  },
+  {
+   "say": "First, risk. Card debt has no house or car behind it.",
+   "pause": 0.3
+  },
+  {
+   "say": "Banks write off about three point eight percent of card loans a year.",
+   "cap": "Banks write off about 3.8% of card loans a year.",
+   "pause": 0.3
+  },
+  {
+   "say": "The other fourteen and a half? Costs, your rewards, and the bank's margin. Ouch.",
+   "cap": "The other 14.5? Costs, your rewards, and the bank's margin. Ouch.",
+   "pause": 0.4
+  },
+  {
+   "say": "So the real number isn't four percent. It's twenty-two.",
+   "cap": "So the real number isn't 4%. It's 22%.",
+   "pause": 0.3
+  },
+  {
+   "say": "Not financial advice. Follow for more.",
+   "pause": 0.45
+  }
+ ],
+ "scenes": [
+  {
+   "until": 1,
+   "els": [
+    {
+     "type": "text",
+     "text": "22%",
+     "y": 400,
+     "at": -1,
+     "font": "head",
+     "size": 210,
+     "color": "red",
+     "mode": "fade",
+     "id": "hero"
+    },
+    {
+     "type": "text",
+     "text": "when the Fed is at 4%?!",
+     "y": 660,
+     "at": -1,
+     "font": "hand",
+     "size": 78,
+     "color": "blue",
+     "rot": -1.5,
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "Fed data, Q3 2026",
+     "y": 770,
+     "at": -1,
+     "font": "hand",
+     "size": 54,
+     "color": "grey",
+     "mode": "fade"
+    },
+    {
+     "type": "stick",
+     "pose": "think",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": -1
+    }
+   ]
+  },
+  {
+   "until": 3,
+   "els": [
+    {
+     "type": "text",
+     "text": "average card rate, Q3 2026:",
+     "y": 370,
+     "at": 1,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "count",
+     "value": 22.36,
+     "prefix": "",
+     "suffix": "%",
+     "decimals": 2,
+     "y": 470,
+     "size": 200,
+     "color": "red",
+     "at": 1,
+     "id": "n1"
+    },
+    {
+     "type": "underline",
+     "of": "n1",
+     "color": "red",
+     "at": 1,
+     "delay": 1.0
+    },
+    {
+     "type": "text",
+     "text": "the Fed's key rate: 4% max",
+     "y": 760,
+     "at": 2,
+     "font": "hand",
+     "size": 66,
+     "color": "grey"
+    },
+    {
+     "type": "stick",
+     "pose": "shocked",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 1
+    }
+   ]
+  },
+  {
+   "until": 6,
+   "els": [
+    {
+     "type": "text",
+     "text": "the 18-point gap, roughly:",
+     "y": 350,
+     "at": 3,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "loans never paid back",
+     "y": 445,
+     "at": 3,
+     "size": 46,
+     "color": "grey",
+     "x": 135
+    },
+    {
+     "type": "bar",
+     "x": 135,
+     "y": 505,
+     "w": 152,
+     "color": "grey",
+     "at": 3,
+     "delay": 0.2
+    },
+    {
+     "type": "text",
+     "text": "about 3.8 pts",
+     "y": 550,
+     "at": 3,
+     "font": "head",
+     "size": 64,
+     "x": 135
+    },
+    {
+     "type": "text",
+     "text": "costs, rewards, bank margin",
+     "y": 645,
+     "at": 4,
+     "size": 46,
+     "color": "grey",
+     "x": 135
+    },
+    {
+     "type": "bar",
+     "x": 135,
+     "y": 705,
+     "w": 572,
+     "color": "red",
+     "at": 4,
+     "delay": 0.2
+    },
+    {
+     "type": "text",
+     "text": "about 14.5 pts",
+     "y": 750,
+     "at": 4,
+     "font": "head",
+     "size": 64,
+     "color": "red",
+     "x": 135,
+     "id": "c3"
+    },
+    {
+     "type": "highlight",
+     "of": "c3",
+     "at": 4,
+     "delay": 0.8
+    },
+    {
+     "type": "stick",
+     "pose": "point",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "until": 7,
+   "els": [
+    {
+     "type": "text",
+     "text": "the real number:",
+     "y": 360,
+     "at": 6,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "not the Fed's 4%",
+     "y": 465,
+     "at": 6,
+     "size": 58
+    },
+    {
+     "type": "text",
+     "text": "it's your card's 22%",
+     "y": 565,
+     "at": 6,
+     "size": 58
+    },
+    {
+     "type": "text",
+     "text": "about 5.6 times more",
+     "y": 665,
+     "at": 6,
+     "size": 58,
+     "id": "f6"
+    },
+    {
+     "type": "highlight",
+     "of": "f6",
+     "at": 6,
+     "delay": 0.4
+    },
+    {
+     "type": "stick",
+     "pose": "cheer",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "until": "end",
+   "els": [
+    {
+     "type": "card",
+     "label": "note:",
+     "lines": [
+      "Fed G.19 (Nov 6, 2026): 22.36%, Q3.",
+      "FOMC Oct 28, 2026: 3.75% to 4%.",
+      "Charge-offs 3.82%, Q2 2026 (FRED).",
+      "Education only. Not financial advice."
+     ],
+     "y": 350,
+     "at": 7
+    },
+    {
+     "type": "text",
+     "text": "follow for",
+     "y": 640,
+     "at": 7,
+     "font": "hand",
+     "size": 66,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "The Real Number",
+     "y": 715,
+     "at": 7,
+     "font": "head",
+     "size": 84,
+     "delay": 0.18,
+     "mode": "fade",
+     "id": "rn"
+    },
+    {
+     "type": "highlight",
+     "of": "rn",
+     "at": 7,
+     "delay": 0.33
+    },
+    {
+     "type": "stick",
+     "pose": "point",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 7
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "kicker": "the Fed: 4%",
+  "big": "22%",
+  "sub": "on your credit card?!",
+  "date": "Money Machine",
+  "big_color": "red",
+  "big_size": 200
+ },
+ "sources": [
+  {
+   "claim": "Commercial bank interest rate on credit card plans, accounts assessed interest: 22.36% (2026 Q3, preliminary); all accounts 21.19%. Fed G.19 released Nov 6, 2026, fetched Nov 18, 2026.",
+   "url": "https://www.federalreserve.gov/releases/G19/current/default.htm"
+  },
+  {
+   "claim": "FOMC maintained the federal funds target range at 3-3/4 to 4 percent on Oct 28, 2026 (vote 10-2).",
+   "url": "https://federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+  },
+  {
+   "claim": "Charge-off rate on credit card loans, all commercial banks: 3.82% (Q2 2026, seasonally adjusted), FRED, fetched Nov 18, 2026.",
+   "url": "https://fred.stlouisfed.org/series/CORCCACBS"
+  },
+  {
+   "claim": "Python: 22.36 - 4.00 = 18.36 points gap; 18.36 - 3.82 = 14.54 points; 22.36 / 4.00 = 5.59x. The split is a rough illustration, not an accounting breakdown.",
+   "url": "https://www.federalreserve.gov/releases/G19/current/default.htm"
+  }
+ ],
+ "post": {
+  "post_at": "2026-11-20T08:00:00+05:30",
+  "instagram_caption": "Why is your credit card 22% when the Fed's rate is 4%?\n\nThe Fed's own data: card accounts paying interest averaged 22.36% in Q3 2026. The Fed's key rate range tops out at 4% (held on Oct 28, 2026). That's an 18-point gap. Roughly 3.8 points of it is risk: banks wrote off 3.82% of card loans (Q2 2026), because card debt has no house or car behind it. The other 14.5 points or so covers running costs, rewards and the bank's margin. Rough illustration, not an accounting breakdown.\n\nDo you know your card's APR without checking?\n\nSources: Federal Reserve G.19 and FOMC statement, FRED (fetched Nov 18, 2026). Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#creditcards #interestrates #federalreserve #personalfinance #therealnumber",
+  "youtube_title": "Why Your Credit Card Is 22% When the Fed Is at 4%",
+  "youtube_description": "Card accounts paying interest averaged 22.36% in Q3 2026 (Federal Reserve G.19, released Nov 6, 2026), while the Fed's key rate range tops out at 4% (FOMC, Oct 28, 2026). Of the roughly 18-point gap, about 3.8 points is credit risk (charge-off rate 3.82%, Q2 2026); the rest, about 14.5 points, covers running costs, rewards and bank margin. Rough illustration, not an accounting breakdown. Education only, not financial advice. AI narration.\n\nSources: Fed G.19 https://www.federalreserve.gov/releases/G19/current/default.htm · FOMC statement https://federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm · FRED charge-offs https://fred.stlouisfed.org/series/CORCCACBS\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#creditcards #interestrates #federalreserve",
+  "youtube_tags": [
+   "credit card interest",
+   "APR",
+   "federal reserve",
+   "interest rates",
+   "the real number"
+  ]
+ }
+}
