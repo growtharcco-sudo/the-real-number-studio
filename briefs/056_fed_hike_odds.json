@@ -1,0 +1,174 @@
+{
+ "id": "056_fed_hike_odds",
+ "style": "notebook",
+ "layout": "presenter",
+ "series": "Money News",
+ "speed": 1.08,
+ "keywords": [
+  "Fed",
+  "hike",
+  "December",
+  "inflation",
+  "minutes",
+  "mortgage"
+ ],
+ "beats": [
+  {
+   "say": "Ninety-five percent. That's how sure traders are that the Fed raises rates again in December.",
+   "cap": "95%. That's how sure traders are that the Fed raises rates again in December.",
+   "pause": 0.3,
+   "show": {
+    "kind": "hook",
+    "big": "95%",
+    "sub": "odds of a Fed hike?!",
+    "date": "CME FedWatch via AP, Nov 18",
+    "color": "red",
+    "pose": "shocked"
+   }
+  },
+  {
+   "say": "On Wednesday, the Fed released notes from its October meeting.",
+   "pause": 0.3,
+   "show": {
+    "kind": "facts",
+    "label": "Fed minutes, Nov 18:",
+    "lines": [
+     "almost all: more hikes likely",
+     "some wanted one in October",
+     "a few: bigger than 0.25 pts"
+    ],
+    "pose": "point"
+   }
+  },
+  {
+   "say": "Almost all officials said more rate hikes would likely be appropriate.",
+   "pause": 0.3
+  },
+  {
+   "say": "Some wanted one already in October. A few even talked about a bigger move. Wait, what?",
+   "pause": 0.4
+  },
+  {
+   "say": "Why? Inflation. The Fed's favourite gauge hit three point six percent in September.",
+   "cap": "Why? Inflation. The Fed's favourite gauge hit 3.6% in September.",
+   "pause": 0.3,
+   "show": {
+    "kind": "compare",
+    "label": "inflation vs the target:",
+    "a": {
+     "label": "the Fed's target",
+     "value": "2%",
+     "frac": 0.555,
+     "color": "grey"
+    },
+    "b": {
+     "label": "PCE inflation, September",
+     "value": "3.6%",
+     "frac": 1.0
+    },
+    "color": "red",
+    "pose": "think"
+   }
+  },
+  {
+   "say": "The target is two. That's almost double.",
+   "cap": "The target is 2%. That's almost double.",
+   "pause": 0.4
+  },
+  {
+   "say": "The Fed's rate is now three point seven five to four percent, and mortgage rates have topped seven percent in recent months.",
+   "cap": "The Fed's rate is now 3.75% to 4%, and mortgage rates have topped 7% in recent months.",
+   "pause": 0.3,
+   "show": {
+    "kind": "facts",
+    "label": "where rates stand:",
+    "lines": [
+     "Fed: 3.75% to 4%",
+     "mortgages: topped 7%",
+     "next meeting: Dec 8 to 9"
+    ],
+    "pose": "shrug"
+   }
+  },
+  {
+   "say": "The next decision is December ninth.",
+   "pause": 0.4
+  },
+  {
+   "say": "So the real number isn't the Fed's four percent. It's the three point six they're chasing.",
+   "cap": "So the real number isn't the Fed's 4%. It's the 3.6% they're chasing.",
+   "pause": 0.3,
+   "show": {
+    "kind": "facts",
+    "label": "the real number:",
+    "lines": [
+     "not the Fed's 4%",
+     "it's 3.6% inflation",
+     "vs a 2% target"
+    ],
+    "pose": "cheer"
+   }
+  },
+  {
+   "say": "Market odds can change. Not financial advice. Follow for more.",
+   "pause": 0.45,
+   "show": {
+    "kind": "ending",
+    "lines": [
+     "FOMC minutes, released Nov 18, 2026.",
+     "AP: CME FedWatch about 95%, Nov 18.",
+     "AFP: PCE 3.6% in Sept. Odds can change.",
+     "Education only. Not financial advice."
+    ],
+    "pose": "point"
+   }
+  }
+ ],
+ "cover": {
+  "kicker": "will the Fed hike again?",
+  "big": "95%",
+  "sub": "traders think so",
+  "date": "Money News · Nov 18, 2026",
+  "big_color": "red",
+  "big_size": 190
+ },
+ "sources": [
+  {
+   "claim": "Fed released minutes of the Oct 27-28, 2026 FOMC meeting on Nov 18, 2026, 2:00 p.m. EST (Federal Reserve press release).",
+   "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm"
+  },
+  {
+   "claim": "Nearly all Fed officials expect a December hike; two floated a half-point; CME FedWatch showed roughly 95% odds of a December hike; mortgage rates have topped 7% in recent months (AP, Christopher Rugaber, Nov 18, 2026).",
+   "url": "https://www.investmentexecutive.com/news/economy/fed-minutes-point-to-need-for-higher-interest-rates/"
+  },
+  {
+   "claim": "'Almost all' participants judged further hikes likely appropriate; target range 3.75 to 4.00 percent, 10-2 vote; PCE inflation 3.6% in September (AFP via Korea Times, Nov 19, 2026 KST).",
+   "url": "https://www.koreatimes.co.kr/world/20261119/almost-all-fed-policymakers-saw-further-interest-rate-hikes-as-likely"
+  },
+  {
+   "claim": "Minutes: 'some' wanted a hike in October; 'a few' said a hike larger than 25 bp should be considered; market fully pricing a 25 bp hike at the Dec 8-9 meeting (XTB, Nov 18, 2026).",
+   "url": "https://www.xtb.com/int/market-analysis/news-and-research/fed-minutes-virtually-everyone-in-favor-of-further-rate-hikes-is-there-a-chance-for-50-basis-points-in-december"
+  },
+  {
+   "claim": "FOMC held the target range at 3-3/4 to 4 percent on Oct 28, 2026.",
+   "url": "https://federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+  },
+  {
+   "claim": "Python: 3.6 / 2 = 1.8x the target (almost double); gap 1.6 points.",
+   "url": "https://www.koreatimes.co.kr/world/20261119/almost-all-fed-policymakers-saw-further-interest-rate-hikes-as-likely"
+  }
+ ],
+ "post": {
+  "post_at": "2026-11-19T18:30:00+05:30",
+  "instagram_caption": "95%. That's how sure traders are that the Fed raises rates again in December.\n\nThe Fed's October minutes, released Nov 18, 2026, say almost all officials judged more rate hikes would likely be appropriate. Some wanted one already in October, and a few said a move bigger than a quarter point should be considered. The reason: PCE inflation, the Fed's preferred gauge, was 3.6% in September, against a 2% target. The Fed's rate is 3.75% to 4%, mortgage rates have topped 7% in recent months, and the next decision is Dec 9. CME FedWatch odds (about 95%, via AP) can change.\n\nHow are higher rates hitting your budget?\n\nSources: Federal Reserve, AP, AFP, XTB (Nov 18, 2026). Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#federalreserve #interestrates #inflation #moneynews #therealnumber",
+  "youtube_title": "95% Odds the Fed Hikes Again: What the Minutes Say",
+  "youtube_description": "The Fed's October minutes (released Nov 18, 2026) say almost all officials judged more rate hikes would likely be appropriate; some wanted one in October and a few raised a bigger move. PCE inflation was 3.6% in September against a 2% target. The Fed's rate is 3.75% to 4%, mortgage rates have topped 7% in recent months, and CME FedWatch showed about 95% odds of a December hike (AP, Nov 18, 2026). Odds can change. Education only, not financial advice. AI narration.\n\nSources: Federal Reserve https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm · AP via Investment Executive https://www.investmentexecutive.com/news/economy/fed-minutes-point-to-need-for-higher-interest-rates/ · AFP via Korea Times https://www.koreatimes.co.kr/world/20261119/almost-all-fed-policymakers-saw-further-interest-rate-hikes-as-likely\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#federalreserve #interestrates #inflation",
+  "youtube_tags": [
+   "federal reserve",
+   "fed minutes",
+   "rate hike",
+   "inflation",
+   "the real number"
+  ]
+ }
+}

@@ -12,13 +12,10 @@ payment, Binance hack, Oct 2026 Nasdaq wipeout.
 | $1,000 Then | $1,000 in Amazon in 1997 | ~$3.4M (price moves) | Amazon IR split history + close |
 | $1,000 Then | $1,000 with Buffett in 1965 | 5,502,284% vs 39,054% S&P | Berkshire annual letter (latest) |
 | How They Really Make Money | Coca-Cola pays Buffett 63% of his cost every year | ~$816M a year on ~$1.3B cost | Berkshire letter |
-| The Collapse | FTX: the $8 billion hole | ~$8B shortfall, 25-year sentence | DOJ SDNY |
 | The Collapse | Archegos: $20 billion gone in 2 days | Credit Suisse ~$5.5B loss | DOJ / CS report |
 | The Collapse | GameStop up ~28x in a month | ~$17 to $483 intraday, Jan 2021 | SEC staff report |
 | The Real Cost | Same debt, paid off 15 years faster | $200/month: 33 months, ~$1,486 interest | compute (state APR + rule) |
-| Money Machine | Why your card is ~20% when the Fed is ~4% | APR gap (rates move) | Bankrate + Fed, today |
 | Pros vs Index | Two in three funds didn't survive 20 years | 36.52% survived | SPIVA US latest |
-| Pros vs Index | 2-and-20: paid even when they lose | 2% of $1B = $20M a year | compute + definition |
 | How They Really Make Money | BlackRock manages ~$1,890 per human | AUM / world population | BlackRock IR + UN pop |
 | Crypto, Clearly | Crypto thieves stole $2.7B in one year | 2025 total | Chainalysis / TRM report |
 | Crypto, Clearly | The whole crypto market vs one company | total crypto cap vs Nvidia cap | CoinGecko + close, today |
@@ -37,3 +34,6 @@ India Edition: at most 1 in 7 posts.
 | The Real Cost | $5,000 card at $100/month: $9,012 interest | 22.15 0X0P+0PR (Fed G.19 Q2 2026) | queued 037_card_interest (2026-11-04 08:00 IST) |
 | $1,000 Then | $1,000 in Apple in 1980 | $3.52M before dividends (Nov 4, 2026 close $349.51) | queued 043_apple_1980 (2026-11-05 22:00 IST) |
 | Myth vs Math | "$24 for Manhattan" | 60 guilders in trade goods (Schagen letter, Nov 5, 1626) | queued 044_manhattan_24 (2026-11-06 08:00 IST) |
+| Wall Street Secrets | 2-and-20: $20M even in a losing year | 2% of $1B = $20M | queued 053_two_and_twenty (2026-11-19 08:00 IST) |
+| Money Machine | Card 22.36% vs Fed 4% | 22.36% (Fed G.19 Q3 2026) | queued 054_card_vs_fed (2026-11-20 08:00 IST) |
+| The Collapse | FTX paid 119%, about 32% in Bitcoin terms | $16,871 claim price vs $62,541 (Nov 18, 2026) | queued 055_ftx_twist (2026-11-20 22:00 IST) |
