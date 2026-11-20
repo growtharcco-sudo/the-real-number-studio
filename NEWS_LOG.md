@@ -11,3 +11,4 @@
 2026-11-12 20:24 IST | breaking | 050_huang_resigns | re-post of 049 with Kress photo (049 deleted by Samrit)
 2026-11-13 13:19 IST | breaking | 051_connected_or_not | Binance + Nvidia + stablecoin rule: connected? checked
 2026-11-19 02:35 IST | news | 056_fed_hike_odds | Fed minutes: almost all see more hikes, 95% odds
+2026-11-21 02:51 IST | news | 058_correction_friday | Nasdaq -5.1%, erases 2026 gain; S&P, Dow correction

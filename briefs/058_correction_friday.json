@@ -1,0 +1,72 @@
+{
+ "id": "058_correction_friday",
+ "style": "notebook",
+ "layout": "presenter",
+ "series": "Money News",
+ "speed": 1.08,
+ "keywords": ["Nasdaq", "correction", "record", "AI", "Anthropic", "year", "row"],
+ "beats": [
+  {
+   "say": "The Nasdaq fell five point one percent on Friday. In one day.",
+   "cap": "The Nasdaq fell 5.1% on Friday. In one day.",
+   "pause": 0.35,
+   "show": {"kind": "hook", "big": "-5.1%", "sub": "the Nasdaq, in one day", "date": "Nov 20, 2026 · Reuters", "color": "red", "pose": "shocked"}
+  },
+  {
+   "say": "Ouch. And wait for what it did to the whole year.",
+   "pause": 0.35
+  },
+  {
+   "say": "At the close, the S and P five hundred was down three point six percent.",
+   "cap": "At the close, the S&P 500 was down 3.6%.",
+   "pause": 0.3,
+   "show": {"kind": "facts", "label": "Friday, Nov 20, the close:", "lines": ["Nasdaq: -5.13%", "S&P 500: -3.59%", "Dow: -1.85%, -909 points"], "pose": "shocked"}
+  },
+  {
+   "say": "The Dow lost over nine hundred points.",
+   "pause": 0.35
+  },
+  {
+   "say": "The S and P and the Dow are now more than ten percent below their records. That's called a correction.",
+   "cap": "The S&P 500 and the Dow are now more than 10% below their records. That's called a correction.",
+   "pause": 0.3,
+   "show": {"kind": "number", "label": "below their record highs:", "value": 10, "suffix": "%+", "note": "S&P 500 + Dow = correction", "pose": "think"}
+  },
+  {
+   "say": "And the S and P fell seven days in a row. Its longest losing streak since February twenty twenty.",
+   "cap": "And the S&P 500 fell 7 days in a row. Its longest losing streak since February 2020.",
+   "pause": 0.35
+  },
+  {
+   "say": "The trigger? Fear around A I stocks. Even Anthropic's brand-new shares posted a steep loss on day two.",
+   "cap": "The trigger? Fear around AI stocks. Even Anthropic's brand-new shares posted a steep loss on day two.",
+   "pause": 0.35,
+   "show": {"kind": "facts", "label": "what's behind it (reported):", "lines": ["fear around AI stocks", "chip stocks hit hard", "Anthropic: steep loss, day 2"], "pose": "shrug"}
+  },
+  {
+   "say": "Now the big one. The Nasdaq's gain for twenty twenty-six? Gone. It's now negative for the year.",
+   "cap": "Now the big one. The Nasdaq's gain for 2026? Gone. It's now negative for the year.",
+   "pause": 0.35,
+   "show": {"kind": "facts", "label": "the Nasdaq in 2026:", "lines": ["its 2026 gain: erased", "now below zero for the year", "(Nov 20 close: 22,654)"], "pose": "shocked"}
+  },
+  {
+   "say": "The real number isn't one bad Friday. It's a whole year's gain, wiped out. Nobody knows what's next. Follow for more.",
+   "pause": 0.45,
+   "show": {"kind": "ending", "lines": ["Reuters, CBS News (Nov 20, 2026).", "Closes are Reuters preliminary data.", "Maths in Python.", "Education only. Not financial advice."], "pose": "point"}
+  }
+ ],
+ "cover": {"kicker": "Friday, the Nasdaq fell", "big": "-5.1%", "sub": "and wiped out its 2026 gain", "date": "Money News · Nov 20, 2026", "big_color": "red", "big_size": 190},
+ "sources": [
+  {"claim": "Reuters (via The Standard, Nov 20, 2026, preliminary data): S&P 500 lost 257.38 points, or 3.59%, to 6,918.45; Nasdaq Composite lost 1,225.05 points, or 5.13%, to 22,654.15; Dow fell 908.88 points, or 1.85%, to 48,188.18. Dow and S&P 500 more than 10% below record closing highs, confirming corrections. S&P 500 seventh consecutive drop, longest losing streak since February 2020. Nasdaq dipped into negative territory for the year. Anthropic's shares posted a steep loss on their second day. Fetched Nov 21, 2026.", "url": "https://www.thestandard.com.hk/finance/article/349179/Wall-St-ends-sharply-lower-on-AI-selloff-SP-500-Dow-in-correction"},
+  {"claim": "CBS News (Nov 20, 2026, 3:57 PM EST): both the S&P 500 and Dow entered correction territory; tech stocks plunged, with AMD and Broadcom leading losses. Fetched Nov 21, 2026.", "url": "https://www.cbsnews.com/news/stocks-enter-correction-territory-ai-fears/"},
+  {"claim": "Zacks via Yahoo Finance (Nov 20, 2026): Thursday Nov 19 closes: Dow 49,097.06; S&P 500 7,175.83; Nasdaq 23,879.20. Fetched Nov 21, 2026.", "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-nov-20-132200926.html"},
+  {"claim": "Python check: 7,175.83 - 257.38 = 6,918.45 (-3.587%); 23,879.20 - 1,225.05 = 22,654.15 (-5.130%); 49,097.06 - 908.88 = 48,188.18 (-1.851%).", "url": "https://www.thestandard.com.hk/finance/article/349179/Wall-St-ends-sharply-lower-on-AI-selloff-SP-500-Dow-in-correction"}
+ ],
+ "post": {
+  "post_at": "2026-11-21T18:30:00+05:30",
+  "instagram_caption": "The Nasdaq fell 5.1% in one day, and its whole 2026 gain is gone.\n\nOn Friday, Nov 20, 2026, the Nasdaq Composite lost 1,225 points (5.13%) to 22,654, now negative for the year. The S&P 500 fell 3.59% to 6,918 and the Dow fell 909 points (1.85%) to 48,188 (Reuters, preliminary closes). The S&P 500 and the Dow are now more than 10% below their record closes: a correction. The S&P 500 has fallen 7 days in a row, its longest streak since February 2020. Reported trigger: fear around AI stocks, with chip stocks hit hard and Anthropic's new shares posting a steep loss on their second day of trading. Nobody knows what comes next.\n\nHow are you feeling about the market this week?\n\nSources: Reuters, CBS News, Zacks (Nov 20, 2026). Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#stockmarket #nasdaq #sp500 #moneynews #therealnumber",
+  "youtube_title": "Nasdaq -5.1% in a Day: Its 2026 Gain Is Gone",
+  "youtube_description": "On Nov 20, 2026, the Nasdaq Composite fell 5.13% to 22,654 and turned negative for the year; the S&P 500 fell 3.59% to 6,918 and the Dow fell 1.85% to 48,188 (Reuters, preliminary closes). The S&P 500 and the Dow closed more than 10% below their records, a correction, and the S&P 500 fell for a 7th day in a row, its longest losing streak since February 2020. Reported trigger: fear around AI stocks; Anthropic's new shares posted a steep loss on their second day. Education only, not financial advice. AI narration.\n\nSources: Reuters via The Standard https://www.thestandard.com.hk/finance/article/349179/Wall-St-ends-sharply-lower-on-AI-selloff-SP-500-Dow-in-correction · CBS News https://www.cbsnews.com/news/stocks-enter-correction-territory-ai-fears/ · Zacks via Yahoo Finance https://finance.yahoo.com/markets/stocks/articles/stock-market-news-nov-20-132200926.html\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#stockmarket #nasdaq #sp500",
+  "youtube_tags": ["stock market", "nasdaq", "S&P 500 correction", "AI stocks", "the real number"]
+ }
+}
