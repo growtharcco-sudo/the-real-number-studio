@@ -36,3 +36,4 @@ India Edition: at most 1 in 7 posts.
 | The Collapse | FTX paid 119%, about 32% in Bitcoin terms | $16,871 claim price vs $62,541 (Nov 18, 2026) | queued 055_ftx_twist (2026-11-20 22:00 IST) |
 | How They Really Make Money | BlackRock manages about $1,880 per human | $15.49T AUM (Sep 30, 2026) / 8.24B people (PRB 2026) | queued 057_blackrock_per_human (2026-11-21 08:00 IST) |
 | Myth vs Math | "70% of lottery winners go broke" | NEFE (Jan 12, 2018): not backed by its research | queued 059_lottery_myth (2026-11-22 08:00 IST) |
+| The Collapse | Archegos: $36B fund, $160B of bets | $100B+ wiped out in under a week; banks lost $10B+ | queued 060_archegos_collapse (2026-11-22 22:00 IST) |

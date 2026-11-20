@@ -1,0 +1,494 @@
+{
+ "id": "060_archegos_collapse",
+ "style": "notebook",
+ "layout": "presenter",
+ "series": "The Collapse",
+ "voice": "am_michael",
+ "speed": 1.08,
+ "caption_keywords": [
+  "Archegos",
+  "borrowed",
+  "exposure",
+  "banks",
+  "Credit Suisse",
+  "fraud",
+  "prison"
+ ],
+ "phrases": [
+  {
+   "say": "March twenty twenty-one. In under a week, over one hundred billion dollars of stock value vanished. Wait for who paid.",
+   "cap": "March 2021. In under a week, over $100 billion of stock value vanished. Wait for who paid.",
+   "pause": 0.35
+  },
+  {
+   "say": "The fund was Archegos, run by Bill Hwang. It managed about thirty-six billion dollars.",
+   "cap": "The fund was Archegos, run by Bill Hwang. It managed about $36 billion.",
+   "pause": 0.3
+  },
+  {
+   "say": "Then he borrowed. A lot.",
+   "pause": 0.35
+  },
+  {
+   "say": "With borrowed money, his bets grew to one hundred sixty billion dollars of stocks.",
+   "cap": "With borrowed money, his bets grew to $160 billion of stocks.",
+   "pause": 0.3
+  },
+  {
+   "say": "That's about four dollars forty of stocks for every dollar. Wait, what?",
+   "cap": "That's about $4.40 of stocks for every $1. Wait, what?",
+   "pause": 0.35
+  },
+  {
+   "say": "When those stocks fell, lenders demanded cash. Archegos couldn't pay.",
+   "pause": 0.3
+  },
+  {
+   "say": "So who paid the bill? Wall Street banks lost more than ten billion dollars.",
+   "cap": "So who paid the bill? Wall Street banks lost more than $10 billion.",
+   "pause": 0.3
+  },
+  {
+   "say": "Credit Suisse alone lost five point five billion. Ouch. It's now part of U B S.",
+   "cap": "Credit Suisse alone lost $5.5 billion. Ouch. It's now part of UBS.",
+   "pause": 0.35
+  },
+  {
+   "say": "Hwang was convicted of fraud and sentenced to eighteen years in prison.",
+   "pause": 0.3
+  },
+  {
+   "say": "The real number isn't thirty-six billion. It's one hundred sixty. Borrowed money cuts both ways. Follow for more.",
+   "cap": "The real number isn't $36 billion. It's $160 billion. Borrowed money cuts both ways. Follow for more.",
+   "pause": 0.45
+  }
+ ],
+ "scenes": [
+  {
+   "until": 1,
+   "els": [
+    {
+     "type": "text",
+     "text": "$100B+",
+     "y": 400,
+     "at": -1,
+     "font": "head",
+     "size": 210,
+     "color": "red",
+     "mode": "fade",
+     "id": "hero"
+    },
+    {
+     "type": "text",
+     "text": "gone in less than a week",
+     "y": 660,
+     "at": -1,
+     "font": "hand",
+     "size": 78,
+     "color": "blue",
+     "rot": -1.5,
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "Archegos · March 2021",
+     "y": 770,
+     "at": -1,
+     "font": "hand",
+     "size": 54,
+     "color": "grey",
+     "mode": "fade"
+    },
+    {
+     "type": "stick",
+     "pose": "shocked",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": -1
+    }
+   ]
+  },
+  {
+   "until": 3,
+   "els": [
+    {
+     "type": "text",
+     "text": "Archegos managed:",
+     "y": 370,
+     "at": 1,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "count",
+     "value": 36,
+     "prefix": "$",
+     "suffix": "B",
+     "decimals": 0,
+     "y": 470,
+     "size": 200,
+     "color": "red",
+     "at": 1,
+     "id": "n1"
+    },
+    {
+     "type": "underline",
+     "of": "n1",
+     "color": "red",
+     "at": 1,
+     "delay": 1.0
+    },
+    {
+     "type": "text",
+     "text": "then he borrowed. a lot.",
+     "y": 760,
+     "at": 2,
+     "font": "hand",
+     "size": 66,
+     "color": "grey"
+    },
+    {
+     "type": "stick",
+     "pose": "point",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 1
+    }
+   ]
+  },
+  {
+   "until": 5,
+   "els": [
+    {
+     "type": "text",
+     "text": "Archegos, before the fall:",
+     "y": 350,
+     "at": 3,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "money it managed",
+     "y": 445,
+     "at": 3,
+     "size": 46,
+     "color": "grey",
+     "x": 135
+    },
+    {
+     "type": "bar",
+     "x": 135,
+     "y": 505,
+     "w": 163,
+     "color": "grey",
+     "at": 3,
+     "delay": 0.2
+    },
+    {
+     "type": "text",
+     "text": "about $36B",
+     "y": 550,
+     "at": 3,
+     "font": "head",
+     "size": 64,
+     "x": 135
+    },
+    {
+     "type": "text",
+     "text": "stocks it was exposed to",
+     "y": 645,
+     "at": 4,
+     "size": 46,
+     "color": "grey",
+     "x": 135
+    },
+    {
+     "type": "bar",
+     "x": 135,
+     "y": 705,
+     "w": 725,
+     "color": "red",
+     "at": 4,
+     "delay": 0.2
+    },
+    {
+     "type": "text",
+     "text": "$160B",
+     "y": 750,
+     "at": 4,
+     "font": "head",
+     "size": 64,
+     "color": "red",
+     "x": 135,
+     "id": "c3"
+    },
+    {
+     "type": "highlight",
+     "of": "c3",
+     "at": 4,
+     "delay": 0.8
+    },
+    {
+     "type": "stick",
+     "pose": "shocked",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "until": 6,
+   "els": [
+    {
+     "type": "text",
+     "text": "late March 2021:",
+     "y": 360,
+     "at": 5,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "the stocks fall",
+     "y": 465,
+     "at": 5,
+     "size": 58
+    },
+    {
+     "type": "text",
+     "text": "lenders demand cash",
+     "y": 565,
+     "at": 5,
+     "size": 58
+    },
+    {
+     "type": "text",
+     "text": "Archegos can't pay",
+     "y": 665,
+     "at": 5,
+     "size": 58,
+     "id": "f5"
+    },
+    {
+     "type": "highlight",
+     "of": "f5",
+     "at": 5,
+     "delay": 0.4
+    },
+    {
+     "type": "stick",
+     "pose": "think",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "until": 8,
+   "els": [
+    {
+     "type": "text",
+     "text": "the banks lost:",
+     "y": 370,
+     "at": 6,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "count",
+     "value": 10,
+     "prefix": "$",
+     "suffix": "B+",
+     "decimals": 0,
+     "y": 470,
+     "size": 200,
+     "color": "red",
+     "at": 6,
+     "id": "n6"
+    },
+    {
+     "type": "underline",
+     "of": "n6",
+     "color": "red",
+     "at": 6,
+     "delay": 1.0
+    },
+    {
+     "type": "text",
+     "text": "Credit Suisse alone: $5.5B",
+     "y": 760,
+     "at": 7,
+     "font": "hand",
+     "size": 66,
+     "color": "grey"
+    },
+    {
+     "type": "stick",
+     "pose": "shrug",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "until": 9,
+   "els": [
+    {
+     "type": "text",
+     "text": "the real number:",
+     "y": 360,
+     "at": 8,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "not $36B",
+     "y": 465,
+     "at": 8,
+     "size": 58
+    },
+    {
+     "type": "text",
+     "text": "$160B of bets",
+     "y": 565,
+     "at": 8,
+     "size": 58
+    },
+    {
+     "type": "text",
+     "text": "Hwang: 18 years in prison",
+     "y": 665,
+     "at": 8,
+     "size": 58,
+     "id": "f8"
+    },
+    {
+     "type": "highlight",
+     "of": "f8",
+     "at": 8,
+     "delay": 0.4
+    },
+    {
+     "type": "stick",
+     "pose": "think",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 8
+    }
+   ]
+  },
+  {
+   "until": "end",
+   "els": [
+    {
+     "type": "card",
+     "label": "note:",
+     "lines": [
+      "NBC News, AP (Nov 2024).",
+      "US DOJ, SDNY. Archegos: $36B",
+      "managed, $160B exposure.",
+      "Education only. Not financial advice."
+     ],
+     "y": 350,
+     "at": 9
+    },
+    {
+     "type": "text",
+     "text": "follow for",
+     "y": 640,
+     "at": 9,
+     "font": "hand",
+     "size": 66,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "The Real Number",
+     "y": 715,
+     "at": 9,
+     "font": "head",
+     "size": 84,
+     "delay": 0.18,
+     "mode": "fade",
+     "id": "rn"
+    },
+    {
+     "type": "highlight",
+     "of": "rn",
+     "at": 9,
+     "delay": 0.33
+    },
+    {
+     "type": "stick",
+     "pose": "point",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 9
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "kicker": "Archegos had $36B. It bet",
+  "big": "$160B",
+  "sub": "then it broke in under a week",
+  "date": "The Collapse",
+  "big_color": "red",
+  "big_size": 190
+ },
+ "sources": [
+  {
+   "claim": "Archegos eventually managed $36 billion; Hwang's borrowing helped him amass $160 billion of exposure to stocks; the March 2021 implosion took less than a week; more than $100 billion of market value in Hwang's stocks was wiped out; the collapse cost Wall Street banks more than $10 billion; Credit Suisse lost $5.5 billion and is now part of UBS; Hwang sentenced to 18 years (NBC News, Nov 2024). Fetched Nov 21, 2026.",
+   "url": "https://www.nbcnews.com/news/us-news/archegos-bill-hwang-sentenced-18-years-prison-massive-us-fraud-rcna181134"
+  },
+  {
+   "claim": "Margin calls in late March 2021 wiped out more than $100 billion in market value in just days (AP via Fortune, Nov 21, 2024). Fetched Nov 21, 2026.",
+   "url": "https://fortune.com/2024/11/21/archegos-founder-bill-hwang-sentenced-18-years-fraud-cost-investment-banks-billions/"
+  },
+  {
+   "claim": "US DOJ SDNY: Hwang convicted in July 2024 of racketeering conspiracy, securities fraud, market manipulation and wire fraud; sentenced to 18 years; in late March 2021 Archegos faced margin calls it could not meet, causing billions in losses to counterparties. Fetched Nov 21, 2026.",
+   "url": "https://www.justice.gov/usao-sdny/pr/founder-and-head-archegos-capital-management-bill-hwang-sentenced-18-years-prison"
+  },
+  {
+   "claim": "Python: 160 / 36 = 4.44 dollars of stock exposure per dollar managed.",
+   "url": "https://www.nbcnews.com/news/us-news/archegos-bill-hwang-sentenced-18-years-prison-massive-us-fraud-rcna181134"
+  }
+ ],
+ "post": {
+  "post_at": "2026-11-22T22:00:00+05:30",
+  "instagram_caption": "A $36 billion fund made $160 billion of bets. Then it broke in less than a week.\n\nArchegos Capital, run by Bill Hwang, eventually managed about $36 billion, but borrowing took its exposure to stocks to about $160 billion, about $4.40 for every $1. In late March 2021 those stocks fell, lenders demanded cash, and Archegos couldn't pay. More than $100 billion of market value in its stocks was wiped out in days. Banks lost more than $10 billion; Credit Suisse alone lost $5.5 billion. Hwang was convicted of fraud in July 2024 and sentenced to 18 years in prison.\n\nDid you know a fund could borrow that much?\n\nSources: NBC News, AP, US DOJ SDNY (2024). Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#archegos #hedgefund #wallstreet #leverage #therealnumber",
+  "youtube_title": "Archegos: $36 Billion Became $160 Billion of Bets, Then Broke",
+  "youtube_description": "Archegos Capital, run by Bill Hwang, eventually managed about $36 billion, but borrowing gave it about $160 billion of exposure to stocks (about $4.40 per $1). In late March 2021, margin calls it couldn't meet set off a collapse that took less than a week and wiped out more than $100 billion of market value in its stocks. Banks lost more than $10 billion, including $5.5 billion at Credit Suisse. Hwang was convicted in July 2024 and sentenced to 18 years in prison. Education only, not financial advice. AI narration.\n\nSources: NBC News https://www.nbcnews.com/news/us-news/archegos-bill-hwang-sentenced-18-years-prison-massive-us-fraud-rcna181134 · AP via Fortune https://fortune.com/2024/11/21/archegos-founder-bill-hwang-sentenced-18-years-fraud-cost-investment-banks-billions/ · US DOJ https://www.justice.gov/usao-sdny/pr/founder-and-head-archegos-capital-management-bill-hwang-sentenced-18-years-prison\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#archegos #hedgefund #wallstreet",
+  "youtube_tags": [
+   "Archegos",
+   "Bill Hwang",
+   "hedge fund collapse",
+   "Credit Suisse",
+   "the real number"
+  ]
+ }
+}

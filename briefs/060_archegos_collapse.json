@@ -1,0 +1,178 @@
+{
+ "id": "060_archegos_collapse",
+ "style": "notebook",
+ "layout": "presenter",
+ "series": "The Collapse",
+ "speed": 1.08,
+ "keywords": [
+  "Archegos",
+  "borrowed",
+  "exposure",
+  "banks",
+  "Credit Suisse",
+  "fraud",
+  "prison"
+ ],
+ "beats": [
+  {
+   "say": "March twenty twenty-one. In under a week, over one hundred billion dollars of stock value vanished. Wait for who paid.",
+   "cap": "March 2021. In under a week, over $100 billion of stock value vanished. Wait for who paid.",
+   "pause": 0.35,
+   "show": {
+    "kind": "hook",
+    "big": "$100B+",
+    "sub": "gone in less than a week",
+    "date": "Archegos · March 2021",
+    "color": "red",
+    "pose": "shocked"
+   }
+  },
+  {
+   "say": "The fund was Archegos, run by Bill Hwang. It managed about thirty-six billion dollars.",
+   "cap": "The fund was Archegos, run by Bill Hwang. It managed about $36 billion.",
+   "pause": 0.3,
+   "show": {
+    "kind": "number",
+    "label": "Archegos managed:",
+    "value": 36,
+    "prefix": "$",
+    "suffix": "B",
+    "note": "then he borrowed. a lot.",
+    "pose": "point"
+   }
+  },
+  {
+   "say": "Then he borrowed. A lot.",
+   "pause": 0.35
+  },
+  {
+   "say": "With borrowed money, his bets grew to one hundred sixty billion dollars of stocks.",
+   "cap": "With borrowed money, his bets grew to $160 billion of stocks.",
+   "pause": 0.3,
+   "show": {
+    "kind": "compare",
+    "label": "Archegos, before the fall:",
+    "a": {
+     "label": "money it managed",
+     "value": "about $36B",
+     "frac": 0.225,
+     "color": "grey"
+    },
+    "b": {
+     "label": "stocks it was exposed to",
+     "value": "$160B",
+     "frac": 1.0
+    },
+    "color": "red",
+    "pose": "shocked"
+   }
+  },
+  {
+   "say": "That's about four dollars forty of stocks for every dollar. Wait, what?",
+   "cap": "That's about $4.40 of stocks for every $1. Wait, what?",
+   "pause": 0.35
+  },
+  {
+   "say": "When those stocks fell, lenders demanded cash. Archegos couldn't pay.",
+   "pause": 0.3,
+   "show": {
+    "kind": "facts",
+    "label": "late March 2021:",
+    "lines": [
+     "the stocks fall",
+     "lenders demand cash",
+     "Archegos can't pay"
+    ],
+    "pose": "think"
+   }
+  },
+  {
+   "say": "So who paid the bill? Wall Street banks lost more than ten billion dollars.",
+   "cap": "So who paid the bill? Wall Street banks lost more than $10 billion.",
+   "pause": 0.3,
+   "show": {
+    "kind": "number",
+    "label": "the banks lost:",
+    "value": 10,
+    "prefix": "$",
+    "suffix": "B+",
+    "note": "Credit Suisse alone: $5.5B",
+    "color": "red",
+    "pose": "shrug"
+   }
+  },
+  {
+   "say": "Credit Suisse alone lost five point five billion. Ouch. It's now part of U B S.",
+   "cap": "Credit Suisse alone lost $5.5 billion. Ouch. It's now part of UBS.",
+   "pause": 0.35
+  },
+  {
+   "say": "Hwang was convicted of fraud and sentenced to eighteen years in prison.",
+   "pause": 0.3,
+   "show": {
+    "kind": "facts",
+    "label": "the real number:",
+    "lines": [
+     "not $36B",
+     "$160B of bets",
+     "Hwang: 18 years in prison"
+    ],
+    "pose": "think"
+   }
+  },
+  {
+   "say": "The real number isn't thirty-six billion. It's one hundred sixty. Borrowed money cuts both ways. Follow for more.",
+   "cap": "The real number isn't $36 billion. It's $160 billion. Borrowed money cuts both ways. Follow for more.",
+   "pause": 0.45,
+   "show": {
+    "kind": "ending",
+    "lines": [
+     "NBC News, AP (Nov 2024).",
+     "US DOJ, SDNY. Archegos: $36B",
+     "managed, $160B exposure.",
+     "Education only. Not financial advice."
+    ],
+    "pose": "point"
+   }
+  }
+ ],
+ "cover": {
+  "kicker": "Archegos had $36B. It bet",
+  "big": "$160B",
+  "sub": "then it broke in under a week",
+  "date": "The Collapse",
+  "big_color": "red",
+  "big_size": 190
+ },
+ "sources": [
+  {
+   "claim": "Archegos eventually managed $36 billion; Hwang's borrowing helped him amass $160 billion of exposure to stocks; the March 2021 implosion took less than a week; more than $100 billion of market value in Hwang's stocks was wiped out; the collapse cost Wall Street banks more than $10 billion; Credit Suisse lost $5.5 billion and is now part of UBS; Hwang sentenced to 18 years (NBC News, Nov 2024). Fetched Nov 21, 2026.",
+   "url": "https://www.nbcnews.com/news/us-news/archegos-bill-hwang-sentenced-18-years-prison-massive-us-fraud-rcna181134"
+  },
+  {
+   "claim": "Margin calls in late March 2021 wiped out more than $100 billion in market value in just days (AP via Fortune, Nov 21, 2024). Fetched Nov 21, 2026.",
+   "url": "https://fortune.com/2024/11/21/archegos-founder-bill-hwang-sentenced-18-years-fraud-cost-investment-banks-billions/"
+  },
+  {
+   "claim": "US DOJ SDNY: Hwang convicted in July 2024 of racketeering conspiracy, securities fraud, market manipulation and wire fraud; sentenced to 18 years; in late March 2021 Archegos faced margin calls it could not meet, causing billions in losses to counterparties. Fetched Nov 21, 2026.",
+   "url": "https://www.justice.gov/usao-sdny/pr/founder-and-head-archegos-capital-management-bill-hwang-sentenced-18-years-prison"
+  },
+  {
+   "claim": "Python: 160 / 36 = 4.44 dollars of stock exposure per dollar managed.",
+   "url": "https://www.nbcnews.com/news/us-news/archegos-bill-hwang-sentenced-18-years-prison-massive-us-fraud-rcna181134"
+  }
+ ],
+ "post": {
+  "post_at": "2026-11-22T22:00:00+05:30",
+  "instagram_caption": "A $36 billion fund made $160 billion of bets. Then it broke in less than a week.\n\nArchegos Capital, run by Bill Hwang, eventually managed about $36 billion, but borrowing took its exposure to stocks to about $160 billion, about $4.40 for every $1. In late March 2021 those stocks fell, lenders demanded cash, and Archegos couldn't pay. More than $100 billion of market value in its stocks was wiped out in days. Banks lost more than $10 billion; Credit Suisse alone lost $5.5 billion. Hwang was convicted of fraud in July 2024 and sentenced to 18 years in prison.\n\nDid you know a fund could borrow that much?\n\nSources: NBC News, AP, US DOJ SDNY (2024). Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#archegos #hedgefund #wallstreet #leverage #therealnumber",
+  "youtube_title": "Archegos: $36 Billion Became $160 Billion of Bets, Then Broke",
+  "youtube_description": "Archegos Capital, run by Bill Hwang, eventually managed about $36 billion, but borrowing gave it about $160 billion of exposure to stocks (about $4.40 per $1). In late March 2021, margin calls it couldn't meet set off a collapse that took less than a week and wiped out more than $100 billion of market value in its stocks. Banks lost more than $10 billion, including $5.5 billion at Credit Suisse. Hwang was convicted in July 2024 and sentenced to 18 years in prison. Education only, not financial advice. AI narration.\n\nSources: NBC News https://www.nbcnews.com/news/us-news/archegos-bill-hwang-sentenced-18-years-prison-massive-us-fraud-rcna181134 · AP via Fortune https://fortune.com/2024/11/21/archegos-founder-bill-hwang-sentenced-18-years-fraud-cost-investment-banks-billions/ · US DOJ https://www.justice.gov/usao-sdny/pr/founder-and-head-archegos-capital-management-bill-hwang-sentenced-18-years-prison\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#archegos #hedgefund #wallstreet",
+  "youtube_tags": [
+   "Archegos",
+   "Bill Hwang",
+   "hedge fund collapse",
+   "Credit Suisse",
+   "the real number"
+  ]
+ }
+}
