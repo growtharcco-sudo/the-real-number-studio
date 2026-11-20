@@ -12,13 +12,11 @@ payment, Binance hack, Oct 2026 Nasdaq wipeout.
 | $1,000 Then | $1,000 in Amazon in 1997 | ~$3.4M (price moves) | Amazon IR split history + close |
 | $1,000 Then | $1,000 with Buffett in 1965 | 5,502,284% vs 39,054% S&P | Berkshire annual letter (latest) |
 | How They Really Make Money | Coca-Cola pays Buffett 63% of his cost every year | ~$816M a year on ~$1.3B cost | Berkshire letter |
-| The Collapse | Archegos: $20 billion gone in 2 days | Credit Suisse ~$5.5B loss | DOJ / CS report |
 | The Collapse | GameStop up ~28x in a month | ~$17 to $483 intraday, Jan 2021 | SEC staff report |
 | The Real Cost | Same debt, paid off 15 years faster | $200/month: 33 months, ~$1,486 interest | compute (state APR + rule) |
 | Pros vs Index | Two in three funds didn't survive 20 years | 36.52% survived | SPIVA US latest |
 | Crypto, Clearly | Crypto thieves stole $2.7B in one year | 2025 total | Chainalysis / TRM report |
 | Crypto, Clearly | The whole crypto market vs one company | total crypto cap vs Nvidia cap | CoinGecko + close, today |
-| Myth vs Math | "70% of lottery winners go broke" | myth: try to find the source | trace the claim |
 | Myth vs Math | Tulip mania prices | myth vs record | academic source |
 | The Real Cost (India Edition) | Your "safe" FD is losing money | ~ -0.25% real after 30% tax | RBI CPI + bank FD rate, today |
 | The Real Cost (India Edition) | A ₹50 lakh home loan costs ₹1.04 crore | 8.5%, 20 years | compute |
@@ -37,3 +35,4 @@ India Edition: at most 1 in 7 posts.
 | Money Machine | Card 22.36% vs Fed 4% | 22.36% (Fed G.19 Q3 2026) | queued 054_card_vs_fed (2026-11-20 08:00 IST) |
 | The Collapse | FTX paid 119%, about 32% in Bitcoin terms | $16,871 claim price vs $62,541 (Nov 18, 2026) | queued 055_ftx_twist (2026-11-20 22:00 IST) |
 | How They Really Make Money | BlackRock manages about $1,880 per human | $15.49T AUM (Sep 30, 2026) / 8.24B people (PRB 2026) | queued 057_blackrock_per_human (2026-11-21 08:00 IST) |
+| Myth vs Math | "70% of lottery winners go broke" | NEFE (Jan 12, 2018): not backed by its research | queued 059_lottery_myth (2026-11-22 08:00 IST) |

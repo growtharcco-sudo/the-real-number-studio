@@ -1,0 +1,284 @@
+{
+ "id": "059_lottery_myth",
+ "style": "notebook",
+ "layout": "presenter",
+ "series": "Myth vs Math",
+ "voice": "am_michael",
+ "speed": 1.08,
+ "caption_keywords": [
+  "lottery",
+  "winners",
+  "broke",
+  "research",
+  "Swedish",
+  "satisfaction",
+  "myth"
+ ],
+ "phrases": [
+  {
+   "say": "Everyone says seventy percent of lottery winners go broke. Let's check that.",
+   "cap": "Everyone says 70% of lottery winners go broke. Let's check that.",
+   "pause": 0.35
+  },
+  {
+   "say": "It's usually credited to a US financial education group, N E F E.",
+   "pause": 0.3
+  },
+  {
+   "say": "In twenty eighteen, the group said it's not backed by its research. Just one person, at a two thousand one meeting.",
+   "cap": "In 2018, the group said it's not backed by its research. Just one person, at a 2001 meeting.",
+   "pause": 0.35
+  },
+  {
+   "say": "So, real research. A Swedish study surveyed big winners five to twenty-two years later.",
+   "cap": "So, real research. A Swedish study surveyed big winners 5 to 22 years later.",
+   "pause": 0.3
+  },
+  {
+   "say": "Their life satisfaction was higher than similar people's, and it lasted over a decade.",
+   "pause": 0.35
+  },
+  {
+   "say": "The real number isn't seventy percent. It's one unchecked quote. Follow for more.",
+   "cap": "The real number isn't 70%. It's one unchecked quote. Follow for more.",
+   "pause": 0.45
+  }
+ ],
+ "scenes": [
+  {
+   "until": 1,
+   "els": [
+    {
+     "type": "text",
+     "text": "70%",
+     "y": 400,
+     "at": -1,
+     "font": "head",
+     "size": 210,
+     "color": "red",
+     "mode": "fade",
+     "id": "hero"
+    },
+    {
+     "type": "text",
+     "text": "of lottery winners go broke?",
+     "y": 660,
+     "at": -1,
+     "font": "hand",
+     "size": 78,
+     "color": "blue",
+     "rot": -1.5,
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "let's check",
+     "y": 770,
+     "at": -1,
+     "font": "hand",
+     "size": 54,
+     "color": "grey",
+     "mode": "fade"
+    },
+    {
+     "type": "stick",
+     "pose": "shrug",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": -1
+    }
+   ]
+  },
+  {
+   "until": 3,
+   "els": [
+    {
+     "type": "text",
+     "text": "the source, supposedly:",
+     "y": 360,
+     "at": 1,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "a US financial education group",
+     "y": 465,
+     "at": 1,
+     "size": 58
+    },
+    {
+     "type": "text",
+     "text": "a 2001 meeting",
+     "y": 565,
+     "at": 2,
+     "size": 58
+    },
+    {
+     "type": "text",
+     "text": "one person said \"70%\"",
+     "y": 665,
+     "at": 2,
+     "size": 58,
+     "id": "f1"
+    },
+    {
+     "type": "highlight",
+     "of": "f1",
+     "at": 2,
+     "delay": 0.4
+    },
+    {
+     "type": "stick",
+     "pose": "point",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 1
+    }
+   ]
+  },
+  {
+   "until": 5,
+   "els": [
+    {
+     "type": "text",
+     "text": "Sweden, 5 to 22 years later:",
+     "y": 360,
+     "at": 3,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "big winners vs similar people",
+     "y": 465,
+     "at": 3,
+     "size": 58
+    },
+    {
+     "type": "text",
+     "text": "life satisfaction: higher",
+     "y": 565,
+     "at": 4,
+     "size": 58
+    },
+    {
+     "type": "text",
+     "text": "and it lasted over a decade",
+     "y": 665,
+     "at": 4,
+     "size": 58,
+     "id": "f3"
+    },
+    {
+     "type": "highlight",
+     "of": "f3",
+     "at": 4,
+     "delay": 0.4
+    },
+    {
+     "type": "stick",
+     "pose": "shocked",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "until": "end",
+   "els": [
+    {
+     "type": "card",
+     "label": "note:",
+     "lines": [
+      "NEFE statement, Jan 12, 2018.",
+      "Lindqvist, Ostling, Cesarini,",
+      "Review of Economic Studies, 2020.",
+      "Education only. Not financial advice."
+     ],
+     "y": 350,
+     "at": 5
+    },
+    {
+     "type": "text",
+     "text": "follow for",
+     "y": 640,
+     "at": 5,
+     "font": "hand",
+     "size": 66,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "The Real Number",
+     "y": 715,
+     "at": 5,
+     "font": "head",
+     "size": 84,
+     "delay": 0.18,
+     "mode": "fade",
+     "id": "rn"
+    },
+    {
+     "type": "highlight",
+     "of": "rn",
+     "at": 5,
+     "delay": 0.33
+    },
+    {
+     "type": "stick",
+     "pose": "point",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 5
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "kicker": "70% of lottery winners go broke?",
+  "big": "70%?",
+  "sub": "nobody can back it up",
+  "date": "Myth vs Math",
+  "big_color": "red",
+  "big_size": 190
+ },
+ "sources": [
+  {
+   "claim": "NEFE, Jan 12, 2018: the 70 percent statistic 'is not backed by research from NEFE, nor can it be confirmed by the organization'; a participant stated it at a 2001 NEFE think tank, 'independently and without verification from NEFE'. Fetched Nov 21, 2026.",
+   "url": "https://www.nefe.org/news/2018/01/research-statistic-on-financial-windfalls-and-bankruptcy.aspx"
+  },
+  {
+   "claim": "Lindqvist, Ostling and Cesarini, 'Long-Run Effects of Lottery Wealth on Psychological Well-Being', Review of Economic Studies 87(6), 2020: Swedish lottery players surveyed 5 to 22 years after the win; large-prize winners show sustained increases in overall life satisfaction that persist for over a decade. Fetched Nov 21, 2026.",
+   "url": "https://ideas.repec.org/a/oup/restud/v87y2020i6p2703-2726..html"
+  },
+  {
+   "claim": "NBER Working Paper 24667 (May 2018), same study.",
+   "url": "https://www.nber.org/papers/w24667"
+  }
+ ],
+ "post": {
+  "post_at": "2026-11-22T08:00:00+05:30",
+  "instagram_caption": "\"70% of lottery winners go broke.\" Where does that number actually come from?\n\nThe stat is usually credited to the US National Endowment for Financial Education (NEFE). In January 2018, NEFE said it is not backed by its research and cannot be confirmed: one participant said it at a 2001 NEFE think tank. Meanwhile, a Swedish study (Review of Economic Studies, 2020) surveyed lottery players 5 to 22 years after a win and found big winners' life satisfaction was higher than similar people's, and stayed higher for over a decade. That study measured satisfaction, not bank balances.\n\nWhat money \"fact\" have you heard that you'd like us to check?\n\nSources: NEFE (Jan 12, 2018), Lindqvist, Ostling and Cesarini (2020). Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#lottery #moneymyths #personalfinance #financialliteracy #therealnumber",
+  "youtube_title": "\"70% of Lottery Winners Go Broke\"? Nobody Can Back It Up",
+  "youtube_description": "The popular \"70% of lottery winners go broke\" stat is usually credited to the National Endowment for Financial Education. In a statement dated Jan 12, 2018, NEFE said it is not backed by its research and cannot be confirmed; a participant said it at a 2001 think tank. A Swedish study (Lindqvist, Ostling and Cesarini, Review of Economic Studies, 2020) surveyed lottery players 5 to 22 years after a win and found large-prize winners' life satisfaction rose and stayed higher for over a decade. It measured satisfaction, not bank balances. Education only, not financial advice. AI narration.\n\nSources: NEFE https://www.nefe.org/news/2018/01/research-statistic-on-financial-windfalls-and-bankruptcy.aspx · Review of Economic Studies (2020) https://ideas.repec.org/a/oup/restud/v87y2020i6p2703-2726..html · NBER https://www.nber.org/papers/w24667\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#lottery #moneymyths #personalfinance",
+  "youtube_tags": [
+   "lottery winners",
+   "money myths",
+   "lottery curse",
+   "personal finance",
+   "the real number"
+  ]
+ }
+}

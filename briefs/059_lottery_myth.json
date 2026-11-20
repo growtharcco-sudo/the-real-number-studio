@@ -1,0 +1,119 @@
+{
+ "id": "059_lottery_myth",
+ "style": "notebook",
+ "layout": "presenter",
+ "series": "Myth vs Math",
+ "speed": 1.08,
+ "keywords": [
+  "lottery",
+  "winners",
+  "broke",
+  "research",
+  "Swedish",
+  "satisfaction",
+  "myth"
+ ],
+ "beats": [
+  {
+   "say": "Everyone says seventy percent of lottery winners go broke. Let's check that.",
+   "cap": "Everyone says 70% of lottery winners go broke. Let's check that.",
+   "pause": 0.35,
+   "show": {
+    "kind": "hook",
+    "big": "70%",
+    "sub": "of lottery winners go broke?",
+    "date": "let's check",
+    "color": "red",
+    "pose": "shrug"
+   }
+  },
+  {
+   "say": "It's usually credited to a US financial education group, N E F E.",
+   "pause": 0.3,
+   "show": {
+    "kind": "facts",
+    "label": "the source, supposedly:",
+    "lines": [
+     "a US financial education group",
+     "a 2001 meeting",
+     "one person said \"70%\""
+    ],
+    "pose": "point"
+   }
+  },
+  {
+   "say": "In twenty eighteen, the group said it's not backed by its research. Just one person, at a two thousand one meeting.",
+   "cap": "In 2018, the group said it's not backed by its research. Just one person, at a 2001 meeting.",
+   "pause": 0.35
+  },
+  {
+   "say": "So, real research. A Swedish study surveyed big winners five to twenty-two years later.",
+   "cap": "So, real research. A Swedish study surveyed big winners 5 to 22 years later.",
+   "pause": 0.3,
+   "show": {
+    "kind": "facts",
+    "label": "Sweden, 5 to 22 years later:",
+    "lines": [
+     "big winners vs similar people",
+     "life satisfaction: higher",
+     "and it lasted over a decade"
+    ],
+    "pose": "shocked"
+   }
+  },
+  {
+   "say": "Their life satisfaction was higher than similar people's, and it lasted over a decade.",
+   "pause": 0.35
+  },
+  {
+   "say": "The real number isn't seventy percent. It's one unchecked quote. Follow for more.",
+   "cap": "The real number isn't 70%. It's one unchecked quote. Follow for more.",
+   "pause": 0.45,
+   "show": {
+    "kind": "ending",
+    "lines": [
+     "NEFE statement, Jan 12, 2018.",
+     "Lindqvist, Ostling, Cesarini,",
+     "Review of Economic Studies, 2020.",
+     "Education only. Not financial advice."
+    ],
+    "pose": "point"
+   }
+  }
+ ],
+ "cover": {
+  "kicker": "70% of lottery winners go broke?",
+  "big": "70%?",
+  "sub": "nobody can back it up",
+  "date": "Myth vs Math",
+  "big_color": "red",
+  "big_size": 190
+ },
+ "sources": [
+  {
+   "claim": "NEFE, Jan 12, 2018: the 70 percent statistic 'is not backed by research from NEFE, nor can it be confirmed by the organization'; a participant stated it at a 2001 NEFE think tank, 'independently and without verification from NEFE'. Fetched Nov 21, 2026.",
+   "url": "https://www.nefe.org/news/2018/01/research-statistic-on-financial-windfalls-and-bankruptcy.aspx"
+  },
+  {
+   "claim": "Lindqvist, Ostling and Cesarini, 'Long-Run Effects of Lottery Wealth on Psychological Well-Being', Review of Economic Studies 87(6), 2020: Swedish lottery players surveyed 5 to 22 years after the win; large-prize winners show sustained increases in overall life satisfaction that persist for over a decade. Fetched Nov 21, 2026.",
+   "url": "https://ideas.repec.org/a/oup/restud/v87y2020i6p2703-2726..html"
+  },
+  {
+   "claim": "NBER Working Paper 24667 (May 2018), same study.",
+   "url": "https://www.nber.org/papers/w24667"
+  }
+ ],
+ "post": {
+  "post_at": "2026-11-22T08:00:00+05:30",
+  "instagram_caption": "\"70% of lottery winners go broke.\" Where does that number actually come from?\n\nThe stat is usually credited to the US National Endowment for Financial Education (NEFE). In January 2018, NEFE said it is not backed by its research and cannot be confirmed: one participant said it at a 2001 NEFE think tank. Meanwhile, a Swedish study (Review of Economic Studies, 2020) surveyed lottery players 5 to 22 years after a win and found big winners' life satisfaction was higher than similar people's, and stayed higher for over a decade. That study measured satisfaction, not bank balances.\n\nWhat money \"fact\" have you heard that you'd like us to check?\n\nSources: NEFE (Jan 12, 2018), Lindqvist, Ostling and Cesarini (2020). Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#lottery #moneymyths #personalfinance #financialliteracy #therealnumber",
+  "youtube_title": "\"70% of Lottery Winners Go Broke\"? Nobody Can Back It Up",
+  "youtube_description": "The popular \"70% of lottery winners go broke\" stat is usually credited to the National Endowment for Financial Education. In a statement dated Jan 12, 2018, NEFE said it is not backed by its research and cannot be confirmed; a participant said it at a 2001 think tank. A Swedish study (Lindqvist, Ostling and Cesarini, Review of Economic Studies, 2020) surveyed lottery players 5 to 22 years after a win and found large-prize winners' life satisfaction rose and stayed higher for over a decade. It measured satisfaction, not bank balances. Education only, not financial advice. AI narration.\n\nSources: NEFE https://www.nefe.org/news/2018/01/research-statistic-on-financial-windfalls-and-bankruptcy.aspx · Review of Economic Studies (2020) https://ideas.repec.org/a/oup/restud/v87y2020i6p2703-2726..html · NBER https://www.nber.org/papers/w24667\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#lottery #moneymyths #personalfinance",
+  "youtube_tags": [
+   "lottery winners",
+   "money myths",
+   "lottery curse",
+   "personal finance",
+   "the real number"
+  ]
+ }
+}
