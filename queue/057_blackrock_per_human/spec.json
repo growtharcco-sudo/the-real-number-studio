@@ -1,0 +1,335 @@
+{
+ "id": "057_blackrock_per_human",
+ "style": "notebook",
+ "layout": "presenter",
+ "series": "How They Really Make Money",
+ "voice": "am_michael",
+ "speed": 1.08,
+ "caption_keywords": [
+  "BlackRock",
+  "trillion",
+  "clients",
+  "human",
+  "Earth",
+  "day"
+ ],
+ "phrases": [
+  {
+   "say": "How much money does one company manage, for every single human on Earth?",
+   "pause": 0.35
+  },
+  {
+   "say": "BlackRock. On September thirtieth, it managed fifteen point five trillion dollars of clients' money.",
+   "cap": "BlackRock. On September 30, it managed $15.5 trillion of clients' money.",
+   "pause": 0.3
+  },
+  {
+   "say": "In three months, clients handed it two hundred five billion more. About two point two billion a day.",
+   "cap": "In 3 months, clients handed it $205 billion more. About $2.2 billion a day.",
+   "pause": 0.3
+  },
+  {
+   "say": "A day! Now split it across eight point two four billion people.",
+   "cap": "A day! Now split it across 8.24 billion people.",
+   "pause": 0.35
+  },
+  {
+   "say": "About one thousand eight hundred eighty dollars, for every human. Even babies.",
+   "cap": "About $1,880, for every human. Even babies.",
+   "pause": 0.35
+  },
+  {
+   "say": "The real number isn't fifteen trillion. It's eighteen eighty, per person. Follow for more.",
+   "cap": "The real number isn't $15 trillion. It's $1,880, per person. Follow for more.",
+   "pause": 0.45
+  }
+ ],
+ "scenes": [
+  {
+   "until": 1,
+   "els": [
+    {
+     "type": "text",
+     "text": "$?",
+     "y": 400,
+     "at": -1,
+     "font": "head",
+     "size": 210,
+     "color": "red",
+     "mode": "fade",
+     "id": "hero"
+    },
+    {
+     "type": "text",
+     "text": "for every human on Earth",
+     "y": 660,
+     "at": -1,
+     "font": "hand",
+     "size": 78,
+     "color": "blue",
+     "rot": -1.5,
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "wait for it",
+     "y": 770,
+     "at": -1,
+     "font": "hand",
+     "size": 54,
+     "color": "grey",
+     "mode": "fade"
+    },
+    {
+     "type": "stick",
+     "pose": "think",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": -1
+    }
+   ]
+  },
+  {
+   "until": 2,
+   "els": [
+    {
+     "type": "text",
+     "text": "BlackRock manages:",
+     "y": 370,
+     "at": 1,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "count",
+     "value": 15.5,
+     "prefix": "$",
+     "suffix": "T",
+     "decimals": 1,
+     "y": 470,
+     "size": 200,
+     "color": "red",
+     "at": 1,
+     "id": "n1"
+    },
+    {
+     "type": "underline",
+     "of": "n1",
+     "color": "red",
+     "at": 1,
+     "delay": 1.0
+    },
+    {
+     "type": "text",
+     "text": "as of Sep 30, 2026",
+     "y": 760,
+     "at": 1,
+     "font": "hand",
+     "size": 66,
+     "color": "grey"
+    },
+    {
+     "type": "stick",
+     "pose": "shocked",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 1
+    }
+   ]
+  },
+  {
+   "until": 4,
+   "els": [
+    {
+     "type": "text",
+     "text": "in just 3 months:",
+     "y": 360,
+     "at": 2,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "$205B of new money came in",
+     "y": 465,
+     "at": 2,
+     "size": 58
+    },
+    {
+     "type": "text",
+     "text": "that's about $2.2B a day",
+     "y": 565,
+     "at": 3,
+     "size": 58
+    },
+    {
+     "type": "text",
+     "text": "its Q3 revenue: $7.75B",
+     "y": 665,
+     "at": 3,
+     "size": 58,
+     "id": "f2"
+    },
+    {
+     "type": "highlight",
+     "of": "f2",
+     "at": 3,
+     "delay": 0.4
+    },
+    {
+     "type": "stick",
+     "pose": "point",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 2
+    }
+   ]
+  },
+  {
+   "until": 5,
+   "els": [
+    {
+     "type": "text",
+     "text": "$15.5T / 8.24B people =",
+     "y": 370,
+     "at": 4,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "count",
+     "value": 1880,
+     "prefix": "$",
+     "suffix": "",
+     "decimals": 0,
+     "y": 470,
+     "size": 200,
+     "color": "green",
+     "at": 4,
+     "id": "n4"
+    },
+    {
+     "type": "underline",
+     "of": "n4",
+     "color": "green",
+     "at": 4,
+     "delay": 1.0
+    },
+    {
+     "type": "text",
+     "text": "per human. even babies.",
+     "y": 760,
+     "at": 4,
+     "font": "hand",
+     "size": 66,
+     "color": "grey"
+    },
+    {
+     "type": "stick",
+     "pose": "cheer",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "until": "end",
+   "els": [
+    {
+     "type": "card",
+     "label": "note:",
+     "lines": [
+      "BlackRock Q3 2026 results (Oct 14):",
+      "AUM $15.49T, net inflows $205B.",
+      "People: PRB 2026, 8.24B. Maths in Python.",
+      "Education only. Not financial advice."
+     ],
+     "y": 350,
+     "at": 5
+    },
+    {
+     "type": "text",
+     "text": "follow for",
+     "y": 640,
+     "at": 5,
+     "font": "hand",
+     "size": 66,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "The Real Number",
+     "y": 715,
+     "at": 5,
+     "font": "head",
+     "size": 84,
+     "delay": 0.18,
+     "mode": "fade",
+     "id": "rn"
+    },
+    {
+     "type": "highlight",
+     "of": "rn",
+     "at": 5,
+     "delay": 0.33
+    },
+    {
+     "type": "stick",
+     "pose": "point",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 5
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "kicker": "BlackRock manages, per human:",
+  "big": "$1,880",
+  "sub": "every person on Earth",
+  "date": "BlackRock, Sep 30, 2026",
+  "big_color": "green",
+  "big_size": 190
+ },
+ "sources": [
+  {
+   "claim": "BlackRock Q3 2026 earnings release (Oct 14, 2026, SEC 8-K exhibit 99.1): AUM $15,488,263 million at Sep 30, 2026 ($15.5 trillion); Q3 net inflows $205,466 million. Fetched Nov 21, 2026.",
+   "url": "https://www.sec.gov/Archives/edgar/data/0002012383/000119312526420979/blk-ex99_1.htm"
+  },
+  {
+   "claim": "World population 2026: 8.24 billion (PRB 2026 World Population Data Sheet, Oct 20, 2026). US Census IDB: 8.2 billion in July 2026. Fetched Nov 21, 2026.",
+   "url": "https://www.prb.org/app/uploads/2026/10/10.20.26_PRB_World-Population-Data-Sheet_Key-Findings-Brief.pdf"
+  },
+  {
+   "claim": "Python: 15,488,263e6 / 8.24e9 = $1,879.64 per person; 205,466e6 / 92 days (Jul 1 to Sep 30) = $2.233B a day.",
+   "url": "https://www.sec.gov/Archives/edgar/data/0002012383/000119312526420979/blk-ex99_1.htm"
+  }
+ ],
+ "post": {
+  "post_at": "2026-11-21T08:00:00+05:30",
+  "instagram_caption": "BlackRock manages about $1,880 for every human on Earth.\n\nOn Sep 30, 2026, BlackRock managed $15.5 trillion of clients' money, from pension funds to everyday savers, per its Q3 results. In those three months alone, clients added $205 billion, about $2.2 billion a day. Split $15.5 trillion across the world's 8.24 billion people (PRB, 2026) and it comes to about $1,880 each.\n\nDid you know your pension or index fund might be managed by a company you've never thought about?\n\nSources: BlackRock Q3 2026 results (Oct 14, 2026), PRB 2026 World Population Data Sheet. Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#blackrock #assetmanagement #wallstreet #moneyfacts #therealnumber",
+  "youtube_title": "BlackRock Manages About $1,880 for Every Human on Earth",
+  "youtube_description": "BlackRock managed $15.5 trillion of client money on Sep 30, 2026 (Q3 2026 results, Oct 14, 2026), and clients added $205 billion in the quarter, about $2.2 billion a day. Divided by the world's 8.24 billion people (PRB 2026), that's about $1,880 per person. Education only, not financial advice. AI narration.\n\nSources: BlackRock Q3 2026 release https://www.sec.gov/Archives/edgar/data/0002012383/000119312526420979/blk-ex99_1.htm · PRB 2026 World Population Data Sheet https://www.prb.org/app/uploads/2026/10/10.20.26_PRB_World-Population-Data-Sheet_Key-Findings-Brief.pdf\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#blackrock #wallstreet #money",
+  "youtube_tags": [
+   "BlackRock",
+   "asset management",
+   "trillion",
+   "wall street",
+   "the real number"
+  ]
+ }
+}
