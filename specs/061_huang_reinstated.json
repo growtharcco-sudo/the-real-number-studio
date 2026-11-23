@@ -1,0 +1,362 @@
+{
+ "id": "061_huang_reinstated",
+ "style": "notebook",
+ "layout": "presenter",
+ "series": "Money News",
+ "voice": "am_michael",
+ "speed": 1.1,
+ "caption_keywords": [],
+ "phrases": [
+  {
+   "say": "Eleven days ago, Jensen Huang quit Nvidia. Today, he's back.",
+   "pause": 0.4
+  },
+  {
+   "say": "Wait, what?",
+   "pause": 0.45
+  },
+  {
+   "say": "Nvidia's board voted unanimously to reinstate him as C E O, effective immediately.",
+   "cap": "Nvidia's board voted unanimously to reinstate him as CEO, effective immediately.",
+   "pause": 0.3
+  },
+  {
+   "say": "The board says it got input from senior U S government officials that his return poses no national security risk.",
+   "cap": "The board says it got input from senior US government officials that his return poses no national security risk.",
+   "pause": 0.45
+  },
+  {
+   "say": "And the market? Nvidia shares jumped more than twenty-five percent before the opening bell.",
+   "cap": "And the market? Nvidia shares jumped more than 25% before the opening bell.",
+   "pause": 0.45
+  },
+  {
+   "say": "Let's rewind.",
+   "pause": 0.25
+  },
+  {
+   "say": "November eighth, he admits the affair. November twelfth, he resigns. November twenty-third, he's CEO again.",
+   "cap": "Nov 8, he admits the affair. Nov 12, he resigns. Nov 23, he's CEO again.",
+   "pause": 0.45
+  },
+  {
+   "say": "So the real number isn't the scandal. It's how much the market is betting on one man.",
+   "pause": 0.4
+  },
+  {
+   "say": "Follow for more.",
+   "pause": 0.6
+  }
+ ],
+ "scenes": [
+  {
+   "until": 2,
+   "els": [
+    {
+     "type": "photo",
+     "src": "work/jensen_huang.png",
+     "y": 345,
+     "w": 250,
+     "at": -1
+    },
+    {
+     "type": "text",
+     "text": "back as Nvidia CEO",
+     "y": 665,
+     "at": -1,
+     "font": "hand",
+     "size": 60,
+     "color": "blue",
+     "rot": -1.5,
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "+25%",
+     "y": 735,
+     "at": -1,
+     "font": "head",
+     "size": 110,
+     "color": "green",
+     "mode": "fade"
+    },
+    {
+     "type": "stick",
+     "pose": "shocked",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": -1
+    }
+   ]
+  },
+  {
+   "until": 4,
+   "els": [
+    {
+     "type": "text",
+     "text": "what happened, Nov 23:",
+     "y": 360,
+     "at": 2,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "board vote: unanimous",
+     "y": 465,
+     "at": 2,
+     "size": 58
+    },
+    {
+     "type": "text",
+     "text": "CEO again, effective now",
+     "y": 565,
+     "at": 3,
+     "size": 58
+    },
+    {
+     "type": "text",
+     "text": "back on the board too",
+     "y": 665,
+     "at": 3,
+     "size": 58
+    },
+    {
+     "type": "text",
+     "text": "“no national security risk”",
+     "y": 765,
+     "at": 3,
+     "size": 58,
+     "id": "f2"
+    },
+    {
+     "type": "highlight",
+     "of": "f2",
+     "at": 3,
+     "delay": 0.4
+    },
+    {
+     "type": "stick",
+     "pose": "point",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 2
+    }
+   ]
+  },
+  {
+   "until": 5,
+   "els": [
+    {
+     "type": "text",
+     "text": "Nvidia premarket, more than:",
+     "y": 370,
+     "at": 4,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "count",
+     "value": 25,
+     "prefix": "+",
+     "suffix": "%",
+     "decimals": 0,
+     "y": 470,
+     "size": 200,
+     "color": "green",
+     "at": 4,
+     "id": "n4"
+    },
+    {
+     "type": "underline",
+     "of": "n4",
+     "color": "green",
+     "at": 4,
+     "delay": 1.0
+    },
+    {
+     "type": "text",
+     "text": "in one morning",
+     "y": 760,
+     "at": 4,
+     "font": "hand",
+     "size": 66,
+     "color": "grey"
+    },
+    {
+     "type": "stick",
+     "pose": "cheer",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "until": 7,
+   "els": [
+    {
+     "type": "text",
+     "text": "the 15-day rollercoaster:",
+     "y": 360,
+     "at": 5,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "Nov 8: admits affair",
+     "y": 465,
+     "at": 5,
+     "size": 58
+    },
+    {
+     "type": "text",
+     "text": "Nov 12: resigns as CEO",
+     "y": 565,
+     "at": 6,
+     "size": 58
+    },
+    {
+     "type": "text",
+     "text": "Nov 23: reinstated",
+     "y": 665,
+     "at": 6,
+     "size": 58
+    },
+    {
+     "type": "text",
+     "text": "shares: down, then up",
+     "y": 765,
+     "at": 6,
+     "size": 58,
+     "id": "f5"
+    },
+    {
+     "type": "highlight",
+     "of": "f5",
+     "at": 6,
+     "delay": 0.4
+    },
+    {
+     "type": "stick",
+     "pose": "think",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "until": "end",
+   "els": [
+    {
+     "type": "card",
+     "label": "note:",
+     "lines": [
+      "As of Nov 23, 2026, premarket.",
+      "Sources: Nvidia board via CNBC, CBS,",
+      "AP, Yahoo Finance.",
+      "Education only. Not financial advice."
+     ],
+     "y": 350,
+     "at": 7
+    },
+    {
+     "type": "text",
+     "text": "follow for",
+     "y": 640,
+     "at": 7,
+     "font": "hand",
+     "size": 66,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "The Real Number",
+     "y": 715,
+     "at": 7,
+     "font": "head",
+     "size": 84,
+     "delay": 0.18,
+     "mode": "fade",
+     "id": "rn"
+    },
+    {
+     "type": "highlight",
+     "of": "rn",
+     "at": 7,
+     "delay": 0.33
+    },
+    {
+     "type": "stick",
+     "pose": "shrug",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 7
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "kicker": "11 days later",
+  "big": "HE'S BACK",
+  "sub": "Jensen Huang, Nvidia CEO again",
+  "date": "Nov 23, 2026",
+  "big_color": "green",
+  "big_size": 150
+ },
+ "sources": [
+  {
+   "claim": "Nvidia reinstates Huang as CEO effective immediately; unanimous board vote; input from senior levels of US government, 'poses no national security risk'; shares soaring more than 26% (CNBC, fetched Nov 23 2026)",
+   "url": "https://cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html"
+  },
+  {
+   "claim": "Board chair Harvey C. Jones quote; reinstated as president and CEO (CBS News, fetched Nov 23 2026)",
+   "url": "https://www.cbsnews.com/news/nvidia-reinstates-jensen-huang-ceo/"
+  },
+  {
+   "claim": "Nvidia shares soared 27% in premarket after reinstatement as president, CEO and board director (Yahoo Finance live, fetched Nov 23 2026)",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-091118583.html"
+  },
+  {
+   "claim": "Timeline: Nov 8 admitted being unfaithful; Nov 12 resignation announced (Dexerto, fetched Nov 23 2026)",
+   "url": "https://www.dexerto.com/gaming/nvidia-reinstates-jensen-huang-as-ceo-amid-ongoing-foreign-intelligence-investigation-3430657/"
+  },
+  {
+   "claim": "AP: board reinstated Huang shortly after rejecting his offer to return (KRON4/AP)",
+   "url": "https://www.kron4.com/news/technology-ai/nvidia-reinstates-jensen-huang-as-ceo/"
+  },
+  {
+   "claim": "Python: Nov 23 - Nov 12 = 11 days; Nov 23 - Nov 8 = 15 days. Reel says 'more than 25%' because sources give 26% to 27% premarket.",
+   "url": "https://cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html"
+  }
+ ],
+ "post": {
+  "post_at": "2026-11-23T19:45:00+05:30",
+  "breaking": true,
+  "instagram_caption": "11 days ago, Jensen Huang quit Nvidia. Today he's back.\n\nNvidia's board voted unanimously to reinstate Huang as president and CEO, effective immediately. The board said it received input from senior levels of the US government that his return poses no national security risk. Board chair Harvey Jones: \"The Board believes Jensen is the right person to lead NVIDIA.\" Nvidia shares jumped more than 25% in premarket trading on Nov 23. The timeline: Nov 8 he admitted an affair, Nov 12 he resigned, Nov 23 he was reinstated.\n\nShould one person matter this much to a $4 trillion company?\n\nSources: Nvidia board statement via CNBC, CBS News, AP, Yahoo Finance. Education only. Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#nvidia #jensenhuang #stockmarket #breakingnews #therealnumber",
+  "youtube_title": "Jensen Huang Is Back as Nvidia CEO, 11 Days After Quitting",
+  "youtube_description": "Nvidia's board voted unanimously to reinstate Jensen Huang as president and CEO, effective immediately, saying it received input from senior US government officials that his return poses no national security risk. Nvidia shares jumped more than 25% in premarket trading on Nov 23, 2026. Timeline: Nov 8 he admitted an affair, Nov 12 he resigned, Nov 23 he was reinstated. Education only, not financial advice. AI narration.\n\nSources: CNBC https://cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html · CBS News https://www.cbsnews.com/news/nvidia-reinstates-jensen-huang-ceo/ · Yahoo Finance https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-091118583.html\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#nvidia #jensenhuang #stockmarket",
+  "youtube_tags": [
+   "nvidia",
+   "jensen huang",
+   "nvidia ceo",
+   "nvidia stock",
+   "the real number"
+  ]
+ }
+}
