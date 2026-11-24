@@ -14,7 +14,6 @@ payment, Binance hack, Oct 2026 Nasdaq wipeout.
 | How They Really Make Money | Coca-Cola pays Buffett 63% of his cost every year | ~$816M a year on ~$1.3B cost | Berkshire letter |
 | The Collapse | GameStop up ~28x in a month | ~$17 to $483 intraday, Jan 2021 | SEC staff report |
 | The Real Cost | Same debt, paid off 15 years faster | $200/month: 33 months, ~$1,486 interest | compute (state APR + rule) |
-| Pros vs Index | Two in three funds didn't survive 20 years | 36.52% survived | SPIVA US latest |
 | Crypto, Clearly | Crypto thieves stole $2.7B in one year | 2025 total | Chainalysis / TRM report |
 | Crypto, Clearly | The whole crypto market vs one company | total crypto cap vs Nvidia cap | CoinGecko + close, today |
 | Myth vs Math | Tulip mania prices | myth vs record | academic source |
@@ -37,3 +36,4 @@ India Edition: at most 1 in 7 posts.
 | How They Really Make Money | BlackRock manages about $1,880 per human | $15.49T AUM (Sep 30, 2026) / 8.24B people (PRB 2026) | queued 057_blackrock_per_human (2026-11-21 08:00 IST) |
 | Myth vs Math | "70% of lottery winners go broke" | NEFE (Jan 12, 2018): not backed by its research | queued 059_lottery_myth (2026-11-22 08:00 IST) |
 | The Collapse | Archegos: $36B fund, $160B of bets | $100B+ wiped out in under a week; banks lost $10B+ | queued 060_archegos_collapse (2026-11-22 22:00 IST) |
+| Pros vs Index | 62% of US stock funds from 20 years ago are gone | 37.85% survived, 94.89% trailed (SPIVA US mid-2026) | queued 062_funds_vanish (2026-11-25 08:00 IST) |

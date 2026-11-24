@@ -1,0 +1,417 @@
+{
+ "id": "062_funds_vanish",
+ "style": "notebook",
+ "layout": "presenter",
+ "series": "Pros vs Index",
+ "voice": "am_michael",
+ "speed": 1.08,
+ "caption_keywords": [
+  "funds",
+  "gone",
+  "SPIVA",
+  "survived",
+  "beat",
+  "benchmark",
+  "index"
+ ],
+ "phrases": [
+  {
+   "say": "Sixty-two percent of US stock funds from twenty years ago? Gone.",
+   "cap": "62% of US stock funds from 20 years ago? Gone.",
+   "pause": 0.35
+  },
+  {
+   "say": "S and P's SPIVA report followed two thousand one hundred ninety US stock funds for twenty years, up to June twenty twenty-six.",
+   "cap": "S&P's SPIVA report followed 2,190 US stock funds for 20 years, up to June 2026.",
+   "pause": 0.3
+  },
+  {
+   "say": "Only about thirty-eight percent still exist. The rest were closed or merged away. Ouch.",
+   "cap": "Only about 38% still exist. The rest were closed or merged away. Ouch.",
+   "pause": 0.35
+  },
+  {
+   "say": "And how many beat their benchmark over those twenty years? Wait for it.",
+   "pause": 0.3
+  },
+  {
+   "say": "About five percent. Almost ninety-five percent trailed it.",
+   "cap": "About 5%. Almost 95% trailed it.",
+   "pause": 0.35
+  },
+  {
+   "say": "The real number isn't one star fund. It's about one in twenty. Follow for more.",
+   "cap": "The real number isn't one star fund. It's about 1 in 20. Follow for more.",
+   "pause": 0.45
+  }
+ ],
+ "scenes": [
+  {
+   "until": 1,
+   "els": [
+    {
+     "type": "text",
+     "text": "62%",
+     "y": 400,
+     "at": -1,
+     "font": "head",
+     "size": 210,
+     "color": "red",
+     "mode": "fade",
+     "id": "hero"
+    },
+    {
+     "type": "text",
+     "text": "of US stock funds: gone",
+     "y": 660,
+     "at": -1,
+     "font": "hand",
+     "size": 78,
+     "color": "blue",
+     "rot": -1.5,
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "20 years · SPIVA",
+     "y": 770,
+     "at": -1,
+     "font": "hand",
+     "size": 54,
+     "color": "grey",
+     "mode": "fade"
+    },
+    {
+     "type": "stick",
+     "pose": "shocked",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": -1
+    }
+   ]
+  },
+  {
+   "until": 2,
+   "els": [
+    {
+     "type": "text",
+     "text": "funds at the start:",
+     "y": 370,
+     "at": 1,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "count",
+     "value": 2190,
+     "prefix": "",
+     "suffix": "",
+     "decimals": 0,
+     "y": 470,
+     "size": 200,
+     "color": "blue",
+     "at": 1,
+     "id": "n1"
+    },
+    {
+     "type": "underline",
+     "of": "n1",
+     "color": "blue",
+     "at": 1,
+     "delay": 1.0
+    },
+    {
+     "type": "text",
+     "text": "20 years, to June 30, 2026",
+     "y": 760,
+     "at": 1,
+     "font": "hand",
+     "size": 66,
+     "color": "grey"
+    },
+    {
+     "type": "stick",
+     "pose": "point",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 1
+    }
+   ]
+  },
+  {
+   "until": 3,
+   "els": [
+    {
+     "type": "text",
+     "text": "after 20 years:",
+     "y": 350,
+     "at": 2,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "funds at the start",
+     "y": 445,
+     "at": 2,
+     "size": 46,
+     "color": "grey",
+     "x": 135
+    },
+    {
+     "type": "bar",
+     "x": 135,
+     "y": 505,
+     "w": 725,
+     "color": "grey",
+     "at": 2,
+     "delay": 0.2
+    },
+    {
+     "type": "text",
+     "text": "2,190",
+     "y": 550,
+     "at": 2,
+     "font": "head",
+     "size": 64,
+     "x": 135
+    },
+    {
+     "type": "text",
+     "text": "still around",
+     "y": 645,
+     "at": 2,
+     "size": 46,
+     "color": "grey",
+     "x": 135
+    },
+    {
+     "type": "bar",
+     "x": 135,
+     "y": 705,
+     "w": 274,
+     "color": "red",
+     "at": 2,
+     "delay": 0.2
+    },
+    {
+     "type": "text",
+     "text": "about 38%",
+     "y": 750,
+     "at": 2,
+     "font": "head",
+     "size": 64,
+     "color": "red",
+     "x": 135,
+     "id": "c2"
+    },
+    {
+     "type": "highlight",
+     "of": "c2",
+     "at": 2,
+     "delay": 0.8
+    },
+    {
+     "type": "stick",
+     "pose": "shrug",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 2
+    }
+   ]
+  },
+  {
+   "until": 4,
+   "els": [
+    {
+     "type": "text",
+     "text": "the real test:",
+     "y": 360,
+     "at": 3,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "20 years",
+     "y": 465,
+     "at": 3,
+     "size": 58
+    },
+    {
+     "type": "text",
+     "text": "vs the S&P Composite 1500",
+     "y": 565,
+     "at": 3,
+     "size": 58
+    },
+    {
+     "type": "text",
+     "text": "how many won?",
+     "y": 665,
+     "at": 3,
+     "size": 58,
+     "id": "f3"
+    },
+    {
+     "type": "highlight",
+     "of": "f3",
+     "at": 3,
+     "delay": 0.4
+    },
+    {
+     "type": "stick",
+     "pose": "think",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "until": 5,
+   "els": [
+    {
+     "type": "text",
+     "text": "beat the benchmark:",
+     "y": 370,
+     "at": 4,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "count",
+     "value": 5,
+     "prefix": "",
+     "suffix": "%",
+     "decimals": 0,
+     "y": 470,
+     "size": 200,
+     "color": "red",
+     "at": 4,
+     "id": "n4"
+    },
+    {
+     "type": "underline",
+     "of": "n4",
+     "color": "red",
+     "at": 4,
+     "delay": 1.0
+    },
+    {
+     "type": "text",
+     "text": "94.89% trailed it",
+     "y": 760,
+     "at": 4,
+     "font": "hand",
+     "size": 66,
+     "color": "grey"
+    },
+    {
+     "type": "stick",
+     "pose": "shocked",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "until": "end",
+   "els": [
+    {
+     "type": "card",
+     "label": "note:",
+     "lines": [
+      "S&P Dow Jones Indices,",
+      "SPIVA U.S. Mid-Year 2026,",
+      "data as of June 30, 2026.",
+      "Past results don't guarantee future ones."
+     ],
+     "y": 350,
+     "at": 5
+    },
+    {
+     "type": "text",
+     "text": "follow for",
+     "y": 640,
+     "at": 5,
+     "font": "hand",
+     "size": 66,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "The Real Number",
+     "y": 715,
+     "at": 5,
+     "font": "head",
+     "size": 84,
+     "delay": 0.18,
+     "mode": "fade",
+     "id": "rn"
+    },
+    {
+     "type": "highlight",
+     "of": "rn",
+     "at": 5,
+     "delay": 0.33
+    },
+    {
+     "type": "stick",
+     "pose": "point",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 5
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "kicker": "US stock funds from 20 years ago",
+  "big": "62%",
+  "sub": "are gone",
+  "date": "Pros vs Index",
+  "big_color": "red",
+  "big_size": 190
+ },
+ "sources": [
+  {
+   "claim": "SPIVA U.S. Mid-Year 2026 (S&P Dow Jones Indices), Report 2, All Domestic Funds, 20-year: 2,190 funds at start, survivorship 37.85% (so 62.15% merged or liquidated). Data as of June 30, 2026. Fetched Nov 25, 2026 IST.",
+   "url": "https://www.spglobal.com/spdji/en/documents/spiva/spiva-us-mid-year-2026.pdf"
+  },
+  {
+   "claim": "Same report, Report 1a: 94.89% of All Domestic Funds underperformed the S&P Composite 1500 over 20 years (so 5.11% did not). Large-cap funds vs S&P 500, 20 years: 92.61% underperformed.",
+   "url": "https://www.spglobal.com/spdji/en/documents/spiva/spiva-us-mid-year-2026.pdf"
+  }
+ ],
+ "post": {
+  "post_at": "2026-11-25T08:00:00+05:30",
+  "instagram_caption": "62% of US stock funds from 20 years ago no longer exist.\n\nS&P Dow Jones Indices' SPIVA U.S. Mid-Year 2026 report followed 2,190 actively managed US stock funds over the 20 years to June 30, 2026. Only 37.85% survived; the rest were merged or liquidated. Over the same 20 years, 94.89% underperformed the S&P Composite 1500 (SPIVA counts funds that disappeared as underperformers). That leaves about 5%, roughly 1 in 20. Past results don't guarantee future ones.\n\nDid you know most funds quietly disappear?\n\nSource: SPIVA U.S. Mid-Year 2026, S&P Dow Jones Indices. Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#indexfunds #investing #stockmarket #financialliteracy #therealnumber",
+  "youtube_title": "62% of US Stock Funds From 20 Years Ago Are Gone",
+  "youtube_description": "S&P Dow Jones Indices' SPIVA U.S. Mid-Year 2026 report followed 2,190 actively managed US stock funds over the 20 years to June 30, 2026. Only 37.85% survived; the rest were merged or liquidated. Over 20 years, 94.89% underperformed the S&P Composite 1500, which leaves about 5%. SPIVA counts funds that disappeared as underperformers. Past results don't guarantee future ones. Education only, not financial advice. AI narration.\n\nSource: SPIVA U.S. Mid-Year 2026 https://www.spglobal.com/spdji/en/documents/spiva/spiva-us-mid-year-2026.pdf\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#indexfunds #investing #stockmarket",
+  "youtube_tags": [
+   "SPIVA",
+   "active funds vs index",
+   "mutual funds",
+   "index funds",
+   "the real number"
+  ]
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "id": "062_funds_vanish",
+ "style": "notebook",
+ "layout": "presenter",
+ "series": "Pros vs Index",
+ "speed": 1.08,
+ "keywords": ["funds", "gone", "SPIVA", "survived", "beat", "benchmark", "index"],
+ "beats": [
+  {"say": "Sixty-two percent of US stock funds from twenty years ago? Gone.",
+   "cap": "62% of US stock funds from 20 years ago? Gone.",
+   "pause": 0.35,
+   "show": {"kind": "hook", "big": "62%", "sub": "of US stock funds: gone", "date": "20 years · SPIVA", "color": "red", "pose": "shocked"}},
+  {"say": "S and P's SPIVA report followed two thousand one hundred ninety US stock funds for twenty years, up to June twenty twenty-six.",
+   "cap": "S&P's SPIVA report followed 2,190 US stock funds for 20 years, up to June 2026.",
+   "pause": 0.3,
+   "show": {"kind": "number", "label": "funds at the start:", "value": 2190, "note": "20 years, to June 30, 2026", "color": "blue", "pose": "point"}},
+  {"say": "Only about thirty-eight percent still exist. The rest were closed or merged away. Ouch.",
+   "cap": "Only about 38% still exist. The rest were closed or merged away. Ouch.",
+   "pause": 0.35,
+   "show": {"kind": "compare", "label": "after 20 years:", "a": {"label": "funds at the start", "value": "2,190", "frac": 1.0, "color": "grey"},
+            "b": {"label": "still around", "value": "about 38%", "frac": 0.3785}, "color": "red", "pose": "shrug"}},
+  {"say": "And how many beat their benchmark over those twenty years? Wait for it.",
+   "pause": 0.3,
+   "show": {"kind": "facts", "label": "the real test:", "lines": ["20 years", "vs the S&P Composite 1500", "how many won?"], "pose": "think"}},
+  {"say": "About five percent. Almost ninety-five percent trailed it.",
+   "cap": "About 5%. Almost 95% trailed it.",
+   "pause": 0.35,
+   "show": {"kind": "number", "label": "beat the benchmark:", "value": 5, "suffix": "%", "note": "94.89% trailed it", "color": "red", "pose": "shocked"}},
+  {"say": "The real number isn't one star fund. It's about one in twenty. Follow for more.",
+   "cap": "The real number isn't one star fund. It's about 1 in 20. Follow for more.",
+   "pause": 0.45,
+   "show": {"kind": "ending", "lines": ["S&P Dow Jones Indices,", "SPIVA U.S. Mid-Year 2026,", "data as of June 30, 2026.", "Past results don't guarantee future ones."], "pose": "point"}}
+ ],
+ "cover": {"kicker": "US stock funds from 20 years ago", "big": "62%", "sub": "are gone", "date": "Pros vs Index", "big_color": "red", "big_size": 190},
+ "sources": [
+  {"claim": "SPIVA U.S. Mid-Year 2026 (S&P Dow Jones Indices), Report 2, All Domestic Funds, 20-year: 2,190 funds at start, survivorship 37.85% (so 62.15% merged or liquidated). Data as of June 30, 2026. Fetched Nov 25, 2026 IST.",
+   "url": "https://www.spglobal.com/spdji/en/documents/spiva/spiva-us-mid-year-2026.pdf"},
+  {"claim": "Same report, Report 1a: 94.89% of All Domestic Funds underperformed the S&P Composite 1500 over 20 years (so 5.11% did not). Large-cap funds vs S&P 500, 20 years: 92.61% underperformed.",
+   "url": "https://www.spglobal.com/spdji/en/documents/spiva/spiva-us-mid-year-2026.pdf"}
+ ],
+ "post": {
+  "post_at": "2026-11-25T08:00:00+05:30",
+  "instagram_caption": "62% of US stock funds from 20 years ago no longer exist.\n\nS&P Dow Jones Indices' SPIVA U.S. Mid-Year 2026 report followed 2,190 actively managed US stock funds over the 20 years to June 30, 2026. Only 37.85% survived; the rest were merged or liquidated. Over the same 20 years, 94.89% underperformed the S&P Composite 1500 (SPIVA counts funds that disappeared as underperformers). That leaves about 5%, roughly 1 in 20. Past results don't guarantee future ones.\n\nDid you know most funds quietly disappear?\n\nSource: SPIVA U.S. Mid-Year 2026, S&P Dow Jones Indices. Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#indexfunds #investing #stockmarket #financialliteracy #therealnumber",
+  "youtube_title": "62% of US Stock Funds From 20 Years Ago Are Gone",
+  "youtube_description": "S&P Dow Jones Indices' SPIVA U.S. Mid-Year 2026 report followed 2,190 actively managed US stock funds over the 20 years to June 30, 2026. Only 37.85% survived; the rest were merged or liquidated. Over 20 years, 94.89% underperformed the S&P Composite 1500, which leaves about 5%. SPIVA counts funds that disappeared as underperformers. Past results don't guarantee future ones. Education only, not financial advice. AI narration.\n\nSource: SPIVA U.S. Mid-Year 2026 https://www.spglobal.com/spdji/en/documents/spiva/spiva-us-mid-year-2026.pdf\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#indexfunds #investing #stockmarket",
+  "youtube_tags": ["SPIVA", "active funds vs index", "mutual funds", "index funds", "the real number"]
+ }
+}
