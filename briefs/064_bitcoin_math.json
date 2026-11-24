@@ -1,0 +1,136 @@
+{
+ "id": "064_bitcoin_math",
+ "style": "notebook",
+ "layout": "presenter",
+ "series": "Crypto Clearly",
+ "speed": 1.08,
+ "keywords": [
+  "Bitcoin",
+  "record",
+  "math",
+  "rise",
+  "double",
+  "losses"
+ ],
+ "beats": [
+  {
+   "say": "Bitcoin is down fifty-two percent from its record. So a fifty-two percent rise gets it back? Nope.",
+   "cap": "Bitcoin is down 52% from its record. So a 52% rise gets it back? Nope.",
+   "pause": 0.35,
+   "show": {
+    "kind": "hook",
+    "big": "-52%",
+    "sub": "so +52% gets it back?",
+    "date": "Bitcoin · as of Nov 24, 2026",
+    "color": "red",
+    "pose": "shrug"
+   }
+  },
+  {
+   "say": "Its record was about one hundred twenty-six thousand dollars, in October twenty twenty-five.",
+   "cap": "Its record was about $126,000, in October 2025.",
+   "pause": 0.3,
+   "show": {
+    "kind": "compare",
+    "label": "Bitcoin price:",
+    "a": {
+     "label": "record, Oct 6, 2025",
+     "value": "$126,198",
+     "frac": 1.0,
+     "color": "grey"
+    },
+    "b": {
+     "label": "Nov 24, 2026",
+     "value": "$60,459",
+     "frac": 0.479
+    },
+    "color": "red",
+    "pose": "point"
+   }
+  },
+  {
+   "say": "On November twenty-fourth: about sixty thousand five hundred. Ouch.",
+   "cap": "On November 24: about $60,500. Ouch.",
+   "pause": 0.35
+  },
+  {
+   "say": "Now add fifty-two percent. You only reach about ninety-two thousand.",
+   "cap": "Now add 52%. You only reach about $92,000.",
+   "pause": 0.3,
+   "show": {
+    "kind": "facts",
+    "label": "the math:",
+    "lines": [
+     "$60,459 + 52%",
+     "= about $92,000",
+     "still not $126,198"
+    ],
+    "pose": "think"
+   }
+  },
+  {
+   "say": "To get back to the record, it would need to rise about one hundred nine percent. More than double.",
+   "cap": "To get back to the record, it would need to rise about 109%. More than double.",
+   "pause": 0.35,
+   "show": {
+    "kind": "number",
+    "label": "rise needed to get back:",
+    "value": 109,
+    "suffix": "%",
+    "note": "just to get back to even",
+    "color": "red",
+    "pose": "shocked"
+   }
+  },
+  {
+   "say": "The real number isn't fifty-two percent. It's one hundred nine. Follow for more.",
+   "cap": "The real number isn't 52%. It's 109%. Follow for more.",
+   "pause": 0.45,
+   "show": {
+    "kind": "ending",
+    "lines": [
+     "Fortune: BTC $60,458.70, Nov 24,",
+     "2026, 7:45 a.m. ET; record",
+     "$126,198.07 on Oct 6, 2025.",
+     "Crypto is risky. Not advice."
+    ],
+    "pose": "point"
+   }
+  }
+ ],
+ "cover": {
+  "kicker": "Bitcoin fell 52%. To get back:",
+  "big": "+109%",
+  "sub": "losses hurt more than they look",
+  "date": "Crypto Clearly · Nov 24, 2026",
+  "big_color": "red",
+  "big_size": 190
+ },
+ "sources": [
+  {
+   "claim": "Fortune, Current price of Bitcoin for November 24, 2026: 'At 7:45 a.m. Eastern Time today, the price of Bitcoin (1 BTC) is $60,458.70'; all-time high $126,198.07 on Oct. 6, 2025. Fetched Nov 25, 2026 IST.",
+   "url": "https://fortune.com/article/price-of-bitcoin-11-24-2026/"
+  },
+  {
+   "claim": "KuCoin News: Bitcoin's record of about $126,210 (October 2025) turned one year old; CoinMarketCap Academy: Bitcoin smashed the $126K record in October 2025.",
+   "url": "https://www.kucoin.com/news/flash/bitcoin-s-126-210-all-time-high-turns-one-year-old"
+  },
+  {
+   "claim": "Python: 1 - 60458.70/126198.07 = 52.1% fall; 126198.07/60458.70 - 1 = 108.7% rise needed; 60458.70 x 1.52 = 91,897.",
+   "url": "https://fortune.com/article/price-of-bitcoin-11-24-2026/"
+  }
+ ],
+ "post": {
+  "post_at": "2026-11-26T08:00:00+05:30",
+  "instagram_caption": "Bitcoin is down 52% from its record. Does a 52% rise get it back? No.\n\nFortune put Bitcoin at $60,458.70 at 7:45 a.m. ET on Nov 24, 2026, about 52% below its record of $126,198.07 on Oct 6, 2025. A 52% rise from $60,459 only reaches about $92,000. Getting back to the record would take a rise of about 109%, more than double. That's not a prediction, just how percentages work: a fall shrinks the base, so the climb back has to be bigger. Crypto products are unregulated and can be highly risky.\n\nDid you know losses and gains aren't the same size?\n\nSource: Fortune (Nov 24, 2026). Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#bitcoin #crypto #moneymath #financialliteracy #therealnumber",
+  "youtube_title": "Bitcoin Is Down 52%. Getting Back Takes 109%",
+  "youtube_description": "Fortune put Bitcoin at $60,458.70 at 7:45 a.m. ET on Nov 24, 2026, about 52% below its record of $126,198.07 on Oct 6, 2025. A 52% rise from there only reaches about $92,000; getting back to the record would take a rise of about 109%. This is percentage math, not a prediction. Crypto products are unregulated and can be highly risky. Education only, not financial advice. AI narration.\n\nSources: Fortune https://fortune.com/article/price-of-bitcoin-11-24-2026/ · KuCoin News https://www.kucoin.com/news/flash/bitcoin-s-126-210-all-time-high-turns-one-year-old\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#bitcoin #crypto #moneymath",
+  "youtube_tags": [
+   "bitcoin",
+   "bitcoin price",
+   "crypto math",
+   "percent loss",
+   "the real number"
+  ]
+ }
+}
