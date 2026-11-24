@@ -1,0 +1,491 @@
+{
+ "id": "065_coke_dividends",
+ "style": "notebook",
+ "layout": "presenter",
+ "series": "Money Machine",
+ "voice": "am_michael",
+ "speed": 1.08,
+ "caption_keywords": [
+  "Berkshire",
+  "Coca-Cola",
+  "Coke",
+  "dividends",
+  "cost",
+  "payout",
+  "year"
+ ],
+ "phrases": [
+  {
+   "say": "Berkshire Hathaway paid one point three billion dollars for its Coca-Cola shares. Wait till you see what Coke paid it back in one year.",
+   "cap": "Berkshire Hathaway paid $1.3 billion for its Coca-Cola shares. Wait till you see what Coke paid it back in one year.",
+   "pause": 0.35
+  },
+  {
+   "say": "Warren Buffett's company started buying in nineteen eighty-eight, and built up to four hundred million shares.",
+   "cap": "Warren Buffett's company started buying in 1988, and built up to 400 million shares.",
+   "pause": 0.3
+  },
+  {
+   "say": "Total cost: about three dollars twenty-five a share.",
+   "cap": "Total cost: about $3.25 a share.",
+   "pause": 0.35
+  },
+  {
+   "say": "The money machine is dividends: cash Coke pays its owners out of profits. And Coke has raised it sixty-four years in a row.",
+   "cap": "The money machine is dividends: cash Coke pays its owners out of profits. And Coke has raised it 64 years in a row.",
+   "pause": 0.35
+  },
+  {
+   "say": "In twenty twenty-five, Coke paid Berkshire eight hundred sixteen million dollars. In one year. Wait, what?",
+   "cap": "In 2025, Coke paid Berkshire $816 million. In one year. Wait, what?",
+   "pause": 0.35
+  },
+  {
+   "say": "Do the math. Eight hundred sixteen million, divided by one point two nine nine billion.",
+   "cap": "Do the math. $816 million, divided by $1.299 billion.",
+   "pause": 0.3
+  },
+  {
+   "say": "That's about sixty-three percent of the original cost, back in cash, in a single year.",
+   "cap": "That's about 63% of the original cost, back in cash, in a single year.",
+   "pause": 0.35
+  },
+  {
+   "say": "The real number isn't one point three billion. It's sixty-three percent of it, back in one year. Follow for more.",
+   "cap": "The real number isn't $1.3 billion. It's 63% of it, back in one year. Follow for more.",
+   "pause": 0.45
+  }
+ ],
+ "scenes": [
+  {
+   "until": 1,
+   "els": [
+    {
+     "type": "text",
+     "text": "$1.3B",
+     "y": 400,
+     "at": -1,
+     "font": "head",
+     "size": 210,
+     "color": "red",
+     "mode": "fade",
+     "id": "hero"
+    },
+    {
+     "type": "text",
+     "text": "spent on Coca-Cola",
+     "y": 660,
+     "at": -1,
+     "font": "hand",
+     "size": 78,
+     "color": "blue",
+     "rot": -1.5,
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "Berkshire Hathaway · since 1988",
+     "y": 770,
+     "at": -1,
+     "font": "hand",
+     "size": 54,
+     "color": "grey",
+     "mode": "fade"
+    },
+    {
+     "type": "stick",
+     "pose": "point",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": -1
+    }
+   ]
+  },
+  {
+   "until": 3,
+   "els": [
+    {
+     "type": "text",
+     "text": "Berkshire and Coke:",
+     "y": 360,
+     "at": 1,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "1988: starts buying",
+     "y": 465,
+     "at": 1,
+     "size": 58
+    },
+    {
+     "type": "text",
+     "text": "400 million shares",
+     "y": 565,
+     "at": 2,
+     "size": 58
+    },
+    {
+     "type": "text",
+     "text": "total cost: $1.299B",
+     "y": 665,
+     "at": 2,
+     "size": 58,
+     "id": "f1"
+    },
+    {
+     "type": "highlight",
+     "of": "f1",
+     "at": 2,
+     "delay": 0.4
+    },
+    {
+     "type": "stick",
+     "pose": "think",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 1
+    }
+   ]
+  },
+  {
+   "until": 4,
+   "els": [
+    {
+     "type": "text",
+     "text": "Coke's dividend raises:",
+     "y": 370,
+     "at": 3,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "count",
+     "value": 64,
+     "prefix": "",
+     "suffix": "",
+     "decimals": 0,
+     "y": 470,
+     "size": 200,
+     "color": "blue",
+     "at": 3,
+     "id": "n3"
+    },
+    {
+     "type": "underline",
+     "of": "n3",
+     "color": "blue",
+     "at": 3,
+     "delay": 1.0
+    },
+    {
+     "type": "text",
+     "text": "years in a row",
+     "y": 760,
+     "at": 3,
+     "font": "hand",
+     "size": 66,
+     "color": "grey"
+    },
+    {
+     "type": "stick",
+     "pose": "cheer",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "until": 5,
+   "els": [
+    {
+     "type": "text",
+     "text": "Coke paid Berkshire in 2025:",
+     "y": 370,
+     "at": 4,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "count",
+     "value": 816,
+     "prefix": "$",
+     "suffix": "M",
+     "decimals": 0,
+     "y": 470,
+     "size": 200,
+     "color": "red",
+     "at": 4,
+     "id": "n4"
+    },
+    {
+     "type": "underline",
+     "of": "n4",
+     "color": "red",
+     "at": 4,
+     "delay": 1.0
+    },
+    {
+     "type": "text",
+     "text": "in dividends",
+     "y": 760,
+     "at": 4,
+     "font": "hand",
+     "size": 66,
+     "color": "grey"
+    },
+    {
+     "type": "stick",
+     "pose": "shocked",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "until": 6,
+   "els": [
+    {
+     "type": "text",
+     "text": "Berkshire's Coke:",
+     "y": 350,
+     "at": 5,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "what it paid",
+     "y": 445,
+     "at": 5,
+     "size": 46,
+     "color": "grey",
+     "x": 135
+    },
+    {
+     "type": "bar",
+     "x": 135,
+     "y": 505,
+     "w": 725,
+     "color": "grey",
+     "at": 5,
+     "delay": 0.2
+    },
+    {
+     "type": "text",
+     "text": "$1.299B",
+     "y": 550,
+     "at": 5,
+     "font": "head",
+     "size": 64,
+     "x": 135
+    },
+    {
+     "type": "text",
+     "text": "dividends, 2025 alone",
+     "y": 645,
+     "at": 5,
+     "size": 46,
+     "color": "grey",
+     "x": 135
+    },
+    {
+     "type": "bar",
+     "x": 135,
+     "y": 705,
+     "w": 455,
+     "color": "red",
+     "at": 5,
+     "delay": 0.2
+    },
+    {
+     "type": "text",
+     "text": "$816M",
+     "y": 750,
+     "at": 5,
+     "font": "head",
+     "size": 64,
+     "color": "red",
+     "x": 135,
+     "id": "c5"
+    },
+    {
+     "type": "highlight",
+     "of": "c5",
+     "at": 5,
+     "delay": 0.8
+    },
+    {
+     "type": "stick",
+     "pose": "think",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "until": 7,
+   "els": [
+    {
+     "type": "text",
+     "text": "paid back in one year:",
+     "y": 370,
+     "at": 6,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "count",
+     "value": 63,
+     "prefix": "",
+     "suffix": "%",
+     "decimals": 0,
+     "y": 470,
+     "size": 200,
+     "color": "red",
+     "at": 6,
+     "id": "n6"
+    },
+    {
+     "type": "underline",
+     "of": "n6",
+     "color": "red",
+     "at": 6,
+     "delay": 1.0
+    },
+    {
+     "type": "text",
+     "text": "of the original cost",
+     "y": 760,
+     "at": 6,
+     "font": "hand",
+     "size": 66,
+     "color": "grey"
+    },
+    {
+     "type": "stick",
+     "pose": "shocked",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "until": "end",
+   "els": [
+    {
+     "type": "card",
+     "label": "note:",
+     "lines": [
+      "Berkshire Hathaway 2025 Annual",
+      "Report: cost $1,299M, 2025",
+      "dividends $816M. Coca-Cola, 2026.",
+      "Past results don't guarantee future."
+     ],
+     "y": 350,
+     "at": 7
+    },
+    {
+     "type": "text",
+     "text": "follow for",
+     "y": 640,
+     "at": 7,
+     "font": "hand",
+     "size": 66,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "The Real Number",
+     "y": 715,
+     "at": 7,
+     "font": "head",
+     "size": 84,
+     "delay": 0.18,
+     "mode": "fade",
+     "id": "rn"
+    },
+    {
+     "type": "highlight",
+     "of": "rn",
+     "at": 7,
+     "delay": 0.33
+    },
+    {
+     "type": "stick",
+     "pose": "point",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 7
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "kicker": "Coke paid Berkshire in one year",
+  "big": "63%",
+  "sub": "of what it paid for the shares",
+  "date": "Money Machine · 2025",
+  "big_color": "red",
+  "big_size": 190
+ },
+ "sources": [
+  {
+   "claim": "Berkshire Hathaway 2025 Annual Report, shareholder letter table (dollars in millions, Dec 31, 2025): The Coca-Cola Company, 9.3% owned, cost basis 1,299, market value 27,964, 2025 dividends 816. Fetched Nov 25, 2026 IST.",
+   "url": "https://pdf.dfcfw.com/pdf/H2_AN202602281820143568_1.pdf"
+  },
+  {
+   "claim": "Motley Fool (via Yahoo Finance), Mar 10, 2026: 'In 2025 alone, Berkshire Hathaway made $816 million in dividends from Coca-Cola stock'; cost basis $3.25 per share on its 400 million-plus shares; first bought Coca-Cola in 1988.",
+   "url": "https://finance.yahoo.com/news/much-berkshire-hathaway-made-coca-124000190.html"
+  },
+  {
+   "claim": "Motley Fool, Feb 12, 2026: as of September 2025, Berkshire held 400 million shares of Coke.",
+   "url": "https://www.fool.com/investing/2026/02/12/buffetts-all-time-favorite-stock-is-dropping-whats"
+  },
+  {
+   "claim": "Coca-Cola, Feb 19, 2026: quarterly dividend raised from 51 to 53 cents ($2.12 a year), its 64th consecutive annual dividend increase.",
+   "url": "https://investors.coca-colacompany.com/news-events/press-releases/detail/1152/board-of-directors-of-the-coca-cola-company-elects-new-officer-and-approves-64th-consecutive-annual-dividend-increase"
+  },
+  {
+   "claim": "Python: 816 / 1299 = 62.8%; 1299 / 400 = $3.25 a share.",
+   "url": "https://pdf.dfcfw.com/pdf/H2_AN202602281820143568_1.pdf"
+  }
+ ],
+ "post": {
+  "post_at": "2026-11-26T22:00:00+05:30",
+  "instagram_caption": "Berkshire paid $1.3 billion for its Coca-Cola shares. In 2025, Coke paid it $816 million.\n\nBerkshire Hathaway started buying Coca-Cola in 1988 and built up to 400 million shares, at a total cost of $1,299 million (about $3.25 a share). Its 2025 annual report shows $816 million of Coca-Cola dividends in 2025: about 63% of the original cost, in one year. Coca-Cola raised its dividend again in February 2026, its 64th annual increase in a row. Dividends can be cut, and past results don't guarantee future ones.\n\nWhat company would you guess pays out the most cash to its owners?\n\nSources: Berkshire Hathaway 2025 Annual Report, Coca-Cola (Feb 19, 2026). Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#dividends #warrenbuffett #cocacola #investing #therealnumber",
+  "youtube_title": "Coke Paid Berkshire 63% of Its Cost in One Year",
+  "youtube_description": "Berkshire Hathaway started buying Coca-Cola in 1988 and built up to 400 million shares at a total cost of $1,299 million. Its 2025 annual report shows $816 million of Coca-Cola dividends in 2025, about 63% of the original cost in a single year (stake worth $27,964 million at Dec 31, 2025). Coca-Cola raised its dividend in February 2026 to $2.12 a share a year, its 64th consecutive annual increase. Dividends can be cut; past results don't guarantee future ones. Education only, not financial advice. AI narration.\n\nSources: Berkshire Hathaway 2025 Annual Report https://pdf.dfcfw.com/pdf/H2_AN202602281820143568_1.pdf · Coca-Cola https://investors.coca-colacompany.com/news-events/press-releases/detail/1152/board-of-directors-of-the-coca-cola-company-elects-new-officer-and-approves-64th-consecutive-annual-dividend-increase · Motley Fool https://finance.yahoo.com/news/much-berkshire-hathaway-made-coca-124000190.html\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#dividends #warrenbuffett #investing",
+  "youtube_tags": [
+   "Berkshire Hathaway",
+   "Coca-Cola dividend",
+   "Warren Buffett",
+   "dividends",
+   "the real number"
+  ]
+ }
+}

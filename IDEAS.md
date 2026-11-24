@@ -11,7 +11,6 @@ payment, Binance hack, Oct 2026 Nasdaq wipeout.
 |---|---|---|---|
 | $1,000 Then | $1,000 in Amazon in 1997 | ~$3.4M (price moves) | Amazon IR split history + close |
 | $1,000 Then | $1,000 with Buffett in 1965 | 5,502,284% vs 39,054% S&P | Berkshire annual letter (latest) |
-| How They Really Make Money | Coca-Cola pays Buffett 63% of his cost every year | ~$816M a year on ~$1.3B cost | Berkshire letter |
 | The Collapse | GameStop up ~28x in a month | ~$17 to $483 intraday, Jan 2021 | SEC staff report |
 | The Real Cost | Same debt, paid off 15 years faster | $200/month: 33 months, ~$1,486 interest | compute (state APR + rule) |
 | Crypto, Clearly | Crypto thieves stole $2.7B in one year | 2025 total | Chainalysis / TRM report |
@@ -37,3 +36,5 @@ India Edition: at most 1 in 7 posts.
 | Myth vs Math | "70% of lottery winners go broke" | NEFE (Jan 12, 2018): not backed by its research | queued 059_lottery_myth (2026-11-22 08:00 IST) |
 | The Collapse | Archegos: $36B fund, $160B of bets | $100B+ wiped out in under a week; banks lost $10B+ | queued 060_archegos_collapse (2026-11-22 22:00 IST) |
 | Pros vs Index | 62% of US stock funds from 20 years ago are gone | 37.85% survived, 94.89% trailed (SPIVA US mid-2026) | queued 062_funds_vanish (2026-11-25 08:00 IST) |
+| Money Machine | Coke paid Berkshire 63% of its cost in one year | $816M 2025 dividends on $1,299M cost (Berkshire 2025 AR) | queued 065_coke_dividends (2026-11-26 22:00 IST) |
+| Crypto Clearly | Bitcoin -52% needs +109% to get back | $60,458.70 (Fortune, Nov 24, 2026) vs $126,198.07 record | queued 064_bitcoin_math (2026-11-26 08:00 IST) |
