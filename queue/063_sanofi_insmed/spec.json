@@ -1,0 +1,409 @@
+{
+ "id": "063_sanofi_insmed",
+ "style": "notebook",
+ "layout": "presenter",
+ "series": "Money News",
+ "voice": "am_michael",
+ "speed": 1.08,
+ "caption_keywords": [
+  "Sanofi",
+  "Insmed",
+  "cash",
+  "pill",
+  "Brinsupri",
+  "premium",
+  "patent",
+  "launch"
+ ],
+ "phrases": [
+  {
+   "say": "Why would anyone pay forty-one billion dollars for one pill? Wait for the timing.",
+   "cap": "Why would anyone pay $41 billion for one pill? Wait for the timing.",
+   "pause": 0.35
+  },
+  {
+   "say": "On November twenty-fourth, French drugmaker Sanofi agreed to buy Insmed for one hundred seventy-five dollars a share. All cash.",
+   "cap": "On November 24, French drugmaker Sanofi agreed to buy Insmed for $175 a share. All cash.",
+   "pause": 0.3
+  },
+  {
+   "say": "That's about forty-six percent above Insmed's price on November eighteenth, before reports of a deal.",
+   "cap": "That's about 46% above Insmed's price on November 18, before reports of a deal.",
+   "pause": 0.35
+  },
+  {
+   "say": "The pill is Brinsupri, for a lung disease called bronchiectasis. It launched in the US in August twenty twenty-five.",
+   "cap": "The pill is Brinsupri, for a lung disease called bronchiectasis. It launched in the US in August 2025.",
+   "pause": 0.3
+  },
+  {
+   "say": "The companies say it has already brought in one point oh nine billion dollars. Wait, already?",
+   "cap": "The companies say it has already brought in $1.09 billion. Wait, already?",
+   "pause": 0.35
+  },
+  {
+   "say": "Fierce Pharma reports Sanofi needs new hits before its best-seller, Dupixent, hits a patent cliff.",
+   "pause": 0.3
+  },
+  {
+   "say": "It still needs approvals, and should close in the first half of twenty twenty-seven.",
+   "cap": "It still needs approvals, and should close in the first half of 2027.",
+   "pause": 0.35
+  },
+  {
+   "say": "The real number isn't one pill. It's forty-one billion dollars, just fifteen months after launch. Follow for more.",
+   "cap": "The real number isn't one pill. It's $41 billion, just 15 months after launch. Follow for more.",
+   "pause": 0.45
+  }
+ ],
+ "scenes": [
+  {
+   "until": 1,
+   "els": [
+    {
+     "type": "text",
+     "text": "$41B?",
+     "y": 400,
+     "at": -1,
+     "font": "head",
+     "size": 210,
+     "color": "red",
+     "mode": "fade",
+     "id": "hero"
+    },
+    {
+     "type": "text",
+     "text": "for one hit pill",
+     "y": 660,
+     "at": -1,
+     "font": "hand",
+     "size": 78,
+     "color": "blue",
+     "rot": -1.5,
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "Sanofi · Insmed · Nov 24, 2026",
+     "y": 770,
+     "at": -1,
+     "font": "hand",
+     "size": 54,
+     "color": "grey",
+     "mode": "fade"
+    },
+    {
+     "type": "stick",
+     "pose": "shocked",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": -1
+    }
+   ]
+  },
+  {
+   "until": 3,
+   "els": [
+    {
+     "type": "text",
+     "text": "Sanofi pays per share:",
+     "y": 370,
+     "at": 1,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "count",
+     "value": 175,
+     "prefix": "$",
+     "suffix": "",
+     "decimals": 0,
+     "y": 470,
+     "size": 200,
+     "color": "blue",
+     "at": 1,
+     "id": "n1"
+    },
+    {
+     "type": "underline",
+     "of": "n1",
+     "color": "blue",
+     "at": 1,
+     "delay": 1.0
+    },
+    {
+     "type": "text",
+     "text": "about 46% above Nov 18",
+     "y": 760,
+     "at": 2,
+     "font": "hand",
+     "size": 66,
+     "color": "grey"
+    },
+    {
+     "type": "stick",
+     "pose": "point",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 1
+    }
+   ]
+  },
+  {
+   "until": 4,
+   "els": [
+    {
+     "type": "text",
+     "text": "the pill:",
+     "y": 360,
+     "at": 3,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "Brinsupri",
+     "y": 465,
+     "at": 3,
+     "size": 58
+    },
+    {
+     "type": "text",
+     "text": "for a lung disease",
+     "y": 565,
+     "at": 3,
+     "size": 58
+    },
+    {
+     "type": "text",
+     "text": "US launch: August 2025",
+     "y": 665,
+     "at": 3,
+     "size": 58,
+     "id": "f3"
+    },
+    {
+     "type": "highlight",
+     "of": "f3",
+     "at": 3,
+     "delay": 0.4
+    },
+    {
+     "type": "stick",
+     "pose": "think",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "until": 5,
+   "els": [
+    {
+     "type": "text",
+     "text": "Brinsupri revenue so far:",
+     "y": 370,
+     "at": 4,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "count",
+     "value": 1.09,
+     "prefix": "$",
+     "suffix": "B",
+     "decimals": 2,
+     "y": 470,
+     "size": 200,
+     "color": "blue",
+     "at": 4,
+     "id": "n4"
+    },
+    {
+     "type": "underline",
+     "of": "n4",
+     "color": "blue",
+     "at": 4,
+     "delay": 1.0
+    },
+    {
+     "type": "text",
+     "text": "through Sep 30, 2026",
+     "y": 760,
+     "at": 4,
+     "font": "hand",
+     "size": 66,
+     "color": "grey"
+    },
+    {
+     "type": "stick",
+     "pose": "shocked",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "until": 7,
+   "els": [
+    {
+     "type": "text",
+     "text": "why pay so much?",
+     "y": 360,
+     "at": 5,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "Dupixent: patent cliff ahead",
+     "y": 465,
+     "at": 5,
+     "size": 58
+    },
+    {
+     "type": "text",
+     "text": "Sanofi needs new hits",
+     "y": 565,
+     "at": 6,
+     "size": 58
+    },
+    {
+     "type": "text",
+     "text": "deal: needs approvals",
+     "y": 665,
+     "at": 6,
+     "size": 58
+    },
+    {
+     "type": "text",
+     "text": "close: first half of 2027",
+     "y": 765,
+     "at": 6,
+     "size": 58,
+     "id": "f5"
+    },
+    {
+     "type": "highlight",
+     "of": "f5",
+     "at": 6,
+     "delay": 0.4
+    },
+    {
+     "type": "stick",
+     "pose": "shrug",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "until": "end",
+   "els": [
+    {
+     "type": "card",
+     "label": "note:",
+     "lines": [
+      "Sanofi and Insmed release,",
+      "Nov 24, 2026 (SEC 8-K).",
+      "Fierce Pharma, Nov 19, 2026.",
+      "Education only. Not financial advice."
+     ],
+     "y": 350,
+     "at": 7
+    },
+    {
+     "type": "text",
+     "text": "follow for",
+     "y": 640,
+     "at": 7,
+     "font": "hand",
+     "size": 66,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "The Real Number",
+     "y": 715,
+     "at": 7,
+     "font": "head",
+     "size": 84,
+     "delay": 0.18,
+     "mode": "fade",
+     "id": "rn"
+    },
+    {
+     "type": "highlight",
+     "of": "rn",
+     "at": 7,
+     "delay": 0.33
+    },
+    {
+     "type": "stick",
+     "pose": "point",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 7
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "kicker": "Sanofi pays, for one hit pill",
+  "big": "$41B",
+  "sub": "15 months after launch",
+  "date": "Money News · Nov 24, 2026",
+  "big_color": "red",
+  "big_size": 190
+ },
+ "sources": [
+  {
+   "claim": "Joint release, Nov 24, 2026: Sanofi to acquire Insmed for $175 per share in cash, total equity value approx. $41.0 billion (EUR 37.6 billion); premium approx. 46% to Insmed's unaffected close on Nov 18, 2026; Brinsupri (brensocatib) for non-cystic fibrosis bronchiectasis, US launch August 2025, '$1.09 billion in revenue through September 30, 2026'; expected to close in the first half of 2027, subject to Insmed shareholder and regulatory approvals. Fetched Nov 25, 2026 IST.",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001104506/000114036126045364/ef20086426_ex99-1.htm"
+  },
+  {
+   "claim": "Fierce Pharma, Nov 19, 2026: Sanofi mounting a defense against a looming Dupixent patent cliff; Brinsupri approved summer 2025.",
+   "url": "https://www.fiercepharma.com/pharma/facing-down-dupixent-cliff-sanofi-mulls-buyout-insmed-and-its-blockbuster-be-brinsupri"
+  },
+  {
+   "claim": "Yahoo Finance (GuruFocus), Nov 24, 2026: Insmed shares up about 14.3% after Sanofi agreed to acquire it for $41 billion. StockTitan live markets page, Nov 24, 2026, same deal terms.",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/insmed-insm-stock-14-3-150055705.html"
+  },
+  {
+   "claim": "Python: Aug 2025 to Nov 2026 = 15 months; $175 / 1.46 = about $120 unaffected price.",
+   "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-24-2026"
+  }
+ ],
+ "post": {
+  "post_at": "2026-11-25T18:30:00+05:30",
+  "instagram_caption": "Why would anyone pay $41 billion for one pill?\n\nOn Nov 24, 2026, Sanofi agreed to buy Insmed for $175 a share in cash, about $41.0 billion, roughly 46% above Insmed's Nov 18 close (before deal reports). The prize is Brinsupri, a lung disease pill launched in the US in August 2025, which the companies say brought in $1.09 billion through Sep 30, 2026. Fierce Pharma reports Sanofi needs new growth ahead of a Dupixent patent cliff. The deal needs shareholder and regulatory approval and is expected to close in the first half of 2027.\n\nWould you pay $41 billion for a drug that launched 15 months ago?\n\nSources: Sanofi and Insmed release (Nov 24, 2026), Fierce Pharma. Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#moneynews #pharma #mergers #stockmarket #therealnumber",
+  "youtube_title": "Sanofi Pays $41 Billion for One Hit Pill",
+  "youtube_description": "On Nov 24, 2026, Sanofi agreed to acquire Insmed for $175 per share in cash, a total equity value of about $41.0 billion and a premium of about 46% to Insmed's Nov 18 close. The main prize is Brinsupri, a pill for non-cystic fibrosis bronchiectasis launched in the US in August 2025, with $1.09 billion in revenue through Sep 30, 2026 per the companies. The deal needs Insmed shareholder and regulatory approvals and is expected to close in the first half of 2027. Education only, not financial advice. AI narration.\n\nSources: Sanofi and Insmed release https://www.sec.gov/Archives/edgar/data/0001104506/000114036126045364/ef20086426_ex99-1.htm · Fierce Pharma https://www.fiercepharma.com/pharma/facing-down-dupixent-cliff-sanofi-mulls-buyout-insmed-and-its-blockbuster-be-brinsupri\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#moneynews #pharma #mergers",
+  "youtube_tags": [
+   "Sanofi",
+   "Insmed",
+   "Brinsupri",
+   "pharma deal",
+   "the real number"
+  ]
+ }
+}
