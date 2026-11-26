@@ -1,0 +1,139 @@
+{
+ "id": "068_india_deposit_cover",
+ "style": "notebook",
+ "layout": "presenter",
+ "series": "Money Machine · India Edition",
+ "speed": 1.08,
+ "keywords": [
+  "insured",
+  "bank",
+  "DICGC",
+  "accounts",
+  "money",
+  "India"
+ ],
+ "beats": [
+  {
+   "say": "If your bank in India fails, how much of your money is insured? Five lack rupees. That's it.",
+   "cap": "If your bank in India fails, how much of your money is insured? Rs 5 lakh. That's it.",
+   "pause": 0.35,
+   "show": {
+    "kind": "hook",
+    "big": "Rs 5L",
+    "sub": "5 lakh rupees, per bank",
+    "date": "DICGC · since Feb 4, 2020",
+    "color": "red",
+    "pose": "shocked"
+   }
+  },
+  {
+   "say": "That's the D I C G C limit: per depositor, per bank, principal and interest together.",
+   "cap": "That's the DICGC limit: per depositor, per bank, principal and interest together.",
+   "pause": 0.3,
+   "show": {
+    "kind": "facts",
+    "label": "the insurance limit:",
+    "lines": [
+     "Rs 5 lakh per depositor",
+     "per bank",
+     "principal + interest"
+    ],
+    "pose": "point"
+   }
+  },
+  {
+   "say": "The good news? That fully covers ninety-seven point four percent of all accounts.",
+   "cap": "The good news? That fully covers 97.4% of all accounts.",
+   "pause": 0.3,
+   "show": {
+    "kind": "number",
+    "label": "accounts fully covered:",
+    "value": 97.4,
+    "decimals": 1,
+    "suffix": "%",
+    "note": "nice!",
+    "color": "blue",
+    "pose": "cheer"
+   }
+  },
+  {
+   "say": "But big balances sit in a few big accounts. So, how much of the actual money is insured?",
+   "cap": "But big balances sit in a few big accounts. So, how much of the actual money is insured?",
+   "pause": 0.3,
+   "show": {
+    "kind": "facts",
+    "label": "the twist:",
+    "lines": [
+     "most accounts: small",
+     "most money: in big ones"
+    ],
+    "pose": "think"
+   }
+  },
+  {
+   "say": "Only thirty-nine point seven percent. Wait, what?",
+   "cap": "Only 39.7%. Wait, what?",
+   "pause": 0.35,
+   "show": {
+    "kind": "number",
+    "label": "deposits actually insured:",
+    "value": 39.7,
+    "decimals": 1,
+    "suffix": "%",
+    "note": "as of March 31, 2026",
+    "color": "red",
+    "pose": "shocked"
+   }
+  },
+  {
+   "say": "The real number isn't ninety-seven percent. It's thirty-nine point seven. Follow for more.",
+   "cap": "The real number isn't 97%. It's 39.7%. Follow for more.",
+   "pause": 0.45,
+   "show": {
+    "kind": "ending",
+    "lines": [
+     "DICGC Annual Report 2025-26:",
+     "97.4% of accounts fully covered,",
+     "39.7% of deposits insured",
+     "(Mar 31, 2026). Limit Rs 5 lakh."
+    ],
+    "pose": "point"
+   }
+  }
+ ],
+ "cover": {
+  "kicker": "Bank money insured in India",
+  "big": "39.7%",
+  "sub": "covered by the Rs 5 lakh limit",
+  "date": "India Edition · DICGC 2026",
+  "big_color": "red",
+  "big_size": 170
+ },
+ "sources": [
+  {
+   "claim": "DICGC Annual Report 2025-26 (Oct 2026), p. 2: 'The current coverage limit is ₹5,00,000 ... per depositor per bank which has been effective from February 4, 2020'; 'The proportion of fully protected accounts remained high at 97.4 per cent'; insured deposits ratio 'moderated to 39.7 per cent as at end-March 2026'; assessable deposits ₹275 lakh crore, insured deposits ₹109 lakh crore; 1,950 insured banks. Fetched Nov 27, 2026 IST.",
+   "url": "https://www.dicgc.org.in/sites/default/files/2026-10/dicgc-annual-report-2025-26-english-version.pdf"
+  },
+  {
+   "claim": "DICGC FAQs: 'The DICGC insures principal and interest upto a maximum amount of ₹ 5 lakh'; each depositor in a bank is insured up to ₹5,00,000. Fetched Nov 27, 2026 IST.",
+   "url": "https://dicgc.org.in/FAQs"
+  },
+  {
+   "claim": "Python check: 109 / 275 = 39.6% from rounded totals, consistent with the reported 39.7%; 100 - 39.7 = 60.3% uninsured.",
+   "url": "https://www.dicgc.org.in/sites/default/files/2026-10/dicgc-annual-report-2025-26-english-version.pdf"
+  }
+ ],
+ "post": {
+  "post_at": "2026-11-28T08:00:00+05:30",
+  "instagram_caption": "If your bank in India fails, only ₹5 lakh of your money is insured.\n\nIndia Edition. DICGC insures deposits up to ₹5 lakh per depositor per bank, principal and interest together, a limit in place since Feb 4, 2020. As of March 31, 2026, that fully covered 97.4% of all accounts, but only 39.7% of the money: ₹109 lakh crore insured out of ₹275 lakh crore of assessable deposits, per DICGC's 2025-26 annual report.\n\nDid you know the limit was per bank, not per account?\n\nSource: DICGC Annual Report 2025-26, DICGC FAQs. Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#banking #india #personalfinance #money #therealnumber",
+  "youtube_title": "Only 39.7% of Money in Indian Banks Is Insured",
+  "youtube_description": "India Edition. DICGC deposit insurance covers up to ₹5 lakh per depositor per bank (principal and interest together), effective since Feb 4, 2020. As of March 31, 2026, 97.4% of accounts were fully protected, but insured deposits were only 39.7% of assessable deposits (₹109 lakh crore of ₹275 lakh crore), per the DICGC Annual Report 2025-26. Education only, not financial advice. AI narration.\n\nSources: DICGC Annual Report 2025-26 https://www.dicgc.org.in/sites/default/files/2026-10/dicgc-annual-report-2025-26-english-version.pdf · DICGC FAQs https://dicgc.org.in/FAQs\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#banking #india #personalfinance",
+  "youtube_tags": [
+   "DICGC",
+   "deposit insurance India",
+   "bank safety",
+   "India Edition",
+   "the real number"
+  ]
+ }
+}

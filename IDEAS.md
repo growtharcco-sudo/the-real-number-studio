@@ -18,7 +18,6 @@ payment, Binance hack, Oct 2026 Nasdaq wipeout.
 | Myth vs Math | Tulip mania prices | myth vs record | academic source |
 | The Real Cost (India Edition) | Your "safe" FD is losing money | ~ -0.25% real after 30% tax | RBI CPI + bank FD rate, today |
 | The Real Cost (India Edition) | A ₹50 lakh home loan costs ₹1.04 crore | 8.5%, 20 years | compute |
-| Money Machine (India Edition) | India insures only ₹5 lakh of your deposit | DICGC ₹5 lakh | DICGC |
 | Pros vs Index (India Edition) | Indian fund managers vs the index | large-cap lag % | SPIVA India latest |
 
 India Edition: at most 1 in 7 posts.
@@ -39,3 +38,4 @@ India Edition: at most 1 in 7 posts.
 | Money Machine | Coke paid Berkshire 63% of its cost in one year | $816M 2025 dividends on $1,299M cost (Berkshire 2025 AR) | queued 065_coke_dividends (2026-11-26 22:00 IST) |
 | Crypto Clearly | Bitcoin -52% needs +109% to get back | $60,458.70 (Fortune, Nov 24, 2026) vs $126,198.07 record | queued 064_bitcoin_math (2026-11-26 08:00 IST) |
 | The Real Cost | Black Friday: $149,000 spent online a second | $12.9B Adobe forecast / 86,400 s | queued 066_black_friday_second (2026-11-27 08:00 IST) |
+| Money Machine (India Edition) | Only 39.7% of money in Indian banks is insured | Rs 5 lakh limit; 97.4% of accounts fully covered (DICGC AR 2025-26) | queued 068_india_deposit_cover (2026-11-28 08:00 IST) |
