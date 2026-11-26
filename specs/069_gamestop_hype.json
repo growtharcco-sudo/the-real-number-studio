@@ -1,0 +1,442 @@
+{
+ "id": "069_gamestop_hype",
+ "style": "notebook",
+ "layout": "presenter",
+ "series": "The Collapse",
+ "voice": "am_michael",
+ "speed": 1.08,
+ "caption_keywords": [
+  "GameStop",
+  "short",
+  "SEC",
+  "hype",
+  "squeeze",
+  "brokers",
+  "sentiment"
+ ],
+ "phrases": [
+  {
+   "say": "In January twenty twenty-one, a video game store's stock went up about twenty-seven hundred percent. In under three weeks.",
+   "cap": "In January 2021, a video game store's stock went up about 2,700%. In under three weeks.",
+   "pause": 0.35
+  },
+  {
+   "say": "GameStop. Selling games in malls. Short sellers had bet big against it.",
+   "cap": "GameStop. Selling games in malls. Short sellers had bet big against it.",
+   "pause": 0.3
+  },
+  {
+   "say": "Short interest hit one hundred twenty-three percent of the shares available to trade. Wait, what?",
+   "cap": "Short interest hit 123% of the shares available to trade. Wait, what?",
+   "pause": 0.35
+  },
+  {
+   "say": "Online buyers piled in. On January twenty-seventh, it closed at three hundred forty-seven dollars fifty-one.",
+   "cap": "Online buyers piled in. On January 27, it closed at $347.51.",
+   "pause": 0.3
+  },
+  {
+   "say": "The next day it touched four hundred eighty-three dollars, and some brokers restricted trading.",
+   "cap": "The next day it touched $483, and some brokers restricted trading.",
+   "pause": 0.35
+  },
+  {
+   "say": "Everyone called it a short squeeze. But the S E C found short sellers buying back were a small fraction of buying. The fuel was hype.",
+   "cap": "Everyone called it a short squeeze. But the SEC found short sellers buying back were a small fraction of buying. The fuel was hype.",
+   "pause": 0.3
+  },
+  {
+   "say": "And then? From that peak, the price fell more than eighty-six percent. Ouch.",
+   "cap": "And then? From that peak, the price fell more than 86%. Ouch.",
+   "pause": 0.35
+  },
+  {
+   "say": "The real number isn't twenty-seven hundred percent up. It's eighty-six percent down. Past results don't guarantee future ones. Follow for more.",
+   "cap": "The real number isn't 2,700% up. It's 86% down. Past results don't guarantee future ones. Follow for more.",
+   "pause": 0.45
+  }
+ ],
+ "scenes": [
+  {
+   "until": 1,
+   "els": [
+    {
+     "type": "text",
+     "text": "+2,700%",
+     "y": 400,
+     "at": -1,
+     "font": "head",
+     "size": 210,
+     "color": "red",
+     "mode": "fade",
+     "id": "hero"
+    },
+    {
+     "type": "text",
+     "text": "GameStop, January 2021",
+     "y": 660,
+     "at": -1,
+     "font": "hand",
+     "size": 78,
+     "color": "blue",
+     "rot": -1.5,
+     "mode": "fade"
+    },
+    {
+     "type": "text",
+     "text": "SEC staff report · Oct 2021",
+     "y": 770,
+     "at": -1,
+     "font": "hand",
+     "size": 54,
+     "color": "grey",
+     "mode": "fade"
+    },
+    {
+     "type": "stick",
+     "pose": "shocked",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": -1
+    }
+   ]
+  },
+  {
+   "until": 3,
+   "els": [
+    {
+     "type": "text",
+     "text": "shares sold short, % of float:",
+     "y": 370,
+     "at": 1,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "count",
+     "value": 122.97,
+     "prefix": "",
+     "suffix": "%",
+     "decimals": 2,
+     "y": 470,
+     "size": 200,
+     "color": "blue",
+     "at": 1,
+     "id": "n1"
+    },
+    {
+     "type": "underline",
+     "of": "n1",
+     "color": "blue",
+     "at": 1,
+     "delay": 1.0
+    },
+    {
+     "type": "text",
+     "text": "more than 100%?!",
+     "y": 760,
+     "at": 2,
+     "font": "hand",
+     "size": 66,
+     "color": "grey"
+    },
+    {
+     "type": "stick",
+     "pose": "think",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 1
+    }
+   ]
+  },
+  {
+   "until": 4,
+   "els": [
+    {
+     "type": "text",
+     "text": "close, Jan 27, 2021:",
+     "y": 370,
+     "at": 3,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "count",
+     "value": 347.51,
+     "prefix": "$",
+     "suffix": "",
+     "decimals": 2,
+     "y": 470,
+     "size": 200,
+     "color": "blue",
+     "at": 3,
+     "id": "n3"
+    },
+    {
+     "type": "underline",
+     "of": "n3",
+     "color": "blue",
+     "at": 3,
+     "delay": 1.0
+    },
+    {
+     "type": "text",
+     "text": "from under $20",
+     "y": 760,
+     "at": 3,
+     "font": "hand",
+     "size": 66,
+     "color": "grey"
+    },
+    {
+     "type": "stick",
+     "pose": "point",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "until": 5,
+   "els": [
+    {
+     "type": "text",
+     "text": "intraday high, Jan 28:",
+     "y": 370,
+     "at": 4,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "count",
+     "value": 483,
+     "prefix": "$",
+     "suffix": "",
+     "decimals": 0,
+     "y": 470,
+     "size": 200,
+     "color": "red",
+     "at": 4,
+     "id": "n4"
+    },
+    {
+     "type": "underline",
+     "of": "n4",
+     "color": "red",
+     "at": 4,
+     "delay": 1.0
+    },
+    {
+     "type": "text",
+     "text": "brokers: hold on!",
+     "y": 760,
+     "at": 4,
+     "font": "hand",
+     "size": 66,
+     "color": "grey"
+    },
+    {
+     "type": "stick",
+     "pose": "shocked",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "until": 6,
+   "els": [
+    {
+     "type": "text",
+     "text": "the SEC's finding:",
+     "y": 360,
+     "at": 5,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "short covering: small fraction",
+     "y": 465,
+     "at": 5,
+     "size": 58
+    },
+    {
+     "type": "text",
+     "text": "the fuel: positive sentiment",
+     "y": 565,
+     "at": 5,
+     "size": 58,
+     "id": "f5"
+    },
+    {
+     "type": "highlight",
+     "of": "f5",
+     "at": 5,
+     "delay": 0.4
+    },
+    {
+     "type": "stick",
+     "pose": "think",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "until": 7,
+   "els": [
+    {
+     "type": "text",
+     "text": "from the Jan 28 peak:",
+     "y": 370,
+     "at": 6,
+     "font": "hand",
+     "size": 74,
+     "color": "blue"
+    },
+    {
+     "type": "count",
+     "value": 86,
+     "prefix": "-",
+     "suffix": "%",
+     "decimals": 0,
+     "y": 470,
+     "size": 200,
+     "color": "red",
+     "at": 6,
+     "id": "n6"
+    },
+    {
+     "type": "underline",
+     "of": "n6",
+     "color": "red",
+     "at": 6,
+     "delay": 1.0
+    },
+    {
+     "type": "text",
+     "text": "over 86%, per the SEC",
+     "y": 760,
+     "at": 6,
+     "font": "hand",
+     "size": 66,
+     "color": "grey"
+    },
+    {
+     "type": "stick",
+     "pose": "shocked",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "until": "end",
+   "els": [
+    {
+     "type": "card",
+     "label": "note:",
+     "lines": [
+      "SEC staff report, Oct 2021:",
+      "+2,700% (Jan 8 to 28 intraday),",
+      "then a fall of over 86%.",
+      "Prices as reported in 2021."
+     ],
+     "y": 350,
+     "at": 7
+    },
+    {
+     "type": "text",
+     "text": "follow for",
+     "y": 640,
+     "at": 7,
+     "font": "hand",
+     "size": 66,
+     "color": "blue"
+    },
+    {
+     "type": "text",
+     "text": "The Real Number",
+     "y": 715,
+     "at": 7,
+     "font": "head",
+     "size": 84,
+     "delay": 0.18,
+     "mode": "fade",
+     "id": "rn"
+    },
+    {
+     "type": "highlight",
+     "of": "rn",
+     "at": 7,
+     "delay": 0.33
+    },
+    {
+     "type": "stick",
+     "pose": "point",
+     "x": 495,
+     "y": 1570,
+     "h": 520,
+     "presenter": true,
+     "at": 7
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "kicker": "GameStop rose 2,700%. Then?",
+  "big": "-86%",
+  "sub": "from the January 2021 peak",
+  "date": "The Collapse · SEC report",
+  "big_color": "red",
+  "big_size": 190
+ },
+ "sources": [
+  {
+   "claim": "SEC Staff Report on Equity and Options Market Structure Conditions in Early 2021 (Oct 2021), p. 19: 'By January 27, GME closed at a high of $347.51 per share'; 'The following day, share prices jumped further to an intraday high of $483.00.' p. 20: 'GME's intraday share price increased approximately 2,700% from its intraday low on January 8 ... to its intraday high on January 28, followed by a decrease of over 86%.' p. 22: short interest 'in January 2021 reached 122.97%'; 'fell as low as $40.59 by February 19'. p. 18: traded 'a little under $20 per share' at end-2020. p. 27: short covering 'was a small fraction of overall buy volume'; 'it was the positive sentiment, not the buying-to-cover, that sustained the weeks-long price appreciation'. p. 33: some broker-dealers restricted some types of trading. Fetched Nov 27, 2026 IST.",
+   "url": "https://www.sec.gov/files/staff-report-equity-options-market-struction-conditions-early-2021.pdf"
+  },
+  {
+   "claim": "SEC press release 2021-212, Oct 18, 2021: SEC staff releases the report.",
+   "url": "https://www.sec.gov/news/press-release/2021-212"
+  },
+  {
+   "claim": "Python: Jan 8 to Jan 28, 2021 = 20 days (under three weeks); 122.97% rounds to 123%; 1 - 40.59/483 = 91.6% low-to-peak drop, consistent with the SEC's 'over 86%'.",
+   "url": "https://www.sec.gov/files/staff-report-equity-options-market-struction-conditions-early-2021.pdf"
+  }
+ ],
+ "post": {
+  "post_at": "2026-11-28T22:00:00+05:30",
+  "instagram_caption": "In January 2021, GameStop's stock rose about 2,700% in under three weeks. Then it fell more than 86%.\n\nPer the SEC's staff report (Oct 2021), GameStop short interest reached 122.97% of its float in January 2021. As online investors piled in, the stock closed at $347.51 on Jan 27 and hit $483 intraday on Jan 28, up about 2,700% from its Jan 8 intraday low, and some brokers restricted trading. The SEC found buying by short sellers was a small fraction of buy volume: positive sentiment sustained the rise. Then the price fell more than 86%. Prices as reported in 2021. Past results don't guarantee future ones.\n\nWere you watching GameStop in January 2021?\n\nSource: SEC Staff Report on Equity and Options Market Structure Conditions in Early 2021. Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#gamestop #stockmarket #investing #wallstreet #therealnumber",
+  "youtube_title": "GameStop: Up 2,700% in 3 Weeks, Then Down 86%",
+  "youtube_description": "The SEC staff report on early 2021 market conditions (Oct 2021) found GameStop's intraday price rose about 2,700% from its Jan 8, 2021 low to its Jan 28 high of $483, after closing at $347.51 on Jan 27, followed by a decrease of over 86%. Short interest reached 122.97% of float in January 2021, but the SEC found buying by short sellers was a small fraction of buy volume and that positive sentiment sustained the rise. Prices as reported in 2021. Past results don't guarantee future ones. Education only, not financial advice. AI narration.\n\nSources: SEC staff report https://www.sec.gov/files/staff-report-equity-options-market-struction-conditions-early-2021.pdf · SEC press release https://www.sec.gov/news/press-release/2021-212\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#gamestop #stockmarket #investing",
+  "youtube_tags": [
+   "GameStop",
+   "GME 2021",
+   "short squeeze",
+   "meme stocks",
+   "the real number"
+  ]
+ }
+}

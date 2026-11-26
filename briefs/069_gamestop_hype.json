@@ -1,0 +1,159 @@
+{
+ "id": "069_gamestop_hype",
+ "style": "notebook",
+ "layout": "presenter",
+ "series": "The Collapse",
+ "speed": 1.08,
+ "keywords": [
+  "GameStop",
+  "short",
+  "SEC",
+  "hype",
+  "squeeze",
+  "brokers",
+  "sentiment"
+ ],
+ "beats": [
+  {
+   "say": "In January twenty twenty-one, a video game store's stock went up about twenty-seven hundred percent. In under three weeks.",
+   "cap": "In January 2021, a video game store's stock went up about 2,700%. In under three weeks.",
+   "pause": 0.35,
+   "show": {
+    "kind": "hook",
+    "big": "+2,700%",
+    "sub": "GameStop, January 2021",
+    "date": "SEC staff report · Oct 2021",
+    "color": "red",
+    "pose": "shocked"
+   }
+  },
+  {
+   "say": "GameStop. Selling games in malls. Short sellers had bet big against it.",
+   "cap": "GameStop. Selling games in malls. Short sellers had bet big against it.",
+   "pause": 0.3,
+   "show": {
+    "kind": "number",
+    "label": "shares sold short, % of float:",
+    "value": 122.97,
+    "decimals": 2,
+    "suffix": "%",
+    "note": "more than 100%?!",
+    "color": "blue",
+    "pose": "think"
+   }
+  },
+  {
+   "say": "Short interest hit one hundred twenty-three percent of the shares available to trade. Wait, what?",
+   "cap": "Short interest hit 123% of the shares available to trade. Wait, what?",
+   "pause": 0.35
+  },
+  {
+   "say": "Online buyers piled in. On January twenty-seventh, it closed at three hundred forty-seven dollars fifty-one.",
+   "cap": "Online buyers piled in. On January 27, it closed at $347.51.",
+   "pause": 0.3,
+   "show": {
+    "kind": "number",
+    "label": "close, Jan 27, 2021:",
+    "value": 347.51,
+    "decimals": 2,
+    "prefix": "$",
+    "note": "from under $20",
+    "color": "blue",
+    "pose": "point"
+   }
+  },
+  {
+   "say": "The next day it touched four hundred eighty-three dollars, and some brokers restricted trading.",
+   "cap": "The next day it touched $483, and some brokers restricted trading.",
+   "pause": 0.35,
+   "show": {
+    "kind": "number",
+    "label": "intraday high, Jan 28:",
+    "value": 483,
+    "prefix": "$",
+    "note": "brokers: hold on!",
+    "color": "red",
+    "pose": "shocked"
+   }
+  },
+  {
+   "say": "Everyone called it a short squeeze. But the S E C found short sellers buying back were a small fraction of buying. The fuel was hype.",
+   "cap": "Everyone called it a short squeeze. But the SEC found short sellers buying back were a small fraction of buying. The fuel was hype.",
+   "pause": 0.3,
+   "show": {
+    "kind": "facts",
+    "label": "the SEC's finding:",
+    "lines": [
+     "short covering: small fraction",
+     "the fuel: positive sentiment"
+    ],
+    "pose": "think"
+   }
+  },
+  {
+   "say": "And then? From that peak, the price fell more than eighty-six percent. Ouch.",
+   "cap": "And then? From that peak, the price fell more than 86%. Ouch.",
+   "pause": 0.35,
+   "show": {
+    "kind": "number",
+    "label": "from the Jan 28 peak:",
+    "value": 86,
+    "prefix": "-",
+    "suffix": "%",
+    "note": "over 86%, per the SEC",
+    "color": "red",
+    "pose": "shocked"
+   }
+  },
+  {
+   "say": "The real number isn't twenty-seven hundred percent up. It's eighty-six percent down. Past results don't guarantee future ones. Follow for more.",
+   "cap": "The real number isn't 2,700% up. It's 86% down. Past results don't guarantee future ones. Follow for more.",
+   "pause": 0.45,
+   "show": {
+    "kind": "ending",
+    "lines": [
+     "SEC staff report, Oct 2021:",
+     "+2,700% (Jan 8 to 28 intraday),",
+     "then a fall of over 86%.",
+     "Prices as reported in 2021."
+    ],
+    "pose": "point"
+   }
+  }
+ ],
+ "cover": {
+  "kicker": "GameStop rose 2,700%. Then?",
+  "big": "-86%",
+  "sub": "from the January 2021 peak",
+  "date": "The Collapse · SEC report",
+  "big_color": "red",
+  "big_size": 190
+ },
+ "sources": [
+  {
+   "claim": "SEC Staff Report on Equity and Options Market Structure Conditions in Early 2021 (Oct 2021), p. 19: 'By January 27, GME closed at a high of $347.51 per share'; 'The following day, share prices jumped further to an intraday high of $483.00.' p. 20: 'GME's intraday share price increased approximately 2,700% from its intraday low on January 8 ... to its intraday high on January 28, followed by a decrease of over 86%.' p. 22: short interest 'in January 2021 reached 122.97%'; 'fell as low as $40.59 by February 19'. p. 18: traded 'a little under $20 per share' at end-2020. p. 27: short covering 'was a small fraction of overall buy volume'; 'it was the positive sentiment, not the buying-to-cover, that sustained the weeks-long price appreciation'. p. 33: some broker-dealers restricted some types of trading. Fetched Nov 27, 2026 IST.",
+   "url": "https://www.sec.gov/files/staff-report-equity-options-market-struction-conditions-early-2021.pdf"
+  },
+  {
+   "claim": "SEC press release 2021-212, Oct 18, 2021: SEC staff releases the report.",
+   "url": "https://www.sec.gov/news/press-release/2021-212"
+  },
+  {
+   "claim": "Python: Jan 8 to Jan 28, 2021 = 20 days (under three weeks); 122.97% rounds to 123%; 1 - 40.59/483 = 91.6% low-to-peak drop, consistent with the SEC's 'over 86%'.",
+   "url": "https://www.sec.gov/files/staff-report-equity-options-market-struction-conditions-early-2021.pdf"
+  }
+ ],
+ "post": {
+  "post_at": "2026-11-28T22:00:00+05:30",
+  "instagram_caption": "In January 2021, GameStop's stock rose about 2,700% in under three weeks. Then it fell more than 86%.\n\nPer the SEC's staff report (Oct 2021), GameStop short interest reached 122.97% of its float in January 2021. As online investors piled in, the stock closed at $347.51 on Jan 27 and hit $483 intraday on Jan 28, up about 2,700% from its Jan 8 intraday low, and some brokers restricted trading. The SEC found buying by short sellers was a small fraction of buy volume: positive sentiment sustained the rise. Then the price fell more than 86%. Prices as reported in 2021. Past results don't guarantee future ones.\n\nWere you watching GameStop in January 2021?\n\nSource: SEC Staff Report on Equity and Options Market Structure Conditions in Early 2021. Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#gamestop #stockmarket #investing #wallstreet #therealnumber",
+  "youtube_title": "GameStop: Up 2,700% in 3 Weeks, Then Down 86%",
+  "youtube_description": "The SEC staff report on early 2021 market conditions (Oct 2021) found GameStop's intraday price rose about 2,700% from its Jan 8, 2021 low to its Jan 28 high of $483, after closing at $347.51 on Jan 27, followed by a decrease of over 86%. Short interest reached 122.97% of float in January 2021, but the SEC found buying by short sellers was a small fraction of buy volume and that positive sentiment sustained the rise. Prices as reported in 2021. Past results don't guarantee future ones. Education only, not financial advice. AI narration.\n\nSources: SEC staff report https://www.sec.gov/files/staff-report-equity-options-market-struction-conditions-early-2021.pdf · SEC press release https://www.sec.gov/news/press-release/2021-212\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#gamestop #stockmarket #investing",
+  "youtube_tags": [
+   "GameStop",
+   "GME 2021",
+   "short squeeze",
+   "meme stocks",
+   "the real number"
+  ]
+ }
+}

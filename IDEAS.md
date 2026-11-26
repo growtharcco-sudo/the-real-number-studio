@@ -11,7 +11,6 @@ payment, Binance hack, Oct 2026 Nasdaq wipeout.
 |---|---|---|---|
 | $1,000 Then | $1,000 in Amazon in 1997 | ~$3.4M (price moves) | Amazon IR split history + close |
 | $1,000 Then | $1,000 with Buffett in 1965 | 5,502,284% vs 39,054% S&P | Berkshire annual letter (latest) |
-| The Collapse | GameStop up ~28x in a month | ~$17 to $483 intraday, Jan 2021 | SEC staff report |
 | The Real Cost | Same debt, paid off 15 years faster | $200/month: 33 months, ~$1,486 interest | compute (state APR + rule) |
 | Crypto, Clearly | Crypto thieves stole $2.7B in one year | 2025 total | Chainalysis / TRM report |
 | Crypto, Clearly | The whole crypto market vs one company | total crypto cap vs Nvidia cap | CoinGecko + close, today |
@@ -39,3 +38,4 @@ India Edition: at most 1 in 7 posts.
 | Crypto Clearly | Bitcoin -52% needs +109% to get back | $60,458.70 (Fortune, Nov 24, 2026) vs $126,198.07 record | queued 064_bitcoin_math (2026-11-26 08:00 IST) |
 | The Real Cost | Black Friday: $149,000 spent online a second | $12.9B Adobe forecast / 86,400 s | queued 066_black_friday_second (2026-11-27 08:00 IST) |
 | Money Machine (India Edition) | Only 39.7% of money in Indian banks is insured | Rs 5 lakh limit; 97.4% of accounts fully covered (DICGC AR 2025-26) | queued 068_india_deposit_cover (2026-11-28 08:00 IST) |
+| The Collapse | GameStop +2,700% in under 3 weeks, then -86% | $483 intraday Jan 28, 2021; 122.97% short interest (SEC staff report) | queued 069_gamestop_hype (2026-11-28 22:00 IST) |
