@@ -1,0 +1,161 @@
+{
+ "id": "067_tariffs_14",
+ "style": "notebook",
+ "layout": "presenter",
+ "series": "Money News",
+ "speed": 1.08,
+ "keywords": [
+  "tariffs",
+  "proposed",
+  "China",
+  "Vietnam",
+  "Japan",
+  "hearing",
+  "deal"
+ ],
+ "beats": [
+  {
+   "say": "If anything you own was made in China, Japan or Vietnam, listen up. The US just proposed new tariffs on fourteen economies.",
+   "cap": "If anything you own was made in China, Japan or Vietnam, listen up. The US just proposed new tariffs on 14 economies.",
+   "pause": 0.35,
+   "show": {
+    "kind": "hook",
+    "big": "14",
+    "sub": "economies, new tariffs",
+    "date": "USTR proposal · Nov 25, 2026",
+    "color": "red",
+    "pose": "point"
+   }
+  },
+  {
+   "say": "It came on Wednesday, under a trade law called Section three oh one. Wait for the highest rate.",
+   "cap": "It came on Wednesday, under a trade law called Section 301. Wait for the highest rate.",
+   "pause": 0.3,
+   "show": {
+    "kind": "facts",
+    "label": "the list includes:",
+    "lines": [
+     "China, EU, Japan",
+     "South Korea, Taiwan, India",
+     "Vietnam + 7 more"
+    ],
+    "pose": "think"
+   }
+  },
+  {
+   "say": "The list: China, the E U, Japan, South Korea, Taiwan, India, Vietnam, and seven more.",
+   "cap": "The list: China, the EU, Japan, South Korea, Taiwan, India, Vietnam, and 7 more.",
+   "pause": 0.3
+  },
+  {
+   "say": "For the E U, Japan, South Korea and Taiwan: fifteen percent.",
+   "cap": "For the EU, Japan, South Korea and Taiwan: 15%.",
+   "pause": 0.3,
+   "show": {
+    "kind": "number",
+    "label": "EU, Japan, Korea, Taiwan:",
+    "value": 15,
+    "suffix": "%",
+    "note": "proposed rate",
+    "color": "blue",
+    "pose": "point"
+   }
+  },
+  {
+   "say": "China: up to twenty percent, on top of the tariffs it already pays from twenty eighteen. Ouch.",
+   "cap": "China: up to 20%, on top of the tariffs it already pays from 2018. Ouch.",
+   "pause": 0.35,
+   "show": {
+    "kind": "number",
+    "label": "China, up to (on top of 2018):",
+    "value": 20,
+    "suffix": "%",
+    "note": "ouch",
+    "color": "red",
+    "pose": "shocked"
+   }
+  },
+  {
+   "say": "But none of it is in effect yet. Comments close January fifth. A public hearing starts January twenty-fifth.",
+   "cap": "But none of it is in effect yet. Comments close January 5. A public hearing starts January 25.",
+   "pause": 0.3,
+   "show": {
+    "kind": "facts",
+    "label": "not in effect yet:",
+    "lines": [
+     "comments close: Jan 5, 2027",
+     "hearing: Jan 25, 2027"
+    ],
+    "pose": "shrug"
+   }
+  },
+  {
+   "say": "And the highest proposed rate? Up to thirty-five percent, for Vietnam, or twenty if a deal is done. Wait, what?",
+   "cap": "And the highest proposed rate? Up to 35%, for Vietnam, or 20% if a deal is done. Wait, what?",
+   "pause": 0.35,
+   "show": {
+    "kind": "number",
+    "label": "Vietnam, up to:",
+    "value": 35,
+    "suffix": "%",
+    "note": "20% with a deal",
+    "color": "red",
+    "pose": "shocked"
+   }
+  },
+  {
+   "say": "The real number isn't fourteen economies. It's up to thirty-five percent, and it's still only a proposal. Follow for more.",
+   "cap": "The real number isn't 14 economies. It's up to 35%, and it's still only a proposal. Follow for more.",
+   "pause": 0.45,
+   "show": {
+    "kind": "ending",
+    "lines": [
+     "USTR Section 301 proposal,",
+     "Nov 25, 2026 (Wiley, Pillsbury,",
+     "Reuters, AP, CNBC reports).",
+     "Proposed rates, not in effect."
+    ],
+    "pose": "point"
+   }
+  }
+ ],
+ "cover": {
+  "kicker": "New US tariffs on 14 economies",
+  "big": "35%",
+  "sub": "the highest proposed rate",
+  "date": "Money News · Nov 25, 2026",
+  "big_color": "red",
+  "big_size": 190
+ },
+ "sources": [
+  {
+   "claim": "Wiley Rein alert, Nov 25, 2026: USTR affirmative Section 301 structural excess capacity determinations for 14 of 16 economies investigated; proposed rates: EU, Japan, South Korea, Switzerland, Taiwan 15%; Bangladesh, Cambodia, Indonesia, Malaysia, Thailand up to 18%; Singapore up to 20%; India up to 25%; Vietnam up to 35%; China up to 20% (or 10% on one annex), with an up to 40% alternative; no determinations for Mexico or Norway; comments due Jan 5, 2027; hearing Jan 25, 2027; proposed measures, not yet in effect. Fetched Nov 27, 2026 IST.",
+   "url": "https://www.wiley.law/alert-USTR-Announces-Affirmative-Section-301-Determinations-and-Proposes-New-Tariffs-on-14-Trading-Partners-to-Address-Structural-Excess-Capacity"
+  },
+  {
+   "claim": "Pillsbury Global Trade & Sanctions Law, Nov 25, 2026: same 14 economies; India and Vietnam no-deal rates 25% and 35%, reduced to 17% and 20% if agreements are concluded; China up to 20% on most goods; MFN and the 2018 Section 301 tariffs (25%) continue to apply; notices state no effective date; comments Jan 5, 2027, hearing Jan 25, 2027. Fetched Nov 27, 2026 IST.",
+   "url": "https://www.globaltradeandsanctionslaw.com/ustr-proposes-section-301-tariffs-on-14-economies-in-structural-excess-capacity-investigations/"
+  },
+  {
+   "claim": "Unbiased Headlines, Nov 25, 2026 (citing Reuters, AP, CNBC): 14 economies listed, Mexico and Norway left off; China 20% on top of first-term tariffs; 'The rates are proposals, not final duties.' Fetched Nov 27, 2026 IST.",
+   "url": "https://unbiasedheadlines.com/article/ustr-proposes-section-301-tariffs-on-14-economies-with-china-facing-20-extra"
+  },
+  {
+   "claim": "Count check in Python: 14 economies minus 7 named (China, EU, Japan, South Korea, Taiwan, India, Vietnam) = 7 more.",
+   "url": "https://www.wiley.law/alert-USTR-Announces-Affirmative-Section-301-Determinations-and-Proposes-New-Tariffs-on-14-Trading-Partners-to-Address-Structural-Excess-Capacity"
+  }
+ ],
+ "post": {
+  "post_at": "2026-11-27T18:30:00+05:30",
+  "instagram_caption": "The US just proposed new tariffs on 14 economies. The highest: up to 35%.\n\nOn Nov 25, 2026, the US Trade Representative proposed Section 301 tariffs on 14 economies, including China, the EU, Japan, South Korea, Taiwan, India and Vietnam. Proposed rates: 15% for the EU, Japan, South Korea and Taiwan; up to 20% for China, on top of its 2018 tariffs; up to 25% for India; up to 35% for Vietnam, or 20% with a deal. None of it is in effect yet: comments close Jan 5, 2027 and a public hearing starts Jan 25, 2027.\n\nWhich country on the list surprised you most?\n\nSources: USTR proposal as summarized by Wiley and Pillsbury (Nov 25, 2026); Reuters, AP, CNBC reports. Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#tariffs #trade #economy #moneynews #therealnumber",
+  "youtube_title": "US Proposes New Tariffs on 14 Economies, Up to 35%",
+  "youtube_description": "On Nov 25, 2026, the US Trade Representative proposed Section 301 tariffs on 14 economies over structural excess capacity: 15% for the EU, Japan, South Korea, Switzerland and Taiwan; up to 18% for Bangladesh, Cambodia, Indonesia, Malaysia and Thailand; up to 20% for Singapore; up to 25% for India; up to 35% for Vietnam (20% with a deal); and up to 20% for China on top of its 2018 tariffs. Mexico and Norway were investigated but not included. The rates are proposals, not in effect: comments are due Jan 5, 2027 and a hearing starts Jan 25, 2027. Education only, not financial advice. AI narration.\n\nSources: Wiley https://www.wiley.law/alert-USTR-Announces-Affirmative-Section-301-Determinations-and-Proposes-New-Tariffs-on-14-Trading-Partners-to-Address-Structural-Excess-Capacity · Pillsbury https://www.globaltradeandsanctionslaw.com/ustr-proposes-section-301-tariffs-on-14-economies-in-structural-excess-capacity-investigations/ · Unbiased Headlines https://unbiasedheadlines.com/article/ustr-proposes-section-301-tariffs-on-14-economies-with-china-facing-20-extra\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#tariffs #trade #economy",
+  "youtube_tags": [
+   "tariffs",
+   "Section 301",
+   "USTR",
+   "trade war",
+   "the real number"
+  ]
+ }
+}

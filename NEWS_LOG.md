@@ -14,3 +14,4 @@
 2026-11-21 02:51 IST | news | 058_correction_friday | Nasdaq -5.1%, erases 2026 gain; S&P, Dow correction
 2026-11-23 19:46 IST | breaking | 061_huang_reinstated | Huang reinstated as Nvidia CEO; shares +25%+ premarket
 2026-11-25 02:17 IST | news | 063_sanofi_insmed | Sanofi buys Insmed for $41B, 46% premium
+2026-11-27 02:16 IST | news | 067_tariffs_14 | US proposes Section 301 tariffs on 14 economies
