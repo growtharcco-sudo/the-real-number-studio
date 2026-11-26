@@ -1,0 +1,66 @@
+{
+ "id": "066_black_friday_second",
+ "style": "notebook",
+ "layout": "presenter",
+ "series": "The Real Cost",
+ "speed": 1.08,
+ "keywords": ["Black Friday", "online", "Adobe", "forecast", "second", "pay later"],
+ "beats": [
+  {
+   "say": "Americans could spend twelve point nine billion dollars online on Black Friday. In one day.",
+   "cap": "Americans could spend $12.9 billion online on Black Friday. In one day.",
+   "pause": 0.35,
+   "show": {"kind": "hook", "big": "$12.9B", "sub": "online, in one day", "date": "Adobe forecast · Black Friday 2026", "color": "red", "pose": "shocked"}
+  },
+  {
+   "say": "That's Adobe's forecast for this year, up nine point two percent on last year.",
+   "cap": "That's Adobe's forecast for this year, up 9.2% on last year.",
+   "pause": 0.3,
+   "show": {"kind": "number", "label": "vs Black Friday 2025:", "value": 9.2, "decimals": 1, "prefix": "+", "suffix": "%", "note": "Adobe forecast", "color": "blue", "pose": "point"}
+  },
+  {
+   "say": "And about eight hundred seven million of it on pay-later plans. Wait, what?",
+   "cap": "And about $807 million of it on pay-later plans. Wait, what?",
+   "pause": 0.35,
+   "show": {"kind": "number", "label": "on pay-later plans (BNPL):", "value": 807, "prefix": "$", "suffix": "M", "note": "pay... later?", "color": "red", "pose": "shocked"}
+  },
+  {
+   "say": "So how fast is that? A day has eighty-six thousand four hundred seconds. Let's divide.",
+   "cap": "So how fast is that? A day has 86,400 seconds. Let's divide.",
+   "pause": 0.3,
+   "show": {"kind": "facts", "label": "do the math:", "lines": ["$12.9 billion", "÷ 86,400 seconds"], "pose": "think"}
+  },
+  {
+   "say": "That's about one hundred forty-nine thousand dollars. Every single second.",
+   "cap": "That's about $149,000. Every single second.",
+   "pause": 0.35,
+   "show": {"kind": "number", "label": "spent online, per second:", "value": 149000, "prefix": "$", "note": "every second", "color": "red", "pose": "shocked"}
+  },
+  {
+   "say": "The real number isn't the discount. It's one hundred forty-nine thousand dollars a second. Follow for more.",
+   "cap": "The real number isn't the discount. It's $149,000 a second. Follow for more.",
+   "pause": 0.45,
+   "show": {"kind": "ending", "lines": ["Adobe forecast, Sep 28, 2026:", "$12.9B online, Black Friday", "Nov 27, 2026. $807M BNPL.", "12.9B / 86,400 = $149,306/s"], "pose": "point"}
+  }
+ ],
+ "cover": {
+  "kicker": "Black Friday online, every second",
+  "big": "$149K",
+  "sub": "spent per second (forecast)",
+  "date": "The Real Cost · Adobe 2026",
+  "big_color": "red",
+  "big_size": 170
+ },
+ "sources": [
+  {"claim": "Adobe press release, Sep 28, 2026: Black Friday ($12.9 billion, up 9.2% YoY); BNPL set to drive $807 million in online spend on Black Friday. Fetched Nov 27, 2026 IST.", "url": "https://news.adobe.com/news/2026/09/adobe-us-holiday-shopping-season-to-hit-record"},
+  {"claim": "Adobe Digital Insights 2026 Holiday Forecast PDF: Black Friday 11/27; $12.9B, +9.2%; Black Friday BNPL $807 million, up 8% YoY. Fetched Nov 27, 2026 IST.", "url": "https://business.adobe.com/assets/resources/holiday-shopping-report/2026/pdf/2026-adobe-digital-insights-holiday-forecast.pdf"},
+  {"claim": "Python: 12.9e9 / 86,400 = 149,305.6 dollars a second, about $149,000.", "url": "https://news.adobe.com/news/2026/09/adobe-us-holiday-shopping-season-to-hit-record"}
+ ],
+ "post": {
+  "post_at": "2026-11-27T08:00:00+05:30",
+  "instagram_caption": "Black Friday could see $149,000 spent online every second.\n\nAdobe forecasts US shoppers will spend $12.9 billion online on Black Friday, Nov 27, 2026, up 9.2% on last year, with about $807 million of it on pay-later plans (BNPL). A day has 86,400 seconds, so that is about $149,000 a second. This is a forecast; the real total comes out after the weekend.\n\nWhat's the one thing you actually buy on Black Friday?\n\nSource: Adobe Digital Insights holiday forecast (Sep 28, 2026). Not financial advice.\nFollow @the_real.number for the real number behind your money.\n\n#blackfriday #shopping #personalfinance #money #therealnumber",
+  "youtube_title": "Black Friday: $149,000 Spent Online Every Second",
+  "youtube_description": "Adobe forecasts US online spending of $12.9 billion on Black Friday (Nov 27, 2026), up 9.2% year over year, including about $807 million via pay-later (BNPL) plans. Divided by 86,400 seconds in a day, that is about $149,000 a second. Forecast as of Sep 28, 2026; actual results may differ. Education only, not financial advice. AI narration.\n\nSources: Adobe https://news.adobe.com/news/2026/09/adobe-us-holiday-shopping-season-to-hit-record · Adobe Digital Insights forecast https://business.adobe.com/assets/resources/holiday-shopping-report/2026/pdf/2026-adobe-digital-insights-holiday-forecast.pdf\n\nSubscribe to @Thereal.number for the real number behind your money.\n\n#blackfriday #shopping #personalfinance",
+  "youtube_tags": ["Black Friday 2026", "Adobe forecast", "online shopping", "BNPL", "the real number"]
+ }
+}

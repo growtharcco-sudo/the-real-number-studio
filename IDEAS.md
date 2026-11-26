@@ -38,3 +38,4 @@ India Edition: at most 1 in 7 posts.
 | Pros vs Index | 62% of US stock funds from 20 years ago are gone | 37.85% survived, 94.89% trailed (SPIVA US mid-2026) | queued 062_funds_vanish (2026-11-25 08:00 IST) |
 | Money Machine | Coke paid Berkshire 63% of its cost in one year | $816M 2025 dividends on $1,299M cost (Berkshire 2025 AR) | queued 065_coke_dividends (2026-11-26 22:00 IST) |
 | Crypto Clearly | Bitcoin -52% needs +109% to get back | $60,458.70 (Fortune, Nov 24, 2026) vs $126,198.07 record | queued 064_bitcoin_math (2026-11-26 08:00 IST) |
+| The Real Cost | Black Friday: $149,000 spent online a second | $12.9B Adobe forecast / 86,400 s | queued 066_black_friday_second (2026-11-27 08:00 IST) |
